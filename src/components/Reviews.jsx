@@ -15,8 +15,8 @@ const REVIEWS_DATA = [
     isNew: true,
     isLocalGuide: false,
     text: {
-      es: 'Tôi đến ăn trưa và được tiếp đón rất niềm nở. Nhân viên vui tính. Tôi đã có được bữa cơm ngon miệng với món thịt kho. Chuẩn hương vị cơm quê. Ở nơi đất khách quê người mà tôi lại được thưởng thức món ngon như món của mẹ tôi nấu vậy. Tôi khuyên mọi người hãy đến nhà hàng này nhé.\n\n(Traducido por Google)\nFui a almorzar y me recibieron muy amablemente. El personal es divertido. Disfruté de una comida deliciosa con carne de cerdo estofada (thịt kho). Sabor a comida casera. En un país extranjero, poder disfrutar de un plato tan rico como el de mi madre es increíble. Recomiendo mucho venir a este restaurante.\n\nTipo de comida: Almuerzo',
-      en: 'Tôi đến ăn trưa và được tiếp đón rất niềm nở. Nhân viên vui tính. Tôi đã có được bữa cơm ngon miệng với món thịt kho. Chuẩn hương vị cơm quê. Ở nơi đất khách quê người mà tôi lại được thưởng thức món ngon như món của mẹ tôi nấu vậy. Tôi khuyên mọi người hãy đến nhà hàng này nhé.\n\n(Translated by Google)\nI came for lunch and was welcomed very warmly. The staff is friendly. I had a delicious meal with braised pork (thịt kho). The authentic taste of home-cooked meals. In a foreign land, being able to enjoy a dish as delicious as the one my mother cooks is amazing. I highly recommend everyone to visit this restaurant.\n\nMeal type: Lunch'
+      es: 'Fui a almorzar y me recibieron muy amablemente. El personal es divertido. Disfruté de una comida deliciosa con carne de cerdo estofada (thịt kho), con el auténtico sabor a hogar. En un país extranjero, poder disfrutar de un plato tan rico como el de mi madre es increíble. Recomiendo mucho venir a este restaurante.\n\nTipo de comida: Almuerzo',
+      en: 'I came for lunch and was welcomed very warmly. The staff is friendly. I had a delicious meal with braised pork (thịt kho), tasting just like home-cooked meals. In a foreign land, being able to enjoy a dish as delicious as the one my mother cooks is amazing. I highly recommend everyone to visit this restaurant.\n\nMeal type: Lunch'
     },
     images: [
       '/reviews/storefront_review.png',
