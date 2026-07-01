@@ -35,8 +35,8 @@ const REVIEWS_DATA = [
     isNew: false,
     isLocalGuide: true,
     text: {
-      es: 'Riquísimos todo. Muchísimo sabor, el postre verde aunque a priori el color me impacto estaba delicioso. Super atentos, rápidos y de precio nos costó 43€ dos personas con copas de vino incluidas.\n\nLoại hình bữa ăn\nBữa tối\n\nGiá mỗi người\n20-30 €\n\nĐộ ồn\nYên tĩnh, dễ trò chuyện\n\nXem bản dịch (Tiếng Việt)',
-      en: 'Riquísimos todo. Muchísimo sabor, el postre verde aunque a priori el color me impacto estaba delicioso. Super atentos, rápidos y de precio nos costó 43€ dos personas con copas de vino incluidas.\n\nLoại hình bữa ăn\nBữa tối\n\nGiá mỗi người\n20-30 €\n\nĐộ ồn\nYên tĩnh, dễ trò chuyện\n\nXem bản dịch (Tiếng Việt)'
+      es: 'Riquísimos todo. Muchísimo sabor, el postre verde aunque a priori el color me impacto estaba delicioso. Super atentos, rápidos y de precio nos costó 43€ dos personas con copas de vino incluidas.\n\nLoại hình bữa ăn\nBữa tối\n\nGiá mỗi người\n20-30 €',
+      en: 'Riquísimos todo. Muchísimo sabor, el postre verde aunque a priori el color me impacto estaba delicioso. Super atentos, rápidos y de precio nos costó 43€ dos personas con copas de vino incluidas.\n\nLoại hình bữa ăn\nBữa tối\n\nGiá mỗi người\n20-30 €'
     },
     images: [
       '/reviews/dumplings_review.png',
