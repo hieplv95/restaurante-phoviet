@@ -51,18 +51,18 @@ const REVIEWS_DATA = [
     initials: 'NR',
     reviewCount: 622,
     photoCount: 5881,
-    rating: 4,
+    rating: 5,
     timeKey: 'reviews.ago.months.6',
     isNew: false,
     isLocalGuide: true,
     text: {
-      es: 'Los menús son más que suficientes para un almuerzo rápido. El servicio es rápido y la comida es decente. Espera una comida con sabor casero y con las especias adecuadas.',
-      en: 'The set meals are more than enough for a quick lunch. Service is fast and food is decent. Do not come here expecting gourmet vietnamese. Rather, expect a meal that tastes home-cooked and with the appropriate spices...'
+      es: '¡Nos ha encantado! Tiene menú del día y cuenta con muchas opciones, pena no haber podido probarlo todo... Los postres espectaculares.\n\nĐồ ăn: 5\n\nDịch vụ: 5\n\nBầu không khí: 5\n\nXem bản dịch (Tiếng Việt)',
+      en: '¡Nos ha encantado! Tiene menú del día y cuenta con muchas opciones, pena no haber podido probarlo todo... Los postres espectaculares.\n\nĐồ ăn: 5\n\nDịch vụ: 5\n\nBầu không khí: 5\n\nXem bản dịch (Tiếng Việt)'
     },
     images: [
-      '/reviews/pho_bowl_review.png',
-      '/reviews/restaurant_interior_review.png',
-      '/reviews/spring_rolls_review.png'
+      '/reviews/noodle_salad_review.png',
+      '/reviews/table_cups_review.png',
+      '/reviews/person_eating_review.png'
     ],
     moreCount: 3
   }
