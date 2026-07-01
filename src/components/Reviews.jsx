@@ -56,8 +56,8 @@ const REVIEWS_DATA = [
     isNew: false,
     isLocalGuide: true,
     text: {
-      es: '¡Nos ha encantado! Tiene menú del día y cuenta con muchas opciones, pena no haber podido probarlo todo... Los postres espectaculares.\n\nĐồ ăn: 5\n\nDịch vụ: 5\n\nBầu không khí: 5\n\nXem bản dịch (Tiếng Việt)',
-      en: '¡Nos ha encantado! Tiene menú del día y cuenta con muchas opciones, pena no haber podido probarlo todo... Los postres espectaculares.\n\nĐồ ăn: 5\n\nDịch vụ: 5\n\nBầu không khí: 5\n\nXem bản dịch (Tiếng Việt)'
+      es: '¡Nos ha encantado! Tiene menú del día y cuenta con muchas opciones, pena no haber podido probarlo todo... Los postres espectaculares.\n\nĐồ ăn: 5\n\nDịch vụ: 5\n\nBầu không khí: 5',
+      en: '¡Nos ha encantado! Tiene menú del día y cuenta con muchas options, pena no haber podido probarlo todo... Los postres espectaculares.\n\nĐồ ăn: 5\n\nDịch vụ: 5\n\nBầu không khí: 5'
     },
     images: [
       '/reviews/noodle_salad_review.png',
