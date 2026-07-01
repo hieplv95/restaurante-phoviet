@@ -15,12 +15,12 @@ const REVIEWS_DATA = [
     isNew: true,
     isLocalGuide: false,
     text: {
-      es: 'Không gian rộng đẹp, sạch sẽ, đa dạng món ăn để lựa chọn. El espacio es amplio, bonito, limpio y hay una gran variedad de platos para elegir. Excelente servicio.',
-      en: 'Không gian rộng đẹp, sạch sẽ, đa dạng món ăn để lựa chọn. The space is wide, beautiful, clean, and there is a great variety of dishes to choose from.'
+      es: 'Tôi đến ăn trưa và được tiếp đón rất niềm nở. Nhân viên vui tính. Tôi đã có được bữa cơm ngon miệng với món thịt kho. Chuẩn hương vị cơm quê. Ở nơi đất khách quê người mà tôi lại được thưởng thức món ngon như món của mẹ tôi nấu vậy. Tôi khuyên mọi người hãy đến nhà hàng này nhé. (Traducido: Fui a almorzar y me recibieron muy amablemente. El personal es divertido. Disfruté de una comida deliciosa con carne de cerdo estofada, con el auténtico sabor a hogar. ¡Recomiendo mucho este restaurante!)',
+      en: 'Tôi đến ăn trưa và được tiếp đón rất niềm nở. Nhân viên vui tính. Tôi đã có được bữa cơm ngon miệng với món thịt kho. Chuẩn hương vị cơm quê. Ở nơi đất khách quê người mà tôi lại được thưởng thức món ngon như món của mẹ tôi nấu vậy. Tôi khuyên mọi người hãy đến nhà hàng này nhé. (Translated: I came for lunch and was welcomed very warmly. The staff is friendly. I had a delicious meal with braised pork, tasting just like home-cooked meals. I highly recommend this restaurant!)'
     },
     images: [
-      '/reviews/restaurant_interior_review.png',
-      '/reviews/pho_bowl_review.png'
+      '/reviews/storefront_review.png',
+      '/reviews/pork_dish_review.png'
     ]
   },
   {
