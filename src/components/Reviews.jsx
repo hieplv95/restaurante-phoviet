@@ -35,8 +35,8 @@ const REVIEWS_DATA = [
     isNew: false,
     isLocalGuide: true,
     text: {
-      es: 'Riquísimos todo. Muchísimo sabor, el postre verde aunque a priori el color me impacto estaba delicioso. Super atentos, rápidos y de precio nos costó 43€ dos personas con copas de vino incluidas.\n\nLoại hình bữa ăn\nBữa tối\n\nGiá mỗi người\n20-30 €',
-      en: 'Riquísimos todo. Muchísimo sabor, el postre verde aunque a priori el color me impacto estaba delicioso. Super atentos, rápidos y de precio nos costó 43€ dos personas con copas de vino incluidas.\n\nLoại hình bữa ăn\nBữa tối\n\nGiá mỗi người\n20-30 €'
+      es: 'Riquísimos todo. Muchísimo sabor, el postre verde aunque a priori el color me impacto estaba delicioso. Super atentos, rápidos y de precio nos costó 43€ dos personas con copas de vino incluidas.\n\nTipo de comida\nCena\n\nPrecio por persona\n20-30 €',
+      en: 'Riquísimos todo. Muchísimo sabor, el postre verde aunque a priori el color me impacto estaba delicioso. Super atentos, rápidos y de precio nos costó 43€ dos personas con copas de vino incluidas.\n\nMeal type\nDinner\n\nPrice per person\n20-30 €'
     },
     images: [
       '/reviews/dumplings_review.png',
@@ -56,8 +56,8 @@ const REVIEWS_DATA = [
     isNew: false,
     isLocalGuide: true,
     text: {
-      es: '¡Nos ha encantado! Tiene menú del día y cuenta con muchas opciones, pena no haber podido probarlo todo... Los postres espectaculares.\n\nĐồ ăn: 5\n\nDịch vụ: 5\n\nBầu không khí: 5',
-      en: '¡Nos ha encantado! Tiene menú del día y cuenta con muchas options, pena no haber podido probarlo todo... Los postres espectaculares.\n\nĐồ ăn: 5\n\nDịch vụ: 5\n\nBầu không khí: 5'
+      es: '¡Nos ha encantado! Tiene menú del día y cuenta con muchas opciones, pena no haber podido probarlo todo... Los postres espectaculares.\n\nComida: 5\n\nServicio: 5\n\nAmbiente: 5',
+      en: '¡Nos ha encantado! Tiene menú del día y cuenta con muchas options, pena no haber podido probarlo todo... Los postres espectaculares.\n\nFood: 5\n\nService: 5\n\nAtmosphere: 5'
     },
     images: [
       '/reviews/noodle_salad_review.png',
