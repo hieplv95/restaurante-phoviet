@@ -4,10 +4,10 @@ import { Star, MoreVertical } from 'lucide-react';
 
 const REVIEWS_DATA = [
   {
-    id: 'long-nguyen',
-    name: 'Long Nguyen',
+    id: 'carlos-alvaro',
+    name: 'Carlos Alvaro',
     avatarBg: '#10b981',
-    initials: 'LN',
+    initials: 'CA',
     reviewCount: 3,
     photoCount: 4,
     rating: 5,
@@ -15,8 +15,8 @@ const REVIEWS_DATA = [
     isNew: true,
     isLocalGuide: false,
     text: {
-      es: 'Tôi đến ăn trưa và được tiếp đón rất niềm nở. Nhân viên vui tính. Tôi đã có được bữa cơm ngon miệng với món thịt kho. Chuẩn hương vị cơm quê. Ở nơi đất khách quê người mà tôi lại được thưởng thức món ngon như món của mẹ tôi nấu vậy. Tôi khuyên mọi người hãy đến nhà hàng này nhé.\n\nLoại hình bữa ăn\nBữa trưa',
-      en: 'Tôi đến ăn trưa và được tiếp đón rất niềm nở. Nhân viên vui tính. Tôi đã có được bữa cơm ngon miệng với món thịt kho. Chuẩn hương vị cơm quê. Ở nơi đất khách quê người mà tôi lại được thưởng thức món ngon như món của mẹ tôi nấu vậy. Tôi khuyên mọi người hãy đến nhà hàng này nhé.\n\nLoại hình bữa ăn\nBữa trưa'
+      es: 'Fui a almorzar y me recibieron muy amablemente. El personal es divertido. Disfruté de una comida deliciosa con carne de cerdo estofada (thịt kho), con el auténtico sabor a hogar. En un país extranjero, poder disfrutar de un plato tan rico como el de mi madre es increíble. Recomiendo mucho venir a este restaurante.\n\nTipo de comida: Almuerzo',
+      en: 'I came for lunch and was welcomed very warmly. The staff is friendly. I had a delicious meal with braised pork (thịt kho), tasting just like home-cooked meals. In a foreign land, being able to enjoy a dish as delicious as the one my mother cooks is amazing. I highly recommend everyone to visit this restaurant.\n\nMeal type: Lunch'
     },
     images: [
       '/reviews/storefront_review.png',
