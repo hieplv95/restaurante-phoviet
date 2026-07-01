@@ -35,13 +35,13 @@ const REVIEWS_DATA = [
     isNew: false,
     isLocalGuide: true,
     text: {
-      es: 'La comida fue fantástica y el servicio muy rápido. El precio fue increíble para la cantidad de comida que recibimos, y todo estaba delicioso.',
-      en: 'The food was great and service was quick. The price was incredible for the amount of food that we got, and it was delicious.'
+      es: 'Riquísimos todo. Muchísimo sabor, el postre verde aunque a priori el color me impacto estaba delicioso. Super atentos, rápidos y de precio nos costó 43€ dos personas con copas de vino incluidas.\n\nLoại hình bữa ăn\nBữa tối\n\nGiá mỗi người\n20-30 €\n\nĐộ ồn\nYên tĩnh, dễ trò chuyện\n\nXem bản dịch (Tiếng Việt)',
+      en: 'Riquísimos todo. Muchísimo sabor, el postre verde aunque a priori el color me impacto estaba delicioso. Super atentos, rápidos y de precio nos costó 43€ dos personas con copas de vino incluidas.\n\nLoại hình bữa ăn\nBữa tối\n\nGiá mỗi người\n20-30 €\n\nĐộ ồn\nYên tĩnh, dễ trò chuyện\n\nXem bản dịch (Tiếng Việt)'
     },
     images: [
-      '/reviews/spring_rolls_review.png',
-      '/reviews/pho_bowl_review.png',
-      '/reviews/restaurant_interior_review.png'
+      '/reviews/dumplings_review.png',
+      '/reviews/table_setting_review.png',
+      '/reviews/green_dessert_review.png'
     ]
   },
   {
