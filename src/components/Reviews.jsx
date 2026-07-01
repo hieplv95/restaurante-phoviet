@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Star, MoreVertical } from 'lucide-react';
 
@@ -70,6 +70,7 @@ const REVIEWS_DATA = [
 
 export default function Reviews() {
   const { language, t } = useLanguage();
+  const [activePhoto, setActivePhoto] = useState(null);
 
   return (
     <section className="reviews-section">
@@ -145,7 +146,12 @@ export default function Reviews() {
                     {review.images.map((img, index) => {
                       const isLast = index === review.images.length - 1 && review.moreCount;
                       return (
-                        <div key={index} className="review-img-wrapper">
+                        <div 
+                          key={index} 
+                          className="review-img-wrapper"
+                          onClick={() => setActivePhoto(img)}
+                          title={language === 'es' ? 'Haga clic para ampliar' : 'Click to enlarge'}
+                        >
                           <img src={img} alt={`Review photo by ${review.name}`} className="review-attached-img" />
                           {isLast && (
                             <div className="review-img-overlay">
@@ -164,6 +170,18 @@ export default function Reviews() {
         </div>
         
       </div>
+
+      {/* Lightbox Modal */}
+      {activePhoto && (
+        <div className="review-lightbox" onClick={() => setActivePhoto(null)}>
+          <div className="lightbox-content" onClick={e => e.stopPropagation()}>
+            <img src={activePhoto} alt="Zoomed review photo" className="lightbox-image" />
+            <button className="lightbox-close-btn" onClick={() => setActivePhoto(null)} aria-label="Close preview">
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

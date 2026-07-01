@@ -1811,7 +1811,7 @@ input, textarea, select {
 
 /* Google style review card */
 .review-card-google {
-  flex: 0 0 380px;
+  flex: 0 0 440px;
   scroll-snap-align: start;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
@@ -1947,12 +1947,18 @@ input, textarea, select {
 
 .review-img-wrapper {
   flex: 1 1 0;
-  aspect-ratio: 1;
+  height: 130px;
   border-radius: var(--radius-sm);
   overflow: hidden;
   background: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   position: relative;
+  transition: var(--transition-normal);
+}
+.review-img-wrapper:hover {
+  border-color: var(--accent-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .review-attached-img {
@@ -1961,8 +1967,8 @@ input, textarea, select {
   object-fit: cover;
   transition: var(--transition-normal);
 }
-.review-card-google:hover .review-attached-img {
-  transform: scale(1.05);
+.review-img-wrapper:hover .review-attached-img {
+  transform: scale(1.1);
 }
 
 .review-img-overlay {
@@ -1975,5 +1981,72 @@ input, textarea, select {
   color: white;
   font-weight: 700;
   font-size: 0.95rem;
+  pointer-events: none;
+}
+
+/* Lightbox Modal for Reviews */
+.review-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 8, 6, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  animation: zoomIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 4px solid var(--bg-secondary);
+}
+
+.lightbox-close-btn {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.lightbox-close-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
