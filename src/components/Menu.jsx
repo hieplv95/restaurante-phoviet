@@ -1,43 +1,15 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { CATEGORIES, MENU_ITEMS } from '../data/menu';
-import { Plus, Minus, ShoppingCart, Leaf, Flame, Sparkles } from 'lucide-react';
+import { LUNCH_SET_MENU } from '../data/menu';
+import { FileText, Eye, LayoutGrid } from 'lucide-react';
 
-export default function Menu({ cart, onUpdateQuantity }) {
+export default function Menu() {
   const { language, t } = useLanguage();
-  const [activeCategory, setActiveCategory] = useState('all');
-  const [dietFilters, setDietFilters] = useState({
-    spicy: false,
-    vegan: false,
-    gf: false
-  });
+  const [lunchSubTab, setLunchSubTab] = useState('starters'); // 'starters' | 'mains' | 'desserts' | 'drinks'
+  const [lunchViewMode, setLunchViewMode] = useState('interactive'); // 'interactive' | 'image'
+  const [lightboxImage, setLightboxImage] = useState(null); // null | string
 
-  // Toggle diet filters
-  const toggleDiet = (type) => {
-    setDietFilters(prev => ({
-      ...prev,
-      [type]: !prev[type]
-    }));
-  };
-
-  // Filter logic
-  const filteredItems = MENU_ITEMS.filter(item => {
-    // Category check
-    if (activeCategory !== 'all' && item.category !== activeCategory) {
-      return false;
-    }
-    // Diet checks
-    if (dietFilters.spicy && !item.badges.includes('spicy')) return false;
-    if (dietFilters.vegan && !item.badges.includes('vegan')) return false;
-    if (dietFilters.gf && !item.badges.includes('gf')) return false;
-    return true;
-  });
-
-  // Helper to find quantity in cart
-  const getItemQuantity = (itemId) => {
-    const cartItem = cart.find(item => item.id === itemId);
-    return cartItem ? cartItem.quantity : 0;
-  };
+  const currentLang = language || 'es';
 
   return (
     <section id="menu" className="menu-section">
@@ -49,115 +21,171 @@ export default function Menu({ cart, onUpdateQuantity }) {
           <p className="section-desc">{t('menu.desc')}</p>
         </div>
 
-        {/* Categories Tab Swiper */}
-        <div className="categories-container">
-          {CATEGORIES.map(category => (
-            <button
-              key={category.id}
-              className={`category-tab ${activeCategory === category.id ? 'active' : ''}`}
-              onClick={() => setActiveCategory(category.id)}
+        {/* Detailed Lunch Set Menu View */}
+        <div className="lunch-menu-view animate-fade-in">
+          {/* Lunch Menu Header Card */}
+          <div className="lunch-view-header">
+            <div className="lunch-header-tag">🍱 {currentLang === 'es' ? 'SOLO DÍAS LABORALES (LUNES A VIERNES)' : 'WEEKDAYS ONLY (MONDAY TO FRIDAY)'}</div>
+            <h2>{currentLang === 'es' ? 'Menú Medio de Día (Menu Trưa)' : 'Lunchtime Set Menu'}</h2>
+            <div className="lunch-header-price">13.90€</div>
+            <p className="lunch-header-desc">
+              {currentLang === 'es' 
+                ? 'Incluye: 1 Entrante + 1 Plato Principal + 1 Café o Postre + 1 Bebida (Agua, Caña, Copa de vino)' 
+                : 'Includes: 1 Starter + 1 Main Course + 1 Coffee or Dessert + 1 Drink (Water, Beer, Glass of wine)'}
+            </p>
+          </div>
+
+          {/* View Mode Toggle & PDF Download Row */}
+          <div className="lunch-view-actions">
+            <div className="view-mode-toggle">
+              <button
+                className={`toggle-btn ${lunchViewMode === 'interactive' ? 'active' : ''}`}
+                onClick={() => setLunchViewMode('interactive')}
+              >
+                <LayoutGrid size={16} />
+                <span>{currentLang === 'es' ? 'Vista Interactiva' : 'Interactive View'}</span>
+              </button>
+              <button
+                className={`toggle-btn ${lunchViewMode === 'image' ? 'active' : ''}`}
+                onClick={() => setLunchViewMode('image')}
+              >
+                <Eye size={16} />
+                <span>{currentLang === 'es' ? 'Ver Menú Original' : 'Original Menu Design'}</span>
+              </button>
+            </div>
+
+            <a 
+              href="/menu_dias.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-primary download-pdf-btn"
             >
-              <span className="category-emoji">{category.emoji}</span>
-              <span>{language === 'es' ? category.es : category.en}</span>
-            </button>
-          ))}
-        </div>
+              <FileText size={16} />
+              <span>{currentLang === 'es' ? 'Descargar PDF' : 'Download PDF'}</span>
+            </a>
+          </div>
 
-        {/* Dietary Filters Panel */}
-        <div className="diet-filters">
-          <button
-            className={`diet-filter-btn spicy ${dietFilters.spicy ? 'active' : ''}`}
-            onClick={() => toggleDiet('spicy')}
-          >
-            <span>🌶️ {t('menu.filter.spicy')}</span>
-          </button>
-          <button
-            className={`diet-filter-btn vegan ${dietFilters.vegan ? 'active' : ''}`}
-            onClick={() => toggleDiet('vegan')}
-          >
-            <span>🌿 {t('menu.filter.vegan')}</span>
-          </button>
-          <button
-            className={`diet-filter-btn gf ${dietFilters.gf ? 'active' : ''}`}
-            onClick={() => toggleDiet('gf')}
-          >
-            <span>🌾 {t('menu.filter.gf')}</span>
-          </button>
-        </div>
-
-        {/* Menu Cards Grid */}
-        <div className="menu-grid">
-          {filteredItems.map(item => {
-            const qty = getItemQuantity(item.id);
-            const itemTrans = language === 'es' ? item.es : item.en;
-
-            return (
-              <div key={item.id} className="menu-card">
-                {/* Visual Representation (Image box using emoji/pattern) */}
-                <div className="card-image-box">
-                  <div className="card-img-placeholder">
-                    {item.emoji}
-                  </div>
-                  {/* Badges Overlay */}
-                  <div className="card-badges">
-                    {item.badges.includes('spicy') && (
-                      <span className="badge badge-spicy">🌶️ Spicy</span>
-                    )}
-                    {item.badges.includes('vegan') && (
-                      <span className="badge badge-vegan">🌱 Vegan</span>
-                    )}
-                    {item.badges.includes('gf') && (
-                      <span className="badge badge-gf">🌾 Gluten-Free</span>
-                    )}
+          {lunchViewMode === 'image' ? (
+            /* Image Design View */
+            <div className="lunch-sheets-grid animate-fade-in">
+              <div className="lunch-sheet-card" onClick={() => setLightboxImage('/menu_dias_1.png')}>
+                <div className="sheet-image-wrapper">
+                  <img src="/menu_dias_1.png" alt="Menú del Día - Página 1" className="lunch-sheet-img" />
+                  <div className="sheet-hover-overlay">
+                    <Eye size={24} />
+                    <span>{currentLang === 'es' ? 'Click para ampliar' : 'Click to enlarge'}</span>
                   </div>
                 </div>
-
-                {/* Content */}
-                <div className="card-content">
-                  <div className="card-meta">
-                    <div className="card-title-box">
-                      <h3 className="card-title-vn">{item.name}</h3>
-                      <p className="card-title-translate">{itemTrans.name}</p>
-                    </div>
-                    <span className="card-price">{item.price.toFixed(2)}€</span>
-                  </div>
-
-                  <p className="card-desc">{itemTrans.description}</p>
-
-                  {/* Actions */}
-                  <div className="card-action-box">
-                    {qty > 0 ? (
-                      <div className="quantity-adjuster">
-                        <button 
-                          className="qty-btn"
-                          onClick={() => onUpdateQuantity(item.id, qty - 1)}
-                        >
-                          <Minus size={14} />
-                        </button>
-                        <span className="qty-value">{qty}</span>
-                        <button 
-                          className="qty-btn"
-                          onClick={() => onUpdateQuantity(item.id, qty + 1)}
-                        >
-                          <Plus size={14} />
-                        </button>
-                      </div>
-                    ) : (
-                      <button 
-                        className="add-cart-btn"
-                        onClick={() => onUpdateQuantity(item.id, 1)}
-                      >
-                        <ShoppingCart size={14} />
-                        <span>{t('menu.add_to_cart')}</span>
-                      </button>
-                    )}
-                  </div>
+                <div className="sheet-label">
+                  {currentLang === 'es' ? 'Página 1: Entrantes y Postres' : 'Page 1: Starters & Desserts'}
                 </div>
               </div>
-            );
-          })}
+              
+              <div className="lunch-sheet-card" onClick={() => setLightboxImage('/menu_dias_2.png')}>
+                <div className="sheet-image-wrapper">
+                  <img src="/menu_dias_2.png" alt="Menú del Día - Página 2" className="lunch-sheet-img" />
+                  <div className="sheet-hover-overlay">
+                    <Eye size={24} />
+                    <span>{currentLang === 'es' ? 'Click para ampliar' : 'Click to enlarge'}</span>
+                  </div>
+                </div>
+                <div className="sheet-label">
+                  {currentLang === 'es' ? 'Página 2: Platos Principales' : 'Page 2: Main Courses'}
+                </div>
+              </div>
+            </div>
+          ) : (
+            /* Interactive Sub Tabs View */
+            <>
+              {/* Sub Tabs Selector */}
+              <div className="lunch-subtabs">
+                <button 
+                  className={`lunch-subtab-btn ${lunchSubTab === 'starters' ? 'active' : ''}`}
+                  onClick={() => setLunchSubTab('starters')}
+                >
+                  🥗 {currentLang === 'es' ? 'Entrantes' : 'Starters'}
+                </button>
+                <button 
+                  className={`lunch-subtab-btn ${lunchSubTab === 'mains' ? 'active' : ''}`}
+                  onClick={() => setLunchSubTab('mains')}
+                >
+                  🍜 {currentLang === 'es' ? 'Platos Principales' : 'Main Courses'}
+                </button>
+                <button 
+                  className={`lunch-subtab-btn ${lunchSubTab === 'desserts' ? 'active' : ''}`}
+                  onClick={() => setLunchSubTab('desserts')}
+                >
+                  🍮 {currentLang === 'es' ? 'Postres / Café' : 'Dessert / Coffee'}
+                </button>
+                <button 
+                  className={`lunch-subtab-btn ${lunchSubTab === 'drinks' ? 'active' : ''}`}
+                  onClick={() => setLunchSubTab('drinks')}
+                >
+                  🥤 {currentLang === 'es' ? 'Bebidas' : 'Drinks'}
+                </button>
+              </div>
+
+              {/* Sub Tabs Content Grid */}
+              <div className="menu-grid" style={{ marginTop: '32px' }}>
+                {LUNCH_SET_MENU[lunchSubTab].map((item) => {
+                  const itemTrans = currentLang === 'es' ? item.es : item.en;
+                  return (
+                    <div key={item.id} className="menu-card lunch-item-card">
+                      <div className="card-image-box">
+                        <div className="card-img-placeholder">{item.emoji}</div>
+                      </div>
+                      <div className="card-content">
+                        <div className="card-meta">
+                          <div className="card-title-box">
+                            <h3 className="card-title-vn">{item.name}</h3>
+                            <p className="card-title-translate">{itemTrans.name}</p>
+                          </div>
+                        </div>
+                        <p className="card-desc" style={{ marginBottom: '16px', height: 'auto' }}>
+                          {itemTrans.description}
+                        </p>
+
+                        {/* Sub-options rendering as small tags */}
+                        {item.options && (
+                          <div className="lunch-item-options-section">
+                            <span className="options-title">{currentLang === 'es' ? 'Opciones disponibles:' : 'Available options:'}</span>
+                            <div className="options-tags-row">
+                              {item.options.map((opt) => (
+                                <span key={opt.id} className="option-tag-badge">
+                                  {opt[currentLang]}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Extras rendering */}
+                        {item.extra && (
+                          <div className="lunch-item-extra-section">
+                            <span className="extra-badge-info">
+                              ➕ {item.extra[currentLang]}
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </>
+          )}
         </div>
       </div>
+
+      {/* Lightbox Viewer for Menu Images */}
+      {lightboxImage && (
+        <div className="menu-lightbox-overlay" onClick={() => setLightboxImage(null)}>
+          <div className="menu-lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <img src={lightboxImage} alt="Menu Zoom" className="menu-lightbox-img" />
+            <button className="menu-lightbox-close" onClick={() => setLightboxImage(null)}>✕</button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

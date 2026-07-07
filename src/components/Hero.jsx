@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { ArrowRight, ChefHat } from 'lucide-react';
 
-export default function Hero({ onMenuScroll, setView }) {
+export default function Hero({ onMenuScroll }) {
   const { t } = useLanguage();
 
   return (
@@ -22,10 +22,6 @@ export default function Hero({ onMenuScroll, setView }) {
             <button className="btn-primary" onClick={onMenuScroll}>
               <span>{t('hero.btn.menu')}</span>
               <ArrowRight size={18} />
-            </button>
-            <button className="btn-secondary" onClick={() => setView('kitchen')}>
-              <ChefHat size={18} />
-              <span>{t('hero.btn.kitchen')}</span>
             </button>
           </div>
         </div>
