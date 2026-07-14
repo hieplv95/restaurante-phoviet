@@ -2052,378 +2052,323 @@ input, textarea, select {
 
 
 /* ==========================================================================
-   Lunch Set Menu (Menú del Día) Styling
+   Custom Integrated Menu Vibe (Matching main website light theme)
    ========================================================================== */
+.custom-dark-menu {
+  background: var(--bg-tertiary) !important;
+  color: var(--text-primary);
+  padding: 80px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
 
-/* Lunch Promo Card Specifics */
-.lunch-promo-card-item {
-  background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(217, 119, 6, 0.06)), var(--bg-tertiary) !important;
-  border: 1px dashed rgba(15, 118, 110, 0.4) !important;
+.section-tag-gold {
+  color: var(--accent-green);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+  text-align: center;
 }
-.lunch-promo-card-item:hover {
-  border-color: var(--accent-green) !important;
-  box-shadow: 0 12px 30px rgba(15, 118, 110, 0.15) !important;
+
+.section-title-gold {
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
-.lunch-promo-imgbox {
-  background: linear-gradient(135deg, var(--accent-green) 0%, #115e59 100%) !important;
+
+.custom-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px 80px;
+  margin-top: 60px;
 }
-.lunch-promo-imgbox .card-img-placeholder {
-  color: white !important;
-  background: transparent !important;
-  font-size: 5rem;
+
+@media (max-width: 992px) {
+  .custom-menu-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
 }
-.lunch-setup-btn {
-  background: var(--accent-gold) !important;
-  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.2) !important;
+
+.custom-menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border-color);
 }
-.lunch-setup-btn:hover {
-  background: var(--accent-gold-hover) !important;
-  box-shadow: 0 6px 16px rgba(217, 119, 6, 0.3) !important;
+
+.menu-item-info {
+  flex: 1;
+}
+
+.menu-item-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.menu-item-subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.menu-item-price {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin-bottom: 20px;
+}
+
+.menu-item-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.menu-item-options {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-item-options li {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.menu-item-options li.highlight-option {
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.menu-item-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.menu-item-image-circle {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(15, 118, 110, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  background: var(--bg-secondary);
+  transition: transform var(--transition-normal);
+}
+
+.custom-menu-item:hover .menu-item-image-circle {
+  transform: scale(1.05) rotate(5deg);
+  border-color: var(--accent-green);
+}
+
+.menu-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 576px) {
+  .custom-menu-item {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .menu-item-image-circle {
+    width: 150px;
+    height: 150px;
+  }
+  .menu-item-options {
+    align-items: center;
+  }
 }
 
 /* ==========================================================================
-   Detailed Lunch Set Menu (Menú del Día) Styling
+   About Section (Introduction)
    ========================================================================== */
-
-.lunch-menu-view {
-  width: 100%;
-  margin-top: 20px;
-}
-
-/* Header */
-.lunch-view-header {
-  text-align: center;
-  background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(217, 119, 6, 0.06)), var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  padding: 32px 24px;
-  border-radius: var(--radius-lg);
-  margin-bottom: 32px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-.lunch-header-tag {
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--accent-gold);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 8px;
-}
-.lunch-view-header h2 {
-  font-size: 2rem;
-  font-family: var(--font-serif);
-  color: var(--text-primary);
-  margin-bottom: 8px;
-}
-.lunch-header-price {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: var(--accent-green);
-  font-family: var(--font-serif);
-  margin: 12px 0;
-}
-.lunch-header-desc {
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-
-/* Subtabs bar */
-.lunch-subtabs {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 16px;
-}
-.lunch-subtab-btn {
-  padding: 10px 20px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  border-radius: var(--radius-sm);
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
-  cursor: pointer;
-  transition: var(--transition-fast);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.lunch-subtab-btn:hover {
-  background: var(--bg-tertiary);
-  color: var(--text-primary);
-  border-color: var(--text-secondary);
-}
-.lunch-subtab-btn.active {
-  background: var(--accent-green) !important;
-  color: white !important;
-  border-color: var(--accent-green) !important;
-  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.25);
-}
-
-/* Items Cards */
-.lunch-item-card {
-  min-height: auto;
-}
-.lunch-item-options-section {
-  margin-top: 16px;
-  border-top: 1px solid var(--border-color);
-  padding-top: 12px;
-}
-.options-title {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  display: block;
-  margin-bottom: 8px;
-}
-.options-tags-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.option-tag-badge {
-  background: rgba(15, 118, 110, 0.06);
-  border: 1px solid rgba(15, 118, 110, 0.15);
-  color: var(--accent-green);
-  padding: 4px 10px;
-  border-radius: var(--radius-sm);
-  font-size: 0.72rem;
-  font-weight: 600;
-}
-.lunch-item-extra-section {
-  margin-top: 12px;
-  background: rgba(217, 119, 6, 0.06);
-  border: 1px dashed rgba(217, 119, 6, 0.3);
-  padding: 6px 12px;
-  border-radius: var(--radius-sm);
-  display: inline-block;
-}
-.extra-badge-info {
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: #b45309;
-}
-
-/* Actions row (Toggle + Download button) */
-.lunch-view-actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 24px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  padding: 16px 24px;
-  border-radius: var(--radius-md);
-}
-
-.view-mode-toggle {
-  display: flex;
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border-color);
-  padding: 4px;
-  border-radius: var(--radius-sm);
-}
-
-.toggle-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  border: none;
-  background: transparent;
-  border-radius: calc(var(--radius-sm) - 2px);
-  cursor: pointer;
-  transition: var(--transition-fast);
-}
-
-.toggle-btn:hover {
-  color: var(--text-primary);
-}
-
-.toggle-btn.active {
-  background: var(--accent-green);
-  color: white;
-  box-shadow: 0 2px 8px rgba(15, 118, 110, 0.2);
-}
-
-.download-pdf-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: var(--radius-sm);
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-/* Original Sheet design grid */
-.lunch-sheets-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-  margin-top: 24px;
-}
-
-.lunch-sheet-card {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  cursor: pointer;
-  transition: var(--transition-normal);
-}
-
-.lunch-sheet-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  border-color: rgba(15, 118, 110, 0.3);
-}
-
-.sheet-image-wrapper {
-  position: relative;
-  border-radius: var(--radius-sm);
+.about-section {
+  background-color: #edf1ec;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 20c5-5 15-5 20 0s5 15 0 20-15 5-20 0-5-15 0-20zm50 30c5-5 15-5 20 0s5 15 0 20-15 5-20 0-5-15 0-20z' fill='%230f766e' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
   overflow: hidden;
-  border: 1px solid var(--border-color);
-  aspect-ratio: 1.414; /* Standard A4 proportions */
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
-.lunch-sheet-img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.sheet-hover-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
   width: 100%;
-  height: 100%;
-  background: rgba(15, 118, 110, 0.85);
+  max-width: 100%;
+}
+
+.about-content-wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  color: white;
-  opacity: 0;
-  transition: var(--transition-normal);
+  padding: 80px 48px;
 }
 
-.lunch-sheet-card:hover .sheet-hover-overlay {
-  opacity: 1;
+.about-card {
+  background: #ffffff;
+  padding: 64px 48px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 20px 40px rgba(26, 23, 21, 0.04);
+  max-width: 540px;
+  width: 100%;
+  border: 1px solid var(--border-color);
 }
 
-.sheet-hover-overlay span {
-  font-size: 0.9rem;
+.about-tag {
+  color: var(--accent-gold);
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
+  margin-bottom: 16px;
+  display: block;
 }
 
-.sheet-label {
-  font-size: 0.9rem;
+.about-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-primary);
-  text-align: center;
+  margin-bottom: 24px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 
-/* Lightbox overlay style */
-.menu-lightbox-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
+.about-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.about-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.about-img {
   width: 100%;
   height: 100%;
-  background: rgba(15, 12, 10, 0.95);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  animation: fadeIn 0.25s ease-out;
+  object-fit: cover;
 }
 
-.menu-lightbox-content {
-  position: relative;
-  max-width: 90%;
-  max-height: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: zoomIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+@media (max-width: 992px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-content-wrapper {
+    padding: 60px 24px;
+  }
+  .about-card {
+    padding: 48px 32px;
+    max-width: 100%;
+  }
+  .about-image-wrapper {
+    min-height: 400px;
+  }
 }
 
-.menu-lightbox-img {
-  max-width: 100%;
-  max-height: 90vh;
-  object-fit: contain;
+@media (max-width: 576px) {
+  .about-card {
+    padding: 32px 20px;
+  }
+  .about-title {
+    font-size: 1.8rem;
+  }
+  .about-image-wrapper {
+    min-height: 300px;
+  }
+}
+
+/* ==========================================================================
+   Language Selector Flag Styles
+   ========================================================================== */
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transition: all var(--transition-fast);
 }
 
-.menu-lightbox-close {
-  position: absolute;
-  top: -48px;
-  right: 0;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
+.lang-btn:hover {
+  border-color: var(--accent-green);
+  background: var(--bg-tertiary);
+}
+
+.lang-flag-img {
+  width: 22px;
+  height: 15px;
+  border-radius: 2px;
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+.lang-flag-img-dropdown {
+  width: 20px;
+  height: 13px;
+  border-radius: 1px;
+  object-fit: cover;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: block;
+  flex-shrink: 0;
+}
+
+.lang-option {
   display: flex;
   align-items: center;
-  justify-content: center;
-  transition: var(--transition-fast);
+  gap: 10px;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  transition: all var(--transition-fast);
 }
 
-.menu-lightbox-close:hover {
-  background: rgba(255, 255, 255, 0.25);
-  transform: scale(1.05);
+.lang-option span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }
 
-@media (max-width: 600px) {
-  .lunch-view-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .view-mode-toggle {
-    width: 100%;
-  }
-  .toggle-btn {
-    flex-grow: 1;
-    justify-content: center;
-  }
-  .download-pdf-btn {
-    justify-content: center;
-  }
-  .menu-lightbox-close {
-    top: 12px;
-    right: 12px;
-    background: rgba(0, 0, 0, 0.5);
-  }
+.lang-option:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.lang-option.active span {
+  font-weight: 600;
+  color: var(--accent-green);
 }

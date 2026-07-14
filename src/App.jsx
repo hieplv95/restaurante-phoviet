@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from './context/LanguageContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import About from './components/About';
 import Menu from './components/Menu';
 import Reviews from './components/Reviews';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
@@ -24,9 +25,11 @@ function MainApp() {
       {/* Main content */}
       <main>
         <Hero onMenuScroll={handleMenuScroll} />
+        <About />
         <Menu />
         <Reviews />
       </main>
+
 
       {/* Client footer block */}
       <footer id="footer" className="footer">

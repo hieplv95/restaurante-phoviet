@@ -6,6 +6,17 @@ export default function Header() {
   const { language, setLanguage, t } = useLanguage();
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  const langConfig = {
+    es: { label: 'Español', flag: '/flags/es.png', short: 'ES' },
+    en: { label: 'English', flag: '/flags/gb.png', short: 'EN' },
+    vi: { label: 'Tiếng Việt', flag: '/flags/vn.png', short: 'VN' },
+    zh: { label: '中文', flag: '/flags/cn.png', short: 'ZH' },
+    ja: { label: '日本語', flag: '/flags/jp.png', short: 'JA' },
+    ko: { label: '한국어', flag: '/flags/kr.png', short: 'KO' },
+    fr: { label: 'Français', flag: '/flags/fr.png', short: 'FR' },
+    it: { label: 'Italiano', flag: '/flags/it.png', short: 'IT' }
+  };
+
   const toggleLanguage = (lang) => {
     setLanguage(lang);
     setDropdownOpen(false);
@@ -40,22 +51,24 @@ export default function Header() {
               className="lang-btn" 
               onClick={() => setDropdownOpen(!dropdownOpen)}
             >
-              <span>{language === 'es' ? '🇪🇸 ES' : '🇬🇧 EN'}</span>
+              <img 
+                src={langConfig[language]?.flag} 
+                alt={langConfig[language]?.short} 
+                className="lang-flag-img" 
+              />
               <ChevronDown size={14} />
             </button>
             <div className="lang-dropdown" style={{ display: dropdownOpen ? 'flex' : 'none' }}>
-              <button 
-                className={`lang-option ${language === 'es' ? 'active' : ''}`}
-                onClick={() => toggleLanguage('es')}
-              >
-                🇪🇸 Español
-              </button>
-              <button 
-                className={`lang-option ${language === 'en' ? 'active' : ''}`}
-                onClick={() => toggleLanguage('en')}
-              >
-                🇬🇧 English
-              </button>
+              {Object.entries(langConfig).map(([code, cfg]) => (
+                <button 
+                  key={code}
+                  className={`lang-option ${language === code ? 'active' : ''}`}
+                  onClick={() => toggleLanguage(code)}
+                >
+                  <img src={cfg.flag} alt={cfg.short} className="lang-flag-img-dropdown" />
+                  <span>{cfg.label}</span>
+                </button>
+              ))}
             </div>
           </div>
         </div>
