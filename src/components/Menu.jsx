@@ -6,6 +6,105 @@ export default function Menu() {
   const currentLang = language || 'es';
   const [activeCategory, setActiveCategory] = useState('mains');
 
+  const dailyMenuTranslations = {
+    es: {
+      title: "Menú Medio de Día",
+      price: "13,90€",
+      subtitle: "Solo Días Laborales (Lunes a Viernes)",
+      rule: "Incluye: 1 Entrante + 1 Plato Principal + 1 Café o Postre + 1 Bebida",
+      supplement: "*Suplemento de +2,00€ para Cerveza Saigon, Bebidas Caseras o Café Vietnamita",
+      select: "Selecciona 1",
+      starters: "Entrantes",
+      mains: "Platos Principales",
+      desserts: "Postres o Café",
+      drinks: "Bebidas"
+    },
+    en: {
+      title: "Daily Lunch Menu",
+      price: "13,90€",
+      subtitle: "Weekdays Only (Monday to Friday)",
+      rule: "Includes: 1 Starter + 1 Main Course + 1 Coffee or Dessert + 1 Drink",
+      supplement: "*+2.00€ supplement for Saigon Beer, Homemade Drinks or Vietnamese Coffee",
+      select: "Select 1",
+      starters: "Starters",
+      mains: "Main Courses",
+      desserts: "Desserts or Coffee",
+      drinks: "Drinks"
+    },
+    vi: {
+      title: "Menu Trưa Hằng Ngày",
+      price: "13,90€",
+      subtitle: "Chỉ áp dụng ngày thường (Thứ 2 - Thứ 6)",
+      rule: "Bao gồm: 1 Món khai vị + 1 Món chính + 1 Cà phê hoặc Tráng miệng + 1 Đồ uống",
+      supplement: "*Phụ thu +2,00€ khi chọn Bia Sài Gòn, Đồ uống nhà làm hoặc Cà phê sữa đá",
+      select: "Chọn 1 món",
+      starters: "Món Khai Vị",
+      mains: "Món Chính",
+      desserts: "Tráng Miệng / Cà Phê",
+      drinks: "Đồ Uống"
+    },
+    zh: {
+      title: "今日特餐 / 午市套餐",
+      price: "13,90€",
+      subtitle: "仅限工作日 (周一至周五)",
+      rule: "包含: 1道前菜 + 1道主菜 + 1份甜点或咖啡 + 1杯饮料",
+      supplement: "*选择西贡啤酒、自制饮料或越南咖啡需另加 +2,00€",
+      select: "选择 1 款",
+      starters: "前菜",
+      mains: "主菜",
+      desserts: "甜点或咖啡",
+      drinks: "饮料"
+    },
+    ko: {
+      title: "오늘의 런치 세트",
+      price: "13,90€",
+      subtitle: "평일 전용 (월요일 - 금요일)",
+      rule: "포함: 에피타이저 1개 + 메인 요리 1개 + 커피 또는 디저트 1개 + 음료 1개",
+      supplement: "*사이공 맥주, 수제 음료 또는 베트남 연유 커피 선택 시 +2,00€ 추가",
+      select: "택 1",
+      starters: "에피타이저",
+      mains: "메인 요리",
+      desserts: "디저트 또는 커피",
+      drinks: "음료"
+    },
+    ja: {
+      title: "日替わりランチメニュー",
+      price: "13,90€",
+      subtitle: "平日限定 (月曜日〜金曜日)",
+      rule: "セット内容：前菜 1品 ＋ メイン 1品 ＋ デザートまたはコーヒー 1品 ＋ ドリンク 1品",
+      supplement: "*サイゴンビール、自家製ドリンク、またはベトナムコーヒーを選ぶ場合は +2,00€ 追加",
+      select: "1品選択",
+      starters: "前菜",
+      mains: "メイン料理",
+      desserts: "デザートまたはコーヒー",
+      drinks: "ドリンク"
+    },
+    fr: {
+      title: "Menu du Jour",
+      price: "13,90€",
+      subtitle: "Jours ouvrables uniquement (Lundi au Vendredi)",
+      rule: "Inclus : 1 Entrée + 1 Plat Principal + 1 Café ou Dessert + 1 Boisson",
+      supplement: "*Supplément de +2,00€ pour la Bière Saigon, les Boissons Maison ou le Café Vietnamien",
+      select: "Sélectionnez 1",
+      starters: "Entrées",
+      mains: "Plats Principales",
+      desserts: "Desserts ou Café",
+      drinks: "Boissons"
+    },
+    it: {
+      title: "Menu del Giorno",
+      price: "13,90€",
+      subtitle: "Solo giorni feriali (Lunedì a Venerdì)",
+      rule: "Include: 1 Antipasto + 1 Piatto Principale + 1 Caffè o Dolce + 1 Bevanda",
+      supplement: "*Supplemento di +2,00€ per Birra Saigon, Bevande Casalinghe o Caffè Vietnamita",
+      select: "Seleziona 1",
+      starters: "Antipasti",
+      mains: "Piatti Principali",
+      desserts: "Dolci o Caffè",
+      drinks: "Bevande"
+    }
+  };
+
   const categories = [
     { id: 'starters', emoji: '🥗', es: 'Entrantes', en: 'Starters', vi: 'Khai vị', zh: '热身', ja: '前菜', ko: '에피타이저', fr: 'Entrées', it: 'Antipasti' },
     { id: 'mains', emoji: '🍜', es: 'Platos Principales', en: 'Main Courses', vi: 'Món chính', zh: '主菜', ja: 'メイン', ko: '메인 요리', fr: 'Plats', it: 'Piatti' },
@@ -4267,36 +4366,234 @@ export default function Menu() {
         </div>
 
         {/* Menu Grid */}
-        <div className="custom-menu-grid">
-          {menuItems[activeCategory].map((item) => {
-            const details = item[currentLang] || item.es;
-            return (
-              <div key={item.id} className="custom-menu-item">
-                <div className="menu-item-info">
-                  <h3 className="menu-item-title">{item.name}</h3>
-                  <p className="menu-item-subtitle">{details.subtitle}</p>
-                  <div className="menu-item-price">{item.price}</div>
-                  <p className="menu-item-desc">{details.description}</p>
-                  <ul className="menu-item-options">
-                    {details.options.map((opt, idx) => (
-                      <li key={idx} className={opt.highlight ? 'highlight-option' : ''}>
-                        {opt.text}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                {item.image && (
-                  <div className="menu-item-image-container">
-                    <div className="menu-item-image-circle">
-                      <img src={item.image} alt={item.name} className="menu-item-image" />
-                    </div>
-                  </div>
-                )}
+        {activeCategory === 'menudia' ? (
+          <div className="daily-menu-board">
+            <div className="daily-menu-header">
+              <span className="daily-menu-subtitle">
+                {dailyMenuTranslations[currentLang]?.subtitle || 'Solo Días Laborales'}
+              </span>
+              <h3 className="daily-menu-title">
+                {dailyMenuTranslations[currentLang]?.title || 'Menú Medio de Día'}
+              </h3>
+              <div className="daily-menu-price-tag">
+                {dailyMenuTranslations[currentLang]?.price || '13,90€'}
               </div>
-            );
-          })}
-        </div>
-      </div>
+              <p className="daily-menu-rules">
+                {dailyMenuTranslations[currentLang]?.rule || 'Incluye: 1 Entrante + 1 Plato Principal + 1 Café o Postre + 1 Bebida'}
+              </p>
+            </div>
+
+            <div className="daily-menu-grid-layout">
+              {/* Entrantes */}
+              <div className="daily-menu-section">
+                <h4 className="daily-menu-section-title">
+                  <span>{dailyMenuTranslations[currentLang]?.starters || 'Entrantes'}</span>
+                  <span className="daily-menu-section-badge">
+                    {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
+                  </span>
+                </h4>
+                <ul className="daily-menu-items-list">
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Rollo Primavera (Chả giò)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Hai cuốn chả giò nhân rau củ chiên giòn.' : 'Dos rollos fritos crujientes rellenos de verduras.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Rollo Fresco (Gỏi cuốn)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Hai gỏi cuốn tay tươi mát.' : 'Dos rollos frescos envueltos a mano.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Camarón Frito (Tôm chiên xù)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Tôm tẩm bột chiên xù.' : 'Langostinos rebozados crujientes.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Croquetas de Pescado (Chả cá cốm)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Chả cá tẩm cốm chiên giòn.' : 'Croquetas de pescado crujientes.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Ensalada de Mango (Gỏi xoài)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Gỏi xoài xanh tươi mát.' : 'Ensalada vietnamita de mango verde.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Alitas de Pollo (Cánh gà đặc biệt)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Cánh gà chiên giòn đặc biệt.' : 'Alitas de pollo crujientes estilo Pho Viet.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Gyosas (Há cảo)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Há cảo nhân rau và thịt hấp.' : 'Empanadillas al vapor rellenas.'}
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Platos Principales */}
+              <div className="daily-menu-section">
+                <h4 className="daily-menu-section-title">
+                  <span>{dailyMenuTranslations[currentLang]?.mains || 'Platos Principales'}</span>
+                  <span className="daily-menu-section-badge">
+                    {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
+                  </span>
+                </h4>
+                <ul className="daily-menu-items-list">
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Fideos de Arroz Salteados (Wok Phở Xào)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Phở xào cùng rau củ quả.' : 'Fideos de arroz salteados al wok con verduras.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Pad Thai (Wok Hủ Tiếu Thái)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Hủ tiếu Thái xào rau trứng và lạc.' : 'Tallarines de arroz salteados con verduras y cacahuetes.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Arroz Frito (Cơm chiên)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Cơm chiên rau củ tươi ngon.' : 'Arroz salteado con verduras frescas.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Curry (Cà ri)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Cà ri cốt dừa ăn kèm cơm trắng.' : 'Curry aromático con coco y arroz jazmín.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Pollo Salsa Cacahuete (Gà sốt lạc)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Thịt gà xào sốt lạc bùi ngậy.' : 'Pollo salteado con salsa cremosa de cacahuete.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Ternera Pimienta Negra (Bò sốt tiêu đen)</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Thịt bò xào tiêu đen thơm lừng.' : 'Ternera salteada con salsa de pimienta negra.'}
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Postres */}
+              <div className="daily-menu-section">
+                <h4 className="daily-menu-section-title">
+                  <span>{dailyMenuTranslations[currentLang]?.desserts || 'Postres o Café'}</span>
+                  <span className="daily-menu-section-badge">
+                    {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
+                  </span>
+                </h4>
+                <ul className="daily-menu-items-list">
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Chè chuối</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Chè chuối nước cốt dừa hạt trân châu ấm nóng.' : 'Pudin caliente de plátano y leche de coco.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Chè đậu đen</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Chè đậu đen nấu chín kĩ mát ngọt.' : 'Sopa dulce de alubias negras cocidas.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Panna Cotta Tropical</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Panna cotta hương lá dứa cốt dừa và lạc rang.' : 'Panna cotta con sabor a pandan coco y cacahuete.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Sữa chua nếp cẩm</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Sữa chua sánh mịn cùng nếp cẩm dẻo ngọt.' : 'Pudin de arroz negro y yogur cremoso.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Café / Té</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Lựa chọn Cà phê hoặc Trà nóng.' : 'Café solo, cortado, americano, latte o té caliente.'}
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Bebidas */}
+              <div className="daily-menu-section">
+                <h4 className="daily-menu-section-title">
+                  <span>{dailyMenuTranslations[currentLang]?.drinks || 'Bebidas'}</span>
+                  <span className="daily-menu-section-badge">
+                    {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
+                  </span>
+                </h4>
+                <ul className="daily-menu-items-list">
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Agua Mineral</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Nước khoáng đóng chai mát lạnh.' : 'Botella de agua mineral natural.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Caña de Cerveza</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Ly bia hơi tươi mát.' : 'Vaso de cerveza de barril fresca.'}
+                    </span>
+                  </li>
+                  <li className="daily-menu-item-row">
+                    <span className="daily-menu-item-name">Copa de Vino</span>
+                    <span className="daily-menu-item-desc">
+                      {currentLang === 'vi' ? 'Ly rượu vang trắng hoặc đỏ.' : 'Copa de vino de la casa (tinto o blanco).'}
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="daily-menu-footer-note">
+              {dailyMenuTranslations[currentLang]?.supplement || '*Suplemento de +2,00€ para Cerveza Saigon, Bebidas Caseras o Café Vietnamita'}
+            </div>
+          </div>
+        ) : (
+          <div className="custom-menu-grid">
+            {menuItems[activeCategory].map((item) => {
+              const details = item[currentLang] || item.es;
+              return (
+                <div key={item.id} className="custom-menu-item">
+                  <div className="menu-item-info">
+                    <h3 className="menu-item-title">{item.name}</h3>
+                    <p className="menu-item-subtitle">{details.subtitle}</p>
+                    <div className="menu-item-price">{item.price}</div>
+                    <p className="menu-item-desc">{details.description}</p>
+                    <ul className="menu-item-options">
+                      {details.options.map((opt, idx) => (
+                        <li key={idx} className={opt.highlight ? 'highlight-option' : ''}>
+                          {opt.text}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {item.image && (
+                    <div className="menu-item-image-container">
+                      <div className="menu-item-image-circle">
+                        <img src={item.image} alt={item.name} className="menu-item-image" />
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}      </div>
     </section>
   );
 }
