@@ -106,7 +106,6 @@ export default function Menu() {
   };
 
   const categories = [
-    { id: 'menudia', emoji: '📅', es: 'Menú del Día', en: 'Daily Menu', vi: 'Menu Trưa', zh: '今日特餐', ja: '日替わりメニュー', ko: '오늘의 메뉴', fr: 'Menu du Jour', it: 'Menu del Giorno' },
     { id: 'starters', emoji: '🥗', es: 'Entrantes', en: 'Starters', vi: 'Khai vị', zh: '热身', ja: '前菜', ko: '에피타이저', fr: 'Entrées', it: 'Antipasti' },
     { id: 'mains', emoji: '🍜', es: 'Platos Principales', en: 'Main Courses', vi: 'Món chính', zh: '主菜', ja: 'メイン', ko: '메인 요리', fr: 'Plats', it: 'Piatti' },
     { id: 'desserts', emoji: '🍮', es: 'Postres / Café', en: 'Dessert / Coffee', vi: 'Tráng miệng', zh: '甜点', ja: 'デザート', ko: '디저트', fr: 'Desserts', it: 'Dolci' },
