@@ -2162,6 +2162,99 @@ export default function Menu() {
     ],
     desserts: [
       {
+        id: 'pudin-de-platano',
+        name: 'Chè Chuối',
+        es: {
+          subtitle: "Pudin Caliente con Plátano",
+          description: "Pudin caliente con plátano y leche de coco con perlas de tapioca.",
+          options: []
+        },
+        en: {
+          subtitle: "Vietnamese Banana Tapioca Pudding",
+          description: "Warm banana and coconut milk pudding with tapioca pearls.",
+          options: []
+        },
+        vi: {
+          subtitle: "Chè Chuối",
+          description: "Chè chuối và sữa dừa ấm với hạt trân châu.",
+          options: []
+        },
+        zh: {
+          subtitle: "椰香香蕉西米露",
+          description: "热腾腾的香蕉椰奶布丁，搭配西米珍珠。",
+          options: []
+        },
+        ko: {
+          subtitle: "베트남식 따뜻한 바나나 타피오카 푸딩",
+          description: "타피오카 펄을 넣은 따뜻한 바나나와 코코넛 밀크 푸딩.",
+          options: []
+        },
+        ja: {
+          subtitle: "ベトナム風温かいバナナのタピオカプディング",
+          description: "タピオカパールが入った、温かいバナナとココナッツミルクのデザート。",
+          options: []
+        },
+        fr: {
+          subtitle: "Pudding Chaud à la Banane et au Tapioca",
+          description: "Pudding chaud à la banane et au lait de coco avec des perles de tapioca.",
+          options: []
+        },
+        it: {
+          subtitle: "Budino Caldo di Banana e Tapioca",
+          description: "Budino caldo di banana e latte di cocco con perle di tapioca.",
+          options: []
+        },
+        price: '4,90€',
+        image: '/menu_chechuoi.png'
+      },
+      {
+        id: 'che-dau-den',
+        name: 'Chè Đậu Đen',
+        es: {
+          subtitle: "Chè Đậu Đen",
+          description: "Frijoles negros bien cocidos servidos con leche de coco y perlas de tapioca.",
+          options: []
+        },
+        en: {
+          subtitle: "Vietnamese Black Bean Sweet Soup",
+          description: "Well-cooked black beans sweet soup served with coconut milk and tapioca pearls.",
+          options: []
+        },
+        vi: {
+          subtitle: "Chè Đậu Đen",
+          description: "Đậu đen được nấu chín kĩ, ăn kèm nước cốt dừa béo ngậy và trân châu.",
+          options: []
+        },
+        zh: {
+          subtitle: "越式黑豆甜汤",
+          description: "精心熬煮의 단팥죽/甜黑豆汤，搭配椰奶与西米。", // wait! Let's write standard Chinese without mix of korean
+          description: "精心熬煮的甜黑豆汤，搭配椰奶与西米。",
+          options: []
+        },
+        ko: {
+          subtitle: "베트남식 검은콩 단팥탕",
+          description: "부드럽게 푹 삶아낸 검은콩에 코코넛 밀크와 타피오카 펄을 곁들인 달콤한 디저트.",
+          options: []
+        },
+        ja: {
+          subtitle: "ベトナム風黒豆のチェー（お汁粉）",
+          description: "じっくりコトコト煮込んだ黒豆に、ココナッツミルクとタピオカパールを合わせた甘いデザート。",
+          options: []
+        },
+        fr: {
+          subtitle: "Soupe Sucrée aux Haricots Noirs",
+          description: "Soupe sucrée de haricots noirs bien cuits servie avec du lait de coco et des perles de tapioca.",
+          options: []
+        },
+        it: {
+          subtitle: "Zuppa Dolce di Fagioli Neri",
+          description: "Zuppa dolce di fagioli neri ben cotti servita con latte di cocco e perle di tapioca.",
+          options: []
+        },
+        price: '4,90€',
+        image: '/menu_chedauden.png'
+      },
+      {
         id: 'panna-cotta',
         name: 'Panna Cotta Pandan',
         es: {
@@ -2204,8 +2297,8 @@ export default function Menu() {
           description: "Panna cotta cremosa aromatizzata con foglia di pandan e cocco, guarnita con arachidi croccanti.",
           options: []
         },
-        price: '4,90€',
-        image: '/menu_pannacotta.png'
+        price: '4,50€',
+        image: '/menu_pannacottatropical.png'
       }
     ],
     drinks: [
