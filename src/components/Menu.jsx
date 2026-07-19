@@ -2994,24 +2994,24 @@ export default function Menu() {
       },
       {
         id: 'cafe-vietnamita',
-        name: 'Cà phê sữa đá',
+        name: 'Cà phê sữa đá de Vietnam',
         es: {
-          subtitle: "Café Vietnamita Tradicional",
+          subtitle: "Cà phê sữa đá / Vietnamese iced milk coffee",
           description: "Fuerte café de goteo tradicional vietnamita mezclado con leche condensada dulce y abundante hielo.",
           options: []
         },
         en: {
-          subtitle: "Traditional Vietnamese Coffee",
+          subtitle: "Traditional Vietnamese Iced Coffee",
           description: "Strong slow-drip Vietnamese coffee combined with sweet condensed milk and served over plenty of crushed ice.",
           options: []
         },
         vi: {
-          subtitle: "Cà Phê Sữa Đá Phin",
-          description: "Cà phê phin truyền thống Việt Nam đậm đà, hòa quyện cùng sữa đặc ngọt ngào và đá lạnh xay.",
+          subtitle: "Cà Phê Sữa Đá Việt Nam",
+          description: "Cà phê phin truyền thống Việt Nam đậm đà, hòa quyện cùng sữa đặc ngọt ngào và đá lạnh.",
           options: []
         },
         zh: {
-          subtitle: "传统越南 ice coffee",
+          subtitle: "传统越南冰奶咖啡",
           description: "浓郁的传统越南滴滤咖啡，融合甜炼乳与满满冰块。",
           options: []
         },
@@ -3022,12 +3022,12 @@ export default function Menu() {
         },
         ja: {
           subtitle: "伝統ベトナム練乳コーヒー",
-          description: "じっくりドリップした濃いベトナムコーヒーに、甘い練乳とたっぷりの砕いた氷を合わせた一杯。",
+          description: "じっくりドリップした濃いベトナムコーヒーに, 甘い練乳とたっぷりの砕いた氷を合わせた一杯。",
           options: []
         },
         fr: {
           subtitle: "Café Vietnamien Traditionnel",
-          description: "Café filtre vietnamien corsé mélangé avec du lait concentré sucré et servi sur de la glace pilée.",
+          description: "Café filtre vietnamien corsé mélangé avec du lait condensé sucré et servi sur de la glace pilée.",
           options: []
         },
         it: {
@@ -3035,8 +3035,930 @@ export default function Menu() {
           description: "Caffè filtro vietnamita unito a latte condensato dolce e servito con ghiaccio tritato.",
           options: []
         },
-        price: '4,50€',
+        price: '4,00€',
         image: '/menu_cafe.png'
+      },
+      {
+        id: 'cafe-solo',
+        name: 'Café solo',
+        es: {
+          subtitle: "Cà phê đen / Black coffee",
+          description: "Café negro intenso y aromático sin leche.",
+          options: []
+        },
+        en: {
+          subtitle: "Espresso / Black Coffee",
+          description: "Rich and aromatic intense black coffee without milk.",
+          options: []
+        },
+        vi: {
+          subtitle: "Cà Phê Đen",
+          description: "Cà phê đen đậm đà, thơm nồng không pha sữa.",
+          options: []
+        },
+        zh: {
+          subtitle: "意式浓缩/黑咖啡",
+          description: "浓郁芳香的纯黑咖啡，不加奶。",
+          options: []
+        },
+        ko: {
+          subtitle: "에스프레소 / 블랙 커피",
+          description: "우유를 넣지 않은 진하고 향긋한 블랙 커피.",
+          options: []
+        },
+        ja: {
+          subtitle: "エスプレッソ / ブラックコーヒー",
+          description: "ミルクなしの, 濃厚で香り高いブラックコーヒー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Café Noir / Expresso",
+          description: "Café noir intense et aromatique sans lait.",
+          options: []
+        },
+        it: {
+          subtitle: "Caffè Nero / Espresso",
+          description: "Caffè nero intenso e aromatico senza latte.",
+          options: []
+        },
+        price: '1,60€',
+        image: ''
+      },
+      {
+        id: 'cafe-cortado',
+        name: 'Café cortado',
+        es: {
+          subtitle: "Cà phê Cortado của Tây Ban Nha / Spanish Cortado coffee",
+          description: "Café espresso con una pequeña cantidad de leche caliente.",
+          options: []
+        },
+        en: {
+          subtitle: "Cortado Coffee",
+          description: "Espresso coffee cut with a small amount of warm milk.",
+          options: []
+        },
+        vi: {
+          subtitle: "Cà Phê Cortado",
+          description: "Cà phê espresso pha thêm một lượng nhỏ sữa nóng kiểu Tây Ban Nha.",
+          options: []
+        },
+        zh: {
+          subtitle: "告尔多咖啡",
+          description: "浓缩咖啡中加入少量温牛奶调制而成。",
+          options: []
+        },
+        ko: {
+          subtitle: "코르타도",
+          description: "에스프레소에 약간의 따뜻한 우유를 넣은 커피.",
+          options: []
+        },
+        ja: {
+          subtitle: "コルタード",
+          description: "エスプレッソに少量の温かいミルクを加えたコーヒー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Café Noisette / Cortado",
+          description: "Café expresso coupé avec une petite quantité de lait chaud.",
+          options: []
+        },
+        it: {
+          subtitle: "Caffè Macchiato / Cortado",
+          description: "Caffè espresso macchiato con una piccola quantità di latte caldo.",
+          options: []
+        },
+        price: '1,70€',
+        image: ''
+      },
+      {
+        id: 'cafe-latte',
+        name: 'Latte',
+        es: {
+          subtitle: "Café con Leche / Latte",
+          description: "Café espresso con abundante leche vaporizada y una fina capa de espuma.",
+          options: []
+        },
+        en: {
+          subtitle: "Caffè Latte",
+          description: "Espresso coffee with steamed milk and a thin layer of foam.",
+          options: []
+        },
+        vi: {
+          subtitle: "Cà Phê Latte",
+          description: "Cà phê espresso kết hợp với nhiều sữa nóng và một lớp bọt mịn.",
+          options: []
+        },
+        zh: {
+          subtitle: "拿铁咖啡",
+          description: "经典浓缩咖啡与大量蒸气牛奶，覆以薄奶泡。",
+          options: []
+        },
+        ko: {
+          subtitle: "카페 라떼",
+          description: "에스프레소에 부드러운 스팀 우유와 고운 거품을 올린 커피.",
+          options: []
+        },
+        ja: {
+          subtitle: "カフェラテ",
+          description: "エスプレッソにたっぷりのスチームミルクと薄い泡をのせた定番コーヒー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Café au Lait / Latte",
+          description: "Café expresso avec du lait chaud et une fine couche de mousse.",
+          options: []
+        },
+        it: {
+          subtitle: "Caffellatte / Latte",
+          description: "Caffè espresso con latte caldo e un sottile strato di schiuma.",
+          options: []
+        },
+        price: '2,20€',
+        image: ''
+      },
+      {
+        id: 'cafe-americano',
+        name: 'Americano',
+        es: {
+          subtitle: "Café Americano",
+          description: "Café espresso rebajado con agua caliente para un sabor más suave.",
+          options: []
+        },
+        en: {
+          subtitle: "Caffè Americano",
+          description: "Espresso coffee diluted with hot water for a smoother taste.",
+          options: []
+        },
+        vi: {
+          subtitle: "Cà Phê Americano",
+          description: "Cà phê espresso pha loãng với nước nóng mang lại hương vị nhẹ nhàng hơn.",
+          options: []
+        },
+        zh: {
+          subtitle: "美式咖啡",
+          description: "浓缩咖啡中加入热水稀释，口感更柔和温润。",
+          options: []
+        },
+        ko: {
+          subtitle: "아메리카노",
+          description: "에스프레소에 뜨거운 물을 더해 부드럽게 즐기는 커피.",
+          options: []
+        },
+        ja: {
+          subtitle: "アメリカーノ",
+          description: "エスプレッソをお湯で割った, すっきりとして飲みやすいコーヒー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Café Américain",
+          description: "Café expresso allongé d'eau chaude pour un goût plus doux.",
+          options: []
+        },
+        it: {
+          subtitle: "Caffè Americano",
+          description: "Caffè espresso allungato con acqua calda per un gusto più leggero.",
+          options: []
+        },
+        price: '1,80€',
+        image: ''
+      },
+      {
+        id: 'vino-blanco-verdejo',
+        name: 'Blanco Verdejo "Treintaytantos"',
+        es: {
+          subtitle: "Vang trắng Verdejo Treintaytantos / Verdejo Treintaytantos white wine",
+          description: "Vino blanco fresco y afrutado de uva Verdejo.",
+          options: [{ text: "Copa: 3,50€ / Botella: 13,50€", highlight: true }]
+        },
+        en: {
+          subtitle: "Verdejo White Wine",
+          description: "Fresh and fruity white wine made from Verdejo grapes.",
+          options: [{ text: "Glass: 3.50€ / Bottle: 13.50€", highlight: true }]
+        },
+        vi: {
+          subtitle: "Rượu Vang Trắng Verdejo",
+          description: "Rượu vang trắng tươi mát, thơm hương trái cây từ giống nho Verdejo đặc trưng.",
+          options: [{ text: "Ly: 3,50€ / Chai: 13,50€", highlight: true }]
+        },
+        zh: {
+          subtitle: "Verdejo 白葡萄酒",
+          description: "选用Verdejo葡萄酿制的清爽果香型白葡萄酒。",
+          options: [{ text: "杯装: 3.50€ / 瓶装: 13.50€", highlight: true }]
+        },
+        ko: {
+          subtitle: "베르데호 화이트 와인",
+          description: "베르데호 품종의 상큼하고 과일 향이 풍부한 화이트 와인.",
+          options: [{ text: "글라스: 3.50€ / 보틀: 13.50€", highlight: true }]
+        },
+        ja: {
+          subtitle: "ベルデホ 白ワイン",
+          description: "ベルデホ種のブドウから造られる, 爽やかでフルーティーな白ワイン。",
+          options: [{ text: "グラス: 3.50€ / ボトル: 13.50€", highlight: true }]
+        },
+        fr: {
+          subtitle: "Vin Blanc Verdejo",
+          description: "Vin blanc frais et fruité issu de cépage Verdejo.",
+          options: [{ text: "Verre : 3,50€ / Bouteille : 13,50€", highlight: true }]
+        },
+        it: {
+          subtitle: "Vino Bianco Verdejo",
+          description: "Vino bianco fresco e fruttato da uve Verdejo.",
+          options: [{ text: "Calice: 3,50€ / Bottiglia: 13,50€", highlight: true }]
+        },
+        price: '3,50€ / 13,50€',
+        image: ''
+      },
+      {
+        id: 'vino-blanco-grand-vina',
+        name: 'Blanco "Grand Viña"',
+        es: {
+          subtitle: "Vang trắng Grand Viña / Grand Viña white wine",
+          description: "Vino blanco aromático con notas florales y de frutas blancas.",
+          options: [{ text: "Copa: 3,50€ / Botella: 13,50€", highlight: true }]
+        },
+        en: {
+          subtitle: "Grand Viña White Wine",
+          description: "Aromatic white wine with floral and white fruit notes.",
+          options: [{ text: "Glass: 3.50€ / Bottle: 13.50€", highlight: true }]
+        },
+        vi: {
+          subtitle: "Rượu Vang Trắng Grand Viña",
+          description: "Vang trắng tinh tế, ngát hương hoa và các loại quả chín trắng.",
+          options: [{ text: "Ly: 3,50€ / Chai: 13,50€", highlight: true }]
+        },
+        zh: {
+          subtitle: "Grand Viña 白葡萄酒",
+          description: "伴有花香与白果香气的优质白葡萄酒。",
+          options: [{ text: "杯装: 3.50€ / 瓶装: 13.50€", highlight: true }]
+        },
+        ko: {
+          subtitle: "그랑 비냐 화이트 와인",
+          description: "꽃 향기와 흰 과일 향이 어우러진 향긋한 화이트 와인.",
+          options: [{ text: "글라스: 3.50€ / 보틀: 13.50€", highlight: true }]
+        },
+        ja: {
+          subtitle: "グラン・ヴィーニャ 白ワイン",
+          description: "花と白い果実の香りが上品に広がる華やかな白ワイン。",
+          options: [{ text: "グラス: 3.50€ / ボトル: 13.50€", highlight: true }]
+        },
+        fr: {
+          subtitle: "Vin Blanc Grand Viña",
+          description: "Vin blanc aromatique aux notes florales et de fruits blancs.",
+          options: [{ text: "Verre : 3,50€ / Bouteille : 13,50€", highlight: true }]
+        },
+        it: {
+          subtitle: "Vino Bianco Grand Viña",
+          description: "Vino bianco aromatico con note floreali e di frutta a polpa bianca.",
+          options: [{ text: "Calice: 3,50€ / Bottiglia: 13,50€", highlight: true }]
+        },
+        price: '3,50€ / 13,50€',
+        image: ''
+      },
+      {
+        id: 'vino-rosado-grand-vina',
+        name: 'Rosado "Grand Viña"',
+        es: {
+          subtitle: "Vang hồng Grand Viña / Grand Viña rose wine",
+          description: "Vino rosado suave, refrescante y con notas de frutos rojos.",
+          options: [{ text: "Copa: 3,50€ / Botella: 13,50€", highlight: true }]
+        },
+        en: {
+          subtitle: "Grand Viña Rosé Wine",
+          description: "Smooth, refreshing rosé wine with notes of red berries.",
+          options: [{ text: "Glass: 3.50€ / Bottle: 13.50€", highlight: true }]
+        },
+        vi: {
+          subtitle: "Rượu Vang Hồng Grand Viña",
+          description: "Rượu vang hồng mềm mại, thanh mát và thoảng hương quả mọng đỏ.",
+          options: [{ text: "Ly: 3,50€ / Chai: 13,50€", highlight: true }]
+        },
+        zh: {
+          subtitle: "Grand Viña 桃红葡萄酒",
+          description: "口感温润清爽, 带有红色浆果香气的桃红酒。",
+          options: [{ text: "杯装: 3.50€ / 瓶装: 13.50€", highlight: true }]
+        },
+        ko: {
+          subtitle: "그랑 비냐 로제 와인",
+          description: "붉은 과일 향이 은은하고 가볍고 상쾌한 로제 와인.",
+          options: [{ text: "글라스: 3.50€ / 보틀: 13.50€", highlight: true }]
+        },
+        ja: {
+          subtitle: "グラン・ヴィーニャ ロゼワイン",
+          description: "赤いベリーの香りが爽やかに香る, すっきりとしたロゼワイン。",
+          options: [{ text: "グラス: 3.50€ / ボトル: 13.50€", highlight: true }]
+        },
+        fr: {
+          subtitle: "Vin Rosé Grand Viña",
+          description: "Vin rosé doux, rafraîchissant aux notes de fruits rouges.",
+          options: [{ text: "Verre : 3,50€ / Bouteille : 13,50€", highlight: true }]
+        },
+        it: {
+          subtitle: "Vino Rosato Grand Viña",
+          description: "Vino rosato morbido, rinfrescante con note di frutti rossi.",
+          options: [{ text: "Calice: 3,50€ / Bottiglia: 13,50€", highlight: true }]
+        },
+        price: '3,50€ / 13,50€',
+        image: ''
+      },
+      {
+        id: 'vino-tinto-grand-vina',
+        name: 'Tinto "Grand Viña"',
+        es: {
+          subtitle: "Vang đỏ Grand Viña / Grand Viña red wine",
+          description: "Vino tinto joven y equilibrado, perfecto para acompañar comidas.",
+          options: [{ text: "Copa: 3,50€ / Botella: 13,50€", highlight: true }]
+        },
+        en: {
+          subtitle: "Grand Viña Red Wine",
+          description: "Young, well-balanced red wine, perfect for pairing with meals.",
+          options: [{ text: "Glass: 3.50€ / Bottle: 13.50€", highlight: true }]
+        },
+        vi: {
+          subtitle: "Rượu Vang Đỏ Grand Viña",
+          description: "Rượu vang đỏ trẻ trung, cân bằng, sự kết hợp lý tưởng cho các món ăn.",
+          options: [{ text: "Ly: 3,50€ / Chai: 13,50€", highlight: true }]
+        },
+        zh: {
+          subtitle: "Grand Viña 红葡萄酒",
+          description: "口感均衡、酒体年轻的经典红葡萄酒，非常配餐。",
+          options: [{ text: "杯装: 3.50€ / 瓶装: 13.50€", highlight: true }]
+        },
+        ko: {
+          subtitle: "그랑 비냐 레드 와인",
+          description: "가볍고 균형 잡힌 영 레드 와인, 음식과 곁들이기 매우 좋습니다.",
+          options: [{ text: "글라스: 3.50€ / 보틀: 13.50€", highlight: true }]
+        },
+        ja: {
+          subtitle: "グラン・ヴィーニャ 赤ワイン",
+          description: "お食事にも合わせやすい, バランスの取れた軽やかな味わいの赤ワイン。",
+          options: [{ text: "グラス: 3.50€ / ボトル: 13.50€", highlight: true }]
+        },
+        fr: {
+          subtitle: "Vin Rouge Grand Viña",
+          description: "Vin rouge jeune et équilibré, idéal para accompagner vos plats.",
+          options: [{ text: "Verre : 3,50€ / Bouteille : 13,50€", highlight: true }]
+        },
+        it: {
+          subtitle: "Vino Rosso Grand Viña",
+          description: "Vino rosso giovane ed equilibrato, perfetto da abbinare ai pasti.",
+          options: [{ text: "Calice: 3,50€ / Bottiglia: 13,50€", highlight: true }]
+        },
+        price: '3,50€ / 13,50€',
+        image: ''
+      },
+      {
+        id: 'vino-tinto-ramon-bilbao',
+        name: 'Tinto "Ramón Bilbao"',
+        es: {
+          subtitle: "Vang đỏ Ramón Bilbao / Ramón Bilbao red wine",
+          description: "Vino tinto Crianza D.O.Ca. Rioja, elegante con notas de barrica y fruta madura.",
+          options: [{ text: "Copa: 4,20€ / Botella: 18,50€", highlight: true }]
+        },
+        en: {
+          subtitle: "Ramón Bilbao Rioja Red Wine",
+          description: "Elegant D.O.Ca. Rioja Crianza red wine with oak barrel and ripe fruit notes.",
+          options: [{ text: "Glass: 4.20€ / Bottle: 18.50€", highlight: true }]
+        },
+        vi: {
+          subtitle: "Rượu Vang Đỏ Ramón Bilbao Crianza",
+          description: "Vang đỏ Tây Ban Nha vùng Rioja nổi tiếng, trưởng thành trong thùng gỗ sồi, hương vị chín muồi sâu lắng.",
+          options: [{ text: "Ly: 4,20€ / Chai: 18,50€", highlight: true }]
+        },
+        zh: {
+          subtitle: "Ramón Bilbao 里奥哈红葡萄酒",
+          description: "里奥哈法定产区培养级红酒, 伴有木桶陈酿与成熟果香。",
+          options: [{ text: "杯装: 4.20€ / 瓶装: 18.50€", highlight: true }]
+        },
+        ko: {
+          subtitle: "라몬 빌바오 리오하 레드 와인",
+          description: "리오하산 크리안사 등급의 오크 향과 완숙한 과일 맛이 우아한 레드 와인.",
+          options: [{ text: "글라스: 4.20€ / 보틀: 18.50€", highlight: true }]
+        },
+        ja: {
+          subtitle: "ラモン・ビルバオ リオハ赤ワイン",
+          description: "リオハ産の高級赤ワイン。樽熟成による深みと熟した果実味がエレガントに香ります。",
+          options: [{ text: "グラス: 4.20€ / ボトル: 18.50€", highlight: true }]
+        },
+        fr: {
+          subtitle: "Vin Rouge Ramón Bilbao",
+          description: "Vin rouge Crianza D.O.Ca. Rioja, élégant aux notes de fût de chêne et de fruits mûrs.",
+          options: [{ text: "Verre : 4,20€ / Bouteille : 18,50€", highlight: true }]
+        },
+        it: {
+          subtitle: "Vino Rosso Ramón Bilbao",
+          description: "Vino rosso Crianza D.O.Ca. Rioja, elegante con sentori di legno e fruta matura.", // wait: frutta
+          description: "Vino rosso Crianza D.O.Ca. Rioja, elegante con sentori di legno e frutta matura.",
+          options: [{ text: "Calice: 4,20€ / Bottiglia: 18,50€", highlight: true }]
+        },
+        price: '4,20€ / 18,50€',
+        image: ''
+      },
+      {
+        id: 'vino-tinto-protos',
+        name: 'Tinto "Protos"',
+        es: {
+          subtitle: "Vang đỏ Protos / Protos red wine",
+          description: "Excelente vino tinto D.O. Ribera del Duero con cuerpo estructurado y notas especiadas.",
+          options: []
+        },
+        en: {
+          subtitle: "Protos Ribera del Duero Red Wine",
+          description: "Excellent D.O. Ribera del Duero red wine with structured body and spiced notes.",
+          options: []
+        },
+        vi: {
+          subtitle: "Rượu Vang Đỏ Protos",
+          description: "Vang đỏ thượng hạng vùng Ribera del Duero Tây Ban Nha, hương vị đậm đà cấu trúc tinh tế.",
+          options: []
+        },
+        zh: {
+          subtitle: "Protos 杜埃罗河畔红葡萄酒",
+          description: "杜埃罗河畔产区高品质红酒，口感饱满且带有辛香气息。",
+          options: []
+        },
+        ko: {
+          subtitle: "프로토스 리베라 델 두에로 레드 와인",
+          description: "리베라 델 두에로산 고품격 레드 와인, 균형 잡힌 바디감과 스파이시한 여운.",
+          options: []
+        },
+        ja: {
+          subtitle: "プロトス リベラ・デル・ドゥエロ赤ワイン",
+          description: "リベラ・デル・ドゥエロ産の卓越した赤ワイン。深みのあるボディとスパイシーな余韻。",
+          options: []
+        },
+        fr: {
+          subtitle: "Vin Rouge Protos",
+          description: "Excellent vin rouge D.O. Ribera del Duero avec un corps structuré et des notes d'épices.",
+          options: []
+        },
+        it: {
+          subtitle: "Vino Rosso Protos",
+          description: "Eccellente vino rosso D.O. Ribera del Duero dal corpo strutturato e note speziate.",
+          options: []
+        },
+        price: '19,50€',
+        image: ''
+      },
+      {
+        id: 'cava-champan-gran-amat',
+        name: 'Champán "Gran Amat"',
+        es: {
+          subtitle: "Sâm panh Gran Amat / Gran Amat champagne",
+          description: "Espumoso selecto de burbuja fina y persistente, fresco y elegante.",
+          options: []
+        },
+        en: {
+          subtitle: "Gran Amat Champagne / Cava",
+          description: "Select sparkling wine with fine and persistent bubbles, fresh and elegant.",
+          options: []
+        },
+        vi: {
+          subtitle: "Sâm Panh / Cava Gran Amat",
+          description: "Rượu sủi tăm (cava) thượng hạng với sủi bọt mịn li ti, vị sảng khoái thanh lịch.",
+          options: []
+        },
+        zh: {
+          subtitle: "Gran Amat 起泡酒/香槟",
+          description: "精选气泡细腻持久的卡瓦起泡酒，清新爽口而优雅。",
+          options: []
+        },
+        ko: {
+          subtitle: "그랑 아마트 샴페인 / 카바",
+          description: "기포가 가늘고 지속적이며 가벼운 산미와 우아한 스파클링 와인.",
+          options: []
+        },
+        ja: {
+          subtitle: "グラン・アマット スパークリングワイン / カバ",
+          description: "きめ細やかで長続きする泡立ちが特徴の、爽やかでエレガントなカバ（スパークリングワイン）。",
+          options: []
+        },
+        fr: {
+          subtitle: "Champagne / Cava Gran Amat",
+          description: "Mousseux sélectionné aux bulles fines et persistantes, frais et élégant.",
+          options: []
+        },
+        it: {
+          subtitle: "Spumante / Cava Gran Amat",
+          description: "Spumante selezionato a grana fine e persistente, fresco ed elegante.",
+          options: []
+        },
+        price: '16,00€',
+        image: ''
+      },
+      {
+        id: 'cerveza-saigon',
+        name: 'Cerveza vietnamita (Saigon)',
+        es: {
+          subtitle: "Bia Việt Nam - Sài Gòn / Vietnamese beer - Saigon",
+          description: "Cerveza rubia lager de Vietnam, ligera, refrescante e ideal para acompañar platos vietnamitas.",
+          options: []
+        },
+        en: {
+          subtitle: "Saigon Vietnamese Beer",
+          description: "Vietnamese lager beer, light and refreshing, perfect to pair with Vietnamese food.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bia Sài Gòn Việt Nam",
+          description: "Bia lager Sài Gòn đặc trưng của Việt Nam, thanh mát và dễ uống, cực kỳ hợp vị với các món ăn Việt.",
+          options: []
+        },
+        zh: {
+          subtitle: "越南西贡啤酒",
+          description: "经典的越南拉格啤酒，清爽顺口，与越式料理是绝配。",
+          options: []
+        },
+        ko: {
+          subtitle: "사이공 베트남 맥주",
+          description: "베트남을 대표하는 가볍고 청량한 라거 맥주, 베트남 요리와 훌륭한 조화.",
+          options: []
+        },
+        ja: {
+          subtitle: "サイゴン ベトナムビール",
+          description: "ベトナムを代表するラガービール。すっきりと軽快なのどごしでベトナム料理によく合います。",
+          options: []
+        },
+        fr: {
+          subtitle: "Bière Vietnamienne Saigon",
+          description: "Bière blonde vietnamienne, légère et rafraîchissante, idéale avec la cuisine vietnamienne.",
+          options: []
+        },
+        it: {
+          subtitle: "Birra Vietnamita Saigon",
+          description: "Birra lager vietnamita, leggera e rinfrescante, perfetta da abbinare alla cucina locale.",
+          options: []
+        },
+        price: '3,60€',
+        image: ''
+      },
+      {
+        id: 'cerveza-heineken',
+        name: 'Heiniken',
+        es: {
+          subtitle: "Bia Heineken / Heineken beer",
+          description: "Cerveza pale lager premium de origen holandés.",
+          options: []
+        },
+        en: {
+          subtitle: "Heineken Beer",
+          description: "Premium international pale lager beer of Dutch origin.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bia Heineken",
+          description: "Bia lager thương hiệu quốc tế cao cấp.",
+          options: []
+        },
+        zh: {
+          subtitle: "喜力啤酒",
+          description: "源自荷兰的高品质国际淡色拉格啤酒。",
+          options: []
+        },
+        ko: {
+          subtitle: "하이네켄 맥주",
+          description: "네덜란드 원산의 프리미엄 글로벌 라거 맥주.",
+          options: []
+        },
+        ja: {
+          subtitle: "ハイネケン ビール",
+          description: "オランダ生まれの世界的プレミアムラガービール。",
+          options: []
+        },
+        fr: {
+          subtitle: "Bière Heineken",
+          description: "Bière blonde premium d'origine hollandaise.",
+          options: []
+        },
+        it: {
+          subtitle: "Birra Heineken",
+          description: "Birra pale lager premium di origine olandese.",
+          options: []
+        },
+        price: '1,90€',
+        image: ''
+      },
+      {
+        id: 'cerveza-alhambra-1925',
+        name: 'Alhambra 1925',
+        es: {
+          subtitle: "Bia Alhambra 1925 / Alhambra 1925 beer",
+          description: "Cerveza artesanal española premium de color ámbar y notas de lúpulo intenso.",
+          options: []
+        },
+        en: {
+          subtitle: "Alhambra 1925 Beer",
+          description: "Premium Spanish craft lager beer with amber color and intense hops notes.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bia Alhambra 1925",
+          description: "Bia thủ công Tây Ban Nha cao cấp, màu hổ phách sang trọng và hương hoa bia đậm đà.",
+          options: []
+        },
+        zh: {
+          subtitle: "阿兰布拉 1925 啤酒",
+          description: "西班牙高端手工精酿拉格啤酒，琥珀色泽与浓郁啤酒花香。",
+          options: []
+        },
+        ko: {
+          subtitle: "알함브라 1925 맥주",
+          description: "스페인산 프리미엄 크래프트 맥주, 호박색 빛깔과 깊고 진한 홉 향.",
+          options: []
+        },
+        ja: {
+          subtitle: "アルハンブラ 1925 ビール",
+          description: "スペインのプレミアムクラフトラガービール。琥珀色の美しい色合いと豊かなホップのコク。",
+          options: []
+        },
+        fr: {
+          subtitle: "Bière Alhambra 1925",
+          description: "Bière artisanale espagnole de qualité supérieure, couleur ambrée et notes de houblon intense.",
+          options: []
+        },
+        it: {
+          subtitle: "Birra Alhambra 1925",
+          description: "Birra artigianale spagnola premium dal colore ambrato e note di luppolo intenso.",
+          options: []
+        },
+        price: '2,90€',
+        image: ''
+      },
+      {
+        id: 'cerveza-clara',
+        name: 'Clara',
+        es: {
+          subtitle: "Bia nhẹ / Light beer",
+          description: "Cerveza con limón fresca, ligera y muy refrescante.",
+          options: []
+        },
+        en: {
+          subtitle: "Lemon Beer / Radler",
+          description: "Fresh, light, and very refreshing beer mixed with lemon soda.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bia Pha Chanh (Clara)",
+          description: "Bia kết hợp nước ngọt chanh tươi mát, nồng độ cồn nhẹ nhàng dễ chịu.",
+          options: []
+        },
+        zh: {
+          subtitle: "柠檬啤酒/克拉拉",
+          description: "啤酒与柠檬汽水混合而成的低度清凉饮品。",
+          options: []
+        },
+        ko: {
+          subtitle: "클라라 (레몬 맥주)",
+          description: "맥주에 상큼한 레몬 탄산음료를 섞은 알코올 도수가 낮은 가벼운 음료.",
+          options: []
+        },
+        ja: {
+          subtitle: "クララ (レモンビール)",
+          description: "ビールにレモンソーダを合わせた、爽やかで飲みやすいカクテル。",
+          options: []
+        },
+        fr: {
+          subtitle: "Bière Panachée / Radler",
+          description: "Bière coupée au soda citron, fraîche, légère et désaltérante.",
+          options: []
+        },
+        it: {
+          subtitle: "Radler / Shandy",
+          description: "Birra unita a gassosa al limone, fresca, leggera e dissetante.",
+          options: []
+        },
+        price: '2,70€',
+        image: ''
+      },
+      {
+        id: 'cerveza-cana',
+        name: 'Caña',
+        es: {
+          subtitle: "Bia tươi / Fresh beer",
+          description: "Vaso clásico de cerveza de barril recién tirada.",
+          options: []
+        },
+        en: {
+          subtitle: "Draft Beer (Glass)",
+          description: "Classic glass of freshly tapped draft beer.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bia Hơi / Bia Tươi (Ly)",
+          description: "Ly bia tươi rót trực tiếp từ vòi lạnh mát lạnh sảng khoái.",
+          options: []
+        },
+        zh: {
+          subtitle: "生啤酒（小杯）",
+          description: "从生啤机中新鲜打出的经典生啤酒。",
+          options: []
+        },
+        ko: {
+          subtitle: "생맥주 (작은 잔)",
+          description: "생맥주 탭에서 바로 뽑아낸 시원한 클래식 드래프트 생맥주.",
+          options: []
+        },
+        ja: {
+          subtitle: "生ビール（グラス）",
+          description: "サーバーから注ぎたての、のどごし爽快な生ビール。",
+          options: []
+        },
+        fr: {
+          subtitle: "Demi de Bière Pression",
+          description: "Verre classique de bière pression fraîchement tirée.",
+          options: []
+        },
+        it: {
+          subtitle: "Birra alla Spina (Piccola)",
+          description: "Calice classico di birra alla spina appena spillata.",
+          options: []
+        },
+        price: '2,60€',
+        image: ''
+      },
+      {
+        id: 'cerveza-san-miguel-especial',
+        name: 'San Miguel Especial',
+        es: {
+          subtitle: "Đặc sản San Miguel / San Miguel special",
+          description: "Cerveza lager dorada de barril con sabor equilibrado.",
+          options: []
+        },
+        en: {
+          subtitle: "San Miguel Especial Beer",
+          description: "Classic golden lager beer with balanced and refreshing taste.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bia San Miguel Đặc Biệt",
+          description: "Bia lager vàng óng với hương vị cân bằng sảng khoái đặc trưng.",
+          options: []
+        },
+        zh: {
+          subtitle: "生力特别啤酒",
+          description: "经典金黄拉格啤酒，口感均衡，麦香纯正。",
+          options: []
+        },
+        ko: {
+          subtitle: "산 미겔 에스페셜 맥주",
+          description: "균형 잡힌 맛과 청량감을 자랑하는 정통 라거 맥주.",
+          options: []
+        },
+        ja: {
+          subtitle: "サン・ミゲル エスペシャル ビール",
+          description: "バランスの良い味わいとのどごしが人気の、伝統的なゴールデンラガービール。",
+          options: []
+        },
+        fr: {
+          subtitle: "Bière San Miguel Especial",
+          description: "Bière lager dorée au goût équilibré et désaltérant.",
+          options: []
+        },
+        it: {
+          subtitle: "Birra San Miguel Especial",
+          description: "Birra lager dorata dal gusto equilibrato ed armónico.",
+          options: []
+        },
+        price: '2,60€',
+        image: ''
+      },
+      {
+        id: 'cerveza-tostada-sin-alcohol',
+        name: 'Tostada sin alcohol',
+        es: {
+          subtitle: "Bia không cồn / Non-alcoholic beer",
+          description: "Cerveza tostada sin alcohol con gran cuerpo y notas de malta tostada.",
+          options: []
+        },
+        en: {
+          subtitle: "Non-Alcoholic Amber Beer",
+          description: "Full-bodied amber beer with zero alcohol, featuring notes of roasted malt.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bia Đen Không Cồn (Tostada)",
+          description: "Bia sẫm màu không cồn đậm vị, thoảng hương mạch nha rang thơm ngậy.",
+          options: []
+        },
+        zh: {
+          subtitle: "无酒精黑啤",
+          description: "带有烤麦芽香气、口感醇厚的无酒精深色啤酒。",
+          options: []
+        },
+        ko: {
+          subtitle: "무알코올 흑맥주",
+          description: "풍부한 바디감과 구운 맥아 향이 특징인 무알코올 아시아 앰버 맥주.",
+          options: []
+        },
+        ja: {
+          subtitle: "ノンアルコール黒ビール",
+          description: "ノンアルコールでありながら、ロースト麦芽の豊かなコクと深みを楽しめる本格派ビール。",
+          options: []
+        },
+        fr: {
+          subtitle: "Bière Ambrée Sans Alcool",
+          description: "Bière ambrée sans alcool avec du corps et des notes de malt torréfié.",
+          options: []
+        },
+        it: {
+          subtitle: "Birra Scura Analcolica",
+          description: "Birra scura analcolica dal corpo pieno con note di malto tostato.",
+          options: []
+        },
+        price: '2,80€',
+        image: ''
+      },
+      {
+        id: 'cerveza-san-miguel-sin-gluten',
+        name: 'San Miguel sin gluten',
+        es: {
+          subtitle: "Bia San Miguel không gluten / Gluten-free San Miguel beer",
+          description: "Cerveza lager tradicional adaptada para celíacos, conservando todo el sabor.",
+          options: []
+        },
+        en: {
+          subtitle: "Gluten-Free San Miguel Beer",
+          description: "Traditional lager beer adapted for coeliacs, keeping all the flavor.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bia San Miguel Không Gluten",
+          description: "Bia lager truyền thống được điều chế đặc biệt cho người nhạy cảm với gluten nhưng vẫn giữ trọn hương vị tuyệt hảo.",
+          options: []
+        },
+        zh: {
+          subtitle: "无麸质生力啤酒",
+          description: "专为麸质过敏人士特别研制的经典拉格啤酒, 口感毫不妥协。",
+          options: []
+        },
+        ko: {
+          subtitle: "글루텐 프리 산 미겔 맥주",
+          description: "맥주의 맛을 그대로 살려 글루텐 과민증이 있는 분도 즐길 수 있는 라거 맥주.",
+          options: []
+        },
+        ja: {
+          subtitle: "グルテンフリー サン・ミゲル ビール",
+          description: "本来のコクと美味しさはそのままに, グルテンを含まないラガービール。",
+          options: []
+        },
+        fr: {
+          subtitle: "Bière Sans Gluten",
+          description: "Bière blonde traditionnelle adaptée aux coeliaques, conservant toute sa saveur.",
+          options: []
+        },
+        it: {
+          subtitle: "Birra Senza Glutine",
+          description: "Birra lager tradicional adatta ai celiaci, che conserva tutto il gusto originario.", // wait: tradizionale
+          description: "Birra lager tradizionale adatta ai celiaci, che conserva tutto il gusto originario.",
+          options: []
+        },
+        price: '2,90€',
+        image: ''
+      },
+      {
+        id: 'cerveza-corona',
+        name: 'Corona',
+        es: {
+          subtitle: "Bia Corona / Corona beer",
+          description: "Cerveza rubia suave mexicana premium, servida habitualmente con una rodaja de lima.",
+          options: []
+        },
+        en: {
+          subtitle: "Corona Beer",
+          description: "Mild premium Mexican lager beer, usually served with a lime wedge.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bia Corona",
+          description: "Bia nhập khẩu Mexico nổi tiếng dịu nhẹ, thường dùng kèm một lát chanh tươi.",
+          options: []
+        },
+        zh: {
+          subtitle: "科罗娜啤酒",
+          description: "经典的墨西哥清爽拉格啤酒, 饮用时常伴以一片柠檬。",
+          options: []
+        },
+        ko: {
+          subtitle: "코로나 맥주",
+          description: "라임 조각을 곁들여 마시는 멕시코산 청량한 프리미엄 맥주.",
+          options: []
+        },
+        ja: {
+          subtitle: "コロナ ビール",
+          description: "ライムを挿して飲むことでおなじみの, ライトで飲みやすいメキシコ産ビール。",
+          options: []
+        },
+        fr: {
+          subtitle: "Bière Corona",
+          description: "Bière blonde mexicaine douce, généralement servie avec un quartier de citron vert.",
+          options: []
+        },
+        it: {
+          subtitle: "Birra Corona",
+          description: "Birra messicana leggera e rinfrescante, servita tipicamente con uno spicchio di lime.",
+          options: []
+        },
+        price: '2,80€',
+        image: ''
       },
       {
         id: 'te-verde-vietnam',
