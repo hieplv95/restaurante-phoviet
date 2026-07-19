@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 export default function Menu() {
   const { language } = useLanguage();
   const currentLang = language || 'es';
-  const [activeCategory, setActiveCategory] = useState('starters');
+  const [activeCategory, setActiveCategory] = useState('mains');
 
   const categories = [
     { id: 'starters', emoji: '🥗', es: 'Entrantes', en: 'Starters', vi: 'Khai vị', zh: '热身', ja: '前菜', ko: '에피타이저', fr: 'Entrées', it: 'Antipasti' },
@@ -17,205 +17,345 @@ export default function Menu() {
     starters: [
       {
         id: 'cha-gio',
-        name: 'Chả Giò',
+        name: '1. Chả Giò',
         es: {
-          subtitle: 'Rollo Primavera Crujiente',
-          description: 'Dos rollos fritos crujientes rellenos de verduras y fideos de cristal. Servidos con hojas de lechuga.',
+          subtitle: "Rollo Primavera Crujiente",
+          description: "Dos rollos fritos crujientes rellenos de verduras y fideos de cristal. Servidos con hojas de lechuga.",
           options: [
-            { text: '• A. Cerdo (Thịt heo)', highlight: true },
-            { text: '• B. Judía mungo* (Đậu xanh)', highlight: false },
-            { text: 'Rollo extra (Thêm cuốn) +3,40€', highlight: false }
+            { text: "• A. Cerdo (Thịt heo)", highlight: true },
+            { text: "• B. Judía mungo* (Đậu xanh)", highlight: false },
+            { text: "Rollo extra (Thêm cuốn) +3,40€", highlight: false }
           ]
         },
         en: {
-          subtitle: 'Crispy Fried Spring Rolls',
-          description: 'Two crispy fried spring rolls filled with vegetables and glass noodles. Served with lettuce leaves.',
+          subtitle: "Crispy Fried Spring Rolls",
+          description: "Two crispy fried spring rolls filled with vegetables and glass noodles. Served with lettuce leaves.",
           options: [
-            { text: '• A. Pork (Thịt heo)', highlight: true },
-            { text: '• B. Mung bean* (Đậu xanh)', highlight: false },
-            { text: 'Extra roll (Thêm cuốn) +3,40€', highlight: false }
+            { text: "• A. Pork (Thịt heo)", highlight: true },
+            { text: "• B. Mung bean* (Đậu xanh)", highlight: false },
+            { text: "Extra roll (Thêm cuốn) +3,40€", highlight: false }
           ]
         },
         vi: {
-          subtitle: 'Chả Giò Rán Giòn',
-          description: 'Hai cuốn chả giò rán giòn nhân rau củ và miến. Ăn kèm xà lách.',
+          subtitle: "Chả Giò Rán Giòn",
+          description: "Hai cuốn chả giò rán giòn nhân rau củ và miến. Ăn kèm xà lách.",
           options: [
-            { text: '• A. Nhân Thịt Heo', highlight: true },
-            { text: '• B. Nhân Đậu Xanh*', highlight: false },
-            { text: 'Thêm cuốn +3,40€', highlight: false }
+            { text: "• A. Nhân Thịt Heo", highlight: true },
+            { text: "• B. Nhân Đậu Xanh*", highlight: false },
+            { text: "Thêm cuốn +3,40€", highlight: false }
           ]
         },
         zh: {
-          subtitle: '香脆炸春卷',
-          description: '两个香脆的炸春卷，包裹着蔬菜和粉丝。配生菜叶食用。',
+          subtitle: "香脆炸春卷",
+          description: "两个香脆的炸春卷，包裹着蔬菜和粉丝。配生菜叶食用。",
           options: [
-            { text: '• A. 猪肉', highlight: true },
-            { text: '• B. 绿豆*', highlight: false },
-            { text: '加购春卷 +3,40€', highlight: false }
+            { text: "• A. 猪肉", highlight: true },
+            { text: "• B. 绿豆*", highlight: false },
+            { text: "加购春卷 +3,40€", highlight: false }
           ]
         },
         ko: {
-          subtitle: '바삭한 짜조',
-          description: '야채와 당면으로 속을 채워 바삭하게 튀겨낸 짜조 2개. 상추가 함께 제공됩니다.',
+          subtitle: "바삭한 짜조",
+          description: "야채와 당면으로 속을 채워 바삭하게 튀겨낸 짜조 2개. 상추가 함께 제공됩니다.",
           options: [
-            { text: '• A. 돼지고기', highlight: true },
-            { text: '• B. 녹두*', highlight: false },
-            { text: '짜조 추가 +3,40€', highlight: false }
+            { text: "• A. 돼지고기", highlight: true },
+            { text: "• B. 녹두*", highlight: false },
+            { text: "짜조 추가 +3,40€", highlight: false }
           ]
         },
         ja: {
-          subtitle: 'サクサク揚げ春巻き',
-          description: '野菜と春雨を包んでサクサクに揚げた春巻き2本。レタスと一緒にお召し上がりください。',
+          subtitle: "サクサク揚げ春巻き",
+          description: "野菜と春雨を包んでサクサクに揚げた春巻き2本。レタスと一緒にお召し上がりください。",
           options: [
-            { text: '• A. 豚肉', highlight: true },
-            { text: '• B. 緑豆*', highlight: false },
-            { text: '春巻き追加 +3,40€', highlight: false }
+            { text: "• A. 豚肉", highlight: true },
+            { text: "• B. 緑豆*", highlight: false },
+            { text: "春巻き追加 +3,40€", highlight: false }
           ]
         },
         fr: {
-          subtitle: 'Rouleaux de Printemps Croustillants',
-          description: 'Deux rouleaux de printemps frits croustillants farcis de légumes et de vermicelles de verre. Servis avec des feuilles de laitue.',
+          subtitle: "Rouleaux de Printemps Croustillants",
+          description: "Deux rouleaux de printemps frits croustillants farcis de légumes et de vermicelles de verre. Servis avec des feuilles de laitue.",
           options: [
-            { text: '• A. Porc', highlight: true },
-            { text: '• B. Haricot mungo*', highlight: false },
-            { text: 'Rouleau supplémentaire +3,40€', highlight: false }
+            { text: "• A. Porc", highlight: true },
+            { text: "• B. Haricot mungo*", highlight: false },
+            { text: "Rouleau supplémentaire +3,40€", highlight: false }
           ]
         },
         it: {
-          subtitle: 'Involtini Primavera Croccanti',
-          description: 'Due involtini primavera fritti croccanti ripieni di verdure e vermicelli di vetro. Serviti con foglie di lattuga.',
+          subtitle: "Involtini Primavera Croccanti",
+          description: "Due involtini primavera fritti croccanti ripieni di verdure e vermicelli di vetro. Serviti con foglie di lattuga.",
           options: [
-            { text: '• A. Maiale', highlight: true },
-            { text: '• B. Fagioli mungo*', highlight: false },
-            { text: 'Involtino extra +3,40€', highlight: false }
+            { text: "• A. Maiale", highlight: true },
+            { text: "• B. Fagioli mungo*", highlight: false },
+            { text: "Involtino extra +3,40€", highlight: false }
           ]
         },
         price: '7,20€',
-        image: '/reviews/spring_rolls_review.png'
+        image: '/menu_chagio.png'
       },
       {
         id: 'goi-cuon',
-        name: 'Gỏi Cuốn',
+        name: '2. Gỏi Cuốn',
         es: {
-          subtitle: 'Rollitos de Primavera Frescos',
-          description: 'Dos rollitos de arroz frescos envueltos a mano con lechuga, menta, pepino, zanahoria y:',
+          subtitle: "Rollo Fresco",
+          description: "Dos rollos frescos envueltos a mano con:",
           options: [
-            { text: '• A. Gambas y Cerdo (+1€)', highlight: true },
-            { text: '• B. Aguacate y Tofu Orgánico', highlight: false },
-            { text: '(Rollito Extra +3,30€)', highlight: false }
+            { text: "• A. Cerdo y gambas", highlight: true },
+            { text: "• B. Gambas y mango", highlight: false },
+            { text: "• C. Tofu y mango*", highlight: false }
           ]
         },
         en: {
-          subtitle: 'Peacefull Summer Rolls',
-          description: 'Two Fresh Hand-wrapped Summer Rolls with Lettuce, Mint, Cucumber, Carrot And:',
+          subtitle: "Summer Rolls",
+          description: "Two fresh, hand-wrapped rolls with:",
           options: [
-            { text: '• A. Prawns And Pork (+1€)', highlight: true },
-            { text: '• B. Avocado And Organic Tofu', highlight: false },
-            { text: '(Extra Roll +3,30€)', highlight: false }
+            { text: "• A. Pork and prawn", highlight: true },
+            { text: "• B. Prawn and mango", highlight: false },
+            { text: "• C. Tofu and mango*", highlight: false }
           ]
         },
         vi: {
-          subtitle: 'Gỏi Cuốn Tươi',
-          description: 'Hai cuốn gỏi cuốn tay tươi mát cuộn cùng xà lách, rau thơm, dưa leo, cà rốt và:',
+          subtitle: "Gỏi Cuốn Tươi",
+          description: "Hai cuốn gỏi cuốn tay tươi với:",
           options: [
-            { text: '• A. Tôm và Thịt Heo (+1€)', highlight: true },
-            { text: '• B. Bơ và Đậu Hũ Hữu Cơ', highlight: false },
-            { text: '(Thêm cuốn +3,30€)', highlight: false }
+            { text: "• A. Thịt heo và tôm", highlight: true },
+            { text: "• B. Tôm và xoài", highlight: false },
+            { text: "• C. Đậu hũ và xoài*", highlight: false }
           ]
         },
         zh: {
-          subtitle: '美味夏卷',
-          description: '两个纯手工包裹的新鲜夏卷，含有生菜、薄荷、黄瓜、胡萝卜和：',
+          subtitle: "新鲜夏卷",
+          description: "两个纯手工包裹的新鲜夏卷，含有：",
           options: [
-            { text: '• A. 鲜虾与猪肉 (+1€)', highlight: true },
-            { text: '• B. 牛油果与有机豆腐', highlight: false },
-            { text: '(加购夏卷 +3,30€)', highlight: false }
+            { text: "• A. 猪肉与鲜虾", highlight: true },
+            { text: "• B. 鲜虾与芒果", highlight: false },
+            { text: "• C. 豆腐与芒果*", highlight: false }
           ]
         },
         ko: {
-          subtitle: '상큼한 스프링롤',
-          description: '상추, 민트, 오이, 당근을 라이스페이퍼에 손으로 직접 말아낸 신선한 스프링롤 2개:',
+          subtitle: "신선한 스프링롤",
+          description: "라이스페이퍼에 손으로 직접 말아낸 신선한 스프링롤 2개:",
           options: [
-            { text: '• A. 새우와 돼지고기 (+1€)', highlight: true },
-            { text: '• B. 아보카도와 유기농 두부', highlight: false },
-            { text: '(스프링롤 추가 +3,30€)', highlight: false }
+            { text: "• A. 돼지고기와 새우", highlight: true },
+            { text: "• B. 새우와 망고", highlight: false },
+            { text: "• C. 두부와 망고*", highlight: false }
           ]
         },
         ja: {
-          subtitle: 'ヘルシー生春巻き',
-          description: 'レタス、ミント、きゅうり、人参をライスペーパーで包んだ新鮮な生春巻き2本：',
+          subtitle: "新鮮生春巻き",
+          description: "レタス、ミント、きゅうり、人参をライスペーパーで包んだ新鮮な生春巻き2本：",
           options: [
-            { text: '• A. 海老と豚肉 (+1€)', highlight: true },
-            { text: '• B. アボカドと有機豆腐', highlight: false },
-            { text: '(生春巻き追加 +3,30€)', highlight: false }
+            { text: "• A. 豚肉とエビ", highlight: true },
+            { text: "• B. エビとマンゴー", highlight: false },
+            { text: "• C. 豆腐とマンゴー*", highlight: false }
           ]
         },
         fr: {
-          subtitle: 'Rouleaux d\'Été Frais',
-          description: 'Deux rouleaux de riz frais enveloppés à la main avec de la laitue, de la menthe, du concombre, de la carotte et :',
+          subtitle: "Rouleaux d'Été Frais",
+          description: "Deux rouleaux de riz frais enveloppés à la main avec :",
           options: [
-            { text: '• A. Crevettes et Porc (+1€)', highlight: true },
-            { text: '• B. Avocat et Tofu Biologique', highlight: false },
-            { text: '(Rouleau supplémentaire +3,30€)', highlight: false }
+            { text: "• A. Porc et crevettes", highlight: true },
+            { text: "• B. Crevettes et mangue", highlight: false },
+            { text: "• C. Tofu et mangue*", highlight: false }
           ]
         },
         it: {
-          subtitle: 'Involtini d\'Estate Freschi',
-          description: 'Due involtini di riso freschi avvolti a mano con lattuga, menta, cetriolo, carota e:',
+          subtitle: "Involtini d'Estate Freschi",
+          description: "Due involtini di riso freschi avvolti a mano con:",
           options: [
-            { text: '• A. Gamberi e Maiale (+1€)', highlight: true },
-            { text: '• B. Avocado e Tofu Biologico', highlight: false },
-            { text: '(Involtino extra +3,30€)', highlight: false }
+            { text: "• A. Maiale e gamberi", highlight: true },
+            { text: "• B. Gamberi e mango", highlight: false },
+            { text: "• C. Tofu e mango*", highlight: false }
           ]
         },
-        price: '5,90€',
+        price: '7,00€',
         image: '/menu_goicuon.png'
       },
       {
         id: 'tom-chien-xu',
-        name: 'Tôm Chiên Xù',
+        name: '3. Tôm Chiên Xù',
         es: {
-          subtitle: 'Camarón Frito Crujiente',
-          description: 'Langostino rebozado con tempura fresca, servido con salsa de chili dulce.',
+          subtitle: "Camarón Frito",
+          description: "Langostino rebozado con tempura fresca, servido con salsa de chili dulce.",
           options: []
         },
         en: {
-          subtitle: 'Crispy Fried Shrimp',
-          description: 'Fresh battered tempura shrimp, served with sweet chili sauce.',
+          subtitle: "Crispy Fried Shrimp",
+          description: "Fresh tempura-battered shrimp, served with sweet chili sauce.",
           options: []
         },
         vi: {
-          subtitle: 'Tôm Chiên Xù',
-          description: 'Tôm tươi tẩm bột chiên xù giòn rụm, ăn kèm với sốt tương ớt ngọt dịu.',
+          subtitle: "Tôm Chiên Xù",
+          description: "Tôm tươi tẩm bột tempura, ăn kèm với sốt tương ớt ngọt.",
           options: []
         },
         zh: {
-          subtitle: '天妇罗炸虾',
-          description: '裹上面糊新鲜炸制的香脆天妇罗虾，搭配甜辣酱。',
+          subtitle: "天妇罗炸虾",
+          description: "裹上面糊新鲜炸制的香脆天妇罗虾，搭配甜辣酱。",
           options: []
         },
         ko: {
-          subtitle: '바삭한 새우 튀김',
-          description: '신선한 튀김옷을 입혀 바삭하게 튀겨낸 새우 튀김, 스위트 칠리 소스와 함께 제공됩니다.',
+          subtitle: "바삭한 새우 튀김",
+          description: "신선한 튀김옷을 입혀 바삭하게 튀겨낸 새우 튀김, 스위트 칠리 소스와 함께 제공됩니다.",
           options: []
         },
         ja: {
-          subtitle: '海老のサクサク揚げ',
-          description: '新鮮な衣をつけてサクサクに揚げた海老の天ぷら。スイートチリソース添え。',
+          subtitle: "海老のサクサク揚げ",
+          description: "新鮮な衣をつけてサクサクに揚げた海老の天ぷら。スイートチリソース添え。",
           options: []
         },
         fr: {
-          subtitle: 'Beignets de Crevettes Croustillants',
-          description: 'Crevettes fraîches panées en tempura, servies avec une sauce chili douce.',
+          subtitle: "Beignets de Crevettes Croustillants",
+          description: "Crevettes fraîches panées en tempura, servies avec une sauce chili douce.",
           options: []
         },
         it: {
-          subtitle: 'Gamberi Fritti Croccanti',
-          description: 'Gamberi freschi impanati in tempura croccante, serviti con salsa chili dolce.',
+          subtitle: "Gamberi Fritti Croccanti",
+          description: "Gamberi freschi impanati in tempura croccante, serviti con salsa chili dolce.",
           options: []
         },
         price: '7,20€',
         image: '/menu_camaron.png'
+      },
+      {
+        id: 'croquetas-de-pescado',
+        name: '4. Chả Cá Cốm',
+        es: {
+          subtitle: "Croquetas de Pescado Crujientes",
+          description: "Croquetas de pescado (4 piezas) marinadas en hierbas con copos de arroz crujientes.",
+          options: [
+            { text: "Pieza extra (Thêm 1 viên) +1,50€", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Crispy Fish Croquettes",
+          description: "Fish croquettes (4 pieces) marinated in herbs with crispy rice flakes.",
+          options: [
+            { text: "Extra piece (Thêm 1 viên) +1,50€", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Chả Cá Cốm",
+          description: "Chả cá (4 miếng) ướp thảo mộc với vụn cơm giòn.",
+          options: [
+            { text: "Thêm 1 viên +1,50€", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "香脆绿糯米鱼饼",
+          description: "香草腌制鱼饼（4块）裹上香脆绿糯米片炸制。",
+          options: [
+            { text: "加购一块 +1,50€", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "바삭한 초록 쌀 튀김 어묵",
+          description: "허브로 양념하고 바삭한 초록색 찹쌀 플레이크를 묻혀 튀겨낸 베트남식 어묵 요리(4조각).",
+          options: [
+            { text: "어묵 추가 (1조각) +1,50€", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "サクサク緑米のベトナム風魚さつま揚げ",
+          description: "ハーブでマリネした白身魚のすり身（4個）に、サクサクの緑色の扁平米（コム）を衣にして揚げたもの。",
+          options: [
+            { text: "1個追加 +1,50€", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Croquettes de Poisson Croustillantes",
+          description: "Croquettes de poisson (4 pièces) marinées aux herbes avec des flocons de riz croustillants.",
+          options: [
+            { text: "Portion supplémentaire +1,50€", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Crocchette di Pesce Croccanti",
+          description: "Crocchette di pesce (4 pezzi) marinate alle erbe con fiocchi di riso croccanti.",
+          options: [
+            { text: "Porzione extra +1,50€", highlight: false }
+          ]
+        },
+        price: '7,80€',
+        image: '/menu_chacacom.png'
+      },
+      {
+        id: 'goi-xoai',
+        name: 'Gỏi Xoài',
+        es: {
+          subtitle: "Ensalada Vietnam con Mango",
+          description: "Deliciosa ensalada de mango con:",
+          options: [
+            { text: "• A. Cerdo y gambas (7,60€)", highlight: true },
+            { text: "• B. Pollo (7,30€)", highlight: false },
+            { text: "• C. Tofu (7,30€)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Vietnamese Green Mango Salad",
+          description: "Delicious green mango salad with:",
+          options: [
+            { text: "• A. Pork and prawn (7,60€)", highlight: true },
+            { text: "• B. Chicken (7,30€)", highlight: false },
+            { text: "• C. Tofu (7,30€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Gỏi Xoài",
+          description: "Gỏi xoài ngon tuyệt vời, ăn kèm với:",
+          options: [
+            { text: "• A. Thịt heo và tôm (7,60€)", highlight: true },
+            { text: "• B. Thịt gà (7,30€)", highlight: false },
+            { text: "• C. Đậu hũ (7,30€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "越式芒果沙拉",
+          description: "美味的越式青芒果沙拉，搭配：",
+          options: [
+            { text: "• A. 猪肉与鲜虾 (7,60€)", highlight: true },
+            { text: "• B. 鸡肉 (7,30€)", highlight: false },
+            { text: "• C. 豆腐 (7,30€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "베트남식 망고 샐러드",
+          description: "상큼하고 맛있는 베트남식 그린 망고 샐러드, 토핑 선택:",
+          options: [
+            { text: "• A. 돼지고기와 새우 (7,60€)", highlight: true },
+            { text: "• B. 닭고기 (7,30€)", highlight: false },
+            { text: "• C. 두부 (7,30€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "マンゴーサラダ",
+          description: "美味しいベトナム風青マンゴーサラダ、以下から選択：",
+          options: [
+            { text: "• A. 豚肉とエビ (7,60€)", highlight: true },
+            { text: "• B. 鶏肉 (7,30€)", highlight: false },
+            { text: "• C. 豆腐 (7,30€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Salade de Mangue Verte Vietnamienne",
+          description: "Délicieuse salade de mangue verte avec :",
+          options: [
+            { text: "• A. Porc et crevettes (7,60€)", highlight: true },
+            { text: "• B. Poulet (7,30€)", highlight: false },
+            { text: "• C. Tofu (7,30€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Insalata di Mango Verde Vietnamita",
+          description: "Deliziosa insalata di mango verde con:",
+          options: [
+            { text: "• A. Maiale e gamberi (7,60€)", highlight: true },
+            { text: "• B. Pollo (7,30€)", highlight: false },
+            { text: "• C. Tofu (7,30€)", highlight: false }
+          ]
+        },
+        price: '7,30€ / 7,60€',
+        image: '/menu_goixoai.png'
       }
     ],
     mains: [
@@ -223,67 +363,67 @@ export default function Menu() {
         id: 'banh-xeo',
         name: 'Bánh Xèo',
         es: {
-          subtitle: 'Crepe Crujiente Vietnamita',
-          description: 'Crepe vietnamita fino y crujiente de harina de arroz, relleno de brotes de soja y:',
+          subtitle: "Crepe Crujiente Vietnamita",
+          description: "Crepe vietnamita fino y crujiente de harina de arroz, relleno de brotes de soja y:",
           options: [
-            { text: '• A. Gambas y cerdo (+1€)', highlight: true },
-            { text: '• B. Tofu orgánico', highlight: false }
+            { text: "• A. Gambas y cerdo (+1€)", highlight: true },
+            { text: "• B. Tofu orgánico", highlight: false }
           ]
         },
         en: {
-          subtitle: 'Pancake of Joy',
-          description: 'Thin and crispy Vietnamese pancake made with rice flour, stuffed with bean sprouts and:',
+          subtitle: "Pancake of Joy",
+          description: "Thin and crispy Vietnamese pancake made with rice flour, stuffed with bean sprouts and:",
           options: [
-            { text: '• A. Prawns and pork (+1€)', highlight: true },
-            { text: '• B. Organic tofu', highlight: false }
+            { text: "• A. Prawns and pork (+1€)", highlight: true },
+            { text: "• B. Organic tofu", highlight: false }
           ]
         },
         vi: {
-          subtitle: 'Bánh Xèo Vàng Giòn',
-          description: 'Bánh xèo vỏ mỏng giòn rụm làm từ bột gạo, nhân giá đỗ thanh mát và:',
+          subtitle: "Bánh Xèo Vàng Giòn",
+          description: "Bánh xèo vỏ mỏng giòn rụm làm từ bột gạo, nhân giá đỗ thanh mát và:",
           options: [
-            { text: '• A. Tôm và thịt heo (+1€)', highlight: true },
-            { text: '• B. Đậu hũ hữu cơ', highlight: false }
+            { text: "• A. Tôm và thịt heo (+1€)", highlight: true },
+            { text: "• B. Đậu hũ hữu cơ", highlight: false }
           ]
         },
         zh: {
-          subtitle: '越式煎饼',
-          description: '用米粉制作的薄脆越南煎饼，包裹着豆芽和：',
+          subtitle: "越式煎饼",
+          description: "用米粉制作的薄脆越南煎饼，包裹着豆芽和：",
           options: [
-            { text: '• A. 鲜虾与猪肉 (+1€)', highlight: true },
-            { text: '• B. 有机豆腐', highlight: false }
+            { text: "• A. 鲜虾与猪肉 (+1€)", highlight: true },
+            { text: "• B. 有机豆腐", highlight: false }
           ]
         },
         ko: {
-          subtitle: '베트남식 크레프 (반세오)',
-          description: '쌀가루로 얇고 바삭하게 부쳐내어 숙주나물로 속을 채운 베트남식 부침개:',
+          subtitle: "베트남식 크레프 (반세오)",
+          description: "쌀가루로 얇고 바삭하게 부쳐내어 숙주나물로 속을 채운 베트남식 부침개:",
           options: [
-            { text: '• A. 새우와 돼지고기 (+1€)', highlight: true },
-            { text: '• B. 유기농 두부', highlight: false }
+            { text: "• A. 새우와 돼지고기 (+1€)", highlight: true },
+            { text: "• B. 유기농 두부", highlight: false }
           ]
         },
         ja: {
-          subtitle: 'ベトナム風お好み焼き（バインセオ）',
-          description: '米粉で作った薄くてパリパリの生地に、もやしをたっぷり挟んだベトナム風お好み焼き：',
+          subtitle: "ベトナム風お好み焼き（バインセオ）",
+          description: "米粉で作った薄くてパリパリの生地に、もやしをたっぷり挟んだベトナム風お好み焼き：",
           options: [
-            { text: '• A. 海老と豚肉 (+1€)', highlight: true },
-            { text: '• B. 有機豆腐', highlight: false }
+            { text: "• A. 海老と豚肉 (+1€)", highlight: true },
+            { text: "• B. 有機豆腐", highlight: false }
           ]
         },
         fr: {
-          subtitle: 'Crêpe Vietnamienne Croustillante',
-          description: 'Fine crêpe vietnamienne croustillante à la farine de riz, farcie de pousses de soja et de :',
+          subtitle: "Crêpe Vietnamienne Croustillante",
+          description: "Fine crêpe vietnamienne croustillante à la farine de riz, farcie de pousses de soja et de :",
           options: [
-            { text: '• A. Crevettes et porc (+1€)', highlight: true },
-            { text: '• B. Tofu biologique', highlight: false }
+            { text: "• A. Crevettes et porc (+1€)", highlight: true },
+            { text: "• B. Tofu biologique", highlight: false }
           ]
         },
         it: {
-          subtitle: 'Crepe Vietnamita Croccante',
-          description: 'Sottile e croccante crepe vietnamita fatta con farina di riso, ripiena di germogli di soia e:',
+          subtitle: "Crepe Vietnamita Croccante",
+          description: "Sottile e croccante crepe vietnamita fatta con farina di riso, ripiena di germogli di soia e:",
           options: [
-            { text: '• A. Gamberi e maiale (+1€)', highlight: true },
-            { text: '• B. Tofu biologico', highlight: false }
+            { text: "• A. Gamberi e maiale (+1€)", highlight: true },
+            { text: "• B. Tofu biologico", highlight: false }
           ]
         },
         price: '10,90€',
@@ -291,143 +431,1625 @@ export default function Menu() {
       },
       {
         id: 'pho-bo',
-        name: 'Phở Bò',
+        name: '3. Phở',
         es: {
-          subtitle: 'Sopa Phở de Ternera Tradicional',
-          description: 'La sopa Phở es el plato más popular de Vietnam. Sopa de fideos de arroz en un caldo cocinado a fuego lento durante 12 horas, con cebollino, cebolla, cilantro y:',
+          subtitle: "Sopa Phở",
+          description: "El plato más popular de Vietnam, clasificado en la lista de los 50 mejores alimentos del mundo.",
           options: [
-            { text: '• A. Ternera (13.90€)', highlight: true },
-            { text: '• B. Pollo (12.90€)', highlight: false }
+            { text: "• A. Ternera (12,90€) (Thịt bò)", highlight: true },
+            { text: "• B. Pollo (12,90€) (Thịt gà)", highlight: false },
+            { text: "• C. Tofu y champiñones* (11,90€) (Đậu hũ & nấm)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false },
+            { text: "+ Bola de ternera casera (+1,80€) (Bò viên)", highlight: false }
           ]
         },
         en: {
-          subtitle: 'Pho Ancient Hanoi',
-          description: 'Pho soup is the most popular dish in Vietnam. A rice noodle soup in a broth simmered for 12 hours, with chives, onion, coriander and:',
+          subtitle: "Vietnamese Noodle Soup",
+          description: "Vietnam's most popular dish, ranked on the list of the 50 best foods in the world.",
           options: [
-            { text: '• A. Beef (13.90€)', highlight: true },
-            { text: '• B. Chicken (12.90€)', highlight: false }
+            { text: "• A. Beef (12,90€)", highlight: true },
+            { text: "• B. Chicken (12,90€)", highlight: false },
+            { text: "• C. Tofu and mushrooms* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false },
+            { text: "+ Homemade beef ball (+1,80€)", highlight: false }
           ]
         },
         vi: {
-          subtitle: 'Phở Bò Hà Nội Cổ Kính',
-          description: 'Món ăn truyền thức của Việt Nam. Bánh phở mềm cùng nước dùng bò ninh suốt 12 tiếng cùng quế, hồi, thảo quả, hành hoa, hành tây và rau mùi:',
+          subtitle: "Phở",
+          description: "Món ăn nổi tiếng nhất Việt Nam, nằm trong danh sách 50 món ăn ngon nhất thế giới.",
           options: [
-            { text: '• A. Bò viên chín/tái (13.90€)', highlight: true },
-            { text: '• B. Thịt gà ta (12.90€)', highlight: false }
+            { text: "• A. Thịt bò (12,90€)", highlight: true },
+            { text: "• B. Thịt gà (12,90€)", highlight: false },
+            { text: "• C. Đậu hũ và nấm* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false },
+            { text: "+ Bò viên nhà làm (+1,80€)", highlight: false }
           ]
         },
         zh: {
-          subtitle: '传统河内牛肉粉',
-          description: '越南最受欢迎的国宝级美食。扁米粉搭配慢火熬制12小时的香浓骨汤，佐以小葱、洋葱、香菜和：',
+          subtitle: "越南河粉",
+          description: "越南最受欢迎的国宝级美食，名列世界50大美食排行榜。",
           options: [
-            { text: '• A. 牛肉 (13.90€)', highlight: true },
-            { text: '• B. 鸡肉 (12.90€)', highlight: false }
+            { text: "• A. 牛肉 (12,90€)", highlight: true },
+            { text: "• B. 鸡肉 (12,90€)", highlight: false },
+            { text: "• C. 豆腐与蘑菇* (11,90€)", highlight: false },
+            { text: "• D. 素肉 Heura* (11,90€)", highlight: false },
+            { text: "+ 自制牛肉丸 (+1,80€)", highlight: false }
           ]
         },
         ko: {
-          subtitle: '하노이 정통 소고기 쌀국수',
-          description: '베트남에서 가장 인기 있는 요리. 파, 양선파, 고수와 함께 12시간 동안 고아낸 깊은 육수에 말아내는 쌀국수:',
+          subtitle: "베트남 쌀국수",
+          description: "세계 50대 음식으로 선정된 베트남의 대표적인 전통 쌀국수 요리.",
           options: [
-            { text: '• A. 소고기 (13.90€)', highlight: true },
-            { text: '• B. 닭고기 (12.90€)', highlight: false }
+            { text: "• A. 소고기 (12,90€)", highlight: true },
+            { text: "• B. 닭고기 (12,90€)", highlight: false },
+            { text: "• C. 두부와 버섯* (11,90€)", highlight: false },
+            { text: "• D. 식물성 고기 Heura* (11,90€)", highlight: false },
+            { text: "+ 수제 미트볼 (+1,80€)", highlight: false }
           ]
         },
         ja: {
-          subtitle: '伝統ハノイ牛肉フォー',
-          description: 'ベトナムで最も人気の国民食。ネギ、玉ねぎ、パクチーを添え、12時間かけてじっくり煮込んだスープに平打ち米粉麺を合わせた一杯：',
+          subtitle: "ベトナム伝統フォー",
+          description: "世界50大グルメに選出された、ベトナムで最もポピュラーな米粉ヌードルスープ。",
           options: [
-            { text: '• A. 牛肉 (13.90€)', highlight: true },
-            { text: '• B. 鶏肉 (12.90€)', highlight: false }
+            { text: "• A. 牛肉 (12,90€)", highlight: true },
+            { text: "• B. 鶏肉 (12,90€)", highlight: false },
+            { text: "• C. 豆腐とキノコ* (11,90€)", highlight: false },
+            { text: "• D. 植物性肉 Heura* (11,90€)", highlight: false },
+            { text: "+ 自家製牛肉ボール (+1,80€)", highlight: false }
           ]
         },
         fr: {
-          subtitle: 'Soupe Phở Traditionnelle de Hanoï',
-          description: 'Le Phở est le plat emblématique du Vietnam. Une soupe de nouilles de riz dans un bouillon aromatique mijoté pendant 12 heures, avec de la ciboule, des oignons, de la coriandre et :',
+          subtitle: "Soupe de Nouilles Traditionnelle",
+          description: "Le plat le plus populaire du Vietnam, classé parmi les 50 meilleurs aliments au monde.",
           options: [
-            { text: '• A. Bœuf (13.90€)', highlight: true },
-            { text: '• B. Poulet (12.90€)', highlight: false }
+            { text: "• A. Bœuf (12,90€)", highlight: true },
+            { text: "• B. Poulet (12,90€)", highlight: false },
+            { text: "• C. Tofu et champignons* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false },
+            { text: "+ Boulette de bœuf maison (+1,80€)", highlight: false }
           ]
         },
         it: {
-          subtitle: 'Zuppa Phở Tradizionale di Hanoi',
-          description: 'La zuppa Phở è il piatto più famoso del Vietnam. Tagliatelle di riso in un brodo cotto a fuoco lento per 12 ore, con erba cipollina, cipolla, coriandolo e:',
+          subtitle: "Zuppa di Vermicelli Tradizionale",
+          description: "Il piatto più famoso del Vietnam, classificato tra i 50 migliori cibi al mondo.",
           options: [
-            { text: '• A. Manzo (13.90€)', highlight: true },
-            { text: '• B. Pollo (12.90€)', highlight: false }
+            { text: "• A. Manzo (12,90€)", highlight: true },
+            { text: "• B. Pollo (12,90€)", highlight: false },
+            { text: "• C. Tofu e funghi* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false },
+            { text: "+ Polpetta di manzo fatta in casa (+1,80€)", highlight: false }
           ]
         },
-        price: '12,90€ / 13,90€',
+        price: '11,90€ - 12,90€',
         image: '/menu_phobo.png'
       },
       {
-        id: 'bun-bo-nam-bo',
-        name: 'Bún bò Nam bộ',
+        id: 'bun-bo-hue',
+        name: '4. Bún Bò Huế',
         es: {
-          subtitle: 'Ensalada de Fideos del Sur',
-          description: 'Fideos de arroz con ternera, menta, brotes de soja, cebolla frita, cacahuetes, lechuga, zanahoria, pepino y salsa de pescado.',
+          subtitle: "Sopa Hue de Fideos / Hue spicy noodle soup",
+          description: "Sopa de fideos de arroz con ternera y cerdo, con un toque picante.",
+          options: []
+        },
+        en: {
+          subtitle: "Hue spicy noodle soup",
+          description: "Rice noodle soup with beef and pork, with a spicy kick.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bún Bò Huế",
+          description: "Bún bò Huế cay nồng với thịt bò, giò heo đậm đà chuẩn vị.",
+          options: []
+        },
+        zh: {
+          subtitle: "顺化牛肉粉",
+          description: "微辣的顺化牛肉和猪肉米粉汤。",
+          options: []
+        },
+        ko: {
+          subtitle: "매콤한 분보후에",
+          description: "소고기와 돼지고기가 들어간 매콤한 베트남 쌀국수.",
+          options: []
+        },
+        ja: {
+          subtitle: "ブンボーフエ（辛口牛肉フォー）",
+          description: "牛肉と豚肉が入った、スパイスの効いたピリ辛ヌードルスープ。",
+          options: []
+        },
+        fr: {
+          subtitle: "Soupe de Nouilles de Hué Épicée",
+          description: "Soupe de nouilles de riz au bœuf et au porc, avec une touche épicée.",
+          options: []
+        },
+        it: {
+          subtitle: "Zuppa di Vermicelli di Hue Speziata",
+          description: "Zuppa di vermicelli di riso con manzo e maiale, con un tocco piccante.",
+          options: []
+        },
+        price: '13,50€',
+        image: '/menu_bunbohue.png'
+      },
+      {
+        id: 'wok-fideos-de-arroz',
+        name: '5. WOK FIDEOS DE ARROZ',
+        es: {
+          subtitle: "Phở xào / Stir-fried pho",
+          description: "Plato salteado con fideos de arroz, verduras, hierbas, cacahuetes asados, cebollas fritas con:",
           options: [
-            { text: '• A. Ternera +1€', highlight: true },
-            { text: '• B. Tofu Orgánico (No Vegano)', highlight: false }
+            { text: "• A. Ternera (12,90€) (Thịt bò / Beef)", highlight: true },
+            { text: "• B. Gambas (11,90€) (Thịt tôm / Prawn)", highlight: false },
+            { text: "• C. Pollo (11,90€) (Thịt gà / Chicken)", highlight: false },
+            { text: "• D. Tofu (10,90€) (Đậu hũ / Tofu)", highlight: false },
+            { text: "• E. Heura* (11,90€)", highlight: false }
           ]
         },
         en: {
-          subtitle: 'Southern flavor noodle',
-          description: 'Rice noodles with beef, mint, bean sprouts, fried onion, peanuts, lettuce, carrot, cucumber and fish sauce.',
+          subtitle: "Stir-fried pho noodles",
+          description: "Stir-fried rice noodles with vegetables, herbs, roasted peanuts, and fried onions with:",
           options: [
-            { text: '• A. Beef +1€', highlight: true },
-            { text: '• B. Organic Tofu (Non Vegan)', highlight: false }
+            { text: "• A. Beef (12,90€)", highlight: true },
+            { text: "• B. Prawn (11,90€)", highlight: false },
+            { text: "• C. Chicken (11,90€)", highlight: false },
+            { text: "• D. Tofu (10,90€)", highlight: false },
+            { text: "• E. Heura* (11,90€)", highlight: false }
           ]
         },
         vi: {
-          subtitle: 'Bún Bò Nam Bộ Trộn',
-          description: 'Bún tươi trộn cùng thịt bò xào mềm thơm, rau sống, giá đỗ, hành phi, lạc rang giòn, dưa chuột và nước mắm chua ngọt đặc trưng.',
+          subtitle: "Phở Xào",
+          description: "Món xào với bánh phở, rau củ, rau thơm, đậu phộng rang, hành phi ăn kèm với:",
           options: [
-            { text: '• A. Thịt Bò +1€', highlight: true },
-            { text: '• B. Đậu Hũ Hữu Cơ (Món chay)', highlight: false }
+            { text: "• A. Thịt bò (12,90€)", highlight: true },
+            { text: "• B. Tôm (11,90€)", highlight: false },
+            { text: "• C. Thịt gà (11,90€)", highlight: false },
+            { text: "• D. Đậu hũ (10,90€)", highlight: false },
+            { text: "• E. Heura* (11,90€)", highlight: false }
           ]
         },
         zh: {
-          subtitle: '越式南部拌粉',
-          description: '米粉搭配炒牛肉、薄荷、豆芽、油葱酥、花生碎、生菜、胡萝卜、黄瓜及鱼露调味。',
+          subtitle: "炒河粉",
+          description: "河粉搭配蔬菜、香草、烤花生碎和油葱酥炒制，可选配：",
           options: [
-            { text: '• A. 牛肉 +1€', highlight: true },
-            { text: '• B. 有机豆腐 (素食)', highlight: false }
+            { text: "• A. 牛肉 (12,90€)", highlight: true },
+            { text: "• B. 鲜虾 (11,90€)", highlight: false },
+            { text: "• C. 鸡肉 (11,90€)", highlight: false },
+            { text: "• D. 豆腐 (10,90€)", highlight: false },
+            { text: "• E. 素肉 Heura* (11,90€)", highlight: false }
           ]
         },
         ko: {
-          subtitle: '남부식 소고기 비빔 쌀국수',
-          description: '볶은 소고기, 민트, 숙주, 튀긴 양파, 땅콩, 상추, 당근, 오이에 새콤달콤한 느억맘 소스를 비벼 먹는 쌀국수.',
+          subtitle: "볶음 쌀국수",
+          description: "야채, 허브, 구운 땅콩, 튀긴 양파를 곁들인 볶음 쌀국수:",
           options: [
-            { text: '• A. 소고기 +1€', highlight: true },
-            { text: '• B. 유기농 두부 (채식)', highlight: false }
+            { text: "• A. 소고기 (12,90€)", highlight: true },
+            { text: "• B. 새우 (11,90€)", highlight: false },
+            { text: "• C. 닭고기 (11,90€)", highlight: false },
+            { text: "• D. 두부 (10,90€)", highlight: false },
+            { text: "• E. 식물성 고기 Heura* (11,90€)", highlight: false }
           ]
         },
         ja: {
-          subtitle: '南部風牛肉混ぜフォー',
-          description: '炒め牛肉、ミント、もやし、フライドオニオン、ピーナッツ、レタス、人参、きゅうりに魚醤ソースを絡めた混ぜ麺。',
+          subtitle: "炒めフォー",
+          description: "野菜、ハーブ、ローストピーナッツ、フライドオニオンを添えた炒め米粉麺：",
           options: [
-            { text: '• A. 牛肉 +1€', highlight: true },
-            { text: '• B. 有機豆腐（ベジタリアン）', highlight: false }
+            { text: "• A. 牛肉 (12,90€)", highlight: true },
+            { text: "• B. エビ (11,90€)", highlight: false },
+            { text: "• C. 鶏肉 (11,90€)", highlight: false },
+            { text: "• D. 豆腐 (10,90€)", highlight: false },
+            { text: "• E. 植物性肉 Heura* (11,90€)", highlight: false }
           ]
         },
         fr: {
-          subtitle: 'Salade de Nouilles du Sud (Bún Bò)',
-          description: 'Nouilles de riz avec du bœuf sauté, menthe fraîche, pousses de soja, oignons frits, cacahuètes, laitue, carotte, concombre et sauce de poisson.',
+          subtitle: "Nouilles Pho Sautées",
+          description: "Nouilles de riz sautées avec légumes, herbes, cacahuètes grillées et oignons frits avec :",
           options: [
-            { text: '• A. Bœuf +1€', highlight: true },
-            { text: '• B. Tofu Biologique (Végétarien)', highlight: false }
+            { text: "• A. Bœuf (12,90€)", highlight: true },
+            { text: "• B. Crevettes (11,90€)", highlight: false },
+            { text: "• C. Poulet (11,90€)", highlight: false },
+            { text: "• D. Tofu (10,90€)", highlight: false },
+            { text: "• E. Heura* (11,90€)", highlight: false }
           ]
         },
         it: {
-          subtitle: 'Insalata di Vermicelli del Sud (Bún Bò)',
-          description: 'Vermicelli di riso con manzo saltato, menta, germogli di soia, cipolla fritta, arachidi, lattuga, carota, cetriolo e salsa di pesce.',
+          subtitle: "Tagliatelle Pho Saltate",
+          description: "Tagliatelle di riso saltate con verdure, erbe aromatiche, arachidi tostate e cipolle fritte con:",
           options: [
-            { text: '• A. Manzo +1€', highlight: true },
-            { text: '• B. Tofu Biologico (Vegetariano)', highlight: false }
+            { text: "• A. Manzo (12,90€)", highlight: true },
+            { text: "• B. Gamberi (11,90€)", highlight: false },
+            { text: "• C. Pollo (11,90€)", highlight: false },
+            { text: "• D. Tofu (10,90€)", highlight: false },
+            { text: "• E. Heura* (11,90€)", highlight: false }
+          ]
+        },
+        price: '10,90€ - 12,90€',
+        image: '/menu_phoxao.png'
+      },
+      {
+        id: 'pho-xao-gion',
+        name: '6. PHỞ XÀO GIÒN',
+        es: {
+          subtitle: "Phở xào giòn / Crispy fried pho",
+          description: "Fideos de arroz fritos crujientes coronados con verduras salteadas y:",
+          options: [
+            { text: "• A. Ternera (13,90€) (Thịt bò / Beef)", highlight: true },
+            { text: "• B. Gambas (12,90€) (Thịt tôm / Prawn)", highlight: false },
+            { text: "• C. Pollo (12,90€) (Thịt gà / Chicken)", highlight: false },
+            { text: "• D. Tofu (11,90€) (Đậu hũ / Tofu)", highlight: false },
+            { text: "• E. Heura* (12,90€)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Crispy fried pho noodles",
+          description: "Crispy fried rice noodles topped with stir-fried vegetables and:",
+          options: [
+            { text: "• A. Beef (13,90€)", highlight: true },
+            { text: "• B. Prawn (12,90€)", highlight: false },
+            { text: "• C. Chicken (12,90€)", highlight: false },
+            { text: "• D. Tofu (11,90€)", highlight: false },
+            { text: "• E. Heura* (12,90€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Phở Xào Giòn",
+          description: "Bánh phở chiên giòn rụm bên trên là rau củ xào nêm nếm đậm đà cùng với:",
+          options: [
+            { text: "• A. Thịt bò (13,90€)", highlight: true },
+            { text: "• B. Tôm (12,90€)", highlight: false },
+            { text: "• C. Thịt gà (12,90€)", highlight: false },
+            { text: "• D. Đậu hũ (11,90€)", highlight: false },
+            { text: "• E. Heura* (12,90€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "脆皮炒河粉",
+          description: "香脆炸河粉搭配炒蔬菜，可选配：",
+          options: [
+            { text: "• A. 牛肉 (13,90€)", highlight: true },
+            { text: "• B. 鲜虾 (12,90€)", highlight: false },
+            { text: "• C. 鸡肉 (12,90€)", highlight: false },
+            { text: "• D. 豆腐 (11,90€)", highlight: false },
+            { text: "• E. 素肉 Heura* (12,90€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "바삭한 볶음 쌀국수",
+          description: "바삭하게 튀긴 쌀국수 위에 볶은 야채를 얹은 요리:",
+          options: [
+            { text: "• A. 소고기 (13,90€)", highlight: true },
+            { text: "• B. 새우 (12,90€)", highlight: false },
+            { text: "• C. 닭고기 (12,90€)", highlight: false },
+            { text: "• D. 두부 (11,90€)", highlight: false },
+            { text: "• E. 식물성 고기 Heura* (12,90€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "かた焼きフォー",
+          description: "パリパリに揚げた米粉麺に炒めた野菜をかけた一品：",
+          options: [
+            { text: "• A. 牛肉 (13,90€)", highlight: true },
+            { text: "• B. エビ (12,90€)", highlight: false },
+            { text: "• C. 鶏肉 (12,90€)", highlight: false },
+            { text: "• D. 豆腐 (11,90€)", highlight: false },
+            { text: "• E. 植物性肉 Heura* (12,90€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Nouilles Pho Croustillantes",
+          description: "Nouilles de riz frites croustillantes garnies de légumes sautés avec :",
+          options: [
+            { text: "• A. Bœuf (13,90€)", highlight: true },
+            { text: "• B. Crevettes (12,90€)", highlight: false },
+            { text: "• C. Poulet (12,90€)", highlight: false },
+            { text: "• D. Tofu (11,90€)", highlight: false },
+            { text: "• E. Heura* (12,90€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Tagliatelle Pho Croccanti",
+          description: "Tagliatelle di riso fritte croccanti condite con verdure saltate con:",
+          options: [
+            { text: "• A. Manzo (13,90€)", highlight: true },
+            { text: "• B. Gamberi (12,90€)", highlight: false },
+            { text: "• C. Pollo (12,90€)", highlight: false },
+            { text: "• D. Tofu (11,90€)", highlight: false },
+            { text: "• E. Heura* (12,90€)", highlight: false }
           ]
         },
         price: '12,90€',
-        image: '/menu_bunbo.png'
+        image: '/menu_phoxaogion.png'
+      },
+      {
+        id: 'pad-thai',
+        name: '7. PAD THAI',
+        es: {
+          subtitle: "Pad Thái / Pad Thai",
+          description: "Fideos de arroz salteados agridulces con camarones, verduras y huevos.",
+          options: []
+        },
+        en: {
+          subtitle: "Pad Thai",
+          description: "Sweet and sour stir-fried rice noodles with shrimp, vegetables and eggs.",
+          options: []
+        },
+        vi: {
+          subtitle: "Pad Thái",
+          description: "Bún gạo xào chua ngọt với tôm, rau và trứng.",
+          options: []
+        },
+        zh: {
+          subtitle: "泰式炒河粉",
+          description: "酸甜味的泰式炒河粉，搭配鲜虾、蔬菜和鸡蛋。",
+          options: []
+        },
+        ko: {
+          subtitle: "팟타이",
+          description: "새우, 야채, 계란과 함께 볶아낸 새콤달콤한 태국식 볶음 쌀국수.",
+          options: []
+        },
+        ja: {
+          subtitle: "パッタイ",
+          description: "海老、野菜、卵と一緒に炒めた、甘酸っぱいタイ風炒め米粉麺。",
+          options: []
+        },
+        fr: {
+          subtitle: "Pad Thaï",
+          description: "Nouilles de riz sautées aigre-douces avec crevettes, légumes et œufs.",
+          options: []
+        },
+        it: {
+          subtitle: "Pad Thai",
+          description: "Tagliatelle di riso saltate in agrodolce con gamberi, verdure e uova.",
+          options: []
+        },
+        price: '13,50€',
+        image: '/menu_padthai.png'
+      },
+      {
+        id: 'bun-thit-nuong',
+        name: '8. BÚN THỊT NƯỚNG',
+        es: {
+          subtitle: "Bún thịt nướng / Grilled pork with vermicelli",
+          description: "Fideos de arroz frescos con cerdo marinado a la parrilla, verduras frescas, hierbas, cacahuetes y salsa de pescado agridulce.",
+          options: [{ text: "+ Con rollo frito (+3,00€) (Thêm chả giò / With fried spring roll)", highlight: false }]
+        },
+        en: {
+          subtitle: "Grilled pork with rice vermicelli",
+          description: "Fresh rice vermicelli with grilled marinated pork, fresh herbs, peanuts, salad and sweet and sour fish sauce.",
+          options: [{ text: "+ With fried spring roll (+3,00€)", highlight: false }]
+        },
+        vi: {
+          subtitle: "Bún Thịt Nướng",
+          description: "Bún tươi ăn kèm thịt nướng thơm lừng, rau sống, lạc rang, hành phi và nước mắm chua ngọt.",
+          options: [{ text: "+ Thêm chả giò chiên (+3,00€)", highlight: false }]
+        },
+        zh: {
+          subtitle: "烤肉米粉",
+          description: "米粉搭配烤肉、新鲜香草、花生碎、生菜和酸甜鱼露。",
+          options: [{ text: "+ 加购炸春卷 (+3,00€)", highlight: false }]
+        },
+        ko: {
+          subtitle: "숯불 돼지고기 비빔 쌀국수",
+          description: "그릴에 구운 양념 돼지고기, 신선한 야채, 땅콩, 허브와 새콤달콤한 소스를 곁들인 비빔 쌀국수.",
+          options: [{ text: "+ 스프링롤 추가 (+3,00€)", highlight: false }]
+        },
+        ja: {
+          subtitle: "豚焼肉のせライスヌードル",
+          description: "炭火風に焼いた味付け豚肉、新鮮な生野菜、ピーナッツ、ハーブに甘酸っぱい魚醤だれをかけた米粉麺。",
+          options: [{ text: "+ 揚げ春巻き追加 (+3,00€)", highlight: false }]
+        },
+        fr: {
+          subtitle: "Porc grillé avec vermicelles de riz",
+          description: "Vermicelles de riz frais avec porc mariné grillé, herbes fraîches, cacahuètes, salade et sauce de poisson aigre-douce.",
+          options: [{ text: "+ Avec rouleau de printemps frit (+3,00€)", highlight: false }]
+        },
+        it: {
+          subtitle: "Maiale grigliato con vermicelli di riso",
+          description: "Vermicelli di riso freschi con maiale grigliato marinato, erbe fresche, arachidi, insalata e salsa di pesce agrodolce.",
+          options: [{ text: "+ Con involtino primavera fritto (+3,00€)", highlight: false }]
+        },
+        price: '11,90€',
+        image: '/menu_bunthitnuong.png'
+      },
+      {
+        id: 'bun-nem',
+        name: '9. BÚN NEM',
+        es: {
+          subtitle: "Bún nem / Fried spring rolls with vermicelli",
+          description: "Fideos de arroz con rollos de primavera fritos crujientes, verduras frescas, hierbas, cacahuetes y salsa de pescado.",
+          options: []
+        },
+        en: {
+          subtitle: "Fried spring rolls with rice vermicelli",
+          description: "Rice vermicelli served with crispy fried spring rolls, fresh herbs, peanuts, salad and fish sauce.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bún Nem",
+          description: "Bún tươi ăn kèm nem rán giòn rụm, rau sống, lạc rang, hành phi và nước mắm chua ngọt.",
+          options: []
+        },
+        zh: {
+          subtitle: "春卷米粉",
+          description: "米粉搭配香脆炸春卷、新鲜香草、花生碎、生菜和鱼露。",
+          options: []
+        },
+        ko: {
+          subtitle: "짜조 비빔 쌀국수",
+          description: "바삭하게 튀긴 짜조, 신선한 야채, 땅콩, 허브와 느억맘 소스를 곁들인 쌀국수.",
+          options: []
+        },
+        ja: {
+          subtitle: "揚げ春巻きのせライスヌードル",
+          description: "サクサクの揚げ春巻き、新鮮な生野菜、ピーナッツ、ハーブに甘酸っぱいたれをかけた米粉麺。",
+          options: []
+        },
+        fr: {
+          subtitle: "Rouleaux de printemps frits avec vermicelles",
+          description: "Vermicelles de riz avec rouleaux de printemps croustillants, herbes fraîches, cacahuètes, salade et sauce de poisson.",
+          options: []
+        },
+        it: {
+          subtitle: "Involtini fritti con vermicelli di riso",
+          description: "Vermicelli di riso con involtini primavera fritti croccanti, erbe fresche, arachidi, insalata e salsa.",
+          options: []
+        },
+        price: '11,90€',
+        image: '/menu_bunnem.png'
+      },
+      {
+        id: 'bun-bo-nam-bo',
+        name: '10. BÚN BÒ NAM BỘ',
+        es: {
+          subtitle: "Bún bò nam bộ / Southern-style beef noodles",
+          description: "Plato salteado con fideos de arroz, verduras, hierbas, cacahuetes asados, cebollas fritas con:",
+          options: [
+            { text: "• A. Ternera (12,90€) (Thịt bò / Beef)", highlight: true },
+            { text: "• B. Pollo (11,90€) (Thịt gà / Chicken)", highlight: false },
+            { text: "• C. Tofu* (11,90€) (Đậu hũ / Tofu)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false },
+            { text: "+ Con rollo frito (+3,00€) (Thêm chả giò chiên / With fried spring roll)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Southern-style beef noodles",
+          description: "Stir-fried rice noodles with vegetables, herbs, roasted peanuts, and fried onions with:",
+          options: [
+            { text: "• A. Beef (12,90€)", highlight: true },
+            { text: "• B. Chicken (11,90€)", highlight: false },
+            { text: "• C. Tofu* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false },
+            { text: "+ With fried spring roll (+3,00€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Bún Bò Nam Bộ",
+          description: "Món xào với bún gạo, rau củ, rau thơm, đậu phộng rang, hành phi kèm với:",
+          options: [
+            { text: "• A. Thịt bò (12,90€)", highlight: true },
+            { text: "• B. Thịt gà (11,90€)", highlight: false },
+            { text: "• C. Đậu hũ* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false },
+            { text: "+ Thêm chả giò chiên (+3,00€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "越式南部拌粉",
+          description: "米粉搭配炒蔬菜、香草、烤花生碎和油葱酥，可选配：",
+          options: [
+            { text: "• A. 牛肉 (12,90€)", highlight: true },
+            { text: "• B. 鸡肉 (11,90€)", highlight: false },
+            { text: "• C. 豆腐* (11,90€)", highlight: false },
+            { text: "• D. 素肉 Heura* (11,90€)", highlight: false },
+            { text: "+ 加购炸春卷 (+3,00€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "남부식 비빔 쌀국수",
+          description: "야채, 허브, 구운 땅콩, 튀긴 양파를 곁들인 비빔 쌀국수:",
+          options: [
+            { text: "• A. 소고기 (12,90€)", highlight: true },
+            { text: "• B. 닭고기 (11,90€)", highlight: false },
+            { text: "• C. 두부* (11,90€)", highlight: false },
+            { text: "• D. 식물성 고기 Heura* (11,90€)", highlight: false },
+            { text: "+ 스프링롤 추가 (+3,00€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "南部風混ぜライスヌードル",
+          description: "野菜,  ハーブ,  ローストピーナッツ,  フライドオニオンを添えた混ぜ米粉麺：",
+          options: [
+            { text: "• A. 牛肉 (12,90€)", highlight: true },
+            { text: "• B. 鶏肉 (11,90€)", highlight: false },
+            { text: "• C. 豆腐* (11,90€)", highlight: false },
+            { text: "• D. 植物性肉 Heura* (11,90€)", highlight: false },
+            { text: "+ 揚げ春巻き追加 (+3,00€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Salade de nouilles du Sud",
+          description: "Nouilles de riz avec légumes, herbes, cacahuètes grillées et oignons frits avec :",
+          options: [
+            { text: "• A. Bœuf (12,90€)", highlight: true },
+            { text: "• B. Poulet (11,90€)", highlight: false },
+            { text: "• C. Tofu* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false },
+            { text: "+ Avec rouleau de printemps frit (+3,00€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Insalata di vermicelli del Sud",
+          description: "Vermicelli di riso con verdure, erbe aromatiche, arachidi tostate e cipolle fritte con:",
+          options: [
+            { text: "• A. Manzo (12,90€)", highlight: true },
+            { text: "• B. Pollo (11,90€)", highlight: false },
+            { text: "• C. Tofu* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false },
+            { text: "+ Con involtino primavera fritto (+3,00€)", highlight: false }
+          ]
+        },
+        price: '11,90€ - 12,90€',
+        image: '/menu_bunbonambo.png'
+      },
+      {
+        id: 'bun-heo-quay',
+        name: '11. BÚN TRỘN HEO QUAY',
+        es: {
+          subtitle: "Bun heo quay / Crispy roasted pork belly with vermicelli",
+          description: "Fideos de arroz con panceta de cerdo crujiente asada, verduras frescas, hierbas, cacahuetes y salsa de pescado.",
+          options: []
+        },
+        en: {
+          subtitle: "Crispy roasted pork belly with rice vermicelli",
+          description: "Rice vermicelli served with crispy roasted pork belly, fresh herbs, peanuts, salad and fish sauce.",
+          options: []
+        },
+        vi: {
+          subtitle: "Bún Trộn Heo Quay",
+          description: "Bún tươi ăn kèm thịt heo quay da giòn, rau sống, lạc rang, hành phi và nước mắm chua ngọt.",
+          options: []
+        },
+        zh: {
+          subtitle: "脆皮烧肉拌粉",
+          description: "米粉搭配脆皮烧肉、新鲜香草、花生碎、生菜和鱼露。",
+          options: []
+        },
+        ko: {
+          subtitle: "크리스피 삼겹살 비빔 쌀국수",
+          description: "껍질을 바삭하게 구운 삼겹살, 신선한 야채, 땅콩, 허브와 새콤달콤한 소스를 곁들인 쌀국수.",
+          options: []
+        },
+        ja: {
+          subtitle: "クリスピー豚バラのせライスヌードル",
+          description: "皮をカリカリに焼き上げた豚バラ肉、新鮮な生野菜、ピーナッツ、ハーブにタレをかけた米粉麺。",
+          options: []
+        },
+        fr: {
+          subtitle: "Poitrine de porc croustillante avec vermicelles",
+          description: "Vermicelles de riz avec poitrine de porc rôtie croustillante, herbes fraîches, cacahuètes, salade et sauce.",
+          options: []
+        },
+        it: {
+          subtitle: "Pancetta croccante con vermicelli di riso",
+          description: "Vermicelli di riso con pancetta di maiale arrosto croccante, erbe fresche, arachidi, insalata e salsa.",
+          options: []
+        },
+        price: '11,90€',
+        image: '/menu_bunheoquay.png'
+      },
+      {
+        id: 'ternera-con-pimienta',
+        name: '12. TERNERA CON PIMIENTA',
+        es: {
+          subtitle: "Bò sốt tiêu đen / Beef with black pepper sauce",
+          description: "Este es un plato muy popular en las fiestas con un toque ligeramente picante, servido con:",
+          options: [
+            { text: "• A. Arroz (13,90€) (Cơm / Rice)", highlight: true },
+            { text: "• B. Empanadillas (13,90€) (Há cảo / Dumplings)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Beef with black pepper sauce",
+          description: "This is a very popular dish at parties with a slightly spicy touch, served with:",
+          options: [
+            { text: "• A. Rice (13,90€)", highlight: true },
+            { text: "• B. Dumplings (13,90€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Bò Sốt Tiêu Đen",
+          description: "Đây là món ăn rất được ưa chuộng trong các bữa tiệc, có vị hơi cay, thường được dùng kèm với:",
+          options: [
+            { text: "• A. Cơm (13,90€)", highlight: true },
+            { text: "• B. Há cảo (13,90€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "黑椒牛肉",
+          description: "宴会上非常受欢迎的一道微辣菜肴，搭配：",
+          options: [
+            { text: "• A. 米饭 (13,90€)", highlight: true },
+            { text: "• B. 饺子 (13,90€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "블랙페퍼 소스 소고기 볶음",
+          description: "파티에서 매우 인기 있는 약간 매콤한 요리로, 다음과 함께 제공됩니다:",
+          options: [
+            { text: "• A. 밥 (13,90€)", highlight: true },
+            { text: "• B. 만두 (13,90€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "黒胡椒ソース牛肉炒め",
+          description: "パーティーで非常に人気の高い、少しスパイシーな料理。以下と一緒にお召し上がりください：",
+          options: [
+            { text: "• A. ライス (13,90€)", highlight: true },
+            { text: "• B. 餃子 (13,90€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Bœuf sauce poivre noir",
+          description: "C'est un plat très populaire lors des fêtes avec une touche légèrement épicée, servi avec :",
+          options: [
+            { text: "• A. Riz (13,90€)", highlight: true },
+            { text: "• B. Raviolis (13,90€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Manzo in salsa al pepe nero",
+          description: "Questo è un piatto molto popolare alle feste con un tocco leggermente piccante, servito con:",
+          options: [
+            { text: "• A. Riso (13,90€)", highlight: true },
+            { text: "• B. Ravioli (13,90€)", highlight: false }
+          ]
+        },
+        price: '13,90€',
+        image: '/menu_bo_tieu_den.png'
+      },
+      {
+        id: 'ga-sot-lac',
+        name: '13. POLLO CON SALSA DE CACAHUETE',
+        es: {
+          subtitle: "Gà sốt lạc / Chicken with peanut sauce",
+          description: "Pollo salteado con verduras en una deliciosa y cremosa salsa de cacahuetes, servido con arroz jazmín.",
+          options: []
+        },
+        en: {
+          subtitle: "Chicken with peanut sauce",
+          description: "Stir-fried chicken with vegetables in a rich and creamy peanut sauce, served with jasmine rice.",
+          options: []
+        },
+        vi: {
+          subtitle: "Gà Sốt Lạc",
+          description: "Thịt gà xào rau củ sốt lạc béo ngậy, đậm đà, ăn kèm cơm trắng thơm dẻo.",
+          options: []
+        },
+        zh: {
+          subtitle: "花生酱炒鸡肉",
+          description: "鸡肉与蔬菜在浓郁香甜的花生酱中炒制，附香米饭。",
+          options: []
+        },
+        ko: {
+          subtitle: "피넛 소스 치킨 볶음",
+          description: "부드러운 피넛 소스에 야채와 함께 볶아낸 치킨 요리, 재스민 밥과 함께 제공됩니다.",
+          options: []
+        },
+        ja: {
+          subtitle: "ピーナッツソースチキン炒め",
+          description: "濃厚でクリーミーなピーナッツソースで野菜とお肉を炒めた一品。ジャスミンライス添え。",
+          options: []
+        },
+        fr: {
+          subtitle: "Poulet sauce cacahuète",
+          description: "Poulet sauté avec des légumes dans une sauce crémeuse aux cacahuètes, servi avec du riz jasmin.",
+          options: []
+        },
+        it: {
+          subtitle: "Pollo in salsa di arachidi",
+          description: "Pollo saltato con verdure in una ricca e cremosa salsa di arachidi, servito con riso gelsomino.",
+          options: []
+        },
+        price: '11,90€',
+        image: '/menu_ga_sot_lac.png'
+      },
+      {
+        id: 'tamarindo-salteado',
+        name: '14. TAMARINDO SALTEADO',
+        es: {
+          subtitle: "Me xào / Stir-fried tamarind",
+          description: "Excelente combinación de tamarindo, cacahuetes, verduras + arroz jazmín y:",
+          options: [
+            { text: "• A. Gambas (12,90€) (Thịt tôm / Prawn)", highlight: true },
+            { text: "• B. Ternera (12,90€) (Thịt bò / Beef)", highlight: false },
+            { text: "• C. Tofu* (11,90€) (Đậu hũ / Tofu)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Stir-fried tamarind",
+          description: "Excellent combination of tamarind, peanuts, vegetables + jasmine rice and:",
+          options: [
+            { text: "• A. Prawn (12,90€)", highlight: true },
+            { text: "• B. Beef (12,90€)", highlight: false },
+            { text: "• C. Tofu* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Me Xào",
+          description: "Sự kết hợp tuyệt vời giữa sốt me, đậu phộng, rau củ + gạo thơm lài và:",
+          options: [
+            { text: "• A. Tôm (12,90€)", highlight: true },
+            { text: "• B. Thịt bò (12,90€)", highlight: false },
+            { text: "• C. Đậu hũ* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "酸子酱炒河粉",
+          description: "酸子酱、花生、蔬菜搭配香米饭的绝妙组合，可选配：",
+          options: [
+            { text: "• A. 鲜虾 (12,90€)", highlight: true },
+            { text: "• B. 牛肉 (12,90€)", highlight: false },
+            { text: "• C. 豆腐* (11,90€)", highlight: false },
+            { text: "• D. 素肉 Heura* (11,90€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "타마린드 소스 볶음",
+          description: "새콤달콤한 타마린드 소스, 땅콩, 야채의 조화, 재스민 밥과 함께 제공되며 선택 가능:",
+          options: [
+            { text: "• A. 새우 (12,90€)", highlight: true },
+            { text: "• B. 소고기 (12,90€)", highlight: false },
+            { text: "• C. 두부* (11,90€)", highlight: false },
+            { text: "• D. 식물성 고기 Heura* (11,90€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "タマリンド炒め",
+          description: "タマリンドソース、ピーナッツ、野菜の絶妙な組み合わせ。ジャスミンライス添えで、以下から選択：",
+          options: [
+            { text: "• A. エビ (12,90€)", highlight: true },
+            { text: "• B. 牛肉 (12,90€)", highlight: false },
+            { text: "• C. 豆腐* (11,90€)", highlight: false },
+            { text: "• D. 植物性肉 Heura* (11,90€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Sauté au tamarin",
+          description: "Excellente combinaison de tamarin, cacahuètes, légumes + riz jasmin et :",
+          options: [
+            { text: "• A. Crevettes (12,90€)", highlight: true },
+            { text: "• B. Bœuf (12,90€)", highlight: false },
+            { text: "• C. Tofu* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Saltato al tamarindo",
+          description: "Eccellente combinazione di tamarindo, arachidi, verdure + riso gelsomino e:",
+          options: [
+            { text: "• A. Gamberi (12,90€)", highlight: true },
+            { text: "• B. Manzo (12,90€)", highlight: false },
+            { text: "• C. Tofu* (11,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false }
+          ]
+        },
+        price: '11,90€ - 12,90€',
+        image: '/menu_me_xao.png'
+      },
+      {
+        id: 'thit-rang-tom',
+        name: '15. CERDO CRUJIENTE CON CAMARÓN',
+        es: {
+          subtitle: "Thịt rang tôm / Caramelized pork and shrimp",
+          description: "Panceta de cerdo y langostinos caramelizados en una salsa dulce y salada, servido con arroz jazmín.",
+          options: []
+        },
+        en: {
+          subtitle: "Caramelized pork and shrimp",
+          description: "Pork belly and prawns caramelized in a savory sweet and salty sauce, served with jasmine rice.",
+          options: []
+        },
+        vi: {
+          subtitle: "Thịt Rang Tôm",
+          description: "Thịt ba chỉ cháy cạnh cùng tôm đất rim mặn ngọt đậm đà, ăn kèm cơm trắng nóng hổi.",
+          options: []
+        },
+        zh: {
+          subtitle: "鲜虾焖五花肉",
+          description: "五花肉与鲜虾在咸甜适口的酱汁中焖至入味，附香米饭。",
+          options: []
+        },
+        ko: {
+          subtitle: "새우 돼지고기 조림",
+          description: "단짠 소스에 졸여낸 삼겹살과 새우 요리, 재스민 밥과 함께 제공됩니다.",
+          options: []
+        },
+        ja: {
+          subtitle: "豚バラと海老の甘辛炒め",
+          description: "豚バラ肉とエビを甘辛くカラメル状に炒めたご飯が進む一品。ジャスミンライス添え。",
+          options: []
+        },
+        fr: {
+          subtitle: "Porc et crevettes caramélisés",
+          description: "Poitrine de porc et crevettes caramélisés dans une sauce sucrée-salée, servis avec du riz jasmin.",
+          options: []
+        },
+        it: {
+          subtitle: "Maiale e gamberi caramellati",
+          description: "Pancetta di maiale e gamberi caramellati in una salsa saporita dolce-salata, serviti con riso gelsomino.",
+          options: []
+        },
+        price: '13,90€',
+        image: '/menu_thit_rang_tom.png'
+      },
+      {
+        id: 'costillas-de-cerdo-caramelizadas',
+        name: '16. COSTILLAS DE CERDO CARAMELIZADAS',
+        es: {
+          subtitle: "Sườn ram mặn / Salty braised ribs",
+          description: "Jugosas y tiernas costillas de cerdo asadas lentamente con salsa de caramelo + arroz jazmín.",
+          options: []
+        },
+        en: {
+          subtitle: "Salty braised ribs",
+          description: "Juicy slow-roasted pork ribs with caramel sauce and jasmine rice.",
+          options: []
+        },
+        vi: {
+          subtitle: "Sườn Ram Mặn",
+          description: "Sườn heo quay chậm mọng nước với sốt caramel ăn kèm gạo thơm lài.",
+          options: []
+        },
+        zh: {
+          subtitle: "焦糖排骨",
+          description: "多汁嫩滑的慢烤猪排淋上焦糖酱，配上茉莉香米饭。",
+          options: []
+        },
+        ko: {
+          subtitle: "단짠 돼지갈비 구이",
+          description: "재스민 밥과 함께 제공되는 달콤하고 짭조름한 소스의 부드러운 돼지갈비 요리.",
+          options: []
+        },
+        ja: {
+          subtitle: "スペアリブの甘辛煮",
+          description: "ジューシーで柔らかいスペアリブを甘辛いタレでじっくり煮込んだ一品。ジャスミンライス添え。",
+          options: []
+        },
+        fr: {
+          subtitle: "Travers de Porc Caramelisés",
+          description: "Travers de porc juteux et tendres rôtis lentamente avec sauce caramel, servis avec du riz jasmin.",
+          options: []
+        },
+        it: {
+          subtitle: "Costolette di Maiale Caramellate",
+          description: "Costolette di maiale succose e tenere arrostite lentamente con salsa al caramello, servite con riso gelsomino.",
+          options: []
+        },
+        price: '11,90€',
+        image: '/menu_suon_ram.png'
+      },
+      {
+        id: 'thit-kho-tau',
+        name: '17. ESTOFADO DE PANCETA',
+        es: {
+          subtitle: "Thịt kho tàu / Caramelized pork belly with eggs",
+          description: "Panceta de cerdo tierna estofada lentamente con agua de coco y salsa de soja, servida con huevo cocido y arroz jazmín.",
+          options: []
+        },
+        en: {
+          subtitle: "Caramelized pork belly with eggs",
+          description: "Tender pork belly slow-braised in coconut water and soy sauce, served with a hard-boiled egg and jasmine rice.",
+          options: []
+        },
+        vi: {
+          subtitle: "Thịt Kho Tàu",
+          description: "Thịt ba chỉ kho mềm rục cùng nước dừa và trứng vịt, vị béo ngậy đậm đà ăn kèm cơm trắng.",
+          options: []
+        },
+        zh: {
+          subtitle: "卤肉配蛋",
+          description: "五花肉在椰子水和酱油中慢火卤至软烂，配卤蛋和香米饭。",
+          options: []
+        },
+        ko: {
+          subtitle: "베트남식 장조림 (틸코토)",
+          description: "코코넛 워터와 간장에 푹 졸여 부드러운 삼겹살과 삶은 계란 요리, 재스민 밥 제공.",
+          options: []
+        },
+        ja: {
+          subtitle: "豚バラ肉と卵のココナッツ煮",
+          description: "豚バラ肉をココナッツウォーターと醤油で柔らかく煮込み、ゆで卵を添えたベトナムの家庭料理。ジャスミンライス添え。",
+          options: []
+        },
+        fr: {
+          subtitle: "Poitrine de porc caramélisée aux œufs",
+          description: "Poitrine de porc tendre mijotée lentement dans de l'eau de coco et de la sauce soja, servie avec un œuf dur et du riz jasmin.",
+          options: []
+        },
+        it: {
+          subtitle: "Pancetta caramellata con uova",
+          description: "Tenera pancetta di maiale stufata lentamente in acqua di cocco e salsa di soia, servita con un uovo sodo e riso gelsomino.",
+          options: []
+        },
+        price: '11,90€',
+        image: '/menu_thit_kho_tau.png'
+      },
+      {
+        id: 'ba-chi-quay',
+        name: '19. BA CHỈ QUAY',
+        es: {
+          subtitle: "Ba chỉ quay / Roasted pork belly",
+          description: "Panceta de cerdo asada con piel crujiente, servida con una salsa especial.",
+          options: []
+        },
+        en: {
+          subtitle: "Roasted pork belly",
+          description: "Roasted pork belly with crispy skin, served with a special sauce.",
+          options: []
+        },
+        vi: {
+          subtitle: "Ba Chỉ Quay",
+          description: "Thịt ba chỉ nướng với lớp da giòn rụm, ăn kèm với nước chấm đặc biệt.",
+          options: []
+        },
+        zh: {
+          subtitle: "脆皮烧肉",
+          description: "烤至表皮酥脆的五花肉，附特制蘸酱。",
+          options: []
+        },
+        ko: {
+          subtitle: "크리스피 껍질 돼지 삼겹살 구이",
+          description: "껍질을 바삭하게 구운 삼겹살 요리, 특제 소스 포함.",
+          options: []
+        },
+        ja: {
+          subtitle: "カリカリ皮付き豚バラロースト",
+          description: "皮をカリカリに焼き上げた豚バラ肉のロースト。特製ソース添え。",
+          options: []
+        },
+        fr: {
+          subtitle: "Poitrine de Porc Rôtie Croustillante",
+          description: "Poitrine de porc rôtie avec couenne croustillante, servie avec une sauce spéciale.",
+          options: []
+        },
+        it: {
+          subtitle: "Pancetta di Maiale Arrosto Croccante",
+          description: "Pancetta di maiale arrosto con cotenna croccante, servita con una salsa speciale.",
+          options: []
+        },
+        price: '12,90€',
+        image: '/menu_ba_chi_quay.png'
+      },
+      {
+        id: 'dau-hu-tam-xi-dau',
+        name: '20. ĐẬU HŨ TẨM XÌ DẦU',
+        es: {
+          subtitle: "Đậu hũ tẩm xì dầu / Tofu in soy sauce",
+          description: "Tofu frito crujiente salteado con salsa de soja sazonada, ajo y cebollín, servido con arroz jazmín.",
+          options: []
+        },
+        en: {
+          subtitle: "Tofu in soy sauce",
+          description: "Crispy fried tofu stir-fried with seasoned soy sauce, garlic and scallions, served with jasmine rice.",
+          options: []
+        },
+        vi: {
+          subtitle: "Đậu Hũ Tẩm Xì Dầu",
+          description: "Đậu hũ rán giòn rưới nước tương tỏi ớt hành lá đậm đà, ăn kèm cơm trắng.",
+          options: []
+        },
+        zh: {
+          subtitle: "酱油豆腐",
+          description: "香脆炸豆腐与调味酱油、大蒜和青葱一同翻炒，附白米饭。",
+          options: []
+        },
+        ko: {
+          subtitle: "양념간장 두부 부침",
+          description: "바삭하게 부친 두부에 마늘, 파를 넣은 양념간장을 곁들인 요리, 재스민 밥 제공.",
+          options: []
+        },
+        ja: {
+          subtitle: "豆腐の醤油たれ和え",
+          description: "カリッと揚げた豆腐に、にんにくとネギを効かせた醤油だれを絡めた一品。ジャスミンライス添え。",
+          options: []
+        },
+        fr: {
+          subtitle: "Tofu à la sauce soja",
+          description: "Tofu frit croustillant sauté avec sauce soja assaisonnée, ail et ciboule, servi avec du riz jasmin.",
+          options: []
+        },
+        it: {
+          subtitle: "Tofu in salsa di soia",
+          description: "Tofu fritto croccante saltato con salsa di soia condita, aglio e cipollotti, servito con riso gelsomino.",
+          options: []
+        },
+        price: '10,90€',
+        image: '/menu_dau_hu_xi_dau.png'
+      },
+      {
+        id: 'com-chien',
+        name: '21. ARROZ FRITO',
+        es: {
+          subtitle: "Cơm chiên / Fried rice",
+          description: "Arroz jazmín salteado al wok con verduras frescas y huevo, con opción de:",
+          options: [
+            { text: "• A. Pollo (11,90€) (Thịt gà)", highlight: true },
+            { text: "• B. Gambas (12,90€) (Thịt tôm)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Vietnamese fried rice",
+          description: "Wok-tossed jasmine rice with fresh vegetables and egg, with choice of:",
+          options: [
+            { text: "• A. Chicken (11,90€)", highlight: true },
+            { text: "• B. Prawn (12,90€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Cơm Chiên",
+          description: "Cơm chiên tơi xốp xào cùng rau củ quả và trứng, kèm lựa chọn:",
+          options: [
+            { text: "• A. Thịt gà (11,90€)", highlight: true },
+            { text: "• B. Tôm (12,90€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "越式炒饭",
+          description: "大火翻炒的茉莉香米饭搭配新鲜蔬菜 and 鸡蛋，可选配：",
+          options: [
+            { text: "• A. 鸡肉 (11,90€)", highlight: true },
+            { text: "• B. 鲜虾 (12,90€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "베트남식 볶음밥",
+          description: "야채, 계란과 함께 웍에서 볶아낸 재스민 볶음밥, 선택 가능:",
+          options: [
+            { text: "• A. 닭고기 (11,90€)", highlight: true },
+            { text: "• B. 새우 (12,90€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "ベトナム風チャーハン",
+          description: "新鮮な野菜と卵を一緒にパラパラに炒めたジャスミン米のチャーハン。以下から選択：",
+          options: [
+            { text: "• A. 鶏肉 (11,90€)", highlight: true },
+            { text: "• B. エ비 (12,90€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Riz sauté vietnamien",
+          description: "Riz jasmin sauté au wok avec légumes frais et œuf, avec choix de :",
+          options: [
+            { text: "• A. Poulet (11,90€)", highlight: true },
+            { text: "• B. Crevettes (12,90€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Riso fritto vietnamita",
+          description: "Riso gelsomino saltato al wok con verdure fresche e uovo, con scelta di:",
+          options: [
+            { text: "• A. Pollo (11,90€)", highlight: true },
+            { text: "• B. Gamberi (12,90€)", highlight: false }
+          ]
+        },
+        price: '11,90€ - 12,90€',
+        image: '/menu_com_chien.png'
+      },
+      {
+        id: 'com-thit-sot-xi-dau',
+        name: '22. CƠM THỊT SỐT XÌ DẦU',
+        es: {
+          subtitle: "Cơm thịt sốt xì dầu / Rice with meat in soy sauce",
+          description: "La carne se fríe y se sirve con salsa de soja sazonada.",
+          options: [
+            { text: "• A. Pato (13,90€) (Thịt vịt / Duck meat)", highlight: true },
+            { text: "• B. Pollo (11,90€) (Thịt gà / Chicken)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Rice with meat in soy sauce",
+          description: "The meat is fried and served with seasoned soy sauce.",
+          options: [
+            { text: "• A. Duck (13,90€)", highlight: true },
+            { text: "• B. Chicken (11,90€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Cơm Thịt Sốt Xì Dầu",
+          description: "Thịt được chiên và ăn kèm với nước tương nêm gia vị.",
+          options: [
+            { text: "• A. Thịt vịt (13,90€)", highlight: true },
+            { text: "• B. Thịt gà (11,90€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "酱油肉配米饭",
+          description: "肉类炸至金黄，淋上调味酱油，搭配白米饭。",
+          options: [
+            { text: "• A. 鸭肉 (13,90€)", highlight: true },
+            { text: "• B. 鸡肉 (11,90€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "간장 소스 고기 덮밥",
+          description: "구운 고기에 양념 간장 소스를 곁들여 밥과 함께 제공하는 요리:",
+          options: [
+            { text: "• A. 오리고기 (13,90€)", highlight: true },
+            { text: "• B. 닭고기 (11,90€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "お肉の醤油たれ炒めライス",
+          description: "カリッと揚げたお肉に味付け醤油だれをかけた一品。白ご飯添え：",
+          options: [
+            { text: "• A. 鴨肉 (13,90€)", highlight: true },
+            { text: "• B. 鶏肉 (11,90€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Riz avec viande sauce soja",
+          description: "La viande est frite et servie avec une sauce soja assaisonnée.",
+          options: [
+            { text: "• A. Canard (13,90€)", highlight: true },
+            { text: "• B. Poulet (11,90€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Riso con carne in salsa di soia",
+          description: "La carne viene fritta e servita con salsa di soia condita.",
+          options: [
+            { text: "• A. Anatra (13,90€)", highlight: true },
+            { text: "• B. Pollo (11,90€)", highlight: false }
+          ]
+        },
+        price: '11,90€ - 13,90€',
+        image: '/menu_com_thit_xi_dau.png'
+      },
+      {
+        id: 'com-thit-sot-mam-toi',
+        name: '23. CƠM THỊT SỐT MẮM TỎI',
+        es: {
+          subtitle: "Cơm thịt sốt mắm tỏi / Rice with meat in garlic fish sauce",
+          description: "La carne se fríe crujiente y se baña en una aromática salsa de pescado con ajo, servida con arroz blanco.",
+          options: [
+            { text: "• A. Pato (13,90€) (Thịt vịt / Duck meat)", highlight: true },
+            { text: "• B. Pollo (11,90€) (Thịt gà / Chicken)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Rice with meat in garlic fish sauce",
+          description: "The meat is fried crispy and coated in an aromatic garlic fish sauce, served with white rice.",
+          options: [
+            { text: "• A. Duck (13,90€)", highlight: true },
+            { text: "• B. Chicken (11,90€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Cơm Thịt Sốt Mắm Tỏi",
+          description: "Thịt được chiên và ăn kèm với nước sốt mắm tỏi thơm ngon.",
+          options: [
+            { text: "• A. Thịt vịt (13,90€)", highlight: true },
+            { text: "• B. Thịt gà (11,90€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "蒜香鱼露肉配米饭",
+          description: "肉类炸至金黄，裹上香气扑鼻的蒜香鱼露酱汁，附白米饭。",
+          options: [
+            { text: "• A. 鸭肉 (13,90€)", highlight: true },
+            { text: "• B. 鸡肉 (11,90€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "마늘 피시소스 고기 덮밥",
+          description: "바삭하게 튀긴 고기에 향긋한 마늘 피시소스를 버무려 밥과 함께 제공:",
+          options: [
+            { text: "• A. 오리고기 (13,90€)", highlight: true },
+            { text: "• B. 닭고기 (11,90€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "にんにくナンプラーお肉炒めライス",
+          description: "カリッと揚げたお肉に、風味豊かなにんにくナンプラーだれを絡めた一品。白ご飯添え：",
+          options: [
+            { text: "• A. 鴨肉 (13,90€)", highlight: true },
+            { text: "• B. 鶏肉 (11,90€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Riz avec viande sauce poisson ail",
+          description: "La viande est frite croustillante et nappée d'une sauce de poisson à l'ail, servie avec du riz blanc.",
+          options: [
+            { text: "• A. Canard (13,90€)", highlight: true },
+            { text: "• B. Poulet (11,90€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Riso con carne in salsa agrodolce all'aglio",
+          description: "La carne viene fritta croccante e condita con una salsa di pesce all'aglio, servita con riso bianco.",
+          options: [
+            { text: "• A. Anatra (13,90€)", highlight: true },
+            { text: "• B. Pollo (11,90€)", highlight: false }
+          ]
+        },
+        price: '11,90€ - 13,90€',
+        image: '/menu_com_thit_mam_toi.png'
+      },
+      {
+        id: 'com-thit-chien-gung',
+        name: '24. CƠM THỊT CHIÊN GỪNG',
+        es: {
+          subtitle: "Cơm thịt chiên gừng / Rice with fried ginger meat",
+          description: "La carne se marina con especias mezcladas con jengibre fresco y luego se fríe.",
+          options: [
+            { text: "• A. Pato (13,90€) (Thịt vịt / Duck meat)", highlight: true },
+            { text: "• B. Pollo (11,90€) (Thịt gà / Chicken)", highlight: false },
+            { text: "• C. Cerdo (12,90€) (Thịt heo / Pork)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Rice with fried ginger meat",
+          description: "The meat is marinated with spices mixed with fresh ginger and then fried.",
+          options: [
+            { text: "• A. Duck (13,90€)", highlight: true },
+            { text: "• B. Chicken (11,90€)", highlight: false },
+            { text: "• C. Pork (12,90€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Cơm Thịt Chiên Gừng",
+          description: "Thịt được ướp với các loại gia vị trộn với gừng tươi rồi chiên.",
+          options: [
+            { text: "• A. Thịt vịt (13,90€)", highlight: true },
+            { text: "• B. Thịt gà (11,90€)", highlight: false },
+            { text: "• C. Thịt heo (12,90€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "姜炒肉配米饭",
+          description: "肉类用香料和鲜生姜腌制，然后炸至金黄，附白米饭。",
+          options: [
+            { text: "• A. 鸭肉 (13,90€)", highlight: true },
+            { text: "• B. 鸡肉 (11,90€)", highlight: false },
+            { text: "• C. 猪肉 (12,90€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "생강 고기 볶음 덮밥",
+          description: "신선한 생강과 향신료로 마리네이드한 고기를 볶아낸 요리, 밥 제공:",
+          options: [
+            { text: "• A. 오리고기 (13,90€)", highlight: true },
+            { text: "• B. 닭고기 (11,90€)", highlight: false },
+            { text: "• C. 돼지고기 (12,90€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "豚肉とお肉の生姜炒めライス",
+          description: "お肉を生姜と香辛料でマリネし、炒めた一品。白ご飯添え：",
+          options: [
+            { text: "• A. 鴨肉 (13,90€)", highlight: true },
+            { text: "• B. 鶏肉 (11,90€)", highlight: false },
+            { text: "• C. 豚肉 (12,90€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Riz avec viande frite au gingembre",
+          description: "La viande est marinée avec des épices et du gingembre frais, puis frite.",
+          options: [
+            { text: "• A. Canard (13,90€)", highlight: true },
+            { text: "• B. Poulet (11,90€)", highlight: false },
+            { text: "• C. Porc (12,90€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Riso con carne allo zenzero",
+          description: "La carne viene marinata con spezie e zenzero fresco, poi fritta.",
+          options: [
+            { text: "• A. Anatra (13,90€)", highlight: true },
+            { text: "• B. Pollo (11,90€)", highlight: false },
+            { text: "• C. Maiale (12,90€)", highlight: false }
+          ]
+        },
+        price: '11,90€ - 13,90€',
+        image: '/menu_com_chiengung.png'
+      },
+      {
+        id: 'com-thit-nuong',
+        name: '25. CƠM THỊT NƯỚNG',
+        es: {
+          subtitle: "Cơm thịt nướng / Rice with grilled meat",
+          description: "La carne se marina con especias tradicionales y se asa a la parrilla, servida con arroz blanco.",
+          options: [
+            { text: "• A. Pato (13,90€) (Thịt vịt / Duck meat)", highlight: true },
+            { text: "• B. Pollo (11,90€) (Thịt gà / Chicken)", highlight: false },
+            { text: "• C. Cerdo (12,90€) (Thịt heo / Pork)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Rice with grilled meat",
+          description: "The meat is marinated with traditional spices and grilled to perfection, served with white rice.",
+          options: [
+            { text: "• A. Duck (13,90€)", highlight: true },
+            { text: "• B. Chicken (11,90€)", highlight: false },
+            { text: "• C. Pork (12,90€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Cơm Thịt Nướng",
+          description: "Thịt được ướp gia vị và nướng trên vỉ than.",
+          options: [
+            { text: "• A. Thịt vịt (13,90€)", highlight: true },
+            { text: "• B. Thịt gà (11,90€)", highlight: false },
+            { text: "• C. Thịt heo (12,90€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "烤肉配米饭",
+          description: "肉类用传统香料腌制并烤至完美，附白米饭。",
+          options: [
+            { text: "• A. 鸭肉 (13,90€)", highlight: true },
+            { text: "• B. 鸡肉 (11,90€)", highlight: false },
+            { text: "• C. 猪肉 (12,90€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "석쇠 그릴 고기 구이 덮밥",
+          description: "전통 양념으로 마리네이드하여 석쇠에 구운 고기 요리, 밥 제공:",
+          options: [
+            { text: "• A. 오리고기 (13,90€)", highlight: true },
+            { text: "• B. 닭고기 (11,90€)", highlight: false },
+            { text: "• C. 돼지고기 (12,90€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "グリルお肉炒めライス",
+          description: "伝統的な香辛料でマリネし、ジューシーに焼き上げたお肉。白ご飯添え：",
+          options: [
+            { text: "• A. 鴨肉 (13,90€)", highlight: true },
+            { text: "• B. 鶏肉 (11,90€)", highlight: false },
+            { text: "• C. 豚肉 (12,90€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Riz avec viande grillée",
+          description: "La viande is marinée avec des épices traditionnelles et grillée à la perfection, servie avec du riz blanc.",
+          options: [
+            { text: "• A. Canard (13,90€)", highlight: true },
+            { text: "• B. Poulet (11,90€)", highlight: false },
+            { text: "• C. Porc (12,90€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Riso con carne grigliata",
+          description: "La carne viene marinata con spezie tradizionali e grigliata alla perfezione, servita con riso bianco.",
+          options: [
+            { text: "• A. Anatra (13,90€)", highlight: true },
+            { text: "• B. Pollo (11,90€)", highlight: false },
+            { text: "• C. Maiale (12,90€)", highlight: false }
+          ]
+        },
+        price: '11,90€ - 13,90€',
+        image: '/menu_com_thitnuong.png'
+      },
+      {
+        id: 'com-goi-tron',
+        name: '26. CƠM GỎI TRỘN',
+        es: {
+          subtitle: "Cơm gỏi trộn / Vietnamese rice bowl with mixed salad",
+          description: "La salsa agridulce mezclada con verduras y carne, servida con arroz blanco.",
+          options: [
+            { text: "• A. Pato (13,90€) (Thịt vịt / Duck meat)", highlight: true },
+            { text: "• B. Pollo (12,90€) (Thịt gà / Chicken)", highlight: false },
+            { text: "• C. Gambas (12,90€) (Thịt tôm / Prawn)", highlight: false },
+            { text: "• D. Cerdo (12,90€) (Thịt heo / Pork)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Vietnamese rice bowl with mixed salad",
+          description: "Sweet and sour sauce mixed with vegetables and meat, served with white rice.",
+          options: [
+            { text: "• A. Duck (13,90€)", highlight: true },
+            { text: "• B. Chicken (12,90€)", highlight: false },
+            { text: "• C. Prawn (12,90€)", highlight: false },
+            { text: "• D. Pork (12,90€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Cơm Gỏi Trộn",
+          description: "Nước sốt chua ngọt trộn với rau và thịt, ăn kèm với cơm trắng.",
+          options: [
+            { text: "• A. Thịt vịt (13,90€)", highlight: true },
+            { text: "• B. Thịt gà (12,90€)", highlight: false },
+            { text: "• C. Tôm (12,90€)", highlight: false },
+            { text: "• D. Thịt heo (12,90€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "越式沙拉拌饭",
+          description: "酸甜酱汁拌入蔬菜和肉类，搭配白米饭。",
+          options: [
+            { text: "• A. 鸭肉 (13,90€)", highlight: true },
+            { text: "• B. 鸡肉 (12,90€)", highlight: false },
+            { text: "• C. 鲜虾 (12,90€)", highlight: false },
+            { text: "• D. 猪肉 (12,90€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "비빔밥 스타일 라이스 보울",
+          description: "새콤달콤한 소스에 야채와 고기를 비벼 먹는 베트남식 덮밥:",
+          options: [
+            { text: "• A. 오리고기 (13,90€)", highlight: true },
+            { text: "• B. 닭고기 (12,90€)", highlight: false },
+            { text: "• C. 새우 (12,90€)", highlight: false },
+            { text: "• D. 돼지고기 (12,90€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "越式まぜビビンバ",
+          description: "甘酸っぱいたれで野菜とお肉を和え、白ご飯と合わせた丼もの：",
+          options: [
+            { text: "• A. 鴨肉 (13,90€)", highlight: true },
+            { text: "• B. 鶏肉 (12,90€)", highlight: false },
+            { text: "• C. エビ (12,90€)", highlight: false },
+            { text: "• D. 豚肉 (12,90€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Bol de riz avec salade mélangée",
+          description: "Sauce aigre-douce mélangée avec des légumes et de la viande, servie avec du riz blanc.",
+          options: [
+            { text: "• A. Canard (13,90€)", highlight: true },
+            { text: "• B. Poulet (12,90€)", highlight: false },
+            { text: "• C. Crevettes (12,90€)", highlight: false },
+            { text: "• D. Porc (12,90€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Ciotola di riso con insalata mista",
+          description: "Salsa agrodolce mescolata con verdure e carne, servita con riso bianco.",
+          options: [
+            { text: "• A. Anatra (13,90€)", highlight: true },
+            { text: "• B. Pollo (12,90€)", highlight: false },
+            { text: "• C. Gamberi (12,90€)", highlight: false },
+            { text: "• D. Maiale (12,90€)", highlight: false }
+          ]
+        },
+        price: '11,90€ - 12,90€',
+        image: '/menu_com_goi_tron.png'
+      },
+      {
+        id: 'pollo-especial',
+        name: '27. POLLO ESPECIAL',
+        es: {
+          subtitle: "Gà đặc biệt / Special chicken",
+          description: "Pollo salteado con cebolla y una salsa especial premium de la casa, servido con arroz jazmín.",
+          options: []
+        },
+        en: {
+          subtitle: "Special chicken",
+          description: "Stir-fried chicken with onions and a premium house special sauce, served with jasmine rice.",
+          options: []
+        },
+        vi: {
+          subtitle: "Gà Đặc Biệt",
+          description: "Thịt gà xào hành tây cùng nước sốt đặc biệt thượng hạng của nhà hàng, ăn kèm cơm trắng.",
+          options: []
+        },
+        zh: {
+          subtitle: "特制鸡肉",
+          description: "鸡肉与洋葱在餐厅特制高级酱汁中翻炒，附香米饭。",
+          options: []
+        },
+        ko: {
+          subtitle: "스페셜 치킨",
+          description: "양파와 함께 하우스 특제 프리미엄 소스에 볶아낸 치킨 요리, 재스민 밥 제공.",
+          options: []
+        },
+        ja: {
+          subtitle: "特製チキン",
+          description: "玉ねぎとお肉をハウス特製のプレミアムソースで炒めた一品。ジャスミンライス添え。",
+          options: []
+        },
+        fr: {
+          subtitle: "Poulet spécial",
+          description: "Poulet sauté aux oignons avec une sauce spéciale maison de qualité supérieure, servi avec du riz jasmin.",
+          options: []
+        },
+        it: {
+          subtitle: "Pollo speciale",
+          description: "Pollo saltato con cipolle in una speciale salsa premium della casa, servito con riso gelsomino.",
+          options: []
+        },
+        price: '11,90€',
+        image: '/menu_pollo_especial.png'
+      },
+      {
+        id: 'curry',
+        name: '28. CURRY',
+        es: {
+          subtitle: "Cà ri / Curry",
+          description: "Curry Increíblemente aromático con salsa de coco + arroz jazmín con:",
+          options: [
+            { text: "• A. Gambas (12,90€) (Thịt tôm / Prawn)", highlight: true },
+            { text: "• B. Pollo (11,90€) (Thịt gà / Chicken)", highlight: false },
+            { text: "• C. Tofu (10,90€) (Đậu hũ / Tofu)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Curry",
+          description: "Incredibly aromatic curry with coconut sauce + jasmine rice with:",
+          options: [
+            { text: "• A. Prawn (12,90€)", highlight: true },
+            { text: "• B. Chicken (11,90€)", highlight: false },
+            { text: "• C. Tofu (10,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Cà Ri",
+          description: "Cà ri thơm lừng với nước cốt dừa + cơm trắng thơm ngát kèm:",
+          options: [
+            { text: "• A. Tôm (12,90€)", highlight: true },
+            { text: "• B. Thịt gà (11,90€)", highlight: false },
+            { text: "• C. Đậu hũ (10,90€)", highlight: false },
+            { text: "• D. Thịt thực vật Heura* (11,90€)", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "咖喱饭",
+          description: "香气浓郁的椰香咖喱，搭配香米饭，可选配：",
+          options: [
+            { text: "• A. 鲜虾 (12,90€)", highlight: true },
+            { text: "• B. 鸡肉 (11,90€)", highlight: false },
+            { text: "• C. 豆腐 (10,90€)", highlight: false },
+            { text: "• D. 素肉 Heura* (11,90€)", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "카레",
+          description: "코코넛 밀크를 넣어 향긋한 카레, 재스민 밥 제공 및 선택 가능:",
+          options: [
+            { text: "• A. 새우 (12,90€)", highlight: true },
+            { text: "• B. 닭고기 (11,90€)", highlight: false },
+            { text: "• C. 두부 (10,90€)", highlight: false },
+            { text: "• D. 식물성 고기 Heura* (11,90€)", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "カレー",
+          description: "ココナッツミルクの風味豊かな香り高いカレー。ジャスミンライス添えで、以下から選択：",
+          options: [
+            { text: "• A. エビ (12,90€)", highlight: true },
+            { text: "• B. 鶏肉 (11,90€)", highlight: false },
+            { text: "• C. 豆腐 (10,90€)", highlight: false },
+            { text: "• D. 植物性肉 Heura* (11,90€)", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Curry",
+          description: "Curry incroyablement aromatique à la sauce coco + riz jasmin avec :",
+          options: [
+            { text: "• A. Crevettes (12,90€)", highlight: true },
+            { text: "• B. Poulet (11,90€)", highlight: false },
+            { text: "• C. Tofu (10,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Curry",
+          description: "Curry incredibilmente aromatico con salsa al cocco + riso gelsomino con:",
+          options: [
+            { text: "• A. Gamberi (12,90€)", highlight: true },
+            { text: "• B. Pollo (11,90€)", highlight: false },
+            { text: "• C. Tofu (10,90€)", highlight: false },
+            { text: "• D. Heura* (11,90€)", highlight: false }
+          ]
+        },
+        price: '11,90€ - 12,90€',
+        image: '/menu_curry.png'
       }
     ],
     desserts: [
@@ -435,43 +2057,43 @@ export default function Menu() {
         id: 'panna-cotta',
         name: 'Panna Cotta Pandan',
         es: {
-          subtitle: 'Panna Cotta Tropical',
-          description: 'Deliciosa panna cotta cremosa con sabor de coco, pandan y cacahuete.',
+          subtitle: "Panna Cotta Tropical",
+          description: "Deliciosa panna cotta cremosa con sabor de coco, pandan y cacahuete.",
           options: []
         },
         en: {
-          subtitle: 'Tropical Pandan Panna Cotta',
-          description: 'Creamy panna cotta infused with fragrant Vietnamese pandan leaf and coconut, topped with peanuts.',
+          subtitle: "Tropical Pandan Panna Cotta",
+          description: "Creamy panna cotta infused with fragrant Vietnamese pandan leaf and coconut, topped with peanuts.",
           options: []
         },
         vi: {
-          subtitle: 'Panna Cotta Lá Dứa',
-          description: 'Món tráng miệng panna cotta béo ngậy vị cốt dừa hòa quyện cùng hương lá dứa thơm lừng và lạc rang.',
+          subtitle: "Panna Cotta Lá Dứa",
+          description: "Món tráng miệng panna cotta béo ngậy vị cốt dừa hòa quyện cùng hương lá dứa thơm lừng và lạc rang.",
           options: []
         },
         zh: {
-          subtitle: '斑兰椰香奶冻',
-          description: '融入了越南斑兰叶与椰奶香气的丝滑奶冻，上面撒有香脆花生碎。',
+          subtitle: "斑兰椰香奶冻",
+          description: "融入了越南斑兰叶与椰奶香气的丝滑奶冻，上面撒有香脆花生碎。",
           options: []
         },
         ko: {
-          subtitle: '판단 판단코타',
-          description: '향긋한 판단 잎과 코코넛 밀크가 조화를 이루는 부드러운 판나코타, 땅콩 토핑이 올라갑니다.',
+          subtitle: "판단 판단코타",
+          description: "향긋한 판단 잎과 코코넛 밀크가 조화를 이루는 부드러운 판나코타, 땅콩 토핑이 올라갑니다.",
           options: []
         },
         ja: {
-          subtitle: 'パンダン・パンナコッタ',
-          description: 'ベトナムの香るパンダンリーフとココナッツミルクで作る濃厚なパンナコッタ。ピーナッツのせ。',
+          subtitle: "パンダン・パンナコッタ",
+          description: "ベトナムの香るパンダンリーフとココナッツミルクで作る濃厚なパンナコッタ。ピーナッツのせ。",
           options: []
         },
         fr: {
-          subtitle: 'Panna Cotta Tropicale au Pandan',
-          description: 'Délicieuse panna cotta crémeuse infusée de feuille de pandan et de noix de coco, parsemée de cacahuètes.',
+          subtitle: "Panna Cotta Tropicale au Pandan",
+          description: "Délicieuse panna cotta crémeuse infusée de feuille de pandan et de noix de coco, parsemée de cacahuètes.",
           options: []
         },
         it: {
-          subtitle: 'Panna Cotta Tropicale al Pandan',
-          description: 'Panna cotta cremosa aromatizzata con foglia di pandan e cocco, guarnita con arachidi croccanti.',
+          subtitle: "Panna Cotta Tropicale al Pandan",
+          description: "Panna cotta cremosa aromatizzata con foglia di pandan e cocco, guarnita con arachidi croccanti.",
           options: []
         },
         price: '4,90€',
@@ -483,43 +2105,43 @@ export default function Menu() {
         id: 'cafe-vietnamita',
         name: 'Cà phê sữa đá',
         es: {
-          subtitle: 'Café Vietnamita Tradicional',
-          description: 'Fuerte café de goteo tradicional vietnamita mezclado con leche condensada dulce y abundante hielo.',
+          subtitle: "Café Vietnamita Tradicional",
+          description: "Fuerte café de goteo tradicional vietnamita mezclado con leche condensada dulce y abundante hielo.",
           options: []
         },
         en: {
-          subtitle: 'Traditional Vietnamese Coffee',
-          description: 'Strong slow-drip Vietnamese coffee combined with sweet condensed milk and served over plenty of crushed ice.',
+          subtitle: "Traditional Vietnamese Coffee",
+          description: "Strong slow-drip Vietnamese coffee combined with sweet condensed milk and served over plenty of crushed ice.",
           options: []
         },
         vi: {
-          subtitle: 'Cà Phê Sữa Đá Phin',
-          description: 'Cà phê phin truyền thống Việt Nam đậm đà, hòa quyện cùng sữa đặc ngọt ngào và đá lạnh xay.',
+          subtitle: "Cà Phê Sữa Đá Phin",
+          description: "Cà phê phin truyền thống Việt Nam đậm đà, hòa quyện cùng sữa đặc ngọt ngào và đá lạnh xay.",
           options: []
         },
         zh: {
-          subtitle: '传统越南冰咖啡',
-          description: '浓郁的传统越南滴滤咖啡，融合甜炼乳与满满冰块。',
+          subtitle: "传统越南冰咖啡",
+          description: "浓郁的传统越南滴滤咖啡，融合甜炼乳与满满冰块。",
           options: []
         },
         ko: {
-          subtitle: '정통 베트남 연유 커피',
-          description: '천천히 내린 진한 베트남 드립 커피에 달콤한 연유와 부순 얼음을 듬뿍 넣은 커피.',
+          subtitle: "정통 베트남 연유 커피",
+          description: "천천히 내린 진한 베트남 드립 커피에 달콤한 연유와 부순 얼음을 듬뿍 넣은 커피.",
           options: []
         },
         ja: {
-          subtitle: '伝統ベトナム練乳コーヒー',
-          description: 'じっくりドリップした濃いベトナムコーヒーに、甘い練乳とたっぷりの砕いた氷を合わせた一杯。',
+          subtitle: "伝統ベトナム練乳コーヒー",
+          description: "じっくりドリップした濃いベトナムコーヒーに、甘い練乳とたっぷりの砕いた氷を合わせた一杯。",
           options: []
         },
         fr: {
-          subtitle: 'Café Vietnamien Traditionnel',
-          description: 'Café filtre vietnamien corsé mélangé avec du lait concentré sucré et servi sur de la glace pilée.',
+          subtitle: "Café Vietnamien Traditionnel",
+          description: "Café filtre vietnamien corsé mélangé avec du lait concentré sucré et servi sur de la glace pilée.",
           options: []
         },
         it: {
-          subtitle: 'Caffè Vietnamita Tradizionale',
-          description: 'Forte caffè filtro vietnamita unito a latte condensato dolce e servito con ghiaccio tritato.',
+          subtitle: "Caffè Vietnamita Tradizionale",
+          description: "Caffè filtro vietnamita unito a latte condensato dolce e servito con ghiaccio tritato.",
           options: []
         },
         price: '4,50€',
@@ -598,4 +2220,3 @@ const translations = {
   fr: { 'menu.tagline': 'NOTRE CARTE', 'menu.title': 'Explorez Notre Menu' },
   it: { 'menu.tagline': 'IL NOSTRO MENU', 'menu.title': 'Esplora il Nostro Menu' }
 };
-
