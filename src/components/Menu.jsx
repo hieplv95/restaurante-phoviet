@@ -281,7 +281,7 @@ export default function Menu() {
       },
       {
         id: 'goi-xoai',
-        name: 'Gỏi Xoài',
+        name: '5. Gỏi Xoài',
         es: {
           subtitle: "Ensalada Vietnam con Mango",
           description: "Deliciosa ensalada de mango con:",
@@ -356,6 +356,114 @@ export default function Menu() {
         },
         price: '7,30€ / 7,60€',
         image: '/menu_goixoai.png'
+      },
+      {
+        id: 'alitas-de-pollo',
+        name: '6. Cánh Gà Đặc Biệt',
+        es: {
+          subtitle: "Alitas de Pollo Crujientes Estilo Pho Viet",
+          description: "Alitas de pollo crujientes fritas (5 piezas) salteadas con salsa de chili dulce casera.",
+          options: [
+            { text: "Pieza extra (Thêm 1 cánh) +1,50€", highlight: false }
+          ]
+        },
+        en: {
+          subtitle: "Pho Viet-Style Crispy Chicken Wings",
+          description: "Crispy chicken wings (5 pieces) tossed with homemade sweet chili sauce.",
+          options: [
+            { text: "Extra piece (Thêm 1 cánh) +1,50€", highlight: false }
+          ]
+        },
+        vi: {
+          subtitle: "Cánh Gà Đặc Biệt",
+          description: "Cánh gà rán giòn tan (5 miếng) xào nước sốt tương ớt ngọt tự làm.",
+          options: [
+            { text: "Thêm 1 cánh +1,50€", highlight: false }
+          ]
+        },
+        zh: {
+          subtitle: "越式香脆炸鸡翅",
+          description: "香脆炸鸡翅（5只）裹上自制甜辣酱。",
+          options: [
+            { text: "加购一只 +1,50€", highlight: false }
+          ]
+        },
+        ko: {
+          subtitle: "포 비엣 스타일 바삭한 닭날개 튀김",
+          description: "수제 스위트 칠리 소스를 버무린 바삭한 닭날개 튀김(5조각).",
+          options: [
+            { text: "닭날개 추가 (1조각) +1,50€", highlight: false }
+          ]
+        },
+        ja: {
+          subtitle: "フォーベト風サクサク手羽先揚げ",
+          description: "手作りのスイートチリソースを絡めた、サクサクの手羽先揚げ（5個）。",
+          options: [
+            { text: "1個追加 +1,50€", highlight: false }
+          ]
+        },
+        fr: {
+          subtitle: "Ailes de Poulet Croustillantes Style Pho Viet",
+          description: "Ailes de poulet croustillantes (5 pièces) nappées d'une sauce chili douce maison.",
+          options: [
+            { text: "Portion supplémentaire +1,50€", highlight: false }
+          ]
+        },
+        it: {
+          subtitle: "Alette di Pollo Croccanti Stile Pho Viet",
+          description: "Alette di pollo croccanti (5 pezzi) saltate in salsa chili dolce fatta in casa.",
+          options: [
+            { text: "Porzione extra +1,50€", highlight: false }
+          ]
+        },
+        price: '7,20€',
+        image: '/menu_alitas.png'
+      },
+      {
+        id: 'gyosas-al-vapor',
+        name: '7. Há Cảo',
+        es: {
+          subtitle: "Gyosas al Vapor",
+          description: "Empanadillas (há cảo) rellenas de verduras y carne al estilo vietnamita (4 piezas).",
+          options: []
+        },
+        en: {
+          subtitle: "Steamed Har Gow",
+          description: "Vietnamese-style steamed har gow dumplings filled with vegetables and meat (4 pieces).",
+          options: []
+        },
+        vi: {
+          subtitle: "Há Cảo Hấp",
+          description: "Há cảo nhân rau và tôm theo kiểu Việt Nam (4 miếng).",
+          options: []
+        },
+        zh: {
+          subtitle: "越式蒸虾饺",
+          description: "越式蒸饺，包裹着蔬菜和肉类（4只）。",
+          options: []
+        },
+        ko: {
+          subtitle: "베트남식 찐 하가우",
+          description: "야채와 고기/새우로 속을 채운 베트남식 찐만두(4조각).",
+          options: []
+        },
+        ja: {
+          subtitle: "ベトナム風蒸しハガウ（エビ餃子）",
+          description: "野菜と具材を包んだベトナム風の蒸し餃子（4個）。",
+          options: []
+        },
+        fr: {
+          subtitle: "Raviolis Har Gow à la Vapeur",
+          description: "Raviolis à la vapeur de style vietnamien farcis aux légumes et à la viande (4 pièces).",
+          options: []
+        },
+        it: {
+          subtitle: "Ravioli Har Gow al Vapore",
+          description: "Ravioli al vapore in stile vietnamita ripieni di verdure e carne (4 pezzi).",
+          options: []
+        },
+        price: '7,10€',
+        image: '/menu_gyosas.png'
       }
     ],
     mains: [
