@@ -2299,6 +2299,52 @@ export default function Menu() {
         },
         price: '4,50€',
         image: '/menu_pannacottatropical.png'
+      },
+      {
+        id: 'sua-chua-nep-cam',
+        name: 'Sữa Chua Nếp Cẩm',
+        es: {
+          subtitle: "Pudin de Arroz Negro y Yogur",
+          description: "Cremoso, rico y saludable postre de arroz negro servido con yogur y leche de coco.",
+          options: []
+        },
+        en: {
+          subtitle: "Black Sticky Rice Yogurt",
+          description: "Creamy, rich and healthy black rice dessert served with yogurt and coconut milk.",
+          options: []
+        },
+        vi: {
+          subtitle: "Sữa Chua Nếp Cẩm",
+          description: "Món tráng miệng làm từ gạo nếp cẩm béo ngậy, thơm ngon và bổ dưỡng, ăn kèm với sữa chua và nước cốt dừa.",
+          options: []
+        },
+        zh: {
+          subtitle: "椰香酸奶紫米露",
+          description: "软糯香甜的紫米配上酸奶与浓郁椰奶，健康美味。",
+          options: []
+        },
+        ko: {
+          subtitle: "흑미 요거트 푸딩",
+          description: "요거트와 코코넛 밀크를 곁들인 부드럽고 건강한 베트남식 흑미 디저트.",
+          options: []
+        },
+        ja: {
+          subtitle: "黒米ともち米のヨーグルトデザート",
+          description: "ヨーグルトとココナッツミルクを添えた、もちもちでヘルシーな黒米のプディング。",
+          options: []
+        },
+        fr: {
+          subtitle: "Yaourt au Riz Gluant Noir",
+          description: "Dessert crémeux, riche et sain à base de riz gluant noir, servi avec du yaourt et du lait de coco.",
+          options: []
+        },
+        it: {
+          subtitle: "Budino di Riso Nero e Yogurt",
+          description: "Dessert cremoso, sano e nutriente a base di riso nero, servito con yogurt e latte di cocco.",
+          options: []
+        },
+        price: '4,90€',
+        image: '/menu_suachuanepcam.png'
       }
     ],
     drinks: [
