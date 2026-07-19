@@ -2349,6 +2349,650 @@ export default function Menu() {
     ],
     drinks: [
       {
+        id: 'agua-05',
+        name: 'Agua 0.5L',
+        es: {
+          subtitle: "Agua Mineral Natural",
+          description: "Agua mineral sin gas en formato botella de 0,5L.",
+          options: []
+        },
+        en: {
+          subtitle: "Still Mineral Water 0.5L",
+          description: "Still mineral water in a 0.5L bottle.",
+          options: []
+        },
+        vi: {
+          subtitle: "Nước Khoáng 0.5L",
+          description: "Nước khoáng không ga đóng chai dung tích 0.5L.",
+          options: []
+        },
+        zh: {
+          subtitle: "矿泉水 0.5L",
+          description: "0.5升瓶装天然矿泉水。",
+          options: []
+        },
+        ko: {
+          subtitle: "생수 0.5L",
+          description: "0.5L 병 생수.",
+          options: []
+        },
+        ja: {
+          subtitle: "ミネラルウォーター 0.5L",
+          description: "0.5Lのボトル入りミネラルウォーター。",
+          options: []
+        },
+        fr: {
+          subtitle: "Eau Minérale 0,5L",
+          description: "Bouteille d'eau minérale plate de 0,5L.",
+          options: []
+        },
+        it: {
+          subtitle: "Acqua Minerale 0.5L",
+          description: "Bottiglia di acqua minerale naturale da 0.5L.",
+          options: []
+        },
+        price: '2,50€',
+        image: '/menu_agua.png'
+      },
+      {
+        id: 'agua-1l',
+        name: 'Agua 1L',
+        es: {
+          subtitle: "Agua Mineral Natural",
+          description: "Agua mineral sin gas en formato botella de 1L.",
+          options: []
+        },
+        en: {
+          subtitle: "Still Mineral Water 1L",
+          description: "Still mineral water in a 1L bottle.",
+          options: []
+        },
+        vi: {
+          subtitle: "Nước Khoáng 1L",
+          description: "Nước khoáng không ga đóng chai dung tích 1L.",
+          options: []
+        },
+        zh: {
+          subtitle: "矿泉水 1L",
+          description: "1升瓶装天然矿泉水。",
+          options: []
+        },
+        ko: {
+          subtitle: "생수 1L",
+          description: "1L 병 생수.",
+          options: []
+        },
+        ja: {
+          subtitle: "ミネラルウォーター 1L",
+          description: "1Lのボトル入りミネラルウォーター。",
+          options: []
+        },
+        fr: {
+          subtitle: "Eau Minérale 1L",
+          description: "Bouteille d'eau minérale plate de 1L.",
+          options: []
+        },
+        it: {
+          subtitle: "Acqua Minerale 1L",
+          description: "Bottiglia di acqua minerale naturale da 1L.",
+          options: []
+        },
+        price: '4,00€',
+        image: '/menu_agua.png'
+      },
+      {
+        id: 'agua-con-gas',
+        name: 'Agua con gas Vichy Catalan 0.33L',
+        es: {
+          subtitle: "Agua con Gas Vichy Catalan",
+          description: "Agua mineral con gas premium de la marca Vichy Catalan en botella de 0,33L.",
+          options: []
+        },
+        en: {
+          subtitle: "Vichy Catalan Sparkling Water 0.33L",
+          description: "Premium Vichy Catalan sparkling mineral water in a 0.33L bottle.",
+          options: []
+        },
+        vi: {
+          subtitle: "Nước Khoáng Có Ga Vichy Catalan 0.33L",
+          description: "Nước khoáng có ga cao cấp hiệu Vichy Catalan chai 0.33L.",
+          options: []
+        },
+        zh: {
+          subtitle: "维希加泰罗尼亚气泡水 0.33L",
+          description: "0.33升瓶装高端天然气泡水。",
+          options: []
+        },
+        ko: {
+          subtitle: "비쉬 카탈란 탄산수 0.33L",
+          description: "0.33L 병 비쉬 카탈란 프리미엄 탄산수.",
+          options: []
+        },
+        ja: {
+          subtitle: "ヴィシーカタラン 炭酸水 0.33L",
+          description: "0.33Lボトル入りのプレミアムスパークリングウォーター。",
+          options: []
+        },
+        fr: {
+          subtitle: "Eau Pétillante Vichy Catalan 0,33L",
+          description: "Eau minérale pétillante premium Vichy Catalan en bouteille de 0,33L.",
+          options: []
+        },
+        it: {
+          subtitle: "Acqua Frizzante Vichy Catalan 0.33L",
+          description: "Acqua minerale frizzante premium Vichy Catalan in bottiglia da 0.33L.",
+          options: []
+        },
+        price: '2,80€',
+        image: '/menu_agua.png'
+      },
+      {
+        id: 'coca-cola',
+        name: 'Coca-cola',
+        es: {
+          subtitle: "Refresco de Cola",
+          description: "Refresco clásico sabor cola.",
+          options: []
+        },
+        en: {
+          subtitle: "Coca-cola",
+          description: "Classic Coca-cola soft drink.",
+          options: []
+        },
+        vi: {
+          subtitle: "Coca-cola",
+          description: "Nước ngọt Coca-cola truyền thống.",
+          options: []
+        },
+        zh: {
+          subtitle: "可口可乐",
+          description: "经典可口可乐汽水。",
+          options: []
+        },
+        ko: {
+          subtitle: "코카콜라",
+          description: "클래식 코카콜라 탄산음료.",
+          options: []
+        },
+        ja: {
+          subtitle: "コカ・コーラ",
+          description: "クラシックなコカ・コーラ炭酸飲料。",
+          options: []
+        },
+        fr: {
+          subtitle: "Coca-cola",
+          description: "Boisson rafraîchissante Coca-cola classique.",
+          options: []
+        },
+        it: {
+          subtitle: "Coca-cola",
+          description: "Bevanda gassata classica Coca-cola.",
+          options: []
+        },
+        price: '2,80€',
+        image: '/menu_refresco.png'
+      },
+      {
+        id: 'coca-cola-zero',
+        name: 'Coca-cola Zero',
+        es: {
+          subtitle: "Refresco de Cola Zero Azúcar",
+          description: "Coca-cola clásica con sabor original sin azúcar y sin calorías.",
+          options: []
+        },
+        en: {
+          subtitle: "Coca-cola Zero",
+          description: "Original taste Coca-cola with zero sugar and zero calories.",
+          options: []
+        },
+        vi: {
+          subtitle: "Coca-cola Không Đường",
+          description: "Nước ngọt Coca-cola không đường và không calo.",
+          options: []
+        },
+        zh: {
+          subtitle: "零度可口可乐",
+          description: "无糖无热量的零度可口可乐。",
+          options: []
+        },
+        ko: {
+          subtitle: "코카콜라 제로",
+          description: "설탕과 칼로리가 없는 코카콜라 제로.",
+          options: []
+        },
+        ja: {
+          subtitle: "コカ・コーラ ゼロ",
+          description: "砂糖ゼロ・カロリーゼロのコカ・コーラ。",
+          options: []
+        },
+        fr: {
+          subtitle: "Coca-cola Zéro",
+          description: "Coca-cola au goût original sans sucre et sans calories.",
+          options: []
+        },
+        it: {
+          subtitle: "Coca-cola Zero",
+          description: "Coca-cola gusto classico senza zucchero e senza calorie.",
+          options: []
+        },
+        price: '2,80€',
+        image: '/menu_refresco.png'
+      },
+      {
+        id: 'fanta-limon',
+        name: 'Fanta Limón',
+        es: {
+          subtitle: "Refresco de Limón",
+          description: "Refresco con gas con sabor a limón.",
+          options: []
+        },
+        en: {
+          subtitle: "Lemon Fanta",
+          description: "Lemon-flavored carbonated soft drink.",
+          options: []
+        },
+        vi: {
+          subtitle: "Fanta Chanh",
+          description: "Nước ngọt có ga hương vị chanh thanh mát.",
+          options: []
+        },
+        zh: {
+          subtitle: "柠檬味芬达",
+          description: "柠檬口味的芬达碳酸饮料。",
+          options: []
+        },
+        ko: {
+          subtitle: "환타 레몬맛",
+          description: "레몬 향이 상큼한 환타 탄산음료.",
+          options: []
+        },
+        ja: {
+          subtitle: "ファンタ レモン",
+          description: "爽やかなレモン味のファンタ炭酸飲料。",
+          options: []
+        },
+        fr: {
+          subtitle: "Fanta Citron",
+          description: "Boisson gazeuse rafraîchissante au goût citron.",
+          options: []
+        },
+        it: {
+          subtitle: "Fanta Limone",
+          description: "Bevanda frizzante rinfrescante al gusto limone.",
+          options: []
+        },
+        price: '2,80€',
+        image: '/menu_refresco.png'
+      },
+      {
+        id: 'fanta-naranja',
+        name: 'Fanta Naranja',
+        es: {
+          subtitle: "Refresco de Naranja",
+          description: "Refresco con gas con sabor a naranja.",
+          options: []
+        },
+        en: {
+          subtitle: "Orange Fanta",
+          description: "Orange-flavored carbonated soft drink.",
+          options: []
+        },
+        vi: {
+          subtitle: "Fanta Cam",
+          description: "Nước ngọt có ga hương vị cam thơm ngon.",
+          options: []
+        },
+        zh: {
+          subtitle: "橙味芬达",
+          description: "橙子口味的芬达碳酸饮料。",
+          options: []
+        },
+        ko: {
+          subtitle: "환타 오렌지맛",
+          description: "오렌지 향이 달콤한 환타 탄산음료.",
+          options: []
+        },
+        ja: {
+          subtitle: "ファンタ オレンジ",
+          description: "ジューシーなオレンジ味のファンタ炭酸飲料。",
+          options: []
+        },
+        fr: {
+          subtitle: "Fanta Orange",
+          description: "Boisson gazeuse rafraîchissante au goût orange.",
+          options: []
+        },
+        it: {
+          subtitle: "Fanta Arancia",
+          description: "Bevanda frizzante rinfrescante al gusto arancia.",
+          options: []
+        },
+        price: '2,80€',
+        image: '/menu_refresco.png'
+      },
+      {
+        id: 'nestea',
+        name: 'Nestea',
+        es: {
+          subtitle: "Té Frío al Limón",
+          description: "Refresco de té frío sabor limón sin gas.",
+          options: []
+        },
+        en: {
+          subtitle: "Nestea Lemon",
+          description: "Still iced tea beverage with lemon flavor.",
+          options: []
+        },
+        vi: {
+          subtitle: "Trà Đen Nestea Hương Chanh",
+          description: "Nước trà đen Nestea chanh đóng chai giải khát.",
+          options: []
+        },
+        zh: {
+          subtitle: "雀巢柠檬红茶",
+          description: "清新好喝的柠檬口味冰红茶。",
+          options: []
+        },
+        ko: {
+          subtitle: "네스티 아이스티 레몬",
+          description: "상큼한 레몬 향의 아이스티 음료.",
+          options: []
+        },
+        ja: {
+          subtitle: "ネスティ レモンティー",
+          description: "すっきり爽快なレモン味のアイスティー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Nestea Citron",
+          description: "Boisson plate de thé glacé au goût citron.",
+          options: []
+        },
+        it: {
+          subtitle: "Nestea Limone",
+          description: "Tè freddo al limone rinfrescante senza gas.",
+          options: []
+        },
+        price: '2,80€',
+        image: '/menu_refresco.png'
+      },
+      {
+        id: 'te-de-melocoton',
+        name: 'Té de Melocotón',
+        es: {
+          subtitle: "Té de Melocotón",
+          description: "Refrescante té de melocotón natural preparado en casa con naranja, kiwi, lima y limoncillo.",
+          options: []
+        },
+        en: {
+          subtitle: "Peach Tea",
+          description: "Refreshing homemade peach tea brewed with fresh orange, kiwi, lime, and lemongrass.",
+          options: []
+        },
+        vi: {
+          subtitle: "Trà Đào Đặc Biệt",
+          description: "Trà đào thơm ngon nhà làm pha cùng cam tươi, kiwi, chanh xanh và sả.",
+          options: []
+        },
+        zh: {
+          subtitle: "水蜜桃水果茶",
+          description: "自制清爽蜜桃茶，加入新鲜 orange, kiwi, lime và sả调制。",
+          options: []
+        },
+        ko: {
+          subtitle: "복숭아 아이스티",
+          description: "오렌지, 키위, 라임, 레몬그라스를 곁들인 상큼하고 시원한 수제 복숭아 티.",
+          options: []
+        },
+        ja: {
+          subtitle: "ピーチフルーツティー",
+          description: "オレンジ, キウイ, ライム, レモングラスが入った自家製のさっぱりピーチティー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Thé à la Pêche",
+          description: "Thé glacé à la pêche fait maison, rafraîchi avec de l'orange, du kiwi, du citron vert et de la citronnelle.",
+          options: []
+        },
+        it: {
+          subtitle: "Tè alla Pesca",
+          description: "Tè freddo alla pesca fatto in casa, arricchito con arancia, kiwi, lime e citronella.",
+          options: []
+        },
+        price: '4,00€',
+        image: '/menu_tedao.png'
+      },
+      {
+        id: 'te-de-lichi',
+        name: 'Té de Lichi',
+        es: {
+          subtitle: "Té de Lichi",
+          description: "Delicioso té de lichi casero con lima, limón y kiwi.",
+          options: []
+        },
+        en: {
+          subtitle: "Lychee Tea",
+          description: "Delicious homemade lychee tea with fresh lime, lemon, and kiwi slices.",
+          options: []
+        },
+        vi: {
+          subtitle: "Trà Vải Đặc Biệt",
+          description: "Trà vải thơm mát nhà làm pha cùng chanh xanh, chanh vàng và kiwi.",
+          options: []
+        },
+        zh: {
+          subtitle: "荔枝水果茶",
+          description: "自制美味荔枝茶, 加入青柠, 黄柠檬与奇异果片调制。",
+          options: []
+        },
+        ko: {
+          subtitle: "리치 아이스티",
+          description: "라임, 레몬, 키위를 곁들여 향긋하고 달콤한 수제 리치 티.",
+          options: []
+        },
+        ja: {
+          subtitle: "ライチフルーツティー",
+          description: "ライム, レモン, キウイが入った自家製の贅沢なライチティー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Thé au Litchi",
+          description: "Thé glacé au litchi fait maison avec du citron vert, du citron jaune et du kiwi.",
+          options: []
+        },
+        it: {
+          subtitle: "Tè al Litchi",
+          description: "Tè freddo al litchi fatto in casa con lime, limone e kiwi.",
+          options: []
+        },
+        price: '4,00€',
+        image: '/menu_travai.png'
+      },
+      {
+        id: 'coctel-limon-menta',
+        name: 'Cóctel de limón y menta',
+        es: {
+          subtitle: "Cóctel de Limón y Menta",
+          description: "Refrescante cóctel preparado con zumo de limón fresco y hojas de menta machacadas.",
+          options: []
+        },
+        en: {
+          subtitle: "Lemon and Mint Cocktail",
+          description: "Refreshing cocktail prepared with fresh lemon juice and muddled mint leaves.",
+          options: []
+        },
+        vi: {
+          subtitle: "Cocktail Chanh Bạc Hà",
+          description: "Thức uống cocktail mát lạnh từ nước cốt chanh tươi và lá bạc hà nghiền.",
+          options: []
+        },
+        zh: {
+          subtitle: "柠檬薄荷鸡尾酒",
+          description: "使用新鲜柠檬汁与薄荷叶碎调制的清凉鸡尾酒。",
+          options: []
+        },
+        ko: {
+          subtitle: "레몬 민트 칵테일",
+          description: "신선한 레몬 주스와 으깬 민트 잎으로 만든 청량하고 시원한 칵테일.",
+          options: []
+        },
+        ja: {
+          subtitle: "レモンとミントのカクテル",
+          description: "フレッシュレモンジュースとつぶしたミントの葉で作る爽やかなカクテル。",
+          options: []
+        },
+        fr: {
+          subtitle: "Cocktail Citron et Menthe",
+          description: "Cocktail rafraîchissant préparé avec du jus de citron frais et des feuilles de menthe écrasées.",
+          options: []
+        },
+        it: {
+          subtitle: "Cocktail Limone e Menta",
+          description: "Cocktail rinfrescante preparato con succo di limone fresco e foglie di menta pestate.",
+          options: []
+        },
+        price: '5,00€',
+        image: '/menu_coctel_limon.png'
+      },
+      {
+        id: 'zumo-naranja',
+        name: 'Zumo de naranja',
+        es: {
+          subtitle: "Zumo de Naranja Natural",
+          description: "Zumo de naranja recién exprimido 100% natural.",
+          options: []
+        },
+        en: {
+          subtitle: "Fresh Orange Juice",
+          description: "100% freshly squeezed natural orange juice.",
+          options: []
+        },
+        vi: {
+          subtitle: "Nước Cam Ép Nguyên Chất",
+          description: "Nước cam vắt nguyên chất 100% tươi ngon mỗi ngày.",
+          options: []
+        },
+        zh: {
+          subtitle: "鲜榨橙汁",
+          description: "100%新鲜压榨的天然纯橙汁。",
+          options: []
+        },
+        ko: {
+          subtitle: "생오렌지 주스",
+          description: "100% 즉석에서 착즙한 신선한 오렌지 주스.",
+          options: []
+        },
+        ja: {
+          subtitle: "生搾りオレンジジュース",
+          description: "注文を受けてから搾る、100%天然のフレッシュオレンジジュース。",
+          options: []
+        },
+        fr: {
+          subtitle: "Jus d'Orange Pressé",
+          description: "Jus d'orange fraîchement pressé 100% naturel.",
+          options: []
+        },
+        it: {
+          subtitle: "Spremuta d'Arancia",
+          description: "Spremuta fresca di arancia 100% naturale.",
+          options: []
+        },
+        price: '5,00€',
+        image: '/menu_zumonaranja.png'
+      },
+      {
+        id: 'sua-chua-chanh-da',
+        name: 'Sữa chua chanh đá',
+        es: {
+          subtitle: "Yogur Helado Mezclado con Limón",
+          description: "Yogur cremoso batido con hielo y jugo de limón fresco.",
+          options: []
+        },
+        en: {
+          subtitle: "Ice Lemon Yogurt",
+          description: "Creamy yogurt blended with crushed ice and fresh lemon juice.",
+          options: []
+        },
+        vi: {
+          subtitle: "Sữa Chua Chanh Đá",
+          description: "Sữa chua sánh mịn xay cùng đá bào và nước cốt chanh tươi mát lạnh.",
+          options: []
+        },
+        zh: {
+          subtitle: "柠檬冰沙酸奶",
+          description: "将香浓酸奶与碎冰及新鲜柠檬汁混合搅拌的爽口饮品。",
+          options: []
+        },
+        ko: {
+          subtitle: "아이스 레몬 요거트",
+          description: "부드러운 요거트에 부순 얼음과 신선한 레몬즙을 함께 갈아 만든 음료.",
+          options: []
+        },
+        ja: {
+          subtitle: "ヨーグルト・レモン・フローズン",
+          description: "なめらかなヨーグルトに砕いた氷とレモン果汁を合わせてブレンドしたフローズンドリンク。",
+          options: []
+        },
+        fr: {
+          subtitle: "Yaourt Frappé au Citron",
+          description: "Yaourt crémeux mixé avec de la glace pilée et du jus de citron frais.",
+          options: []
+        },
+        it: {
+          subtitle: "Yogurt blended con Ghiaccio e Limone",
+          description: "Yogurt cremoso frullato con ghiaccio tritato e succo di limone fresco.",
+          options: []
+        },
+        price: '4,50€',
+        image: '/menu_suachuachanhda.png'
+      },
+      {
+        id: 'sinh-to-bo',
+        name: 'Sinh tố bơ',
+        es: {
+          subtitle: "Batido de Aguacate",
+          description: "Aguacate fresco triturado y batido con leche condensada y hielo.",
+          options: []
+        },
+        en: {
+          subtitle: "Avocado Smoothie",
+          description: "Creamy, rich shake made with fresh avocado, condensed milk, and ice.",
+          options: []
+        },
+        vi: {
+          subtitle: "Sinh Tố Bơ",
+          description: "Bơ sáp tươi ngon xay nhuyễn cùng sữa đặc và đá bào ngậy thơm.",
+          options: []
+        },
+        zh: {
+          subtitle: "牛油果奶昔",
+          description: "使用新鲜牛油果与甜炼乳及冰块打制而成的香浓果昔。",
+          options: []
+        },
+        ko: {
+          subtitle: "아보카도 스무디",
+          description: "신선한 아보카도와 연유, 얼음을 함께 갈아 만든 고소하고 부드러운 스무디.",
+          options: []
+        },
+        ja: {
+          subtitle: "アボカドスムージー",
+          description: "フレッシュなアボカドに練乳と氷を加えてブレンドした、クリーミーで濃厚なスムージー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Smoothie à l'Avocat",
+          description: "Smoothie onctueux et crémeux à base d'avocat frais, de lait concentré sucré et de glace.",
+          options: []
+        },
+        it: {
+          subtitle: "Smoothie all'Avocado",
+          description: "Smoothie cremoso e vellutato preparato con avocado fresco, latte condensato dolce e ghiaccio.",
+          options: []
+        },
+        price: '4,50€',
+        image: '/menu_avocado_smoothie.png'
+      },
+      {
         id: 'cafe-vietnamita',
         name: 'Cà phê sữa đá',
         es: {
@@ -2367,7 +3011,7 @@ export default function Menu() {
           options: []
         },
         zh: {
-          subtitle: "传统越南冰咖啡",
+          subtitle: "传统越南 ice coffee",
           description: "浓郁的传统越南滴滤咖啡，融合甜炼乳与满满冰块。",
           options: []
         },
