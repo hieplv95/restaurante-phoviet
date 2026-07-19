@@ -2549,3 +2549,72 @@ input, textarea, select {
   border-top: 1px dashed var(--border-color);
   padding-top: 24px;
 }
+
+/* ==========================================================================
+   Category Tab Swiper Scroll Enhancements
+   ========================================================================== */
+.categories-swiper-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+/* Fading gradients at the edges on mobile to hint at scrollable content */
+@media (max-width: 768px) {
+  .categories-swiper-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 12px;
+    width: 60px;
+    background: linear-gradient(to left, var(--bg-primary), transparent);
+    pointer-events: none;
+    z-index: 2;
+  }
+}
+
+.categories-swipe-hint {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .categories-swipe-hint {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--accent-gold);
+    opacity: 0.6;
+    margin-top: 8px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    animation: pulseHint 2s infinite ease-in-out;
+  }
+}
+
+@keyframes pulseHint {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+/* Styled visible scrollbar for categories container on mobile */
+@media (max-width: 768px) {
+  .categories-container::-webkit-scrollbar {
+    height: 4px;
+    display: block !important;
+  }
+  .categories-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 9999px;
+  }
+  .categories-container::-webkit-scrollbar-thumb {
+    background: var(--accent-gold);
+    border-radius: 9999px;
+  }
+}

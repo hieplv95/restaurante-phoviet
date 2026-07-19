@@ -4365,17 +4365,22 @@ export default function Menu() {
         </div>
 
         {/* Categories Tab Swiper */}
-        <div className="categories-container" style={{ marginBottom: '50px' }}>
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              className={`category-tab ${activeCategory === cat.id ? 'active' : ''}`}
-              onClick={() => setActiveCategory(cat.id)}
-            >
-              <span className="category-emoji">{cat.emoji}</span>
-              <span>{cat[currentLang] || cat.es}</span>
-            </button>
-          ))}
+        <div className="categories-swiper-wrapper">
+          <div className="categories-container">
+            {categories.map((cat) => (
+              <button
+                key={cat.id}
+                className={`category-tab ${activeCategory === cat.id ? 'active' : ''}`}
+                onClick={() => setActiveCategory(cat.id)}
+              >
+                <span className="category-emoji">{cat.emoji}</span>
+                <span>{cat[currentLang] || cat.es}</span>
+              </button>
+            ))}
+          </div>
+          <div className="categories-swipe-hint">
+            {translations[currentLang]?.['menu.swipeHint'] || '← Desliza para ver más →'}
+          </div>
         </div>
 
         {/* Menu Grid */}
