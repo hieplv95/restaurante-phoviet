@@ -3037,6 +3037,282 @@ export default function Menu() {
         },
         price: '4,50€',
         image: '/menu_cafe.png'
+      },
+      {
+        id: 'te-verde-vietnam',
+        name: 'Té verde de Vietnam',
+        es: {
+          subtitle: "Trà Xanh Việt Nam / Green Tea from Vietnam",
+          description: "Té verde tradicional importado de Vietnam, aromático y purificante.",
+          options: []
+        },
+        en: {
+          subtitle: "Vietnamese Green Tea",
+          description: "Traditional green tea imported from Vietnam, aromatic and purifying.",
+          options: []
+        },
+        vi: {
+          subtitle: "Trà Xanh Việt Nam",
+          description: "Trà xanh truyền thống Việt Nam thơm hương dịu nhẹ và thanh lọc cơ thể.",
+          options: []
+        },
+        zh: {
+          subtitle: "越南绿茶",
+          description: "从越南进口的传统绿茶，茶香浓郁，提神清心。",
+          options: []
+        },
+        ko: {
+          subtitle: "베트남 녹차",
+          description: "베트남에서 수입한 정통 녹차, 향긋하고 깔끔한 맛.",
+          options: []
+        },
+        ja: {
+          subtitle: "ベトナム緑茶",
+          description: "ベトナムから直輸入した伝統的な緑茶。香り高くすっきりとした味わい。",
+          options: []
+        },
+        fr: {
+          subtitle: "Thé Vert du Vietnam",
+          description: "Thé vert traditionnel importé du Vietnam, aromatique et purifiant.",
+          options: []
+        },
+        it: {
+          subtitle: "Tè Verde del Vietnam",
+          description: "Tè verde tradizionale importato dal Vietnam, aromatico e purificante.",
+          options: []
+        },
+        price: '2,50€',
+        image: ''
+      },
+      {
+        id: 'te-jengibre-limon',
+        name: 'Té de jengibre con limón',
+        es: {
+          subtitle: "Trà Gừng Chanh / Ginger Tea with Lemon",
+          description: "Infusión reconfortante de jengibre fresco y limón, ideal para la digestión.",
+          options: []
+        },
+        en: {
+          subtitle: "Ginger Tea with Lemon",
+          description: "Comforting infusion of fresh ginger and lemon, ideal for digestion.",
+          options: []
+        },
+        vi: {
+          subtitle: "Trà Gừng Chanh",
+          description: "Trà gừng ấm áp kết hợp cùng chanh tươi thơm mát, hỗ trợ tiêu hóa tốt.",
+          options: []
+        },
+        zh: {
+          subtitle: "柠檬生姜茶",
+          description: "新鲜生姜与柠檬的暖胃特调花草茶，有助于消化。",
+          options: []
+        },
+        ko: {
+          subtitle: "레몬 생강차",
+          description: "신선한 생강과 레몬을 우려내어 속을 따뜻하게 해주는 건강차.",
+          options: []
+        },
+        ja: {
+          subtitle: "レモンジンジャーティー",
+          description: "新鮮な生姜とレモンをブレンドした、体を温めるヘルシーなハーブティー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Infusion Gingembre Citron",
+          description: "Infusion réconfortante de gingembre frais et de citron, idéale pour la digestion.",
+          options: []
+        },
+        it: {
+          subtitle: "Infuso di Zenzero e Limone",
+          description: "Infuso confortante di zenzero fresco e limone, ideale per la digestione.",
+          options: []
+        },
+        price: '3,50€',
+        image: ''
+      },
+      {
+        id: 'manzanilla',
+        name: 'Manzanilla',
+        es: {
+          subtitle: "Trà Hoa Cúc / Chamomile Tea",
+          description: "Infusión clásica de flores de manzanilla, relajante y digestiva.",
+          options: []
+        },
+        en: {
+          subtitle: "Chamomile Tea",
+          description: "Classic chamomile flower infusion, relaxing and soothing for digestion.",
+          options: []
+        },
+        vi: {
+          subtitle: "Trà Hoa Cúc",
+          description: "Trà hoa cúc khô thiên nhiên, giúp thanh nhiệt, thư giãn và ngủ ngon.",
+          options: []
+        },
+        zh: {
+          subtitle: "洋甘菊茶",
+          description: "经典的洋甘菊花茶，温和舒缓，有助于放松与消化。",
+          options: []
+        },
+        ko: {
+          subtitle: "캐모마일 티",
+          description: "마음을 편안하게 해주는 클래식 캐모마일 꽃차.",
+          options: []
+        },
+        ja: {
+          subtitle: "カモミールティー",
+          description: "リラックス効果が高く、消化にも優しい定番のカモミールハーブティー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Camomille",
+          description: "Infusion classique de flores de manzanilla, relaxante et digestive.",
+          options: []
+        },
+        it: {
+          subtitle: "Camomilla",
+          description: "Infuso classico di fiori di camomilla, rilassante e digestivo.",
+          options: []
+        },
+        price: '2,50€',
+        image: ''
+      },
+      {
+        id: 'frutos-de-bosque',
+        name: 'Frutos de Bosque',
+        es: {
+          subtitle: "Trà Dâu Rừng / Forest Berries Tea",
+          description: "Deliciosa infusión frutal con una mezcla selecta de bayas y frutos rojos del bosque.",
+          options: []
+        },
+        en: {
+          subtitle: "Forest Berries Tea",
+          description: "Delicious fruit infusion with a select blend of forest berries and red fruits.",
+          options: []
+        },
+        vi: {
+          subtitle: "Trà Dâu Rừng",
+          description: "Trà trái cây thơm ngon phối trộn từ các loại dâu rừng và quả mọng đỏ.",
+          options: []
+        },
+        zh: {
+          subtitle: "森林野莓果茶",
+          description: "甄选多种森林野莓与红果混合调配而成的美味果茶。",
+          options: []
+        },
+        ko: {
+          subtitle: "포레스트 베리 티",
+          description: "다양한 야생 베리와 붉은 과일들을 블렌딩하여 만든 새콤달콤한 과일차.",
+          options: []
+        },
+        ja: {
+          subtitle: "フォレストベリーティー",
+          description: "数種類の野いちごや赤い果実を贅沢にブレンドした、甘酸っぱいフルーツティー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Fruits des Bois",
+          description: "Délicieuse infusion fruitée avec un mélange sélectionné de baies et de fruits rouges des bois.",
+          options: []
+        },
+        it: {
+          subtitle: "Frutti di Bosco",
+          description: "Delizioso infuso fruttato con una miscela selezionata di bacche e frutti rossi del bosco.",
+          options: []
+        },
+        price: '2,50€',
+        image: ''
+      },
+      {
+        id: 'poleo-menta',
+        name: 'Poleo Menta',
+        es: {
+          subtitle: "Trà Bạc Hà / Mint Tea",
+          description: "Infusión refrescante de menta poleo, excelente para después de las comidas.",
+          options: []
+        },
+        en: {
+          subtitle: "Mint Tea",
+          description: "Refreshing pennyroyal mint infusion, excellent for after meals.",
+          options: []
+        },
+        vi: {
+          subtitle: "Trà Bạc Hà",
+          description: "Trà lá bạc hà thanh mát, sảng khoái, rất tốt cho tiêu hóa sau bữa ăn.",
+          options: []
+        },
+        zh: {
+          subtitle: "薄荷茶",
+          description: "清新提神的薄荷草本茶，饭后饮用极佳。",
+          options: []
+        },
+        ko: {
+          subtitle: "페퍼민트/민트 티",
+          description: "식후에 마시기 좋은 깔끔하고 청량한 민트 허브차.",
+          options: []
+        },
+        ja: {
+          subtitle: "ペパーミントティー",
+          description: "爽やかな風味で、食後のお口直しにもぴったりのミントハーブティー。",
+          options: []
+        },
+        fr: {
+          subtitle: "Menthe Pouliot",
+          description: "Infusion rafraîchissante de menthe pouliot, excellente après les repas.",
+          options: []
+        },
+        it: {
+          subtitle: "Menta Piperita",
+          description: "Infuso rinfrescante di menta piperita, eccellente dopo i pasti.",
+          options: []
+        },
+        price: '2,50€',
+        image: ''
+      },
+      {
+        id: 'english-breakfast',
+        name: 'English breakfast (té negro)',
+        es: {
+          subtitle: "Bữa Sáng Kiểu Anh - Trà Đen / English Breakfast - Black Tea",
+          description: "Té negro tradicional de cuerpo robusto, ideal para comenzar el día o tomar con leche.",
+          options: []
+        },
+        en: {
+          subtitle: "English Breakfast Black Tea",
+          description: "Traditional robust-bodied black tea, ideal to start the day or drink with milk.",
+          options: []
+        },
+        vi: {
+          subtitle: "Hồng Trà Bữa Sáng Kiểu Anh",
+          description: "Hồng trà (trà đen) truyền thống đậm đà, lý tưởng để khởi đầu ngày mới hoặc uống cùng sữa.",
+          options: []
+        },
+        zh: {
+          subtitle: "英式早餐红茶",
+          description: "经典的浓郁红茶，非常适合搭配牛奶或开启活力一天。",
+          options: []
+        },
+        ko: {
+          subtitle: "잉글리시 브렉퍼스트 홍차",
+          description: "진하고 깊은 맛의 전통 홍차, 우유와 곁들이거나 아침에 마시기 좋습니다.",
+          options: []
+        },
+        ja: {
+          subtitle: "イングリッシュ・ブレックファスト紅茶",
+          description: "コク深くまろやかな伝統のブラックティー。ミルクティーにも最適。",
+          options: []
+        },
+        fr: {
+          subtitle: "Thé Noir English Breakfast",
+          description: "Thé noir traditionnel au corps robuste, idéal pour commencer la journée ou à déguster avec du lait.",
+          options: []
+        },
+        it: {
+          subtitle: "Tè Nero English Breakfast",
+          description: "Tè nero tradizionale dal corpo robusto, ideale per iniziare la giornata o da gustare con il latte.",
+          options: []
+        },
+        price: '2,50€',
+        image: ''
       }
     ]
   };
@@ -3087,11 +3363,13 @@ export default function Menu() {
                     ))}
                   </ul>
                 </div>
-                <div className="menu-item-image-container">
-                  <div className="menu-item-image-circle">
-                    <img src={item.image} alt={item.name} className="menu-item-image" />
+                {item.image && (
+                  <div className="menu-item-image-container">
+                    <div className="menu-item-image-circle">
+                      <img src={item.image} alt={item.name} className="menu-item-image" />
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             );
           })}
