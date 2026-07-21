@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Menu from './components/Menu';
 import Reviews from './components/Reviews';
+import MapSection from './components/MapSection';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 function MainApp() {
@@ -28,6 +29,7 @@ function MainApp() {
         <About />
         <Menu />
         <Reviews />
+        <MapSection />
       </main>
 
 

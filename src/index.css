@@ -2643,3 +2643,161 @@ input, textarea, select {
     border-radius: 9999px;
   }
 }
+
+/* ==========================================================================
+   Map Section & Floating Google Place Card
+   ========================================================================== */
+.map-section {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.google-map-iframe {
+  width: 100%;
+  height: 100%;
+  filter: contrast(1.02) saturate(1.05);
+}
+
+.map-floating-card {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 22px 24px;
+  width: 330px;
+  max-width: calc(100% - 64px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-floating-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.16);
+}
+
+.card-top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  background: rgba(15, 118, 110, 0.08);
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+.pin-icon {
+  color: var(--accent-green);
+}
+
+.card-ext-btn {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.card-ext-btn:hover {
+  color: var(--accent-red);
+}
+
+.card-restaurant-name {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.card-restaurant-category {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+
+.card-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.stars-group {
+  display: flex;
+  gap: 2px;
+}
+
+.rating-score {
+  font-weight: 800;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+}
+
+.reviews-count {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.card-address-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin-bottom: 18px;
+}
+
+.card-view-maps-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--accent-red);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.card-view-maps-link:hover {
+  opacity: 0.85;
+  transform: translateX(2px);
+}
+
+@media (max-width: 576px) {
+  .map-section {
+    height: 420px;
+  }
+  .map-floating-card {
+    top: 16px;
+    left: 16px;
+    max-width: calc(100% - 32px);
+    padding: 16px 18px;
+  }
+}
