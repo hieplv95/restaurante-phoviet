@@ -37,8 +37,8 @@ function MainApp() {
           {/* Column 1: Brand details */}
           <div>
             <a href="#home" className="logo-link">
-              <span className="logo-icon">🍜</span>
-              <div className="logo-text">Phở<span>Việt</span></div>
+              <img src="/logo_cungdinhhue.png" alt="Pho Viet - Cung Đình Huế" className="logo-img" />
+              <div className="logo-text">Pho <span>Viet</span></div>
             </a>
             <p className="footer-brand-desc">
               {t('footer.desc')}

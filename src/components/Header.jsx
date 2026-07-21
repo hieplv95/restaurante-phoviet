@@ -27,9 +27,9 @@ export default function Header() {
       <div className="container header-container">
         {/* Brand Logo */}
         <a href="#home" className="logo-link">
-          <span className="logo-icon">🍜</span>
+          <img src="/logo_cungdinhhue.png" alt="Pho Viet - Cung Đình Huế" className="logo-img" />
           <div className="logo-text">
-            Phở<span>Việt</span>
+            Pho <span>Viet</span>
           </div>
         </a>
 

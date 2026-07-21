@@ -29,7 +29,13 @@ export default function Hero({ onMenuScroll }) {
         {/* Right: Floating Graphics & Interactive Badges */}
         <div className="hero-media">
           <div className="hero-image-wrapper">
-            <div className="hero-bowl">🍜</div>
+            <div className="hero-bowl">
+              <img 
+                src="/hero_phobo_3d.png" 
+                alt="Phở Bò 3D" 
+                className="hero-bowl-img"
+              />
+            </div>
             
             {/* Top-Left Floating Tag */}
             <div className="hero-badge-floating top-left">
@@ -44,7 +50,7 @@ export default function Hero({ onMenuScroll }) {
             <div className="hero-badge-floating bottom-right">
               <span className="floating-icon">🔥</span>
               <div className="floating-text">
-                <p>Phở Bò</p>
+                <p>Phở Bò Tradicional</p>
                 <p>{t('hero.badge.hours')}</p>
               </div>
             </div>

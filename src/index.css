@@ -187,6 +187,16 @@ input, textarea, select {
   font-size: 2rem;
   animation: float 4s ease-in-out infinite;
 }
+.logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 8px rgba(15, 118, 110, 0.25));
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.logo-link:hover .logo-img {
+  transform: scale(1.15) rotate(6deg);
+}
 .logo-text span {
   color: var(--accent-green);
 }
@@ -494,9 +504,24 @@ input, textarea, select {
   align-items: center;
 }
 .hero-bowl {
-  font-size: 12rem;
-  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.6));
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 20px 35px rgba(15, 118, 110, 0.25));
   animation: float 6s ease-in-out infinite;
+}
+.hero-bowl-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+}
+.hero-bowl-img:hover {
+  transform: scale(1.05) rotate(-2deg);
+  filter: drop-shadow(0 30px 50px rgba(15, 118, 110, 0.38));
 }
 .hero-badge-floating {
   position: absolute;
