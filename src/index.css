@@ -2801,3 +2801,20 @@ input, textarea, select {
     padding: 16px 18px;
   }
 }
+
+/* VietSol Footer Credit Link */
+.footer-credits {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.vietsol-link {
+  color: var(--accent-green);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+.vietsol-link:hover {
+  color: var(--accent-gold);
+  text-decoration: underline;
+}

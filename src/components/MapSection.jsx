@@ -7,27 +7,27 @@ export default function MapSection() {
 
   const textConfig = {
     es: {
-      category: 'RESTAURANTE / COMIDA VIETNAMITA',
-      reviews: '142 reseñas',
+      category: 'RESTAURANTE VIETNAMITA',
+      reviews: '1.205 reseñas',
       address: 'Carrer de Viladomat, 56, Eixample, 08015 Barcelona',
       linkText: 'VER EN GOOGLE MAPS'
     },
     en: {
-      category: 'RESTAURANTE / VIETNAMESE FOOD',
-      reviews: '142 reviews',
+      category: 'VIETNAMESE RESTAURANT',
+      reviews: '1,205 reviews',
       address: 'Carrer de Viladomat, 56, Eixample, 08015 Barcelona',
       linkText: 'VIEW ON GOOGLE MAPS'
     },
     vi: {
-      category: 'NHÀ HÀNG / MÓN ĂN VIỆT NAM',
-      reviews: '142 đánh giá',
+      category: 'NHÀ HÀNG VIỆT NAM',
+      reviews: '1.205 đánh giá',
       address: 'Carrer de Viladomat, 56, Eixample, 08015 Barcelona',
       linkText: 'XEM TRÊN GOOGLE MAPS'
     }
   };
 
   const currText = textConfig[language] || textConfig.es;
-  const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Carrer+de+Viladomat+56+08015+Barcelona";
+  const googleMapsUrl = "https://www.google.com/maps/place/Pho+Viet/@41.3774691,2.1578155,17z/data=!3m2!4b1!5s0x12a4b478d7b41685:0x59d458301199f64a!4m6!3m5!1s0x12a4a31a39f5abcd:0x3c30f56c80806936!8m2!3d41.3774651!4d2.1603904";
 
   return (
     <section id="location" className="map-section">
@@ -37,7 +37,7 @@ export default function MapSection() {
         <iframe
           className="google-map-iframe"
           title="Pho Viet Location Map"
-          src="https://maps.google.com/maps?q=Carrer+de+Viladomat,+56,+08015+Barcelona&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          src="https://maps.google.com/maps?q=41.3774651,2.1603904&hl=es&z=17&output=embed"
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -73,8 +73,8 @@ export default function MapSection() {
                 <Star key={i} size={14} fill="#f59e0b" stroke="#f59e0b" />
               ))}
             </div>
-            <span className="rating-score">4.8</span>
-            <span className="reviews-count">({currText.reviews})</span>
+            <span className="rating-score">4,8</span>
+            <span className="reviews-count">({currText.reviews}) • 10-20 €</span>
           </div>
 
           <p className="card-address-text">{currText.address}</p>

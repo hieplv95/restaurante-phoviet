@@ -86,8 +86,21 @@ function MainApp() {
         </div>
 
         <div className="container footer-bottom">
-          <p>{t('footer.rights')}</p>
-          <div style={{ display: 'flex', gap: '20px' }}>
+          <div>
+            <p>{t('footer.rights')}</p>
+            <p className="footer-credits">
+              {language === 'vi' ? 'Được thiết kế bởi ' : language === 'es' ? 'Diseñado por ' : 'Designed by '}
+              <a 
+                href="https://vietsol.eu/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="vietsol-link"
+              >
+                VietSol
+              </a>
+            </p>
+          </div>
+          <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
             <a href="#privacy" className="footer-link" style={{ fontSize: '0.8rem' }}>
               {language === 'es' ? 'Política de Privacidad' : 'Privacy Policy'}
             </a>
