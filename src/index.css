@@ -2448,14 +2448,15 @@ input, textarea, select {
 }
 
 .daily-menu-board {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  background: #FAF6F0; /* Cream paper flyer background */
+  border: 1px solid #E8DFD0;
   border-radius: 16px;
-  padding: 40px;
+  padding: 45px;
   margin-top: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   position: relative;
   overflow: hidden;
+  color: #2C2825;
 }
 
 .daily-menu-board::before {
@@ -2464,46 +2465,48 @@ input, textarea, select {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent-gold), var(--accent-green));
+  height: 6px;
+  background: linear-gradient(90deg, #D4AF37, #15803D);
 }
 
 .daily-menu-header {
   text-align: center;
-  margin-bottom: 40px;
-  border-bottom: 1px dashed var(--border-color);
-  padding-bottom: 30px;
+  margin-bottom: 45px;
+  border-bottom: 2px dashed #E8DFD0;
+  padding-bottom: 35px;
 }
 
 .daily-menu-title {
   font-family: var(--font-serif);
-  font-size: 2.4rem;
-  color: var(--accent-gold);
+  font-size: 2.5rem;
+  color: #2C2825;
   margin-bottom: 8px;
+  font-weight: 800;
 }
 
 .daily-menu-price-tag {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--accent-gold);
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #B45309;
   font-family: var(--font-serif);
   margin: 10px 0;
 }
 
 .daily-menu-subtitle {
   font-size: 0.95rem;
-  color: var(--accent-green);
+  color: #15803D;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .daily-menu-rules {
   font-family: var(--font-serif);
-  font-size: 1.15rem;
-  color: var(--text-primary);
+  font-size: 1.2rem;
+  color: #4B453F;
   margin-top: 15px;
   font-style: italic;
+  font-weight: 600;
 }
 
 .daily-menu-grid-layout {
@@ -2584,6 +2587,322 @@ input, textarea, select {
   font-style: italic;
   border-top: 1px dashed var(--border-color);
   padding-top: 24px;
+}
+
+/* ==========================================================================
+   Daily Menu Dish Print-Style Sections (dmd-*)
+   Matches the physical flyer layout: category header + dish rows with images
+   ========================================================================== */
+
+.dmd-section-block {
+  margin-top: 44px;
+}
+
+.dmd-section-header {
+  margin-bottom: 20px;
+}
+
+.dmd-section-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 10px 0;
+}
+
+.dmd-section-lang {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.dmd-section-divider {
+  height: 2px;
+  background: linear-gradient(to right, var(--accent-gold), transparent);
+  border-radius: 2px;
+}
+
+.dmd-dish-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.dmd-dish-row:last-child {
+  border-bottom: none;
+}
+
+.dmd-dish-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.dmd-dish-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0 0 4px 0;
+}
+
+.dmd-dish-subtitle {
+  font-size: 0.92rem;
+  color: var(--accent-gold);
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.dmd-dish-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0 0 10px 0;
+}
+
+.dmd-dish-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dmd-dish-options li {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.dmd-option-highlight {
+  color: var(--text-primary) !important;
+  font-weight: 600;
+}
+
+.dmd-dish-image-wrap {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.dmd-dish-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.dmd-dish-row:hover .dmd-dish-img {
+  transform: scale(1.08);
+}
+
+.dmd-supplement-note {
+  text-align: center;
+  margin-top: 44px;
+  font-size: 0.88rem;
+  color: var(--accent-gold);
+  font-style: italic;
+  border-top: 1px dashed rgba(212, 175, 55, 0.3);
+  padding-top: 24px;
+}
+
+/* ==========================================================================
+   Flyer-style daily menu items (dmd-flyer-*)
+   Matches the physical menu print layout from image 2
+   ========================================================================== */
+
+.dmd-flyer-section-header {
+  margin: 50px 0 25px 0;
+  border-bottom: 3px solid #B45309;
+  padding-bottom: 12px;
+}
+
+.dmd-flyer-section-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #B45309;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.dmd-flyer-section-title-sub {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #57534E;
+}
+
+.dmd-flyer-item {
+  padding: 35px 0;
+  border-bottom: 1.5px dashed #E8DFD0;
+}
+
+.dmd-flyer-item:last-child {
+  border-bottom: none;
+}
+
+.dmd-flyer-heading {
+  margin-bottom: 20px;
+}
+
+.dmd-flyer-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #2C2825;
+  margin: 0 0 8px 0;
+}
+
+.dmd-flyer-divider {
+  width: 100%;
+  height: 1px;
+  background: #2C2825;
+}
+
+.dmd-flyer-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.dmd-flyer-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.dmd-flyer-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #2C2825;
+  margin: 0 0 14px 0;
+}
+
+.dmd-flyer-descs {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.dmd-flyer-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.dmd-flyer-desc.es {
+  color: #2C2825;
+  font-weight: 500;
+}
+
+.dmd-flyer-desc.vi {
+  color: #6B6661;
+}
+
+.dmd-flyer-desc.en {
+  color: #8C8680;
+}
+
+.dmd-flyer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.dmd-flyer-option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dmd-flyer-opt-title {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #2C2825;
+}
+
+.dmd-flyer-opt-sub {
+  font-size: 0.88rem;
+  color: #6B6661;
+}
+
+/* Green option styles */
+.dmd-flyer-option-group.vegetarian .dmd-flyer-opt-title {
+  color: #16A34A;
+}
+
+.dmd-flyer-option-group.vegetarian .dmd-flyer-opt-sub {
+  color: #16A34A;
+  opacity: 0.95;
+}
+
+.dmd-flyer-image-wrap {
+  flex-shrink: 0;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  border: 4px solid #FAF6F0; /* Blend with cream bg */
+  outline: 1.5px solid #E8DFD0;
+}
+
+.dmd-flyer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.dmd-flyer-item:hover .dmd-flyer-img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .dmd-flyer-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dmd-flyer-image-wrap {
+    align-self: center;
+    width: 160px;
+    height: 160px;
+  }
+  .dmd-flyer-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dmd-dish-row {
+    flex-direction: column-reverse;
+    gap: 14px;
+  }
+  .dmd-dish-image-wrap {
+    width: 80px;
+    height: 80px;
+    align-self: flex-end;
+  }
+  .dmd-section-title {
+    font-size: 1.3rem;
+  }
 }
 
 /* ==========================================================================

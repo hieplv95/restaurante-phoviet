@@ -4400,6 +4400,108 @@ export default function Menu() {
                 {dailyMenuTranslations[currentLang]?.rule || 'Incluye: 1 Entrante + 1 Plato Principal + 1 Café o Postre + 1 Bebida'}
               </p>
             </div>
+
+            {/* ENTRANTES (KHAI VỊ / STARTERS) Header */}
+            <div className="dmd-flyer-section-header">
+              <h3 className="dmd-flyer-section-title">
+                ENTRANTES <span className="dmd-flyer-section-title-sub">(KHAI VỊ / STARTERS)</span>
+              </h3>
+            </div>
+
+            <div className="dmd-flyer-container">
+              {/* Dish 1: ROLLO PRIMAVERA */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">ROLLO PRIMAVERA</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Chả giò / Fried Spring rolls</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Dos rollos fritos crujientes rellenos de verduras y</p>
+                      <p className="dmd-flyer-desc vi">Hai cuốn chả giò nhân rau củ dùng kèm với</p>
+                      <p className="dmd-flyer-desc en">Two crispy fried spring rolls filled with vegetables served with</p>
+                    </div>
+                    <div className="dmd-flyer-options">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Cerdo</span>
+                        <span className="dmd-flyer-opt-sub">Thịt heo / Pork</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">B. Judía mungo*</span>
+                        <span className="dmd-flyer-opt-sub">Đậu xanh / Mung bean</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">Rollo extra</span>
+                        <span className="dmd-flyer-opt-sub">Thêm cuốn / Extra roll</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_chagio.png" alt="ROLLO PRIMAVERA" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Dish 2: ROLLO FRESCO */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">ROLLO FRESCO</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Gỏi cuốn / Summer rolls</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Dos rollos frescos envueltos a mano y</p>
+                      <p className="dmd-flyer-desc vi">Hai gỏi cuốn tay tươi với</p>
+                      <p className="dmd-flyer-desc en">Two fresh, hand-wrapped rolls with</p>
+                    </div>
+                    <div className="dmd-flyer-options">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Cerdo y gambas</span>
+                        <span className="dmd-flyer-opt-sub">Thịt heo và tôm / Pork and prawn</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Gambas y mango</span>
+                        <span className="dmd-flyer-opt-sub">Tôm và xoài / Prawn and mango</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">C. Tofu y mango*</span>
+                        <span className="dmd-flyer-opt-sub">Đậu hũ và xoài / Tofu and mango</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_goicuon.png" alt="ROLLO FRESCO" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Dish 3: CAMARÓN FRITO */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">CAMARÓN FRITO</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Tôm chiên xù / Crispy fried shrimp</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Langostino rebozado con tempura fresca,</p>
+                      <p className="dmd-flyer-desc es">servido con salsa de chili dulce</p>
+                      <p className="dmd-flyer-desc vi">Tôm tươi tẩm bột tempura, ăn kèm với sốt tương ớt ngọt</p>
+                      <p className="dmd-flyer-desc en">Fresh tempura-battered shrimp, served with sweet chili sauce</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="dmd-supplement-note">
+              {dailyMenuTranslations[currentLang]?.supplement || '*Suplemento de +2,00€ para Cerveza Saigon, Bebidas Caseras o Café Vietnamita'}
+            </div>
           </div>
         ) : (
           <div className="custom-menu-grid">
