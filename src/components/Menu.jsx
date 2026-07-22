@@ -4497,6 +4497,95 @@ export default function Menu() {
                   </div>
                 </div>
               </div>
+
+              {/* Dish 4: CROQUETAS DE PESCADO CRUJIENTES */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">CROQUETAS DE PESCADO CRUJIENTES</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Chả cá cốm / Fried fish cake</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Croquetas de pescado (4 piezas) marinadas en hierbas con copos de arroz crujientes</p>
+                      <p className="dmd-flyer-desc vi">Chả cá (4 miếng) ướp thảo mộc với vụn cơm giòn</p>
+                      <p className="dmd-flyer-desc en">Fish croquettes (4 pieces) marinated in herbs with crispy rice flakes</p>
+                    </div>
+                    <div className="dmd-flyer-options">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">Pieza extra</span>
+                        <span className="dmd-flyer-opt-sub">Thêm 1 viên / Extra piece</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_chacacom.png" alt="CROQUETAS DE PESCADO CRUJIENTES" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Dish 5: ENSALADA VIETNAM DE MANGO */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">ENSALADA VIETNAM DE MANGO</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Gỏi xoài / Vietnamese green mango salad</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Deliciosa ensalada de mango con</p>
+                      <p className="dmd-flyer-desc vi">Gỏi xoài ngon tuyệt vời, ăn kèm với</p>
+                      <p className="dmd-flyer-desc en">Delicious green mango salad with</p>
+                    </div>
+                    <div className="dmd-flyer-options">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Cerdo y gambas</span>
+                        <span className="dmd-flyer-opt-sub">Thịt heo / Pork</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Pollo</span>
+                        <span className="dmd-flyer-opt-sub">Thịt gà / Chicken</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">C. Tofu</span>
+                        <span className="dmd-flyer-opt-sub">Đậu hũ / Tofu</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_goixoai.png" alt="ENSALADA VIETNAM DE MANGO" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Dish 6: ALITAS DE POLLO CRUJIENTES ESTILO PHO VIET */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">ALITAS DE POLLO CRUJIENTES ESTILO PHO VIET</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Cánh gà đặc biệt / Pho Viet - style crispy chicken wings</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Crujientes con salsa de chili dulce casera (5 piezas)</p>
+                      <p className="dmd-flyer-desc vi">Giòn tan với sốt tương ớt ngọt tự làm (5 miếng)</p>
+                      <p className="dmd-flyer-desc en">Crispy with homemade sweet chili sauce (5 pieces)</p>
+                    </div>
+                    <div className="dmd-flyer-options">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">Pieza extra</span>
+                        <span className="dmd-flyer-opt-sub">Thêm 1 viên / Extra piece</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_alitas.png" alt="ALITAS DE POLLO CRUJIENTES" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="dmd-supplement-note">
