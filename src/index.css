@@ -2758,7 +2758,7 @@ input, textarea, select {
 
 .dmd-flyer-title {
   font-family: var(--font-serif);
-  font-size: 1.8rem;
+  font-size: 1.45rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -2786,22 +2786,22 @@ input, textarea, select {
 
 .dmd-flyer-subtitle {
   font-family: var(--font-serif);
-  font-size: 1.35rem;
+  font-size: 1.05rem;
   font-weight: 700;
   font-style: italic;
   color: #2C2825;
-  margin: 0 0 14px 0;
+  margin: 0 0 10px 0;
 }
 
 .dmd-flyer-descs {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .dmd-flyer-desc {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   line-height: 1.5;
   margin: 0;
 }
@@ -2834,12 +2834,12 @@ input, textarea, select {
 
 .dmd-flyer-opt-title {
   font-weight: 800;
-  font-size: 1.05rem;
+  font-size: 0.85rem;
   color: #2C2825;
 }
 
 .dmd-flyer-opt-sub {
-  font-size: 0.88rem;
+  font-size: 0.75rem;
   color: #6B6661;
 }
 
