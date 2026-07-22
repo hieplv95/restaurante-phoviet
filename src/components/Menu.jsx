@@ -5,6 +5,7 @@ export default function Menu() {
   const { language } = useLanguage();
   const currentLang = language || 'es';
   const [activeCategory, setActiveCategory] = useState('mains');
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const dailyMenuTranslations = {
     es: {
@@ -4385,72 +4386,46 @@ export default function Menu() {
 
         {/* Menu Grid */}
         {activeCategory === 'menudia' ? (
-          <div className="daily-menu-board">
-            <div className="daily-menu-header">
-              <span className="daily-menu-subtitle">
-                {dailyMenuTranslations[currentLang]?.subtitle || 'Solo Días Laborales'}
-              </span>
-              <h3 className="daily-menu-title">
-                {dailyMenuTranslations[currentLang]?.title || 'Menú Medio de Día'}
-              </h3>
-              <div className="daily-menu-price-tag">
-                {dailyMenuTranslations[currentLang]?.price || '13,90€'}
-              </div>
-              <p className="daily-menu-rules">
-                {dailyMenuTranslations[currentLang]?.rule || 'Incluye: 1 Entrante + 1 Plato Principal + 1 Café o Postre + 1 Bebida'}
-              </p>
-            </div>
-
-            <div className="daily-menu-grid-layout">
-              {[
-                { key: 'starters', title: dailyMenuTranslations[currentLang]?.starters || 'Entrantes', items: menuItems.starters },
-                { key: 'mains', title: dailyMenuTranslations[currentLang]?.mains || 'Platos Principales', items: menuItems.mains },
-                { key: 'desserts', title: dailyMenuTranslations[currentLang]?.desserts || 'Postres o Café', items: menuItems.desserts },
-                { key: 'drinks', title: dailyMenuTranslations[currentLang]?.drinks || 'Bebidas', items: menuItems.drinks },
-              ].map((section) => (
-                <div key={section.key} className="daily-menu-section">
-                  <h4 className="daily-menu-section-title">
-                    <span>{section.title}</span>
-                    <span className="daily-menu-section-badge">
-                      {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
-                    </span>
-                  </h4>
-                  <div className="daily-menu-cards-list">
-                    {section.items && section.items.map((item) => {
-                      const details = item[currentLang] || item.es;
-                      return (
-                        <div key={item.id} className="custom-menu-item" style={{ marginBottom: '28px', paddingBottom: '24px' }}>
-                          <div className="menu-item-info">
-                            <h3 className="menu-item-title">{item.name}</h3>
-                            <p className="menu-item-subtitle">{details.subtitle}</p>
-                            <p className="menu-item-desc">{details.description}</p>
-                            {details.options && details.options.length > 0 && (
-                              <ul className="menu-item-options">
-                                {details.options.map((opt, idx) => (
-                                  <li key={idx} className={opt.highlight ? 'highlight-option' : ''}>
-                                    {opt.text}
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                          </div>
-                          {item.image && (
-                            <div className="menu-item-image-container">
-                              <div className="menu-item-image-circle">
-                                <img src={item.image} alt={item.name} className="menu-item-image" />
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
+          <div className="daily-menu-image-wrapper">
+            <div className="daily-menu-images-grid">
+              <div 
+                className="daily-menu-image-card"
+                onClick={() => setSelectedImage('/menu_dias_1.png')}
+              >
+                <img 
+                  src="/menu_dias_1.png" 
+                  alt="Menú del Día - Trang 1" 
+                  className="daily-menu-img" 
+                />
+                <div className="daily-menu-zoom-badge">
+                  <span>🔍 {currentLang === 'vi' ? 'Nhấp để phóng to' : currentLang === 'es' ? 'Haz clic para ampliar' : 'Click to enlarge'}</span>
                 </div>
-              ))}
+              </div>
+
+              <div 
+                className="daily-menu-image-card"
+                onClick={() => setSelectedImage('/menu_dias_2.png')}
+              >
+                <img 
+                  src="/menu_dias_2.png" 
+                  alt="Menú del Día - Trang 2" 
+                  className="daily-menu-img" 
+                />
+                <div className="daily-menu-zoom-badge">
+                  <span>🔍 {currentLang === 'vi' ? 'Nhấp để phóng to' : currentLang === 'es' ? 'Haz clic para ampliar' : 'Click to enlarge'}</span>
+                </div>
+              </div>
             </div>
 
-            <div className="daily-menu-footer-note">
-              {dailyMenuTranslations[currentLang]?.supplement || '*Suplemento de +2,00€ para Cerveza Saigon, Bebidas Caseras o Café Vietnamita'}
+            <div className="daily-menu-pdf-actions" style={{ textAlign: 'center', marginTop: '30px' }}>
+              <a 
+                href="/menu_dias.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="pdf-download-btn"
+              >
+                📄 {currentLang === 'vi' ? 'Tải PDF Menú del Día' : currentLang === 'es' ? 'Descargar Menú en PDF' : 'Download Menu PDF'}
+              </a>
             </div>
           </div>
         ) : (
@@ -4484,7 +4459,19 @@ export default function Menu() {
             })}
           </div>
         )}      </div>
-    </section>
+    
+      {/* Lightbox Modal for Menu Images */}
+      {selectedImage && (
+        <div className="lightbox-overlay" onClick={() => setSelectedImage(null)}>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <button className="lightbox-close-btn" onClick={() => setSelectedImage(null)}>
+              &times;
+            </button>
+            <img src={selectedImage} alt="Menu preview" className="lightbox-image" />
+          </div>
+        </div>
+      )}
+</section>
   );
 }
 
