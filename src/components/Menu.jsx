@@ -5,7 +5,6 @@ export default function Menu() {
   const { language } = useLanguage();
   const currentLang = language || 'es';
   const [activeCategory, setActiveCategory] = useState('mains');
-  const [selectedImage, setSelectedImage] = useState(null);
 
   const dailyMenuTranslations = {
     es: {
@@ -4352,6 +4351,19 @@ export default function Menu() {
           </h2>
                 </div>
 
+        {/* Daily Menu Banner Button */}
+        <div className="daily-menu-banner-wrapper">
+          <button
+            className={`daily-menu-banner-btn ${activeCategory === 'menudia' ? 'active' : ''}`}
+            onClick={() => setActiveCategory('menudia')}
+          >
+            <span>📅</span>
+            <span>
+              {dailyMenuTranslations[currentLang]?.title || 'Menú del Día'}: {dailyMenuTranslations[currentLang]?.price || '13,90€'}
+            </span>
+          </button>
+        </div>
+
         {/* Categories Tab Swiper */}
         <div className="categories-swiper-wrapper">
           <div className="categories-container">
@@ -4372,47 +4384,117 @@ export default function Menu() {
         </div>
 
         {/* Menu Grid */}
-        <div className="custom-menu-grid">
-          {menuItems[activeCategory]?.map((item) => {
-            const details = item[currentLang] || item.es;
-            return (
-              <div key={item.id} className="custom-menu-item">
-                <div className="menu-item-info">
-                  <h3 className="menu-item-title">{item.name}</h3>
-                  <p className="menu-item-subtitle">{details.subtitle}</p>
-                  <div className="menu-item-price">{item.price}</div>
-                  <p className="menu-item-desc">{details.description}</p>
-                  <ul className="menu-item-options">
-                    {details.options.map((opt, idx) => (
-                      <li key={idx} className={opt.highlight ? 'highlight-option' : ''}>
-                        {opt.text}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                {item.image && (
-                  <div className="menu-item-image-container">
-                    <div className="menu-item-image-circle">
-                      <img src={item.image} alt={item.name} className="menu-item-image" />
-                    </div>
-                  </div>
-                )}
+        {activeCategory === 'menudia' ? (
+          <div className="daily-menu-board">
+            <div className="daily-menu-header">
+              <span className="daily-menu-subtitle">
+                {dailyMenuTranslations[currentLang]?.subtitle || 'Solo Días Laborales'}
+              </span>
+              <h3 className="daily-menu-title">
+                {dailyMenuTranslations[currentLang]?.title || 'Menú Medio de Día'}
+              </h3>
+              <div className="daily-menu-price-tag">
+                {dailyMenuTranslations[currentLang]?.price || '13,90€'}
               </div>
-            );
-          })}
-        </div>
-      </div>
+              <p className="daily-menu-rules">
+                {dailyMenuTranslations[currentLang]?.rule || 'Incluye: 1 Entrante + 1 Plato Principal + 1 Café o Postre + 1 Bebida'}
+              </p>
+            </div>
+
+            <div className="daily-menu-grid-layout">
+              {[
+                { key: 'starters', title: dailyMenuTranslations[currentLang]?.starters || 'Entrantes', items: menuItems.starters },
+                { key: 'mains', title: dailyMenuTranslations[currentLang]?.mains || 'Platos Principales', items: menuItems.mains },
+                { key: 'desserts', title: dailyMenuTranslations[currentLang]?.desserts || 'Postres o Café', items: menuItems.desserts },
+                { key: 'drinks', title: dailyMenuTranslations[currentLang]?.drinks || 'Bebidas', items: menuItems.drinks },
+              ].map((section) => (
+                <div key={section.key} className="daily-menu-section">
+                  <h4 className="daily-menu-section-title">
+                    <span>{section.title}</span>
+                    <span className="daily-menu-section-badge">
+                      {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
+                    </span>
+                  </h4>
+                  <div className="daily-menu-cards-list">
+                    {section.items && section.items.map((item) => {
+                      const details = item[currentLang] || item.es;
+                      return (
+                        <div key={item.id} className="custom-menu-item" style={{ marginBottom: '28px', paddingBottom: '24px' }}>
+                          <div className="menu-item-info">
+                            <h3 className="menu-item-title">{item.name}</h3>
+                            <p className="menu-item-subtitle">{details.subtitle}</p>
+                            <p className="menu-item-desc">{details.description}</p>
+                            {details.options && details.options.length > 0 && (
+                              <ul className="menu-item-options">
+                                {details.options.map((opt, idx) => (
+                                  <li key={idx} className={opt.highlight ? 'highlight-option' : ''}>
+                                    {opt.text}
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </div>
+                          {item.image && (
+                            <div className="menu-item-image-container">
+                              <div className="menu-item-image-circle">
+                                <img src={item.image} alt={item.name} className="menu-item-image" />
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="daily-menu-footer-note">
+              {dailyMenuTranslations[currentLang]?.supplement || '*Suplemento de +2,00€ para Cerveza Saigon, Bebidas Caseras o Café Vietnamita'}
+            </div>
+          </div>
+        ) : (
+          <div className="custom-menu-grid">
+            {menuItems[activeCategory].map((item) => {
+              const details = item[currentLang] || item.es;
+              return (
+                <div key={item.id} className="custom-menu-item">
+                  <div className="menu-item-info">
+                    <h3 className="menu-item-title">{item.name}</h3>
+                    <p className="menu-item-subtitle">{details.subtitle}</p>
+                    <div className="menu-item-price">{item.price}</div>
+                    <p className="menu-item-desc">{details.description}</p>
+                    <ul className="menu-item-options">
+                      {details.options.map((opt, idx) => (
+                        <li key={idx} className={opt.highlight ? 'highlight-option' : ''}>
+                          {opt.text}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {item.image && (
+                    <div className="menu-item-image-container">
+                      <div className="menu-item-image-circle">
+                        <img src={item.image} alt={item.name} className="menu-item-image" />
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}      </div>
     </section>
   );
 }
 
 const translations = {
-  es: { 'menu.tagline': 'NUESTRA CARTA', 'menu.title': 'Explora Nuestro Menú', 'menu.swipeHint': '← Desliza para ver más →' },
-  en: { 'menu.tagline': 'OUR MENU', 'menu.title': 'Explore Our Menu', 'menu.swipeHint': '← Swipe for more →' },
-  vi: { 'menu.tagline': 'THỰC ĐƠN CỦA CHÚNG TÔI', 'menu.title': 'Khám Phá Thực Đơn', 'menu.swipeHint': '← Vuốt để xem thêm →' },
-  zh: { 'menu.tagline': '我们的菜单', 'menu.title': '探索我们的菜单', 'menu.swipeHint': '← 滑动查看更多 →' },
-  ko: { 'menu.tagline': '엄선된 메뉴', 'menu.title': '메뉴 둘러보기', 'menu.swipeHint': '← Thêm nữa →' },
-  ja: { 'menu.tagline': '私たちのメニュー', 'menu.title': 'メニューを見る', 'menu.swipeHint': '← もっと見る →' },
-  fr: { 'menu.tagline': 'NOTRE CARTE', 'menu.title': 'Explorez Notre Menu', 'menu.swipeHint': '← Glisser pour plus →' },
-  it: { 'menu.tagline': 'IL NOSTRO MENU', 'menu.title': 'Esplora il Nostro Menu', 'menu.swipeHint': '← Scorri per altro →' }
+  es: { 'menu.tagline': 'NUESTRA CARTA', 'menu.title': 'Explora Nuestro Menú' },
+  en: { 'menu.tagline': 'OUR MENU', 'menu.title': 'Explore Our Menu' },
+  vi: { 'menu.tagline': 'THỰC ĐƠN CỦA CHÚNG TÔI', 'menu.title': 'Khám Phá Thực Đơn' },
+  zh: { 'menu.tagline': '我们的菜单', 'menu.title': '探索我们的菜单' },
+  ko: { 'menu.tagline': '엄선된 메뉴', 'menu.title': '메뉴 둘러보기' },
+  ja: { 'menu.tagline': '私たちのメニュー', 'menu.title': 'メニューを見る' },
+  fr: { 'menu.tagline': 'NOTRE CARTE', 'menu.title': 'Explorez Notre Menu' },
+  it: { 'menu.tagline': 'IL NOSTRO MENU', 'menu.title': 'Esplora il Nostro Menu' }
 };
