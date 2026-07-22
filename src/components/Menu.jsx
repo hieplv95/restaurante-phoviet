@@ -4972,6 +4972,122 @@ export default function Menu() {
                   </div>
                 </div>
               </div>
+
+              {/* Main 13: BÚN TRỘN HEO QUAY */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">BÚN TRỘN HEO QUAY</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Bún trộn heo quay / Mixed vermicelli with crispy roasted pork</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Los fideos de arroz se mezclan con cerdo asado</p>
+                      <p className="dmd-flyer-desc vi">Bún gạo trộn với thịt heo quay</p>
+                      <p className="dmd-flyer-desc en">Rice noodles mixed with roasted pork</p>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_bunheoquay.png" alt="BÚN TRỘN HEO QUAY" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 14: CƠM THỊT SỐT XÌ DẦU */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">CƠM THỊT SỐT XÌ DẦU</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Cơm thịt sốt xì dầu / Rice with meat in soy sauce</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">El carne se fríe y se sirve con salsa de soja sazonada</p>
+                      <p className="dmd-flyer-desc vi">Thịt được chiên và ăn kèm với nước tương nêm gia vị</p>
+                      <p className="dmd-flyer-desc en">The meat is fried and served with seasoned soy sauce</p>
+                    </div>
+                    <div className="dmd-flyer-options horizontal">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Pato</span>
+                        <span className="dmd-flyer-opt-sub">Thịt vịt / Duck meat</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Pollo</span>
+                        <span className="dmd-flyer-opt-sub">Thịt gà / Chicken</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_com_thit_xi_dau.png" alt="CƠM THỊT SỐT XÌ DẦU" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 15: CƠM THỊT SỐT MẮM TỎI */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">CƠM THỊT SỐT MẮM TỎI</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Cơm thịt sốt mắm tỏi / Rice with pork in garlic fish sauce</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">El carne se fríe y se sirve con una deliciosa salsa de pescado con ajo</p>
+                      <p className="dmd-flyer-desc vi">Thịt được chiên và ăn kèm với nước sốt mắm tỏi thơm ngon</p>
+                      <p className="dmd-flyer-desc en">The meat is fried and served with a delicious garlic fish sauce</p>
+                    </div>
+                    <div className="dmd-flyer-options horizontal">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Pato</span>
+                        <span className="dmd-flyer-opt-sub">Thịt vịt / Duck meat</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Pollo</span>
+                        <span className="dmd-flyer-opt-sub">Thịt gà / Chicken</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 16: CƠM GỎI TRỘN */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">CƠM GỎI TRỘN</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Cơm gỏi trộn / Vietnamese rice bowl with mixed salad</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">La salsa agridulce mezclada con verduras y carne, servida con arroz blanco</p>
+                      <p className="dmd-flyer-desc vi">Nước sốt chua ngọt trộn với rau và thịt, ăn kèm với cơm trắng</p>
+                      <p className="dmd-flyer-desc en">Sweet and sour sauce mixed with vegetables and meat, served with white rice</p>
+                    </div>
+                    <div className="dmd-flyer-options grid">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Pato</span>
+                        <span className="dmd-flyer-opt-sub">Thịt vịt / Duck meat</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Pollo</span>
+                        <span className="dmd-flyer-opt-sub">Thịt gà / Chicken</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">C. Gambas</span>
+                        <span className="dmd-flyer-opt-sub">Thịt tôm / Prawn</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">D. Cerdo</span>
+                        <span className="dmd-flyer-opt-sub">Thịt heo / Pork</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* POSTRES (TRÁNG MIỆNG / DESSERT) Section Header */}
