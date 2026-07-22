@@ -4728,6 +4728,122 @@ export default function Menu() {
                   </div>
                 </div>
               </div>
+
+              {/* Main 6: TAMARINDO SALTEADO */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">TAMARINDO SALTEADO</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Me xào / Stir-fried tamarind</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Excelente combinación de tamarindo, cacahuetes, verduras + arroz jazmin y:</p>
+                      <p className="dmd-flyer-desc vi">Sự kết hợp tuyệt vời giữa me, đậu phộng, rau củ + gạo thơm lài và:</p>
+                      <p className="dmd-flyer-desc en">Excellent combination of tamarind, peanuts, vegetables + jasmine rice and:</p>
+                    </div>
+                    <div className="dmd-flyer-options grid">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Gambas</span>
+                        <span className="dmd-flyer-opt-sub">Thịt tôm / Prawn</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Ternera +1,00€</span>
+                        <span className="dmd-flyer-opt-sub">Thịt bò / Beef</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">C. Tofu*</span>
+                        <span className="dmd-flyer-opt-sub">Đậu hũ / Tofu</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">D. Heura*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_me_xao.png" alt="TAMARINDO SALTEADO" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 7: SOPA PHỞ */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">SOPA PHỞ</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Phở / Vietnamese noodle soup</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">El plato más popular de Vietnam, clasificado en la lista de los 50 mejores alimentos del mundo.</p>
+                      <p className="dmd-flyer-desc vi">Món ăn nổi tiếng nhất Việt Nam, nằm trong danh sách 50 món ăn ngon nhất thế giới.</p>
+                      <p className="dmd-flyer-desc en">Vietnam's most popular dish, ranked on the list of the 50 best foods in the world.</p>
+                    </div>
+                    <div className="dmd-flyer-options grid">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Ternera +1,00€</span>
+                        <span className="dmd-flyer-opt-sub">Thịt bò / Beef</span>
+                        <span className="dmd-flyer-opt-title" style={{ marginTop: '4px', fontSize: '0.85rem' }}>+ Bola de ternera casera +1,80</span>
+                        <span className="dmd-flyer-opt-sub">+ Bò viên nhà làm / Homemade beef ball</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Pollo</span>
+                        <span className="dmd-flyer-opt-sub">Thịt gà / Chicken</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">C. Tofu y champiñones*</span>
+                        <span className="dmd-flyer-opt-sub">Đậu hũ và nấm / Tofu and mushrooms</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">D. Heura*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_phobo.png" alt="SOPA PHỞ" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 8: CURRY */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">CURRY</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Cà ri / Curry</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Curry increíblemente aromático con salsa de coco + arroz jazmín con.</p>
+                      <p className="dmd-flyer-desc vi">Cà ri thơm lừng với nước cốt dừa + cơm trắng thơm ngát kèm</p>
+                      <p className="dmd-flyer-desc en">Incredibly aromatic curry with coconut sauce + jasmine rice with.</p>
+                    </div>
+                    <div className="dmd-flyer-options grid">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Gambas</span>
+                        <span className="dmd-flyer-opt-sub">Thịt tôm / Prawn</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Pollo</span>
+                        <span className="dmd-flyer-opt-sub">Thịt gà / Chicken</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">C. Tofu</span>
+                        <span className="dmd-flyer-opt-sub">Đậu hũ / Tofu</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">D. Heura*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_curry.png" alt="CURRY" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* POSTRES (TRÁNG MIỆNG / DESSERT) Section Header */}

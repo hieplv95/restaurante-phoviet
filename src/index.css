@@ -2841,6 +2841,12 @@ input, textarea, select {
   gap: 30px;
 }
 
+.dmd-flyer-options.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 20px;
+}
+
 .dmd-flyer-option-group {
   display: flex;
   flex-direction: column;
