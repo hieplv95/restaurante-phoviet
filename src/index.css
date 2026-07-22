@@ -2484,29 +2484,39 @@ input, textarea, select {
   font-weight: 800;
 }
 
-.daily-menu-price-tag {
-  font-size: 3.2rem;
-  font-weight: 900;
-  color: #B45309;
-  font-family: var(--font-serif);
-  margin: 10px 0;
-}
-
-.daily-menu-subtitle {
-  font-size: 0.95rem;
-  color: #15803D;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.daily-menu-subtitle-langs {
+  font-size: 1.05rem;
+  color: #16A34A; /* Green text like the flyer */
+  margin: 4px 0 20px 0;
   font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
-.daily-menu-rules {
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  color: #4B453F;
-  margin-top: 15px;
-  font-style: italic;
+.daily-menu-rules-multilang {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.daily-menu-rule-line {
+  font-size: 0.95rem;
   font-weight: 600;
+  color: #2C2825;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.daily-menu-rule-sub {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #B45309; /* Gold color for drink choices and supplements */
+  margin: 0 0 10px 0;
+}
+
+.daily-menu-rule-sub:last-child {
+  margin-bottom: 0;
 }
 
 .daily-menu-grid-layout {

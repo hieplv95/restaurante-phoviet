@@ -4387,18 +4387,24 @@ export default function Menu() {
         {activeCategory === 'menudia' ? (
           <div className="daily-menu-board">
             <div className="daily-menu-header">
-              <span className="daily-menu-subtitle">
-                {dailyMenuTranslations[currentLang]?.subtitle || 'Solo Días Laborales'}
-              </span>
-              <h3 className="daily-menu-title">
-                {dailyMenuTranslations[currentLang]?.title || 'Menú Medio de Día'}
-              </h3>
-              <div className="daily-menu-price-tag">
-                {dailyMenuTranslations[currentLang]?.price || '13,90€'}
-              </div>
-              <p className="daily-menu-rules">
-                {dailyMenuTranslations[currentLang]?.rule || 'Incluye: 1 Entrante + 1 Plato Principal + 1 Café o Postre + 1 Bebida'}
+              <h3 className="daily-menu-title">SOLO DÍAS LABORALES - 13,90€</h3>
+              <p className="daily-menu-subtitle-langs">
+                (Chỉ áp dụng các ngày trong tuần / Weekdays only)
               </p>
+              <div className="daily-menu-rules-multilang">
+                <p className="daily-menu-rule-line es">
+                  1 entrante + 1 plato principal + 1 café o postre + 1 bebidas (agua/caña/copa de vino)
+                </p>
+                <p className="daily-menu-rule-sub es">
+                  (Cerveza Saigon / Bebidas caseras / Café vietnamita +2,00€)
+                </p>
+                <p className="daily-menu-rule-line en">
+                  1 starter + 1 main course + 1 coffee/dessert + 1 homemade drink (water/beer/glass of wine)
+                </p>
+                <p className="daily-menu-rule-sub en">
+                  (Saigon beer / Beer / Vietnamese coffee +2,00€)
+                </p>
+              </div>
             </div>
 
             {/* ENTRANTES (KHAI VỊ / STARTERS) Header */}
