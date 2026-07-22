@@ -4400,58 +4400,6 @@ export default function Menu() {
                 {dailyMenuTranslations[currentLang]?.rule || 'Incluye: 1 Entrante + 1 Plato Principal + 1 Café o Postre + 1 Bebida'}
               </p>
             </div>
-
-            <div className="daily-menu-grid-layout">
-              {[
-                { key: 'starters', title: dailyMenuTranslations[currentLang]?.starters || 'Entrantes', items: menuItems.starters },
-                { key: 'mains', title: dailyMenuTranslations[currentLang]?.mains || 'Platos Principales', items: menuItems.mains },
-                { key: 'desserts', title: dailyMenuTranslations[currentLang]?.desserts || 'Postres o Café', items: menuItems.desserts },
-                { key: 'drinks', title: dailyMenuTranslations[currentLang]?.drinks || 'Bebidas', items: menuItems.drinks },
-              ].map((section) => (
-                <div key={section.key} className="daily-menu-section">
-                  <h4 className="daily-menu-section-title">
-                    <span>{section.title}</span>
-                    <span className="daily-menu-section-badge">
-                      {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
-                    </span>
-                  </h4>
-                  <div className="daily-menu-cards-list">
-                    {section.items && section.items.map((item) => {
-                      const details = item[currentLang] || item.es;
-                      return (
-                        <div key={item.id} className="custom-menu-item" style={{ marginBottom: '28px', paddingBottom: '24px' }}>
-                          <div className="menu-item-info">
-                            <h3 className="menu-item-title">{item.name}</h3>
-                            <p className="menu-item-subtitle">{details.subtitle}</p>
-                            <p className="menu-item-desc">{details.description}</p>
-                            {details.options && details.options.length > 0 && (
-                              <ul className="menu-item-options">
-                                {details.options.map((opt, idx) => (
-                                  <li key={idx} className={opt.highlight ? 'highlight-option' : ''}>
-                                    {opt.text}
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                          </div>
-                          {item.image && (
-                            <div className="menu-item-image-container">
-                              <div className="menu-item-image-circle">
-                                <img src={item.image} alt={item.name} className="menu-item-image" />
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="daily-menu-footer-note">
-              {dailyMenuTranslations[currentLang]?.supplement || '*Suplemento de +2,00€ para Cerveza Saigon, Bebidas Caseras o Café Vietnamita'}
-            </div>
           </div>
         ) : (
           <div className="custom-menu-grid">
