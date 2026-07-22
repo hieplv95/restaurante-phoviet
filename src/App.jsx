@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from './context/LanguageContext';
 import Header from './components/Header';
+import PolicyModal from './components/PolicyModal';
 import Hero from './components/Hero';
 import About from './components/About';
 import Menu from './components/Menu';
@@ -10,6 +11,7 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 function MainApp() {
   const { language, t } = useLanguage();
+  const [openPolicy, setOpenPolicy] = useState(null);
   
   const handleMenuScroll = () => {
     const menuSection = document.getElementById('menu');
@@ -101,15 +103,28 @@ function MainApp() {
             </p>
           </div>
           <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-            <a href="#privacy" className="footer-link" style={{ fontSize: '0.8rem' }}>
-              {language === 'es' ? 'Política de Privacidad' : 'Privacy Policy'}
-            </a>
-            <a href="#terms" className="footer-link" style={{ fontSize: '0.8rem' }}>
-              {language === 'es' ? 'Términos de Servicio' : 'Terms of Service'}
-            </a>
+            <button 
+              onClick={() => setOpenPolicy('privacy')} 
+              className="footer-link" 
+              style={{ fontSize: '0.8rem', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+            >
+              {t('footer.privacy')}
+            </button>
+            <button 
+              onClick={() => setOpenPolicy('terms')} 
+              className="footer-link" 
+              style={{ fontSize: '0.8rem', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+            >
+              {t('footer.terms')}
+            </button>
           </div>
         </div>
       </footer>
+      <PolicyModal 
+        isOpen={openPolicy !== null} 
+        policyType={openPolicy} 
+        onClose={() => setOpenPolicy(null)} 
+      />
     </div>
   );
 }

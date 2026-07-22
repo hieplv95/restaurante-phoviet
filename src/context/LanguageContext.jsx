@@ -47,7 +47,9 @@ const translations = {
     'footer.hours': 'Horarios',
     'footer.hours.desc': 'Lunes - Domingo: 12:00 - 23:30',
     'footer.contact': 'Contacto',
-    'footer.rights': '© 2026 Restaurante Phở Việt. Todos los derechos reservados.'
+    'footer.rights': '© 2026 Restaurante Phở Việt. Todos los derechos reservados.',
+    'footer.privacy': 'Política de Privacidad',
+    'footer.terms': 'Términos de Servicio'
   },
   en: {
     // Navigation
@@ -93,7 +95,9 @@ const translations = {
     'footer.hours': 'Hours',
     'footer.hours.desc': 'Monday - Sunday: 12:00 - 23:30',
     'footer.contact': 'Contact',
-    'footer.rights': '© 2026 Phở Việt Restaurant. All rights reserved.'
+    'footer.rights': '© 2026 Phở Việt Restaurant. All rights reserved.',
+    'footer.privacy': 'Privacy Policy',
+    'footer.terms': 'Terms of Service'
   },
   vi: {
     // Navigation
@@ -139,7 +143,9 @@ const translations = {
     'footer.hours': 'Giờ Mở Cửa',
     'footer.hours.desc': 'Thứ Hai - Chủ Nhật: 12:00 - 23:30',
     'footer.contact': 'Liên Hệ',
-    'footer.rights': '© 2026 Nhà Hàng Phở Việt. Bảo lưu mọi quyền.'
+    'footer.rights': '© 2026 Nhà Hàng Phở Việt. Bảo lưu mọi quyền.',
+    'footer.privacy': 'Chính sách Bảo mật',
+    'footer.terms': 'Điều khoản Dịch vụ'
   },
   zh: {
     // Navigation
@@ -185,7 +191,9 @@ const translations = {
     'footer.hours': '营业时间',
     'footer.hours.desc': '周一 - 周日：12:00 - 23:30',
     'footer.contact': '联系我们',
-    'footer.rights': '© 2026 Phở Việt 餐厅。保留所有权利。'
+    'footer.rights': '© 2026 Phở Việt 餐厅。保留所有权利。',
+    'footer.privacy': '隐私政策',
+    'footer.terms': '服务条款'
   },
   ko: {
     // Navigation
@@ -231,7 +239,9 @@ const translations = {
     'footer.hours': '영업 시간',
     'footer.hours.desc': '월요일 - 일요일: 12:00 - 23:30',
     'footer.contact': '연락처',
-    'footer.rights': '© 2026 Phở Việt 레스토랑. All rights reserved.'
+    'footer.rights': '© 2026 Phở Việt 레스토랑. All rights reserved.',
+    'footer.privacy': '개인정보 처리방침',
+    'footer.terms': '서비스 약관'
   },
   ja: {
     // Navigation
@@ -277,7 +287,9 @@ const translations = {
     'footer.hours': '営業時間',
     'footer.hours.desc': '月曜日 - 日曜日: 12:00 - 23:30',
     'footer.contact': 'お問い合わせ',
-    'footer.rights': '© 2026 Phở Việt レストラン. All rights reserved.'
+    'footer.rights': '© 2026 Phở Việt レストラン. All rights reserved.',
+    'footer.privacy': 'プライバシーポリシー',
+    'footer.terms': '利用規約'
   },
   fr: {
     // Navigation
@@ -323,7 +335,9 @@ const translations = {
     'footer.hours': 'Horaires',
     'footer.hours.desc': 'Lundi - Dimanche: 12h00 - 23h30',
     'footer.contact': 'Contact',
-    'footer.rights': '© 2026 Restaurant Phở Việt. Tous droits réservés.'
+    'footer.rights': '© 2026 Restaurant Phở Việt. Tous droits réservés.',
+    'footer.privacy': 'Politique de Confidentialité',
+    'footer.terms': 'Conditions d\'Utilisation'
   },
   it: {
     // Navigation
@@ -369,7 +383,9 @@ const translations = {
     'footer.hours': 'Orari',
     'footer.hours.desc': 'Lunedì - Domenica: 12:00 - 23:30',
     'footer.contact': 'Contatto',
-    'footer.rights': '© 2026 Ristorante Phở Việt. Tutti i diritti riservati.'
+    'footer.rights': '© 2026 Ristorante Phở Việt. Tutti i diritti riservati.',
+    'footer.privacy': 'Informativa sulla Privacy',
+    'footer.terms': 'Termini di Servizio'
   }
 };
 
