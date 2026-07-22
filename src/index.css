@@ -2836,6 +2836,11 @@ input, textarea, select {
   margin-top: 15px;
 }
 
+.dmd-flyer-options.horizontal {
+  flex-direction: row;
+  gap: 30px;
+}
+
 .dmd-flyer-option-group {
   display: flex;
   flex-direction: column;

@@ -4623,23 +4623,108 @@ export default function Menu() {
             </div>
 
             <div className="dmd-flyer-container">
-              {/* Main 3: Sopa Hue de Fideos / Hue Spicy Noodle Soup */}
+              {/* Main 1: TERNERA CON PIMIENTA */}
               <div className="dmd-flyer-item">
                 <div className="dmd-flyer-heading">
-                  <h4 className="dmd-flyer-title">SOPA HUE DE FIDEOS / HUE SPICY NOODLE SOUP</h4>
+                  <h4 className="dmd-flyer-title">TERNERA CON PIMIENTA</h4>
                   <div className="dmd-flyer-divider" />
                 </div>
                 <div className="dmd-flyer-body">
                   <div className="dmd-flyer-info">
-                    <p className="dmd-flyer-subtitle">Bún Bò Huế / Hue spicy noodle soup</p>
+                    <p className="dmd-flyer-subtitle">Bò sốt tiêu đen / Beef with black pepper sauce</p>
                     <div className="dmd-flyer-descs">
-                      <p className="dmd-flyer-desc es">Sopa de fideos de arroz con ternera y cerdo, con un toque picante.</p>
-                      <p className="dmd-flyer-desc vi">Bún bò Huế cay nồng với thịt bò, giò heo đậm đà chuẩn vị.</p>
-                      <p className="dmd-flyer-desc en">Rice noodle soup with beef and pork, with a spicy kick.</p>
+                      <p className="dmd-flyer-desc es">Este es un plato muy popular en las fiestas con un toque ligeramente picante, servido con:</p>
+                      <p className="dmd-flyer-desc vi">Đây là món ăn rất được ưa chuộng trong các bữa tiệc, có vị hơi cay, thường được dùng kèm với:</p>
+                      <p className="dmd-flyer-desc en">This is a very popular dish at parties with a slightly spicy touch, served with:</p>
+                    </div>
+                    <div className="dmd-flyer-options horizontal">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Arroz</span>
+                        <span className="dmd-flyer-opt-sub">Cơm / Rice</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Empanadillas</span>
+                        <span className="dmd-flyer-opt-sub">Bánh xếp / Dumplings</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 2: POLLO CON SALSA DE CACAHUETE */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">POLLO CON SALSA DE CACAHUETE</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Gà sốt lạc / Chicken with peanut sauce</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Pollo con salsa de cacahuete con arroz</p>
+                      <p className="dmd-flyer-desc vi">Gà sốt lạc ăn kèm cơm</p>
+                      <p className="dmd-flyer-desc en">Chicken with peanut sauce and rice</p>
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_bunbohue.png" alt="BÚN BÒ HUẾ" className="dmd-flyer-img" />
+                    <img src="/menu_ga_sot_lac.png" alt="POLLO CON SALSA DE CACAHUETE" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 3: COSTILLAS DE CERDO CARAMELIZADAS */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">COSTILLAS DE CERDO CARAMELIZADAS</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Sườn ram mặn / Salty braised ribs</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Jugosas y tiernas costillas de cerdo asadas lentamente con salsa de caramelo + arroz jazmin</p>
+                      <p className="dmd-flyer-desc vi">Sườn heo quay chậm mọng nước với sốt caramel + gạo thơm lài</p>
+                      <p className="dmd-flyer-desc en">Juicy slow-roasted pork ribs with caramel sauce and jasmine rice</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 4: ESTOFADO DE PANCETA */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">ESTOFADO DE PANCETA</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Thịt kho tàu / Vietnamese braised pork with eggs</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Panceta de cerdo, huevos cocidos, agua de coco, salsa de pescado, azucar, chalotas.</p>
+                      <p className="dmd-flyer-desc vi">Thịt ba chỉ, trứng luộc, nước dừa, nước mắm, đường, hành tím.</p>
+                      <p className="dmd-flyer-desc en">Pork belly, boiled eggs, coconut water, fish sauce, sugar, shallots.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 5: BA CHỈ QUAY */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">BA CHỈ QUAY</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Ba chỉ quay / Roasted pork belly</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Panceta de cerdo asada con piel crujiente, servida con una salsa especial.</p>
+                      <p className="dmd-flyer-desc vi">Thịt ba chỉ nướng với lớp da giòn, ăn kèm với nước chấm đặc biệt.</p>
+                      <p className="dmd-flyer-desc en">Roasted pork belly with crispy skin, served with a special sauce.</p>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_ba_chi_quay.png" alt="BA CHỈ QUAY" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
