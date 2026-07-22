@@ -4592,6 +4592,120 @@ export default function Menu() {
                   </div>
                 </div>
               </div>
+
+              {/* Dish 7: GYOSAS AL VAPOR */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">GYOSAS AL VAPOR</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Há cảo / Steamed har gow</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Empanadillas rellenas de verduras y carne al estilo vietnamita</p>
+                      <p className="dmd-flyer-desc vi">Há cảo nhân rau và tôm theo kiểu Việt Nam</p>
+                      <p className="dmd-flyer-desc en">Har gows filled with vegetables and meat in the Vietnamese style</p>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_gyosas.png" alt="GYOSAS AL VAPOR" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* POSTRES (TRÁNG MIỆNG / DESSERT) Section Header */}
+            <div className="dmd-flyer-section-header">
+              <h3 className="dmd-flyer-section-title">
+                POSTRES <span className="dmd-flyer-section-title-sub">(TRÁNG MIỆNG / DESSERT)</span>
+              </h3>
+            </div>
+
+            <div className="dmd-flyer-container">
+              {/* Dessert 1: PUDIN CALIENTE CON PLATANO */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">PUDIN CALIENTE CON PLATANO</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Chè chuối / Vietnamese banana tapioca pudding</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Pudin caliente con platano y leche de coco con perlas de tapioca</p>
+                      <p className="dmd-flyer-desc vi">Chè chuối và sữa dừa ấm với hạt trân châu</p>
+                      <p className="dmd-flyer-desc en">Warm banana and coconut milk pudding with tapioca pearls</p>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_chechuoi.png" alt="PUDIN CALIENTE CON PLATANO" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Dessert 2: CHÈ ĐẬU ĐEN */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">CHÈ ĐẬU ĐEN</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Chè đậu đen / Vietnamese black bean sweet soup</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Les frijoles negros bien cocidos servidos</p>
+                      <p className="dmd-flyer-desc vi">Đậu đen được nấu chín kĩ</p>
+                      <p className="dmd-flyer-desc en">Well-cooked black beans are served</p>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_chedauden.png" alt="CHÈ ĐẬU ĐEN" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Dessert 3: PANNA COTTA TROPICAL */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">PANNA COTTA TROPICAL</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Panna cotta lá dứa / Pandan panna cotta</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Deliciosa panna cotta con sabor de coco pandan y cacahuete</p>
+                      <p className="dmd-flyer-desc vi">Panna cotta thơm ngon với hương vị dừa, lá dứa và đậu phộng</p>
+                      <p className="dmd-flyer-desc en">Delicious panna cotta with coconut, pandan and peanut flavor</p>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_pannacottatropical.png" alt="PANNA COTTA TROPICAL" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Dessert 4: PUDIN DE ARROZ NEGRO Y YOGUR */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">PUDIN DE ARROZ NEGRO Y YOGUR</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Sữa chua nếp cẩm / Black sticky rice yogurt</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Cremoso, rico y saludable postre de arroz negro servido con yogur y leche de coco</p>
+                      <p className="dmd-flyer-desc vi">Món tráng miệng làm từ gạo nếp cẩm béo ngậy, thơm ngon và bổ dưỡng, ăn kèm với sữa chua và nước cốt dừa</p>
+                      <p className="dmd-flyer-desc en">Creamy, rich and healthy black rice dessert served with yogurt and coconut milk</p>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_suachuanepcam.png" alt="PUDIN DE ARROZ NEGRO Y YOGUR" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="dmd-supplement-note">
