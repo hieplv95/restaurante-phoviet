@@ -4615,6 +4615,110 @@ export default function Menu() {
               </div>
             </div>
 
+            {/* PLATOS PRINCIPALES (MÓN CHÍNH / MAIN COURSES) Section Header */}
+            <div className="dmd-flyer-section-header">
+              <h3 className="dmd-flyer-section-title">
+                PLATOS PRINCIPALES <span className="dmd-flyer-section-title-sub">(MÓN CHÍNH / MAIN COURSES)</span>
+              </h3>
+            </div>
+
+            <div className="dmd-flyer-container">
+              {/* Main 1: Crepe Crujiente Vietnamita */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">CREPE CRUJIENTE VIETNAMITA</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Bánh Xèo / Pancake of Joy</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Crepe vietnamita fino y crujiente de harina de arroz, relleno de brotes de soja y:</p>
+                      <p className="dmd-flyer-desc vi">Bánh xèo vỏ mỏng giòn rụm làm từ bột gạo, nhân giá đỗ thanh mát và:</p>
+                      <p className="dmd-flyer-desc en">Thin and crispy Vietnamese pancake made with rice flour, stuffed with bean sprouts and:</p>
+                    </div>
+                    <div className="dmd-flyer-options">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Gambas y cerdo (+1€)</span>
+                        <span className="dmd-flyer-opt-sub">Tôm và thịt heo / Prawn and pork</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">B. Tofu orgánico*</span>
+                        <span className="dmd-flyer-opt-sub">Đậu hũ hữu cơ / Organic tofu</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_banhxeo.png" alt="CREPE CRUJIENTE VIETNAMITA" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 2: Sopa Phở */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">SOPA PHỞ</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Phở / Vietnamese Noodle Soup</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">El plato más popular de Vietnam, clasificado en la lista de los 50 mejores alimentos del mundo.</p>
+                      <p className="dmd-flyer-desc vi">Món ăn nổi tiếng nhất Việt Nam, nằm trong danh sách 50 món ăn ngon nhất thế giới.</p>
+                      <p className="dmd-flyer-desc en">Vietnam's most popular dish, ranked on the list of the 50 best foods in the world.</p>
+                    </div>
+                    <div className="dmd-flyer-options">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Ternera (12,90€)</span>
+                        <span className="dmd-flyer-opt-sub">Thịt bò / Beef</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Pollo (12,90€)</span>
+                        <span className="dmd-flyer-opt-sub">Thịt gà / Chicken</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">C. Tofu y champiñones* (11,90€)</span>
+                        <span className="dmd-flyer-opt-sub">Đậu hũ & nấm / Tofu and mushrooms</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">D. Heura* (11,90€)</span>
+                        <span className="dmd-flyer-opt-sub">Thịt thực vật Heura / Plant-based meat Heura</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">+ Bola de ternera casera (+1,80€)</span>
+                        <span className="dmd-flyer-opt-sub">Bò viên / Beef balls</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_phobo.png" alt="SOPA PHỞ" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 3: Sopa Hue de Fideos / Hue Spicy Noodle Soup */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">SOPA HUE DE FIDEOS / HUE SPICY NOODLE SOUP</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Bún Bò Huế / Hue spicy noodle soup</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Sopa de fideos de arroz con ternera y cerdo, con un toque picante.</p>
+                      <p className="dmd-flyer-desc vi">Bún bò Huế cay nồng với thịt bò, giò heo đậm đà chuẩn vị.</p>
+                      <p className="dmd-flyer-desc en">Rice noodle soup with beef and pork, with a spicy kick.</p>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_bunbohue.png" alt="BÚN BÒ HUẾ" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* POSTRES (TRÁNG MIỆNG / DESSERT) Section Header */}
             <div className="dmd-flyer-section-header">
               <h3 className="dmd-flyer-section-title">
