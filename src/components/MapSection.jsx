@@ -27,7 +27,7 @@ export default function MapSection() {
   };
 
   const currText = textConfig[language] || textConfig.es;
-  const googleMapsUrl = "https://www.google.com/maps/place/Pho+Viet/@41.3774691,2.1578155,17z/data=!3m2!4b1!5s0x12a4b478d7b41685:0x59d458301199f64a!4m6!3m5!1s0x12a4a31a39f5abcd:0x3c30f56c80806936!8m2!3d41.3774651!4d2.1603904";
+  const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Pho+Viet+Carrer+de+Viladomat+56+08015+Barcelona";
 
   return (
     <section id="location" className="map-section">
