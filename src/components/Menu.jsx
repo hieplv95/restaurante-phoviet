@@ -4844,6 +4844,134 @@ export default function Menu() {
                   </div>
                 </div>
               </div>
+
+              {/* Main 9: WOK FIDIEOS DE ARROR */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">WOK FIDIEOS DE ARROR</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Phở xào / Stir-fried pho</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Plato salteado con fideos de arroz, verduras, hierbas, cacahuetes asados, cebollas fritas con.</p>
+                      <p className="dmd-flyer-desc vi">Món xào với bún gạo, rau củ, rau thơm, đậu phộng rang, hành phi.</p>
+                      <p className="dmd-flyer-desc en">Stir-fried dish with rice noodles, vegetables, herbs, roasted peanuts, fried onions with.</p>
+                    </div>
+                    <div className="dmd-flyer-options grid">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Ternera +1,00€</span>
+                        <span className="dmd-flyer-opt-sub">Thịt bò / Beef</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Gambas</span>
+                        <span className="dmd-flyer-opt-sub">Thịt tôm / Prawn</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">C. Pollo</span>
+                        <span className="dmd-flyer-opt-sub">Thịt gà / Chicken</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">D. Tofu</span>
+                        <span className="dmd-flyer-opt-sub">Đậu hũ / Tofu</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">E. Heura*</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 10: BÚN THỊT NƯỚNG */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">BÚN THỊT NƯỚNG</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Bún thịt nướng / Vietnamese grilled pork with rice vermicelli</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Cerdo a la barbacoa con un rollito de primavera vietnamita.</p>
+                      <p className="dmd-flyer-desc vi">Thịt heo nướng ăn kèm nem cuốn Việt Nam.</p>
+                      <p className="dmd-flyer-desc en">Barbecued pork with a Vietnamese spring roll.</p>
+                    </div>
+                    <div className="dmd-flyer-options">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">Con rollo frito</span>
+                        <span className="dmd-flyer-opt-sub">Thêm chả giò chiên / With fried spring roll</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_bunthitnuong.png" alt="BÚN THỊT NƯỚNG" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 11: BÚN NEM */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">BÚN NEM</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Bún nem / Rice vermicelli noodles with fried spring rolls</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Estilo Hanoi: Vermicelli con rollitos de primavera vietnamitas.</p>
+                      <p className="dmd-flyer-desc vi">Phong cách Hà Nội: Bún cuốn kiểu Việt Nam hảo hạng.</p>
+                      <p className="dmd-flyer-desc en">Hanoi style: Vermicelli and Vietnamese spring rolls.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Main 12: BÚN BÒ NAM BỘ */}
+              <div className="dmd-flyer-item">
+                <div className="dmd-flyer-heading">
+                  <h4 className="dmd-flyer-title">BÚN BÒ NAM BỘ</h4>
+                  <div className="dmd-flyer-divider" />
+                </div>
+                <div className="dmd-flyer-body">
+                  <div className="dmd-flyer-info">
+                    <p className="dmd-flyer-subtitle">Bún bò nam bộ / Southern-style beef noodles</p>
+                    <div className="dmd-flyer-descs">
+                      <p className="dmd-flyer-desc es">Plato salteado con fideos de arroz, verduras, hierbas, cacahuetes asados, cebollas fritas con</p>
+                      <p className="dmd-flyer-desc vi">Món xào với bún gạo, rau củ, rau thơm, đậu phộng rang, hành phi kèm</p>
+                      <p className="dmd-flyer-desc en">Stir-fried dish with rice noodles, vegetables, herbs, roasted peanuts, fried onions with</p>
+                    </div>
+                    <div className="dmd-flyer-options grid">
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">A. Ternera +1,00€</span>
+                        <span className="dmd-flyer-opt-sub">Thịt bò / Beef</span>
+                      </div>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">B. Pollo</span>
+                        <span className="dmd-flyer-opt-sub">Thịt gà / Chicken</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">C. Tofu*</span>
+                        <span className="dmd-flyer-opt-sub">Đậu hũ / Tofu</span>
+                      </div>
+                      <div className="dmd-flyer-option-group vegetarian">
+                        <span className="dmd-flyer-opt-title">D. Heura*</span>
+                      </div>
+                    </div>
+                    <div className="dmd-flyer-options" style={{ marginTop: '12px' }}>
+                      <div className="dmd-flyer-option-group">
+                        <span className="dmd-flyer-opt-title">Con rollo frito</span>
+                        <span className="dmd-flyer-opt-sub">Thêm chả giò chiên / With fried spring roll</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dmd-flyer-image-wrap">
+                    <img src="/menu_bunbonambo.png" alt="BÚN BÒ NAM BỘ" className="dmd-flyer-img" />
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* POSTRES (TRÁNG MIỆNG / DESSERT) Section Header */}
