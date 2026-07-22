@@ -4352,19 +4352,6 @@ export default function Menu() {
           </h2>
                 </div>
 
-        {/* Daily Menu Banner Button */}
-        <div className="daily-menu-banner-wrapper">
-          <button
-            className={`daily-menu-banner-btn ${activeCategory === 'menudia' ? 'active' : ''}`}
-            onClick={() => setActiveCategory('menudia')}
-          >
-            <span>📅</span>
-            <span>
-              {dailyMenuTranslations[currentLang]?.title || 'Menú del Día'}: {dailyMenuTranslations[currentLang]?.price || '13,90€'}
-            </span>
-          </button>
-        </div>
-
         {/* Categories Tab Swiper */}
         <div className="categories-swiper-wrapper">
           <div className="categories-container">
@@ -4385,103 +4372,47 @@ export default function Menu() {
         </div>
 
         {/* Menu Grid */}
-        {activeCategory === 'menudia' ? (
-          <div className="daily-menu-image-wrapper">
-            <div className="daily-menu-images-grid">
-              <div 
-                className="daily-menu-image-card"
-                onClick={() => setSelectedImage('/menu_dias_1.png')}
-              >
-                <img 
-                  src="/menu_dias_1.png" 
-                  alt="Menú del Día - Trang 1" 
-                  className="daily-menu-img" 
-                />
-                <div className="daily-menu-zoom-badge">
-                  <span>🔍 {currentLang === 'vi' ? 'Nhấp để phóng to' : currentLang === 'es' ? 'Haz clic para ampliar' : 'Click to enlarge'}</span>
+        <div className="custom-menu-grid">
+          {menuItems[activeCategory]?.map((item) => {
+            const details = item[currentLang] || item.es;
+            return (
+              <div key={item.id} className="custom-menu-item">
+                <div className="menu-item-info">
+                  <h3 className="menu-item-title">{item.name}</h3>
+                  <p className="menu-item-subtitle">{details.subtitle}</p>
+                  <div className="menu-item-price">{item.price}</div>
+                  <p className="menu-item-desc">{details.description}</p>
+                  <ul className="menu-item-options">
+                    {details.options.map((opt, idx) => (
+                      <li key={idx} className={opt.highlight ? 'highlight-option' : ''}>
+                        {opt.text}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              </div>
-
-              <div 
-                className="daily-menu-image-card"
-                onClick={() => setSelectedImage('/menu_dias_2.png')}
-              >
-                <img 
-                  src="/menu_dias_2.png" 
-                  alt="Menú del Día - Trang 2" 
-                  className="daily-menu-img" 
-                />
-                <div className="daily-menu-zoom-badge">
-                  <span>🔍 {currentLang === 'vi' ? 'Nhấp để phóng to' : currentLang === 'es' ? 'Haz clic para ampliar' : 'Click to enlarge'}</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="daily-menu-pdf-actions" style={{ textAlign: 'center', marginTop: '30px' }}>
-              <a 
-                href="/menu_dias.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="pdf-download-btn"
-              >
-                📄 {currentLang === 'vi' ? 'Tải PDF Menú del Día' : currentLang === 'es' ? 'Descargar Menú en PDF' : 'Download Menu PDF'}
-              </a>
-            </div>
-          </div>
-        ) : (
-          <div className="custom-menu-grid">
-            {menuItems[activeCategory].map((item) => {
-              const details = item[currentLang] || item.es;
-              return (
-                <div key={item.id} className="custom-menu-item">
-                  <div className="menu-item-info">
-                    <h3 className="menu-item-title">{item.name}</h3>
-                    <p className="menu-item-subtitle">{details.subtitle}</p>
-                    <div className="menu-item-price">{item.price}</div>
-                    <p className="menu-item-desc">{details.description}</p>
-                    <ul className="menu-item-options">
-                      {details.options.map((opt, idx) => (
-                        <li key={idx} className={opt.highlight ? 'highlight-option' : ''}>
-                          {opt.text}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  {item.image && (
-                    <div className="menu-item-image-container">
-                      <div className="menu-item-image-circle">
-                        <img src={item.image} alt={item.name} className="menu-item-image" />
-                      </div>
+                {item.image && (
+                  <div className="menu-item-image-container">
+                    <div className="menu-item-image-circle">
+                      <img src={item.image} alt={item.name} className="menu-item-image" />
                     </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        )}      </div>
-    
-      {/* Lightbox Modal for Menu Images */}
-      {selectedImage && (
-        <div className="lightbox-overlay" onClick={() => setSelectedImage(null)}>
-          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
-            <button className="lightbox-close-btn" onClick={() => setSelectedImage(null)}>
-              &times;
-            </button>
-            <img src={selectedImage} alt="Menu preview" className="lightbox-image" />
-          </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
-      )}
-</section>
+      </div>
+    </section>
   );
 }
 
 const translations = {
-  es: { 'menu.tagline': 'NUESTRA CARTA', 'menu.title': 'Explora Nuestro Menú' },
-  en: { 'menu.tagline': 'OUR MENU', 'menu.title': 'Explore Our Menu' },
-  vi: { 'menu.tagline': 'THỰC ĐƠN CỦA CHÚNG TÔI', 'menu.title': 'Khám Phá Thực Đơn' },
-  zh: { 'menu.tagline': '我们的菜单', 'menu.title': '探索我们的菜单' },
-  ko: { 'menu.tagline': '엄선된 메뉴', 'menu.title': '메뉴 둘러보기' },
-  ja: { 'menu.tagline': '私たちのメニュー', 'menu.title': 'メニューを見る' },
-  fr: { 'menu.tagline': 'NOTRE CARTE', 'menu.title': 'Explorez Notre Menu' },
-  it: { 'menu.tagline': 'IL NOSTRO MENU', 'menu.title': 'Esplora il Nostro Menu' }
+  es: { 'menu.tagline': 'NUESTRA CARTA', 'menu.title': 'Explora Nuestro Menú', 'menu.swipeHint': '← Desliza para ver más →' },
+  en: { 'menu.tagline': 'OUR MENU', 'menu.title': 'Explore Our Menu', 'menu.swipeHint': '← Swipe for more →' },
+  vi: { 'menu.tagline': 'THỰC ĐƠN CỦA CHÚNG TÔI', 'menu.title': 'Khám Phá Thực Đơn', 'menu.swipeHint': '← Vuốt để xem thêm →' },
+  zh: { 'menu.tagline': '我们的菜单', 'menu.title': '探索我们的菜单', 'menu.swipeHint': '← 滑动查看更多 →' },
+  ko: { 'menu.tagline': '엄선된 메뉴', 'menu.title': '메뉴 둘러보기', 'menu.swipeHint': '← Thêm nữa →' },
+  ja: { 'menu.tagline': '私たちのメニュー', 'menu.title': 'メニューを見る', 'menu.swipeHint': '← もっと見る →' },
+  fr: { 'menu.tagline': 'NOTRE CARTE', 'menu.title': 'Explorez Notre Menu', 'menu.swipeHint': '← Glisser pour plus →' },
+  it: { 'menu.tagline': 'IL NOSTRO MENU', 'menu.title': 'Esplora il Nostro Menu', 'menu.swipeHint': '← Scorri per altro →' }
 };
