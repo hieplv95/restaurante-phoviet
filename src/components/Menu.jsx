@@ -4402,179 +4402,51 @@ export default function Menu() {
             </div>
 
             <div className="daily-menu-grid-layout">
-              {/* Entrantes */}
-              <div className="daily-menu-section">
-                <h4 className="daily-menu-section-title">
-                  <span>{dailyMenuTranslations[currentLang]?.starters || 'Entrantes'}</span>
-                  <span className="daily-menu-section-badge">
-                    {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
-                  </span>
-                </h4>
-                <ul className="daily-menu-items-list">
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Rollo Primavera (Chả giò)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Hai cuốn chả giò nhân rau củ chiên giòn.' : 'Dos rollos fritos crujientes rellenos de verduras.'}
+              {[
+                { key: 'starters', title: dailyMenuTranslations[currentLang]?.starters || 'Entrantes', items: menuItems.starters },
+                { key: 'mains', title: dailyMenuTranslations[currentLang]?.mains || 'Platos Principales', items: menuItems.mains },
+                { key: 'desserts', title: dailyMenuTranslations[currentLang]?.desserts || 'Postres o Café', items: menuItems.desserts },
+                { key: 'drinks', title: dailyMenuTranslations[currentLang]?.drinks || 'Bebidas', items: menuItems.drinks },
+              ].map((section) => (
+                <div key={section.key} className="daily-menu-section">
+                  <h4 className="daily-menu-section-title">
+                    <span>{section.title}</span>
+                    <span className="daily-menu-section-badge">
+                      {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
                     </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Rollo Fresco (Gỏi cuốn)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Hai gỏi cuốn tay tươi mát.' : 'Dos rollos frescos envueltos a mano.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Camarón Frito (Tôm chiên xù)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Tôm tẩm bột chiên xù.' : 'Langostinos rebozados crujientes.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Croquetas de Pescado (Chả cá cốm)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Chả cá tẩm cốm chiên giòn.' : 'Croquetas de pescado crujientes.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Ensalada de Mango (Gỏi xoài)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Gỏi xoài xanh tươi mát.' : 'Ensalada vietnamita de mango verde.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Alitas de Pollo (Cánh gà đặc biệt)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Cánh gà chiên giòn đặc biệt.' : 'Alitas de pollo crujientes estilo Pho Viet.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Gyosas (Há cảo)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Há cảo nhân rau và thịt hấp.' : 'Empanadillas al vapor rellenas.'}
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Platos Principales */}
-              <div className="daily-menu-section">
-                <h4 className="daily-menu-section-title">
-                  <span>{dailyMenuTranslations[currentLang]?.mains || 'Platos Principales'}</span>
-                  <span className="daily-menu-section-badge">
-                    {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
-                  </span>
-                </h4>
-                <ul className="daily-menu-items-list">
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Fideos de Arroz Salteados (Wok Phở Xào)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Phở xào cùng rau củ quả.' : 'Fideos de arroz salteados al wok con verduras.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Pad Thai (Wok Hủ Tiếu Thái)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Hủ tiếu Thái xào rau trứng và lạc.' : 'Tallarines de arroz salteados con verduras y cacahuetes.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Arroz Frito (Cơm chiên)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Cơm chiên rau củ tươi ngon.' : 'Arroz salteado con verduras frescas.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Curry (Cà ri)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Cà ri cốt dừa ăn kèm cơm trắng.' : 'Curry aromático con coco y arroz jazmín.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Pollo Salsa Cacahuete (Gà sốt lạc)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Thịt gà xào sốt lạc bùi ngậy.' : 'Pollo salteado con salsa cremosa de cacahuete.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Ternera Pimienta Negra (Bò sốt tiêu đen)</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Thịt bò xào tiêu đen thơm lừng.' : 'Ternera salteada con salsa de pimienta negra.'}
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Postres */}
-              <div className="daily-menu-section">
-                <h4 className="daily-menu-section-title">
-                  <span>{dailyMenuTranslations[currentLang]?.desserts || 'Postres o Café'}</span>
-                  <span className="daily-menu-section-badge">
-                    {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
-                  </span>
-                </h4>
-                <ul className="daily-menu-items-list">
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Chè chuối</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Chè chuối nước cốt dừa hạt trân châu ấm nóng.' : 'Pudin caliente de plátano y leche de coco.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Chè đậu đen</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Chè đậu đen nấu chín kĩ mát ngọt.' : 'Sopa dulce de alubias negras cocidas.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Panna Cotta Tropical</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Panna cotta hương lá dứa cốt dừa và lạc rang.' : 'Panna cotta con sabor a pandan coco y cacahuete.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Sữa chua nếp cẩm</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Sữa chua sánh mịn cùng nếp cẩm dẻo ngọt.' : 'Pudin de arroz negro y yogur cremoso.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Café / Té</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Lựa chọn Cà phê hoặc Trà nóng.' : 'Café solo, cortado, americano, latte o té caliente.'}
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Bebidas */}
-              <div className="daily-menu-section">
-                <h4 className="daily-menu-section-title">
-                  <span>{dailyMenuTranslations[currentLang]?.drinks || 'Bebidas'}</span>
-                  <span className="daily-menu-section-badge">
-                    {dailyMenuTranslations[currentLang]?.select || 'Selecciona 1'}
-                  </span>
-                </h4>
-                <ul className="daily-menu-items-list">
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Agua Mineral</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Nước khoáng đóng chai mát lạnh.' : 'Botella de agua mineral natural.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Caña de Cerveza</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Ly bia hơi tươi mát.' : 'Vaso de cerveza de barril fresca.'}
-                    </span>
-                  </li>
-                  <li className="daily-menu-item-row">
-                    <span className="daily-menu-item-name">Copa de Vino</span>
-                    <span className="daily-menu-item-desc">
-                      {currentLang === 'vi' ? 'Ly rượu vang trắng hoặc đỏ.' : 'Copa de vino de la casa (tinto o blanco).'}
-                    </span>
-                  </li>
-                </ul>
-              </div>
+                  </h4>
+                  <div className="daily-menu-cards-list">
+                    {section.items && section.items.map((item) => {
+                      const details = item[currentLang] || item.es;
+                      return (
+                        <div key={item.id} className="custom-menu-item" style={{ marginBottom: '28px', paddingBottom: '24px' }}>
+                          <div className="menu-item-info">
+                            <h3 className="menu-item-title">{item.name}</h3>
+                            <p className="menu-item-subtitle">{details.subtitle}</p>
+                            <p className="menu-item-desc">{details.description}</p>
+                            {details.options && details.options.length > 0 && (
+                              <ul className="menu-item-options">
+                                {details.options.map((opt, idx) => (
+                                  <li key={idx} className={opt.highlight ? 'highlight-option' : ''}>
+                                    {opt.text}
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </div>
+                          {item.image && (
+                            <div className="menu-item-image-container">
+                              <div className="menu-item-image-circle">
+                                <img src={item.image} alt={item.name} className="menu-item-image" />
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
             </div>
 
             <div className="daily-menu-footer-note">
