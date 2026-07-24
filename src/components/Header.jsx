@@ -39,13 +39,13 @@ export default function Header() {
             {t('nav.menu')}
           </a>
           <a href="/promo/bun-bo-hue" className="nav-link">
-            Bún Bò Huế
+            Bun Bo Hue
           </a>
           <a href="/promo/banh-xeo" className="nav-link">
-            Bánh Xèo
+            Banh Xeo
           </a>
           <a href="/promo/bun-tron" className="nav-link">
-            Phở & Bún Chả Hà Nội
+            Pho & Bun Cha Ha Noi
           </a>
           <a href="/#footer" className="nav-link">
             {t('footer.contact')}
