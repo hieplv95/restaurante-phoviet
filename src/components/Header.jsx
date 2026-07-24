@@ -35,10 +35,19 @@ export default function Header() {
 
         {/* Navigation Items */}
         <nav className="nav-menu">
-          <a href="#menu" className="nav-link">
+          <a href="/#menu" className="nav-link">
             {t('nav.menu')}
           </a>
-          <a href="#footer" className="nav-link">
+          <a href="/promo/bun-bo-hue" className="nav-link">
+            Bún Bò Huế
+          </a>
+          <a href="/promo/banh-xeo" className="nav-link">
+            Bánh Xèo
+          </a>
+          <a href="/promo/bun-tron" className="nav-link">
+            Bún Trộn
+          </a>
+          <a href="/#footer" className="nav-link">
             {t('footer.contact')}
           </a>
         </nav>
