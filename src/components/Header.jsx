@@ -44,7 +44,7 @@ export default function Header() {
           <a href="/promo/banh-xeo" className="nav-link">
             Banh Xeo
           </a>
-          <a href="/promo/bun-tron" className="nav-link">
+          <a href="/promo/pho-ha-noi" className="nav-link">
             Pho & Bun Cha Ha Noi
           </a>
           <a href="/#footer" className="nav-link">

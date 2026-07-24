@@ -27,7 +27,7 @@ export default function DishPromo({ dish }) {
         { titleKey: 'promo.bx.ing3.title', descKey: 'promo.bx.ing3.desc' }
       ]
     },
-    'bun-tron': {
+    'pho-ha-noi': {
       taglineKey: 'promo.bt.tagline',
       descKey: 'promo.bt.desc',
       image: '/hero_phobo_3d.png',
@@ -63,7 +63,7 @@ export default function DishPromo({ dish }) {
           
           <div className="promo-hero-image-wrapper">
             <img src={config.image} alt="Vietnamese Dish" className="promo-hero-image" />
-            {dish === 'bun-tron' && (
+            {dish === 'pho-ha-noi' && (
               <div className="secondary-image-badge">
                 <img src="/about_buncha.png" alt="Secondary" className="promo-hero-image-secondary" />
               </div>

@@ -129,7 +129,7 @@ export const DISH_STORIES = {
       ]
     }
   },
-  'bun-tron': {
+  'pho-ha-noi': {
     en: {
       title: "The Soul of Hanoi: Phở & Bún Chả",
       intro: "Hanoi, the cultural and culinary heart of Vietnam, is the birthplace of the nation's two most celebrated dishes: Phở and Bún Chả. These two culinary pillars represent the elegance, balance, and delicate refinement of Northern Vietnamese cuisine.",
