@@ -390,7 +390,8 @@ const translations = {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('es'); // Default is Spanish as requested
+  const isPromo = typeof window !== 'undefined' && window.location.pathname.startsWith('/promo/');
+  const [language, setLanguage] = useState(isPromo ? 'en' : 'es');
 
   const t = (key) => {
     return translations[language]?.[key] || translations['es']?.[key] || key;
