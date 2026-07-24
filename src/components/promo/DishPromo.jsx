@@ -1,17 +1,16 @@
 import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
+import { DISH_STORIES } from '../../data/stories';
 import { MapPin, Check } from 'lucide-react';
 
 export default function DishPromo({ dish }) {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
 
   const dishConfig = {
     'bun-bo-hue': {
       taglineKey: 'promo.bbh.tagline',
       descKey: 'promo.bbh.desc',
       image: '/hero_bunbohue.png',
-      storyTitleKey: 'promo.bbh.story.title',
-      storyDescKey: 'promo.bbh.story.desc',
       ingredients: [
         { titleKey: 'promo.bbh.ing1.title', descKey: 'promo.bbh.ing1.desc' },
         { titleKey: 'promo.bbh.ing2.title', descKey: 'promo.bbh.ing2.desc' },
@@ -22,8 +21,6 @@ export default function DishPromo({ dish }) {
       taglineKey: 'promo.bx.tagline',
       descKey: 'promo.bx.desc',
       image: '/menu_banhxeo.png',
-      storyTitleKey: 'promo.bx.story.title',
-      storyDescKey: 'promo.bx.story.desc',
       ingredients: [
         { titleKey: 'promo.bx.ing1.title', descKey: 'promo.bx.ing1.desc' },
         { titleKey: 'promo.bx.ing2.title', descKey: 'promo.bx.ing2.desc' },
@@ -34,8 +31,6 @@ export default function DishPromo({ dish }) {
       taglineKey: 'promo.bt.tagline',
       descKey: 'promo.bt.desc',
       image: '/menu_bunbonambo.png',
-      storyTitleKey: 'promo.bt.story.title',
-      storyDescKey: 'promo.bt.story.desc',
       ingredients: [
         { titleKey: 'promo.bt.ing1.title', descKey: 'promo.bt.ing1.desc' },
         { titleKey: 'promo.bt.ing2.title', descKey: 'promo.bt.ing2.desc' },
@@ -47,6 +42,7 @@ export default function DishPromo({ dish }) {
   const config = dishConfig[dish];
   if (!config) return <div className="container" style={{ padding: '80px 0', textAlign: 'center', color: '#fff' }}>Dish not found.</div>;
 
+  const story = DISH_STORIES[dish]?.[language] || DISH_STORIES[dish]?.['en'];
   const mapsUrl = "https://www.google.com/maps/dir/?api=1&destination=Carrer+de+Viladomat,+56,+Eixample,+08015+Barcelona";
 
   return (
@@ -77,14 +73,30 @@ export default function DishPromo({ dish }) {
       </section>
 
       {/* Story & Heritage Section */}
-      <section className="promo-story-section">
-        <div className="container">
-          <div className="story-card">
-            <h2 className="story-title">{t(config.storyTitleKey)}</h2>
-            <p className="story-desc">{t(config.storyDescKey)}</p>
+      {story && (
+        <section className="promo-story-section">
+          <div className="container">
+            <div className="story-header text-center">
+              <h2 className="story-main-title">{story.title}</h2>
+              <p className="story-intro">{story.intro}</p>
+            </div>
+            
+            <div className="story-sections-list">
+              {story.sections.map((section, idx) => (
+                <div key={idx} className={`story-section-item ${idx % 2 === 1 ? 'reverse' : ''}`}>
+                  <div className="story-section-content">
+                    <h3>{section.heading}</h3>
+                    <p>{section.text}</p>
+                  </div>
+                  <div className="story-section-image-wrapper">
+                    <img src={section.image} alt={section.heading} className="story-section-image" />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Key Ingredients Section */}
       <section className="promo-ingredients-section">

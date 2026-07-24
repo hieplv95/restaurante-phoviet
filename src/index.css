@@ -3577,33 +3577,111 @@ input, textarea, select {
 
 /* Story & Heritage Section */
 .promo-story-section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
-.story-card {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-left: 5px solid var(--accent-green);
-  border-radius: var(--radius-md);
-  padding: 40px;
-  box-shadow: var(--glass-shadow);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.story-header {
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.story-title {
+.story-main-title {
   font-family: var(--font-serif);
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: 2.8rem;
+  font-weight: 800;
   color: var(--text-primary);
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
-.story-desc {
-  font-size: 1.1rem;
+.story-intro {
+  font-size: 1.2rem;
   line-height: 1.7;
   color: var(--text-secondary);
+  font-style: italic;
+}
+
+.story-sections-list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.story-section-item {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-section-item.reverse {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.story-section-item.reverse .story-section-content {
+  grid-column: 2;
+}
+
+.story-section-item.reverse .story-section-image-wrapper {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+@media (max-width: 991px) {
+  .story-section-item, .story-section-item.reverse {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+    text-align: center;
+  }
+  .story-section-item.reverse .story-section-content {
+    grid-column: auto;
+  }
+  .story-section-item.reverse .story-section-image-wrapper {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+.story-section-content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--accent-green);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.story-section-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  text-align: justify;
+}
+
+@media (max-width: 991px) {
+  .story-section-content p {
+    text-align: center;
+  }
+}
+
+.story-section-image-wrapper {
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.4s ease;
+}
+
+.story-section-image-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+.story-section-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
 }
 
 /* Ingredients Grid */
