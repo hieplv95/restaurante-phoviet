@@ -8,10 +8,24 @@ import Menu from './components/Menu';
 import Reviews from './components/Reviews';
 import MapSection from './components/MapSection';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import PromoLayout from './components/promo/PromoLayout';
+import DishPromo from './components/promo/DishPromo';
 
 function MainApp() {
   const { language, t } = useLanguage();
   const [openPolicy, setOpenPolicy] = useState(null);
+  
+  const path = typeof window !== 'undefined' ? window.location.pathname : '';
+  const isPromoPage = path.startsWith('/promo/');
+  const promoDish = isPromoPage ? path.split('/').pop() : null;
+
+  if (isPromoPage) {
+    return (
+      <PromoLayout>
+        <DishPromo dish={promoDish} />
+      </PromoLayout>
+    );
+  }
   
   const handleMenuScroll = () => {
     const menuSection = document.getElementById('menu');
