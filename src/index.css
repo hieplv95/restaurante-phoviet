@@ -3575,70 +3575,35 @@ input, textarea, select {
   }
 }
 
-/* Voucher Card styling */
-.promo-voucher-section {
-  padding: 40px 0;
+/* Story & Heritage Section */
+.promo-story-section {
+  padding: 60px 0;
 }
 
-.voucher-card {
+.story-card {
   background: var(--bg-secondary);
-  border: 2px dashed rgba(15, 118, 110, 0.3);
-  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--accent-green);
+  border-radius: var(--radius-md);
   padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  position: relative;
-  overflow: hidden;
   box-shadow: var(--glass-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-@media (max-width: 768px) {
-  .voucher-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px 20px;
-  }
-}
-
-.voucher-card::before, .voucher-card::after {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: var(--bg-primary);
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.voucher-card::before { left: -16px; }
-.voucher-card::after { right: -16px; }
-
-.voucher-content h3 {
-  font-size: 1.8rem;
-  color: var(--text-primary);
-  margin-bottom: 10px;
-}
-
-.voucher-content p {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  margin-bottom: 20px;
-}
-
-.voucher-code-badge {
-  display: inline-block;
-  padding: 8px 18px;
-  background: rgba(15, 118, 110, 0.05);
-  border: 1px solid rgba(15, 118, 110, 0.3);
-  color: var(--accent-green);
-  font-family: monospace;
+.story-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
   font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.story-desc {
   font-size: 1.1rem;
-  border-radius: 6px;
-  letter-spacing: 1px;
+  line-height: 1.7;
+  color: var(--text-secondary);
 }
 
 /* Ingredients Grid */

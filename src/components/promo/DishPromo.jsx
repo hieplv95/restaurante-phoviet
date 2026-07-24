@@ -10,6 +10,8 @@ export default function DishPromo({ dish }) {
       taglineKey: 'promo.bbh.tagline',
       descKey: 'promo.bbh.desc',
       image: '/hero_bunbohue.png',
+      storyTitleKey: 'promo.bbh.story.title',
+      storyDescKey: 'promo.bbh.story.desc',
       ingredients: [
         { titleKey: 'promo.bbh.ing1.title', descKey: 'promo.bbh.ing1.desc' },
         { titleKey: 'promo.bbh.ing2.title', descKey: 'promo.bbh.ing2.desc' },
@@ -20,6 +22,8 @@ export default function DishPromo({ dish }) {
       taglineKey: 'promo.bx.tagline',
       descKey: 'promo.bx.desc',
       image: '/menu_banhxeo.png',
+      storyTitleKey: 'promo.bx.story.title',
+      storyDescKey: 'promo.bx.story.desc',
       ingredients: [
         { titleKey: 'promo.bx.ing1.title', descKey: 'promo.bx.ing1.desc' },
         { titleKey: 'promo.bx.ing2.title', descKey: 'promo.bx.ing2.desc' },
@@ -30,6 +34,8 @@ export default function DishPromo({ dish }) {
       taglineKey: 'promo.bt.tagline',
       descKey: 'promo.bt.desc',
       image: '/menu_bunbonambo.png',
+      storyTitleKey: 'promo.bt.story.title',
+      storyDescKey: 'promo.bt.story.desc',
       ingredients: [
         { titleKey: 'promo.bt.ing1.title', descKey: 'promo.bt.ing1.desc' },
         { titleKey: 'promo.bt.ing2.title', descKey: 'promo.bt.ing2.desc' },
@@ -70,20 +76,12 @@ export default function DishPromo({ dish }) {
         </div>
       </section>
 
-      {/* Voucher Conversion Booster Section */}
-      <section className="promo-voucher-section">
+      {/* Story & Heritage Section */}
+      <section className="promo-story-section">
         <div className="container">
-          <div className="voucher-card">
-            <div className="voucher-content">
-              <h3>{t('promo.offer.title')}</h3>
-              <p>{t('promo.offer.desc')}</p>
-              <div className="voucher-code-badge">{t('promo.offer.code')}</div>
-            </div>
-            <div className="voucher-cta-box">
-              <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                {t('promo.cta')}
-              </a>
-            </div>
+          <div className="story-card">
+            <h2 className="story-title">{t(config.storyTitleKey)}</h2>
+            <p className="story-desc">{t(config.storyDescKey)}</p>
           </div>
         </div>
       </section>
