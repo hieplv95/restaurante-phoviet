@@ -55,7 +55,17 @@ export default function DishPromo({ dish }) {
             <h1 className="promo-hero-title">{t(config.taglineKey)}</h1>
             <p className="promo-hero-desc">{t(config.descKey)}</p>
             
-            <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary cta-pulse">
+            <a 
+              href={mapsUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-primary cta-pulse"
+              onClick={() => {
+                if (typeof window.gtag_report_conversion === 'function') {
+                  window.gtag_report_conversion(mapsUrl);
+                }
+              }}
+            >
               <MapPin size={20} />
               <span>{t('promo.cta')}</span>
             </a>
@@ -127,7 +137,18 @@ export default function DishPromo({ dish }) {
               <p>📞 +34 632 501 335</p>
               <p>⏰ {t('footer.hours.desc')}</p>
             </div>
-            <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: '20px' }}>
+            <a 
+              href={mapsUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-primary" 
+              style={{ marginTop: '20px' }}
+              onClick={() => {
+                if (typeof window.gtag_report_conversion === 'function') {
+                  window.gtag_report_conversion(mapsUrl);
+                }
+              }}
+            >
               {t('promo.cta')}
             </a>
           </div>

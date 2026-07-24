@@ -59,6 +59,11 @@ export default function MapSection() {
               rel="noopener noreferrer" 
               className="card-ext-btn"
               title={currText.linkText}
+              onClick={() => {
+                if (typeof window.gtag_report_conversion === 'function') {
+                  window.gtag_report_conversion(googleMapsUrl);
+                }
+              }}
             >
               <ExternalLink size={16} />
             </a>
@@ -84,6 +89,11 @@ export default function MapSection() {
             target="_blank" 
             rel="noopener noreferrer" 
             className="card-view-maps-link"
+            onClick={() => {
+              if (typeof window.gtag_report_conversion === 'function') {
+                window.gtag_report_conversion(googleMapsUrl);
+              }
+            }}
           >
             <span>{currText.linkText}</span>
             <ExternalLink size={14} />

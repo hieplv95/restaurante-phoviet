@@ -15,6 +15,25 @@
     gtag('config', 'AW-18285087428');
   </script>
 
+  <!-- Event snippet for Cómo llegar conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18285087428/c36SCLXyqsocEMSVgY9E',
+        'value': 1.0,
+        'currency': 'EUR',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+
   <!-- SEO Meta Tags -->
   <title>Pho Viet Authentic Vietnamese Food In Barcelona</title>
   <meta name="description"
