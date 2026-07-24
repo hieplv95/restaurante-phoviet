@@ -45,7 +45,7 @@ export default function Header() {
             Bánh Xèo
           </a>
           <a href="/promo/bun-tron" className="nav-link">
-            Bún Trộn
+            Phở & Bún Chả Hà Nội
           </a>
           <a href="/#footer" className="nav-link">
             {t('footer.contact')}

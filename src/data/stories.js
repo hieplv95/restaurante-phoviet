@@ -131,65 +131,65 @@ export const DISH_STORIES = {
   },
   'bun-tron': {
     en: {
-      title: "The Refreshing Heritage of Vietnamese Vermicelli Salad Bowls",
-      intro: "Vietnamese rice vermicelli salad bowls (Bún Trộn), featuring masterpieces like Bún Bò Nam Bộ (Southern Beef Salad) and Bún Thịt Nướng (Grilled Pork Vermicelli), represent the fresh, balanced, and herb-centric nature of Southern Vietnamese cuisine. They are the perfect cooling meals designed for tropical weather.",
+      title: "The Soul of Hanoi: Phở & Bún Chả",
+      intro: "Hanoi, the cultural and culinary heart of Vietnam, is the birthplace of the nation's two most celebrated dishes: Phở and Bún Chả. These two culinary pillars represent the elegance, balance, and delicate refinement of Northern Vietnamese cuisine.",
       sections: [
         {
-          heading: "1. Southern Comfort & Tropical Freshness",
-          text: "Unlike the steamy, rich soup broths of Northern and Central Vietnam, the culinary philosophy of the South focuses on lightness, fresh herbs, and vibrant textures. Born in the warm, sun-drenched regions, Bún Trộn is a genius assembly of pre-cooked ingredients served at room temperature. It is a dry salad bowl featuring soft rice vermicelli noodles, crispy cucumbers, pickled carrots and daikon, and a mountain of local herbs. It reflects the Southern lifestyle: fast, fresh, colorful, and heavily reliant on the fresh produce grown along the Mekong River.",
-          image: "/menu_bunbonambo.png"
+          heading: "1. Hanoi Phở: The Essence of Simplicity & Depth",
+          text: "Phở Hà Nội is characterized by its crystal-clear, highly fragrant broth and pure, clean taste. Unlike Southern versions which use a sweeter broth and various table sauces, true Hanoi Phở relies solely on the pure essence of beef marrow bones, toasted spices (star anise, cinnamon, cloves, black cardamom), and charred ginger. It is an art of restraint, where every element—from the tender slices of beef to the soft, flat rice noodles—harmonizes with the rich, aromatic soup. A squeeze of fresh lime and a few slices of bird's eye chili are all you need to elevate this century-old masterpiece.",
+          image: "/hero_phobo_3d.png"
         },
         {
-          heading: "2. The Duo: Bún Bò Nam Bộ vs. Bún Thịt Nướng",
-          text: "Two variations dominate the Bún Trộn landscape. First is Bún Bò Nam Bộ, featuring tender beef slices quickly wok-flamed with large amounts of lemongrass, garlic, and onions. Second is Bún Thịt Nướng, showcasing pork shoulders marinated in honey, lemongrass, and fish sauce, caramelized over hot charcoal. Both bowls share the same light noodle and vegetable base but deliver distinct protein flavors—one savory and garlicky from the wok, the other smokey and sweet from the charcoal grill. The choice between them represents a delightful debate among food lovers.",
-          image: "/menu_bunthitnuong.png"
-        },
-        {
-          heading: "3. Harmony in a Bowl: The Dressing & Crunch",
-          text: "What binds a bowl of Bún Trộn together is the dressing and the toppings. Rather than heavy sauces, the bowl is dressed with a diluted, sweet and sour Nước Chấm fish sauce, splashed over the noodles right before mixing. Every bowl is then generously topped with crushed roasted peanuts and crispy fried shallots. As you toss the bowl, the ingredients mix to create a spectacular mouthful: the crunch of the peanuts, the sweetness of the caramelized meat, the coolness of the herbs, and the savory tang of the dressing.",
+          heading: "2. Bún Chả: The Smoky Street Legend of the Capital",
+          text: "If Phở is Hanoi's soul, Bún Chả is its beating street pulse. This beloved dish consists of sweet and savory pork patties (chả viên) and sliced pork belly (chả miếng) grilled over red-hot charcoal until caramelized and smoky. These caramelized meats are served floating in a warm bowl of sweet, sour, and savory fish sauce dressing, accompanied by crunchy slices of green papaya, soft fresh rice vermicelli, and a mountain of local herbs. Bún Chả gained massive global fame when President Barack Obama and chef Anthony Bourdain famously shared a bowl in a humble Hanoi street food stall.",
           image: "/about_buncha.png"
+        },
+        {
+          heading: "3. Northern Harmony: A Balance of Flavors",
+          text: "Northern Vietnamese cuisine values subtlety above all else. Neither too spicy, too sweet, nor too rich, it focuses on highlighting natural flavors balanced with fresh garden herbs, vinegar, and lime. Enjoying Phở and Bún Chả together is a journey through Hanoi's heritage—an invitation to slow down, sit on a street stool, and savor the aromas of wood smoke and spiced broths that have defined Hanoi's streets for generations.",
+          image: "/menu_camaron.png"
         }
       ]
     },
     es: {
-      title: "La Historia de los Frescos Boles de Fideos Vietnamitas",
-      intro: "Los boles de ensalada de fideos de arroz (Bún Trộn), con platos estrella como Bún Bò Nam Bộ (Ternera al wok con sả) y Bún Thịt Nướng (Cerdo marinado a la parrilla), representan la naturaleza fresca y equilibrada del sur de Vietnam. Son platos ligeros y refrescantes ideales para climas cálidos.",
+      title: "El Alma de Hanói: Phở y Bún Chả",
+      intro: "Hanói, el corazón cultural y culinario de Vietnam, es la cuna de los dos platos más célebres del país: el Phở y el Bún Chả. Estos dos pilares culinarios representan la elegancia, el equilibrio y el refinamiento de la cocina del norte de Vietnam.",
       sections: [
         {
-          heading: "1. Frescura Tropical del Sur de Vietnam",
-          text: "A diferencia de los caldos humeantes del norte y centro de Vietnam, la filosofía culinaria del sur se centra en la ligereza, las hierbas frescas y las texturas vibrantes. Nacido en regiones cálidas, el Bún Trộn es un ensamblaje de ingredientes servidos a temperatura ambiente. Es una ensalada con fideos de arroz elásticos, pepinos crujientes, zanahoria y nabo encurtidos y una montaña de hierbas aromáticas. Refleja el estilo de vida del sur: rápido, fresco, colorido y basado en los productos frescos del río Mekong.",
-          image: "/menu_bunbonambo.png"
+          heading: "1. Phở de Hanói: La Esencia de la Simplicidad y la Profundidad",
+          text: "El Phở de Hanói se caracteriza por su caldo cristalino y altamente aromático, con un sabor puro y limpio. A diferencia de las versiones del sur, que utilizan caldos más dulces y salsas de acompañamiento, el auténtico Phở de Hanói se basa únicamente en la pureza de los huesos de ternera, especias tostadas (anís estrellado, canela, clavo, cardamomo negro) y jengibre asado. Es un arte de moderación, donde cada elemento armoniza con la sopa aromática.",
+          image: "/hero_phobo_3d.png"
         },
         {
-          heading: "2. Bún Bò Nam Bộ contra Bún Thịt Nướng",
-          text: "Dos variaciones dominan el panorama del Bún Trộn. Primero está el Bún Bò Nam Bộ, con finas tiras de ternera salteadas al wok con sả y ajo. El segundo es el Bún Thịt Nướng, que presenta carne de cerdo marinada con miel y sả, caramelizada sobre carbón vegetal caliente. Ambos boles comparten la misma base ligera de fideos y verduras, pero ofrecen sabores diferentes: uno sabroso y con sabor a sả del wok, el otro ahumado y dulce de la parrilla de carbón.",
-          image: "/menu_bunthitnuong.png"
-        },
-        {
-          heading: "3. Armonía en un Bol: El Aderezo y el Toque Crujiente",
-          text: "Lo que une un bol de Bún Trộn es el aderezo y los ingredientes complementarios. En lugar de salsas espesas, el bol se adereza con una salsa Nước Chấm dulce y cítrica que se vierte sobre los fideos justo antes de mezclarlos. Cada bol se corona generosamente con cacahuetes tostados machacados y cebollas crujientes fritas, creando una combinación espectacular en cada bocado.",
+          heading: "2. Bún Chả: La Leyenda Ahumada de las Calles de la Capital",
+          text: "Si el Phở es el alma de Hanói, el Bún Chả es su pulso callejero. Este querido plato consiste en albóndigas de cerdo picadas y panceta de cerdo marinada a la parrilla sobre carbón caliente hasta que queden caramelizadas y ahumadas. Estas carnes se sirven flotando en un bol tibio de salsa de pescado agridulce, acompañadas de rodajas crujientes de papaya verde, fideos de arroz frescos y una montaña de hierbas aromáticas locales.",
           image: "/about_buncha.png"
+        },
+        {
+          heading: "3. Armonía del Norte: Un Equilibrio de Sabores",
+          text: "La cocina del norte de Vietnam valora la sutileza por encima de todo. Ni demasiado picante, ni demasiado dulce, ni demasiado rica; se centra en resaltar los sabores naturales equilibrados con hierbas de jardín frescas, vinagre y lima. Disfrutar del Phở y el Bún Chả es un viaje por la herencia de Hanói.",
+          image: "/menu_camaron.png"
         }
       ]
     },
     vi: {
-      title: "Hương Vị Thanh Mát Của Những Bát Bún Trộn",
-      intro: "Bún trộn Việt Nam, tiêu biểu là hai món ăn trứ danh Bún Bò Nam Bộ và Bún Thịt Nướng, đại diện cho nét đặc trưng ẩm thực tươi mát, nhiều rau và cân bằng của người dân miền Nam. Đây là những món ăn thanh nhiệt hoàn hảo cho những ngày hè oi bức.",
+      title: "Tinh Hoa Ẩm Thực Hà Nội: Phở & Bún Chả",
+      intro: "Hà Nội, trái tim văn hóa và ẩm thực của Việt Nam, là cái nôi sản sinh ra hai món ăn danh tiếng nhất quốc gia: Phở và Bún Chả. Hai cột trụ ẩm thực này đại diện cho sự thanh nhã, hài hòa và tinh tế của ẩm thực đất Bắc.",
       sections: [
         {
-          heading: "1. Sự Tươi Mát Của Ẩm Thực Phương Nam",
-          text: "Khác với các món nước dùng nóng hổi, béo ngậy của miền Bắc và miền Trung, ẩm thực Nam Bộ hướng tới sự nhẹ nhàng, tươi mát từ rau thơm và các kết cấu giòn bùi. Ra đời tại vùng đất ngập tràn nắng ấm, bún trộn là sự kết hợp khéo léo của các nguyên liệu tươi ngon được bày biện ở nhiệt độ phòng. Một bát bún trộn đầy đủ gồm bún tươi sợi nhỏ, dưa chuột cắt lát, đồ chua ngọt (cà rốt, củ cải) cùng vô số loại rau thơm xanh mát, phản ánh phong cách sống của người miền Nam: nhanh, tươi mát và mộc mạc.",
-          image: "/menu_bunbonambo.png"
+          heading: "1. Phở Hà Nội: Tinh Hoa Từ Sự Đơn Giản & Đậm Đà",
+          text: "Phở Hà Nội đặc trưng bởi nước dùng trong vắt, thơm nức và vị ngọt thanh tinh khiết. Khác với phở miền Nam dùng kèm nhiều loại xốt tương và rau ngọt, Phở Hà Nội truyền thống chỉ tập trung tôn vinh hương vị nguyên bản của xương ống bò ninh kỹ, kết hợp với các loại gia vị nướng (hồi, quế, thảo quả, đinh hương) và gừng nướng cháy cạnh. Mọi chi tiết từ lát thịt bò thái mỏng đến sợi bánh phở mềm mướt hòa quyện hoàn hảo trong làn nước dùng nóng hổi.",
+          image: "/hero_phobo_3d.png"
         },
         {
-          heading: "2. Cặp Đôi Hoàn Hảo: Bún Bò Nam Bộ & Bún Thịt Nướng",
-          text: "Nhắc đến bún trộn không thể không nhắc đến hai món ăn tiêu biểu: Bún Bò Nam Bộ với thịt bò xào sả ớt nóng hổi trực tiếp trên chảo gang lớn cùng tỏi thơm nức, và Bún Thịt Nướng với thịt nạc vai heo ướp mật ong, sả băm rồi nướng xèo xèo trên than hồng cháy cạnh. Cả hai món đều dùng chung một đế bún và rau sống thanh nhẹ nhưng mang lại hai hương vị đạm hoàn toàn khác biệt—một bên ngọt đậm hương sả từ chảo wok, một bên thơm phức mùi khói đặc trưng từ lò than.",
-          image: "/menu_bunthitnuong.png"
-        },
-        {
-          heading: "3. Bản Hòa Ca Hương Vị: Nước Mắm Chua Ngọt & Lạc Rang",
-          text: "Chất gắn kết giúp bát bún trộn thăng hoa chính là nước mắm chua ngọt và hành tỏi phi. Thay vì các loại nước xốt đặc, bún trộn được rưới nước mắm chua ngọt pha loãng thơm mùi tỏi ớt ngay trước khi trộn đều. Phía trên bát bún được rắc thêm lạc rang giã dập và hành khô phi vàng ruộm. Khi trộn đều và thưởng thức, thực khách sẽ cảm nhận được vị bùi của lạc, vị ngọt thơm của thịt bò/thịt nướng, vị thanh của rau thơm và vị đậm đà thanh mát của nước mắm.",
+          heading: "2. Bún Chả Hà Nội: Huyền Thoại Ẩm Thực Đường Phố Thủ Đô",
+          text: "Nếu Phở là linh hồn của Hà Nội thì Bún Chả chính là nhịp thở đường phố náo nhiệt. Món ăn gồm chả viên và chả miếng làm từ thịt ba chỉ heo tẩm ướp đậm đà, nướng vàng giòn trên bếp than hoa đỏ rực thơm phức mùi khói. Chả nướng nóng hổi được thả vào bát nước chấm pha chua ngọt ấm nóng, kèm đu đủ xanh muối chua giòn rụm, sợi bún tươi thanh nhẹ và đĩa rau thơm kinh giới, tía tô sạch. Bún Chả đã nổi tiếng toàn cầu khi Tổng thống Mỹ Barack Obama cùng đầu bếp Anthony Bourdain cùng thưởng thức tại Hà Nội.",
           image: "/about_buncha.png"
+        },
+        {
+          heading: "3. Bản Hòa Ca Hương Vị Đất Bắc",
+          text: "Ẩm thực miền Bắc trân quý nhất là sự tinh tế và vừa vặn. Không quá cay, không quá ngọt, cũng không quá béo, ẩm thực Hà Nội chú trọng làm nổi bật vị ngon tự nhiên của nguyên liệu. Thưởng thức Phở và Bún Chả là một lời mời gọi bạn chậm lại để cảm nhận nét thanh bình của thủ đô xưa cũ qua những mùi hương trầm ấm lưu luyến trên các góc phố cổ kính.",
+          image: "/menu_camaron.png"
         }
       ]
     }

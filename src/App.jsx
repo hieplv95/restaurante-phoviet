@@ -16,10 +16,13 @@ function MainApp() {
   const [openPolicy, setOpenPolicy] = useState(null);
   
   const path = typeof window !== 'undefined' ? window.location.pathname : '';
-  const isPromoPage = path.startsWith('/promo/');
-  const promoDish = isPromoPage ? path.split('/').pop() : null;
+  const cleanPath = path.replace(/\/$/, ''); // Remove trailing slash
+  const isPromoPage = cleanPath.startsWith('/promo/') || cleanPath.includes('/promo');
+  const promoDish = isPromoPage ? cleanPath.split('/').filter(Boolean).pop() : null;
 
-  if (isPromoPage) {
+  console.log('[Routing Debug] path:', path, 'cleanPath:', cleanPath, 'isPromoPage:', isPromoPage, 'promoDish:', promoDish);
+
+  if (isPromoPage && promoDish) {
     return (
       <PromoLayout>
         <DishPromo dish={promoDish} />

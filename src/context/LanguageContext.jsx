@@ -77,14 +77,14 @@ const translations = {
     'promo.bx.ing2.desc': 'Langostinos frescos locales y finas tiras de cerdo salteados en el interior del crepe caliente.',
     'promo.bx.ing3.title': 'Envoltura Fresca',
     'promo.bx.ing3.desc': 'Lechuga romana fresca, menta y cilantro utilizados para envolver cada trozo de crepe crujiente.',
-    'promo.bt.tagline': 'Boles de Fideos de Arroz Frescos, Crujientes y Aromáticos',
-    'promo.bt.desc': 'Disfruta de la comida vietnamita más fresca. Elige entre ternera al wok con sả (Bún Bò Nam Bộ) o cerdo a la parrilla (Bún Thịt Nướng), servidos con hierbas frescas, cacahuetes y salsa agridulce.',
-    'promo.bt.ing1.title': 'Fideos Vermicelli',
-    'promo.bt.ing1.desc': 'Fideos finos de arroz que sirven como base ligera y refrescante para el plato.',
-    'promo.bt.ing2.title': 'Ternera Sả / Cerdo Parrilla',
-    'promo.bt.ing2.desc': 'Tiras de ternera salteadas con sả o cerdo marinado cocinado a la parrilla de carbón.',
-    'promo.bt.ing3.title': 'Ingredientes Crujientes',
-    'promo.bt.ing3.desc': 'Cacahuetes tostados machacados, encurtidos caseros de zanahoria y nabo, y cebolla frita crujiente.'
+    'promo.bt.tagline': 'Cocina Tradicional de Hanói: Auténtico Phở y Bún Chả',
+    'promo.bt.desc': 'Descubra el alma de Hanói. Saboree nuestro tradicional Phở de ternera con caldo de 12 horas de cocción lenta y especias aromáticas, junto con el Bún Chả: cerdo marinado a la parrilla sobre carbón servido con fideos y verduras frescas.',
+    'promo.bt.ing1.title': 'Caldo de Phở de 12 Horas',
+    'promo.bt.ing1.desc': 'Huesos de ternera cocidos lentamente con jengibre tostado, chalotas, anís estrellado, canela y cardamomo negro.',
+    'promo.bt.ing2.title': 'Cerdo a la Parrilla de Carbón',
+    'promo.bt.ing2.desc': 'Albóndigas y tiras de cerdo marinadas con miel y sả, asadas al carbón y servidas en salsa agridulce tibia (Bún Chả).',
+    'promo.bt.ing3.title': 'Fideos Planos y Hierbas',
+    'promo.bt.ing3.desc': 'Fideos planos de arroz (Bánh Phở) y fideos finos redondos de arroz (Bún), acompañados de cilantro, menta y albahaca.'
   },
   en: {
     // Navigation
@@ -160,14 +160,14 @@ const translations = {
     'promo.bx.ing2.desc': 'Sautéed fresh local shrimp and pork slices cooked right inside the sizzling crepe.',
     'promo.bx.ing3.title': 'Fresh Herbs Wrap',
     'promo.bx.ing3.desc': 'Crisp romaine lettuce, fresh mint, coriander, and perilla leaves used to wrap each crispy bite.',
-    'promo.bt.tagline': 'Fresh, Crunchy & Aromatic Rice Vermicelli Salad Bowls',
-    'promo.bt.desc': 'Enjoy the ultimate fresh Vietnamese meal. Choose between wok-sautéed Lemongrass Beef (Bún Bò Nam Bộ) or Charcoal-Grilled Pork (Bún Thịt Nướng), served cold over fresh herbs, peanuts, and savory sauce.',
-    'promo.bt.ing1.title': 'Vietnamese Vermicelli',
-    'promo.bt.ing1.desc': 'Soft, thin round rice noodles serving as the refreshing base of the bowl.',
-    'promo.bt.ing2.title': 'Lemongrass Beef / Grilled Pork',
-    'promo.bt.ing2.desc': 'Sautéed beef with lemongrass or charcoal-grilled marinated pork glazed with savory local spices.',
-    'promo.bt.ing3.title': 'Crunchy Toppings',
-    'promo.bt.ing3.desc': 'Crushed roasted peanuts, crisp pickled carrots & daikon, fresh cucumbers, and fragrant crispy fried shallots.'
+    'promo.bt.tagline': 'Traditional Hanoi Cuisine: Authentic Phở & Smoky Bún Chả',
+    'promo.bt.desc': 'Experience the heart and soul of Hanoi. Savor our traditional beef Phở with its crystal-clear 12-hour spiced bone broth, served alongside Bún Chả—charcoal-grilled pork patties and caramelized pork belly swimming in a warm, sweet-sour dipping sauce.',
+    'promo.bt.ing1.title': '12-Hour Beef Phở Broth',
+    'promo.bt.ing1.desc': 'Rich marrow bone soup slow-simmered with toasted cinnamon, star anise, cloves, black cardamom, and charred ginger.',
+    'promo.bt.ing2.title': 'Smoky Charcoal-Grilled Pork',
+    'promo.bt.ing2.desc': 'Tender, honey-marinated pork shoulder patties grilled over hot charcoal embers for that ultimate smoky finish (Bún Chả).',
+    'promo.bt.ing3.title': 'Rice Noodles & Herbs',
+    'promo.bt.ing3.desc': 'Soft flat rice noodles for Phở and thin round vermicelli for Bún Chả, paired with fresh coriander, Thai basil, and perilla.'
   },
   vi: {
     // Navigation
@@ -243,14 +243,14 @@ const translations = {
     'promo.bx.ing2.desc': 'Tôm tươi lột vỏ cùng thịt heo nạc salte chín tới cùng giá đỗ ngọt thanh.',
     'promo.bx.ing3.title': 'Rau sống cuộn kèm',
     'promo.bx.ing3.desc': 'Rau xà lách sạch, lá cải cay, húng lủi, rau thơm rừng giúp cân bằng vị béo của bánh.',
-    'promo.bt.tagline': 'Thanh mát, giòn rụm với bún trộn bò Nam Bộ & thịt nướng',
-    'promo.bt.desc': 'Món ăn thanh nhiệt tuyệt vời cho mùa hè. Bạn có thể chọn Bún Bò Nam Bộ xào sả ớt ngọt thơm hoặc Bún Thịt Nướng thơm lừng, dùng kèm nước mắm pha chua ngọt.',
-    'promo.bt.ing1.title': 'Bún tươi thanh mát',
-    'promo.bt.ing1.desc': 'Sợi bún tươi mềm mịn, tạo cảm giác thanh mát dễ chịu khi thưởng thức.',
-    'promo.bt.ing2.title': 'Bò xào sả / Thịt nướng',
-    'promo.bt.ing2.desc': 'Thịt bò xào lăn thơm mùi sả hoặc thịt heo nướng than hoa cháy cạnh tẩm ướp đậm vị.',
-    'promo.bt.ing3.title': 'Gia vị giòn bùi',
-    'promo.bt.ing3.desc': 'Lạc rang giã nhỏ thơm bùi, đu đủ/cà rốt muối chua, hành phi giòn tan và nước mắm chua ngọt.'
+    'promo.bt.tagline': 'Tinh Hoa Ẩm Thực Hà Nội: Phở & Bún Chả Truyền Thống',
+    'promo.bt.desc': 'Khám phá tinh hoa ẩm thực thủ đô. Thưởng thức Phở Bò Hà Nội với nước dùng thanh trong ninh xương ống suốt 12 tiếng cùng hương hồi thảo quả nồng nàn, kết hợp với Bún Chả thịt nướng than hoa thơm lừng chấm nước mắm chua ngọt.',
+    'promo.bt.ing1.title': 'Nước dùng Phở bò 12h',
+    'promo.bt.ing1.desc': 'Hầm kỹ từ xương ống bò cùng gừng nướng, hành khô, quế chi, hoa hồi, đinh hương và thảo quả nướng thơm.',
+    'promo.bt.ing2.title': 'Chả nướng than hoa',
+    'promo.bt.ing2.desc': 'Thịt ba chỉ và chả viên làm từ nạc vai heo ướp sả mật ong, nướng chín tới trên bếp than hoa đỏ rực thơm phức mùi khói.',
+    'promo.bt.ing3.title': 'Bánh phở & bún tươi kèm rau',
+    'promo.bt.ing3.desc': 'Sợi bánh phở mềm mướt cho bát phở nóng và sợi bún tươi thanh nhẹ cho bún chả, ăn kèm rau húng, ngò gai, tía tô sạch.'
   },
   zh: {
     // Navigation
@@ -495,7 +495,9 @@ const translations = {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const isPromo = typeof window !== 'undefined' && window.location.pathname.startsWith('/promo/');
+  const path = typeof window !== 'undefined' ? window.location.pathname : '';
+  const cleanPath = path.replace(/\/$/, '');
+  const isPromo = cleanPath.startsWith('/promo/') || cleanPath.includes('/promo');
   const [language, setLanguage] = useState(isPromo ? 'en' : 'es');
 
   const t = (key) => {

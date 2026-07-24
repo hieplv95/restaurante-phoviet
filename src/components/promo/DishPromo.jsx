@@ -30,7 +30,7 @@ export default function DishPromo({ dish }) {
     'bun-tron': {
       taglineKey: 'promo.bt.tagline',
       descKey: 'promo.bt.desc',
-      image: '/menu_bunbonambo.png',
+      image: '/hero_phobo_3d.png',
       ingredients: [
         { titleKey: 'promo.bt.ing1.title', descKey: 'promo.bt.ing1.desc' },
         { titleKey: 'promo.bt.ing2.title', descKey: 'promo.bt.ing2.desc' },
@@ -65,7 +65,7 @@ export default function DishPromo({ dish }) {
             <img src={config.image} alt="Vietnamese Dish" className="promo-hero-image" />
             {dish === 'bun-tron' && (
               <div className="secondary-image-badge">
-                <img src="/menu_bunthitnuong.png" alt="Secondary" className="promo-hero-image-secondary" />
+                <img src="/about_buncha.png" alt="Secondary" className="promo-hero-image-secondary" />
               </div>
             )}
           </div>
