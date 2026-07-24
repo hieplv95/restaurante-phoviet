@@ -45,7 +45,7 @@ const translations = {
     // Footer
     'footer.desc': 'Auténtica gastronomía vietnamita. Caldos reconfortantes, baguettes crujientes e ingredientes frescos elaborados a mano.',
     'footer.hours': 'Horarios',
-    'footer.hours.desc': 'Lunes - Domingo: 12:00 - 23:30',
+    'footer.hours.desc': 'Lunes - Domingo: 13:00 - 17:00 / 19:30 - 23:30',
     'footer.contact': 'Contacto',
     'footer.rights': '© 2026 Restaurante Phở Việt. Todos los derechos reservados.',
     'footer.privacy': 'Política de Privacidad',
@@ -128,7 +128,7 @@ const translations = {
     // Footer
     'footer.desc': 'Authentic Vietnamese cuisine. Slow-cooked aromatic broths, crispy baguettes, and fresh hand-prepared ingredients.',
     'footer.hours': 'Hours',
-    'footer.hours.desc': 'Monday - Sunday: 12:00 - 23:30',
+    'footer.hours.desc': 'Monday - Sunday: 13:00 - 17:00 / 19:30 - 23:30',
     'footer.contact': 'Contact',
     'footer.rights': '© 2026 Phở Việt Restaurant. All rights reserved.',
     'footer.privacy': 'Privacy Policy',
@@ -211,7 +211,7 @@ const translations = {
     // Footer
     'footer.desc': 'Ẩm thực Việt Nam chính hiệu. Nước dùng ninh lâu thơm lừng, bánh mì giòn rụm và nguyên liệu tươi ngon tự làm.',
     'footer.hours': 'Giờ Mở Cửa',
-    'footer.hours.desc': 'Thứ Hai - Chủ Nhật: 12:00 - 23:30',
+    'footer.hours.desc': 'Thứ Hai - Chủ Nhật: 13:00 - 17:00 / 19:30 - 23:30',
     'footer.contact': 'Liên Hệ',
     'footer.rights': '© 2026 Nhà Hàng Phở Việt. Bảo lưu mọi quyền.',
     'footer.privacy': 'Chính sách Bảo mật',
@@ -294,7 +294,7 @@ const translations = {
     // Footer
     'footer.desc': '正宗越南美食。慢熬高汤、香脆法棍以及纯手工制作的新鲜食材。',
     'footer.hours': '营业时间',
-    'footer.hours.desc': '周一 - 周日：12:00 - 23:30',
+    'footer.hours.desc': '周一 - 周日：13:00 - 17:00 / 19:30 - 23:30',
     'footer.contact': '联系我们',
     'footer.rights': '© 2026 Phở Việt 餐厅。保留所有权利。',
     'footer.privacy': '隐私政策',
@@ -342,7 +342,7 @@ const translations = {
     // Footer
     'footer.desc': '정통 베트남 요리. 천천히 끓여낸 향긋한 육수, 바삭한 바게트, 그리고 매일 직접 준비하는 신선한 재료.',
     'footer.hours': '영업 시간',
-    'footer.hours.desc': '월요일 - 일요일: 12:00 - 23:30',
+    'footer.hours.desc': '월요일 - 일요일: 13:00 - 17:00 / 19:30 - 23:30',
     'footer.contact': '연락처',
     'footer.rights': '© 2026 Phở Việt 레스토랑. All rights reserved.',
     'footer.privacy': '개인정보 처리방침',
@@ -390,7 +390,7 @@ const translations = {
     // Footer
     'footer.desc': '本格ベトナム料理。じっくり煮込んだスープ、パリッとしたバゲット、毎日手作りする新鮮な食材。',
     'footer.hours': '営業時間',
-    'footer.hours.desc': '月曜日 - 日曜日: 12:00 - 23:30',
+    'footer.hours.desc': '月曜日 - 日曜日: 13:00 - 17:00 / 19:30 - 23:30',
     'footer.contact': 'お問い合わせ',
     'footer.rights': '© 2026 Phở Việt レストラン. All rights reserved.',
     'footer.privacy': 'プライバシーポリシー',
@@ -438,7 +438,7 @@ const translations = {
     // Footer
     'footer.desc': 'Gastronomie vietnamienne authentique. Bouillons réconfortants mijotés, baguettes croustillantes et ingrédients frais faits maison.',
     'footer.hours': 'Horaires',
-    'footer.hours.desc': 'Lundi - Dimanche: 12h00 - 23h30',
+    'footer.hours.desc': 'Lundi - Dimanche: 13h00 - 17h00 / 19h30 - 23h30',
     'footer.contact': 'Contact',
     'footer.rights': '© 2026 Restaurant Phở Việt. Tous droits réservés.',
     'footer.privacy': 'Politique de Confidentialité',
@@ -486,7 +486,7 @@ const translations = {
     // Footer
     'footer.desc': 'Autentica gastronomia vietnamita. Brodi confortanti cotti lentamente, baguette croccanti e ingredienti freschi preparati a mano.',
     'footer.hours': 'Orari',
-    'footer.hours.desc': 'Lunedì - Domenica: 12:00 - 23:30',
+    'footer.hours.desc': 'Lunedì - Domenica: 13:00 - 17:00 / 19:30 - 23:30',
     'footer.contact': 'Contatto',
     'footer.rights': '© 2026 Ristorante Phở Việt. Tutti i diritti riservati.',
     'footer.privacy': 'Informativa sulla Privacy',
