@@ -124,7 +124,7 @@ export default function DishPromo({ dish }) {
             <div className="location-detail-card">
               <p><strong>Pho Viet - Cung Đình Huế</strong></p>
               <p>📍 Carrer de Viladomat, 56, Eixample, 08015 Barcelona</p>
-              <p>📞 +34 912 345 678</p>
+              <p>📞 +34 632 501 335</p>
               <p>⏰ {t('footer.hours.desc')}</p>
             </div>
             <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: '20px' }}>

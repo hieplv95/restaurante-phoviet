@@ -22,7 +22,7 @@ export const policyData = {
         },
         {
           heading: '3. Cumplimiento del RGPD',
-          content: 'De acuerdo con el Reglamento General de Protección de Datos (RGPD) de la UE, usted tiene derecho a acceder, rectificar o solicitar la eliminación de sus datos personales en cualquier momento escribiendo a hola@phoviet.es.'
+          content: 'De acuerdo con el Reglamento General de Protección de Datos (RGPD) de la UE, usted tiene derecho a acceder, rectificar o solicitar la eliminación de sus datos personales en cualquier momento escribiendo a tranngoctuando@gmail.com.'
         }
       ],
       en: [
@@ -36,7 +36,7 @@ export const policyData = {
         },
         {
           heading: '3. GDPR Compliance',
-          content: 'In accordance with the EU General Data Protection Regulation (GDPR), you have the right to access, rectify, or request the deletion of your personal data at any time by emailing hola@phoviet.es.'
+          content: 'In accordance with the EU General Data Protection Regulation (GDPR), you have the right to access, rectify, or request the deletion of your personal data at any time by emailing tranngoctuando@gmail.com.'
         }
       ],
       vi: [
@@ -50,7 +50,7 @@ export const policyData = {
         },
         {
           heading: '3. Quyền hạn của Bạn',
-          content: 'Bạn có quyền truy cập, chỉnh sửa hoặc yêu cầu xóa dữ liệu cá nhân của mình bất kỳ lúc nào bằng cách gửi email trực tiếp về địa chỉ hola@phoviet.es.'
+          content: 'Bạn có quyền truy cập, chỉnh sửa hoặc yêu cầu xóa dữ liệu cá nhân của mình bất kỳ lúc nào bằng cách gửi email trực tiếp về địa chỉ tranngoctuando@gmail.com.'
         }
       ],
       zh: [
@@ -64,7 +64,7 @@ export const policyData = {
         },
         {
           heading: '3. 个人隐私权利',
-          content: '根据欧盟通用数据保护条例 (GDPR)，您有权随时通过发送电子邮件至 hola@phoviet.es 来访问、更正或请求删除您的个人数据。'
+          content: '根据欧盟通用数据保护条例 (GDPR)，您有权随时通过发送电子邮件至 tranngoctuando@gmail.com 来访问、更正或请求删除您的个人数据。'
         }
       ],
       ja: [
@@ -78,7 +78,7 @@ export const policyData = {
         },
         {
           heading: '3. 個人情報の管理',
-          content: 'お客様は、いつでも hola@phoviet.es にメールを送信して、自身の個人情報へのアクセス、訂正、または削除を要求する権利を有します。'
+          content: 'お客様は、いつでも tranngoctuando@gmail.com にメールを送信して、自身の個人情報へのアクセス、訂正、または削除を要求する権利を有します。'
         }
       ],
       ko: [
@@ -92,7 +92,7 @@ export const policyData = {
         },
         {
           heading: '3. 개인정보 보호 권리',
-          content: '고객님은 언제든지 hola@phoviet.es 로 이메일을 보내 자신의 개인정보 조회, 수정 또는 삭제를 요청하실 수 있습니다.'
+          content: '고객님은 언제든지 tranngoctuando@gmail.com 로 이메일을 보내 자신의 개인정보 조회, 수정 또는 삭제를 요청하실 수 있습니다.'
         }
       ],
       fr: [
@@ -106,7 +106,7 @@ export const policyData = {
         },
         {
           heading: '3. Conformité RGPD',
-          content: 'Conformément au Règlement Général sur la Protection des Données (RGPD) de l\'UE, vous disposez d\'un droit d\'accès, de rectification ou de suppression de vos données personnelles à tout moment via hola@phoviet.es.'
+          content: 'Conformément au Règlement Général sur la Protection des Données (RGPD) de l\'UE, vous disposez d\'un droit d\'accès, de rectification ou de suppression de vos données personnelles à tout moment via tranngoctuando@gmail.com.'
         }
       ],
       it: [
@@ -120,7 +120,7 @@ export const policyData = {
         },
         {
           heading: '3. Conformità al GDPR',
-          content: 'In conformità al Regolamento Generale sulla Protezione dei Dati dell\'UE (GDPR), hai il diritto di accedere, rettificare o richiedere la cancellazione dei tuoi dati personali in qualsiasi momento inviando un\'email a hola@phoviet.es.'
+          content: 'In conformità al Regolamento Generale sulla Protezione dei Dati dell\'UE (GDPR), hai il diritto di accedere, rettificare o richiedere la cancellazione dei tuoi dati personali in qualsiasi momento inviando un\'email a tranngoctuando@gmail.com.'
         }
       ]
     }

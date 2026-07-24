@@ -80,11 +80,11 @@ export default function PromoLayout({ children }) {
               </div>
               <div className="footer-info-row">
                 <Phone size={16} className="footer-info-icon" />
-                <span>+34 912 345 678</span>
+                <span>+34 632 501 335</span>
               </div>
               <div className="footer-info-row">
                 <Mail size={16} className="footer-info-icon" />
-                <span>hola@phoviet.es</span>
+                <span>tranngoctuando@gmail.com</span>
               </div>
             </div>
           </div>
