@@ -114,18 +114,6 @@
   <!-- Critical Asset Preload for Instant LCP (logo is LCP on mobile) -->
   <link rel="preload" as="image" href="/logo_hat.webp" type="image/webp" fetchpriority="high" />
 
-  <!-- Inline Critical CSS for Above-the-Fold -->
-  <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;background:#0a0a0a;color:#e5e5e5;overflow-x:hidden}
-    .header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,10,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);height:64px}
-    .container{max-width:1200px;margin:0 auto;padding:0 24px}
-    .header-container{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .logo-link{display:flex;align-items:center;gap:10px;text-decoration:none}
-    .logo-img{width:40px;height:40px;border-radius:8px}
-    .logo-text{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#fff}
-    .logo-text span{color:#f59e0b}
-  </style>
 
   <!-- DNS Prefetch & Preconnect for External Resources -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
