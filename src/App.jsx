@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { useLanguage } from './context/LanguageContext';
 import Header from './components/Header';
-import PolicyModal from './components/PolicyModal';
 import Hero from './components/Hero';
-import About from './components/About';
-import Menu from './components/Menu';
-import Reviews from './components/Reviews';
-import MapSection from './components/MapSection';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
-import PromoLayout from './components/promo/PromoLayout';
-import DishPromo from './components/promo/DishPromo';
 import SEO from './components/SEO';
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+
+// Lazy load below-the-fold components for smaller initial bundle
+const About = lazy(() => import('./components/About'));
+const Menu = lazy(() => import('./components/Menu'));
+const Reviews = lazy(() => import('./components/Reviews'));
+const MapSection = lazy(() => import('./components/MapSection'));
+const PolicyModal = lazy(() => import('./components/PolicyModal'));
+const PromoLayout = lazy(() => import('./components/promo/PromoLayout'));
+const DishPromo = lazy(() => import('./components/promo/DishPromo'));
 
 function MainApp() {
   const { language, t } = useLanguage();
@@ -21,13 +23,13 @@ function MainApp() {
   const isPromoPage = cleanPath.startsWith('/promo/') || cleanPath.includes('/promo');
   const promoDish = isPromoPage ? cleanPath.split('/').filter(Boolean).pop() : null;
 
-  console.log('[Routing Debug] path:', path, 'cleanPath:', cleanPath, 'isPromoPage:', isPromoPage, 'promoDish:', promoDish);
-
   if (isPromoPage && promoDish) {
     return (
-      <PromoLayout>
-        <DishPromo dish={promoDish} />
-      </PromoLayout>
+      <Suspense fallback={null}>
+        <PromoLayout>
+          <DishPromo dish={promoDish} />
+        </PromoLayout>
+      </Suspense>
     );
   }
   
@@ -47,10 +49,12 @@ function MainApp() {
       {/* Main content */}
       <main>
         <Hero onMenuScroll={handleMenuScroll} />
-        <About />
-        <Menu />
-        <Reviews />
-        <MapSection />
+        <Suspense fallback={null}>
+          <About />
+          <Menu />
+          <Reviews />
+          <MapSection />
+        </Suspense>
       </main>
 
 
@@ -139,11 +143,15 @@ function MainApp() {
           </div>
         </div>
       </footer>
-      <PolicyModal 
-        isOpen={openPolicy !== null} 
-        policyType={openPolicy} 
-        onClose={() => setOpenPolicy(null)} 
-      />
+      {openPolicy !== null && (
+        <Suspense fallback={null}>
+          <PolicyModal 
+            isOpen={true} 
+            policyType={openPolicy} 
+            onClose={() => setOpenPolicy(null)} 
+          />
+        </Suspense>
+      )}
     </div>
   );
 }
