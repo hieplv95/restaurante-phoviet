@@ -27,7 +27,7 @@ export default function Header() {
       <div className="container header-container">
         {/* Brand Logo */}
         <a href="#home" className="logo-link">
-          <img src="/logo_hat.webp" alt="Pho Viet Restaurant" className="logo-img" width="40" height="40" decoding="async" />
+          <img src="/logo_hat.webp" alt="Pho Viet Restaurant" className="logo-img" width="40" height="40" decoding="async" fetchPriority="high" />
           <div className="logo-text">
             Pho <span>Viet</span>
           </div>
