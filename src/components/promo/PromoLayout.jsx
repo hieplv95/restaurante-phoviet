@@ -22,7 +22,7 @@ export default function PromoLayout({ children }) {
       <header className="header-wrapper promo-header">
         <div className="container header-container">
           <a href="/" className="logo-link">
-            <img src="/logo_cungdinhhue.png" alt="Pho Viet" className="logo-img" />
+            <img src="/logo_hat.png" alt="Pho Viet Restaurant" className="logo-img" />
             <div className="logo-text">Pho <span>Viet</span></div>
           </a>
 

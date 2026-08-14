@@ -10,6 +10,7 @@ import MapSection from './components/MapSection';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import PromoLayout from './components/promo/PromoLayout';
 import DishPromo from './components/promo/DishPromo';
+import SEO from './components/SEO';
 
 function MainApp() {
   const { language, t } = useLanguage();
@@ -39,6 +40,7 @@ function MainApp() {
 
   return (
     <div className="app-layout">
+      <SEO page="home" />
       {/* Universal navigation bar */}
       <Header />
 
@@ -58,7 +60,7 @@ function MainApp() {
           {/* Column 1: Brand details */}
           <div>
             <a href="#home" className="logo-link">
-              <img src="/logo_cungdinhhue.png" alt="Pho Viet - Cung Đình Huế" className="logo-img" />
+              <img src="/logo_hat.png" alt="Pho Viet Restaurant" className="logo-img" />
               <div className="logo-text">Pho <span>Viet</span></div>
             </a>
             <p className="footer-brand-desc">

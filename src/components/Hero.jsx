@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { ArrowRight, ChefHat } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function Hero({ onMenuScroll }) {
   const { t } = useLanguage();
@@ -32,8 +32,11 @@ export default function Hero({ onMenuScroll }) {
             <div className="hero-bowl">
               <img 
                 src="/hero_phobo_3d.png" 
-                alt="Phở Bò 3D" 
+                alt="Auténtico Phở Bò Vietnamita tradicional con caldo de 12 horas - Pho Viet Barcelona" 
                 className="hero-bowl-img"
+                fetchPriority="high"
+                width="420"
+                height="420"
               />
             </div>
             

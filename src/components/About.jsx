@@ -61,7 +61,14 @@ export default function About() {
 
         {/* Right Side: Image */}
         <div className="about-image-wrapper">
-          <img src="/about_buncha.png" alt="Bun Cha Platter" className="about-img" />
+          <img 
+            src="/about_buncha.png" 
+            alt="Mẹt Bún Chả Hà Nội nướng than hoa truyền thống - Nhà hàng Pho Viet Barcelona" 
+            className="about-img" 
+            loading="lazy" 
+            width="500" 
+            height="380"
+          />
         </div>
       </div>
     </section>

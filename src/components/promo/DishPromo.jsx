@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { DISH_STORIES } from '../../data/stories';
 import { MapPin, Check } from 'lucide-react';
+import SEO from '../SEO';
 
 export default function DishPromo({ dish }) {
   const { language, t } = useLanguage();
@@ -11,6 +12,7 @@ export default function DishPromo({ dish }) {
       taglineKey: 'promo.bbh.tagline',
       descKey: 'promo.bbh.desc',
       image: '/hero_bunbohue.png',
+      imageAlt: 'Bún Bò Huế authentic Vietnamese soup Carrer de Viladomat Barcelona',
       ingredients: [
         { titleKey: 'promo.bbh.ing1.title', descKey: 'promo.bbh.ing1.desc' },
         { titleKey: 'promo.bbh.ing2.title', descKey: 'promo.bbh.ing2.desc' },
@@ -21,6 +23,7 @@ export default function DishPromo({ dish }) {
       taglineKey: 'promo.bx.tagline',
       descKey: 'promo.bx.desc',
       image: '/menu_banhxeo.png',
+      imageAlt: 'Bánh Xèo crispy Vietnamese pancake crepe Pho Viet Barcelona',
       ingredients: [
         { titleKey: 'promo.bx.ing1.title', descKey: 'promo.bx.ing1.desc' },
         { titleKey: 'promo.bx.ing2.title', descKey: 'promo.bx.ing2.desc' },
@@ -31,6 +34,7 @@ export default function DishPromo({ dish }) {
       taglineKey: 'promo.bt.tagline',
       descKey: 'promo.bt.desc',
       image: '/hero_phobo_3d.png',
+      imageAlt: 'Phở Bò Hà Nội truyền thống thịt bò tái mềm Pho Viet Barcelona',
       ingredients: [
         { titleKey: 'promo.bt.ing1.title', descKey: 'promo.bt.ing1.desc' },
         { titleKey: 'promo.bt.ing2.title', descKey: 'promo.bt.ing2.desc' },
@@ -47,6 +51,7 @@ export default function DishPromo({ dish }) {
 
   return (
     <div className="dish-promo-container">
+      <SEO page={dish} />
       {/* Hero Section */}
       <section className="promo-hero">
         <div className="container promo-hero-grid">
@@ -72,10 +77,10 @@ export default function DishPromo({ dish }) {
           </div>
           
           <div className="promo-hero-image-wrapper">
-            <img src={config.image} alt="Vietnamese Dish" className="promo-hero-image" />
+            <img src={config.image} alt={config.imageAlt || 'Plato Vietnamita'} className="promo-hero-image" fetchPriority="high" />
             {dish === 'pho-ha-noi' && (
               <div className="secondary-image-badge">
-                <img src="/about_buncha.png" alt="Secondary" className="promo-hero-image-secondary" />
+                <img src="/about_buncha.png" alt="Bún Chả Hà Nội nướng than hoa Pho Viet Barcelona" className="promo-hero-image-secondary" loading="lazy" />
               </div>
             )}
           </div>
