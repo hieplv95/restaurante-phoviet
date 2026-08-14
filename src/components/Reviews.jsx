@@ -19,8 +19,8 @@ const REVIEWS_DATA = [
       en: 'I came for lunch and was welcomed very warmly. The staff is friendly. I had a delicious meal with braised pork (thịt kho), tasting just like home-cooked meals. In a foreign land, being able to enjoy a dish as delicious as the one my mother cooks is amazing. I highly recommend everyone to visit this restaurant.\n\nMeal type: Lunch'
     },
     images: [
-      '/reviews/storefront_review.png',
-      '/reviews/pork_dish_review.png'
+      '/reviews/storefront_review.webp',
+      '/reviews/pork_dish_review.webp'
     ]
   },
   {
@@ -39,9 +39,9 @@ const REVIEWS_DATA = [
       en: 'Riquísimos todo. Muchísimo sabor, el postre verde aunque a priori el color me impacto estaba delicioso. Super atentos, rápidos y de precio nos costó 43€ dos personas con copas de vino incluidas.\n\nMeal type\nDinner\n\nPrice per person\n20-30 €'
     },
     images: [
-      '/reviews/dumplings_review.png',
-      '/reviews/table_setting_review.png',
-      '/reviews/green_dessert_review.png'
+      '/reviews/dumplings_review.webp',
+      '/reviews/table_setting_review.webp',
+      '/reviews/green_dessert_review.webp'
     ]
   },
   {
@@ -60,9 +60,9 @@ const REVIEWS_DATA = [
       en: '¡Nos ha encantado! Tiene menú del día y cuenta con muchas options, pena no haber podido probarlo todo... Los postres espectaculares.\n\nFood: 5\n\nService: 5\n\nAtmosphere: 5'
     },
     images: [
-      '/reviews/noodle_salad_review.png',
-      '/reviews/table_cups_review.png',
-      '/reviews/person_eating_review.png'
+      '/reviews/noodle_salad_review.webp',
+      '/reviews/table_cups_review.webp',
+      '/reviews/person_eating_review.webp'
     ],
     moreCount: 3
   }
@@ -152,7 +152,15 @@ export default function Reviews() {
                           onClick={() => setActivePhoto(img)}
                           title={language === 'es' ? 'Haga clic para ampliar' : 'Click to enlarge'}
                         >
-                          <img src={img} alt={`Review photo by ${review.name}`} className="review-attached-img" />
+                          <img 
+                            src={img} 
+                            alt={`Review photo by ${review.name}`} 
+                            className="review-attached-img" 
+                            loading="lazy" 
+                            decoding="async" 
+                            width="100" 
+                            height="100" 
+                          />
                           {isLast && (
                             <div className="review-img-overlay">
                               <span>+{review.moreCount}</span>

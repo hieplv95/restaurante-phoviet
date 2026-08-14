@@ -60,7 +60,7 @@ function MainApp() {
           {/* Column 1: Brand details */}
           <div>
             <a href="#home" className="logo-link">
-              <img src="/logo_hat.png" alt="Pho Viet Restaurant" className="logo-img" />
+              <img src="/logo_hat.webp" alt="Pho Viet Restaurant" className="logo-img" width="40" height="40" loading="lazy" decoding="async" />
               <div className="logo-text">Pho <span>Viet</span></div>
             </a>
             <p className="footer-brand-desc">

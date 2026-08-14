@@ -11,7 +11,7 @@ export default function DishPromo({ dish }) {
     'bun-bo-hue': {
       taglineKey: 'promo.bbh.tagline',
       descKey: 'promo.bbh.desc',
-      image: '/hero_bunbohue.png',
+      image: '/hero_bunbohue.webp',
       imageAlt: 'Bún Bò Huế authentic Vietnamese soup Carrer de Viladomat Barcelona',
       ingredients: [
         { titleKey: 'promo.bbh.ing1.title', descKey: 'promo.bbh.ing1.desc' },
@@ -22,7 +22,7 @@ export default function DishPromo({ dish }) {
     'banh-xeo': {
       taglineKey: 'promo.bx.tagline',
       descKey: 'promo.bx.desc',
-      image: '/menu_banhxeo.png',
+      image: '/menu_banhxeo.webp',
       imageAlt: 'Bánh Xèo crispy Vietnamese pancake crepe Pho Viet Barcelona',
       ingredients: [
         { titleKey: 'promo.bx.ing1.title', descKey: 'promo.bx.ing1.desc' },
@@ -33,7 +33,7 @@ export default function DishPromo({ dish }) {
     'pho-ha-noi': {
       taglineKey: 'promo.bt.tagline',
       descKey: 'promo.bt.desc',
-      image: '/hero_phobo_3d.png',
+      image: '/hero_phobo_3d.webp',
       imageAlt: 'Phở Bò Hà Nội truyền thống thịt bò tái mềm Pho Viet Barcelona',
       ingredients: [
         { titleKey: 'promo.bt.ing1.title', descKey: 'promo.bt.ing1.desc' },
@@ -77,10 +77,27 @@ export default function DishPromo({ dish }) {
           </div>
           
           <div className="promo-hero-image-wrapper">
-            <img src={config.image} alt={config.imageAlt || 'Plato Vietnamita'} className="promo-hero-image" fetchPriority="high" />
+            <img 
+              src={config.image} 
+              alt={config.imageAlt || 'Plato Vietnamita'} 
+              className="promo-hero-image" 
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
+              width="450"
+              height="350"
+            />
             {dish === 'pho-ha-noi' && (
               <div className="secondary-image-badge">
-                <img src="/about_buncha.png" alt="Bún Chả Hà Nội nướng than hoa Pho Viet Barcelona" className="promo-hero-image-secondary" loading="lazy" />
+                <img 
+                  src="/about_buncha.webp" 
+                  alt="Bún Chả Hà Nội nướng than hoa Pho Viet Barcelona" 
+                  className="promo-hero-image-secondary" 
+                  loading="lazy" 
+                  decoding="async"
+                  width="200"
+                  height="150"
+                />
               </div>
             )}
           </div>
@@ -104,7 +121,15 @@ export default function DishPromo({ dish }) {
                     <p>{section.text}</p>
                   </div>
                   <div className="story-section-image-wrapper">
-                    <img src={section.image} alt={section.heading} className="story-section-image" />
+                    <img 
+                      src={section.image} 
+                      alt={section.heading} 
+                      className="story-section-image" 
+                      loading="lazy" 
+                      decoding="async"
+                      width="400"
+                      height="300"
+                    />
                   </div>
                 </div>
               ))}

@@ -22,7 +22,7 @@ export default function PromoLayout({ children }) {
       <header className="header-wrapper promo-header">
         <div className="container header-container">
           <a href="/" className="logo-link">
-            <img src="/logo_hat.png" alt="Pho Viet Restaurant" className="logo-img" />
+            <img src="/logo_hat.webp" alt="Pho Viet Restaurant" className="logo-img" width="40" height="40" decoding="async" />
             <div className="logo-text">Pho <span>Viet</span></div>
           </a>
 

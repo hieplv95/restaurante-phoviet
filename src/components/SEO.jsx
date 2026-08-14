@@ -153,11 +153,11 @@ export default function SEO({ page = 'home' }) {
           "name": "Pho Viet Barcelona",
           "alternateName": ["Restaurante Vietnamita Pho Viet", "Phở Việt Barcelona"],
           "image": [
-            "https://phovietbarcelona.com/logo.png",
-            "https://phovietbarcelona.com/hero_phobo_3d.png",
-            "https://phovietbarcelona.com/about_buncha.png"
+            "https://phovietbarcelona.com/logo.webp",
+            "https://phovietbarcelona.com/hero_phobo_3d.webp",
+            "https://phovietbarcelona.com/about_buncha.webp"
           ],
-          "logo": "https://phovietbarcelona.com/logo.png",
+          "logo": "https://phovietbarcelona.com/logo.webp",
           "url": "https://phovietbarcelona.com/",
           "telephone": "+34632501335",
           "priceRange": "$$",

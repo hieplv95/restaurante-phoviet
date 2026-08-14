@@ -62,10 +62,11 @@ export default function About() {
         {/* Right Side: Image */}
         <div className="about-image-wrapper">
           <img 
-            src="/about_buncha.png" 
+            src="/about_buncha.webp" 
             alt="Mẹt Bún Chả Hà Nội nướng than hoa truyền thống - Nhà hàng Pho Viet Barcelona" 
             className="about-img" 
             loading="lazy" 
+            decoding="async" 
             width="500" 
             height="380"
           />

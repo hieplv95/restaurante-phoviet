@@ -190,7 +190,7 @@ export default function Menu() {
           ]
         },
         price: '7,20€',
-        image: '/menu_chagio.png'
+        image: '/menu_chagio.webp'
       },
       {
         id: 'goi-cuon',
@@ -268,7 +268,7 @@ export default function Menu() {
           ]
         },
         price: '7,00€',
-        image: '/menu_goicuon.png'
+        image: '/menu_goicuon.webp'
       },
       {
         id: 'tom-chien-xu',
@@ -314,7 +314,7 @@ export default function Menu() {
           options: []
         },
         price: '7,20€',
-        image: '/menu_camaron.png'
+        image: '/menu_camaron.webp'
       },
       {
         id: 'croquetas-de-pescado',
@@ -376,7 +376,7 @@ export default function Menu() {
           ]
         },
         price: '7,80€',
-        image: '/menu_chacacom.png'
+        image: '/menu_chacacom.webp'
       },
       {
         id: 'goi-xoai',
@@ -454,7 +454,7 @@ export default function Menu() {
           ]
         },
         price: '7,30€ / 7,60€',
-        image: '/menu_goixoai.png'
+        image: '/menu_goixoai.webp'
       },
       {
         id: 'alitas-de-pollo',
@@ -516,7 +516,7 @@ export default function Menu() {
           ]
         },
         price: '7,20€',
-        image: '/menu_alitas.png'
+        image: '/menu_alitas.webp'
       },
       {
         id: 'gyosas-al-vapor',
@@ -562,7 +562,7 @@ export default function Menu() {
           options: []
         },
         price: '7,10€',
-        image: '/menu_gyosas.png'
+        image: '/menu_gyosas.webp'
       }
     ],
     mains: [
@@ -634,7 +634,7 @@ export default function Menu() {
           ]
         },
         price: '10,90€',
-        image: '/menu_banhxeo.png'
+        image: '/menu_banhxeo.webp'
       },
       {
         id: 'pho-bo',
@@ -728,7 +728,7 @@ export default function Menu() {
           ]
         },
         price: '11,90€ - 12,90€',
-        image: '/menu_phobo.png'
+        image: '/menu_phobo.webp'
       },
       {
         id: 'bun-bo-hue',
@@ -774,7 +774,7 @@ export default function Menu() {
           options: []
         },
         price: '13,50€',
-        image: '/menu_bunbohue.png'
+        image: '/menu_bunbohue.webp'
       },
       {
         id: 'wok-fideos-de-arroz',
@@ -868,7 +868,7 @@ export default function Menu() {
           ]
         },
         price: '10,90€ - 12,90€',
-        image: '/menu_phoxao.png'
+        image: '/menu_phoxao.webp'
       },
       {
         id: 'pho-xao-gion',
@@ -962,7 +962,7 @@ export default function Menu() {
           ]
         },
         price: '12,90€',
-        image: '/menu_phoxaogion.png'
+        image: '/menu_phoxaogion.webp'
       },
       {
         id: 'pad-thai',
@@ -1008,7 +1008,7 @@ export default function Menu() {
           options: []
         },
         price: '13,50€',
-        image: '/menu_padthai.png'
+        image: '/menu_padthai.webp'
       },
       {
         id: 'bun-thit-nuong',
@@ -1054,7 +1054,7 @@ export default function Menu() {
           options: [{ text: "+ Con involtino primavera fritto (+3,00€)", highlight: false }]
         },
         price: '11,90€',
-        image: '/menu_bunthitnuong.png'
+        image: '/menu_bunthitnuong.webp'
       },
       {
         id: 'bun-nem',
@@ -1100,7 +1100,7 @@ export default function Menu() {
           options: []
         },
         price: '11,90€',
-        image: '/menu_bunnem.png'
+        image: '/menu_bunnem.webp'
       },
       {
         id: 'bun-bo-nam-bo',
@@ -1194,7 +1194,7 @@ export default function Menu() {
           ]
         },
         price: '11,90€ - 12,90€',
-        image: '/menu_bunbonambo.png'
+        image: '/menu_bunbonambo.webp'
       },
       {
         id: 'bun-heo-quay',
@@ -1240,7 +1240,7 @@ export default function Menu() {
           options: []
         },
         price: '11,90€',
-        image: '/menu_bunheoquay.png'
+        image: '/menu_bunheoquay.webp'
       },
       {
         id: 'ternera-con-pimienta',
@@ -1310,7 +1310,7 @@ export default function Menu() {
           ]
         },
         price: '13,90€',
-        image: '/menu_bo_tieu_den.png'
+        image: '/menu_bo_tieu_den.webp'
       },
       {
         id: 'ga-sot-lac',
@@ -1356,7 +1356,7 @@ export default function Menu() {
           options: []
         },
         price: '11,90€',
-        image: '/menu_ga_sot_lac.png'
+        image: '/menu_ga_sot_lac.webp'
       },
       {
         id: 'tamarindo-salteado',
@@ -1442,7 +1442,7 @@ export default function Menu() {
           ]
         },
         price: '11,90€ - 12,90€',
-        image: '/menu_me_xao.png'
+        image: '/menu_me_xao.webp'
       },
       {
         id: 'thit-rang-tom',
@@ -1488,7 +1488,7 @@ export default function Menu() {
           options: []
         },
         price: '13,90€',
-        image: '/menu_thit_rang_tom.png'
+        image: '/menu_thit_rang_tom.webp'
       },
       {
         id: 'costillas-de-cerdo-caramelizadas',
@@ -1534,7 +1534,7 @@ export default function Menu() {
           options: []
         },
         price: '11,90€',
-        image: '/menu_suon_ram.png'
+        image: '/menu_suon_ram.webp'
       },
       {
         id: 'thit-kho-tau',
@@ -1580,7 +1580,7 @@ export default function Menu() {
           options: []
         },
         price: '11,90€',
-        image: '/menu_thit_kho_tau.png'
+        image: '/menu_thit_kho_tau.webp'
       },
       {
         id: 'ba-chi-quay',
@@ -1626,7 +1626,7 @@ export default function Menu() {
           options: []
         },
         price: '12,90€',
-        image: '/menu_ba_chi_quay.png'
+        image: '/menu_ba_chi_quay.webp'
       },
       {
         id: 'dau-hu-tam-xi-dau',
@@ -1672,7 +1672,7 @@ export default function Menu() {
           options: []
         },
         price: '10,90€',
-        image: '/menu_dau_hu_xi_dau.png'
+        image: '/menu_dau_hu_xi_dau.webp'
       },
       {
         id: 'com-chien',
@@ -1742,7 +1742,7 @@ export default function Menu() {
           ]
         },
         price: '11,90€ - 12,90€',
-        image: '/menu_com_chien.png'
+        image: '/menu_com_chien.webp'
       },
       {
         id: 'com-thit-sot-xi-dau',
@@ -1812,7 +1812,7 @@ export default function Menu() {
           ]
         },
         price: '11,90€ - 13,90€',
-        image: '/menu_com_thit_xi_dau.png'
+        image: '/menu_com_thit_xi_dau.webp'
       },
       {
         id: 'com-thit-sot-mam-toi',
@@ -1882,7 +1882,7 @@ export default function Menu() {
           ]
         },
         price: '11,90€ - 13,90€',
-        image: '/menu_com_thit_mam_toi.png'
+        image: '/menu_com_thit_mam_toi.webp'
       },
       {
         id: 'com-thit-chien-gung',
@@ -1960,7 +1960,7 @@ export default function Menu() {
           ]
         },
         price: '11,90€ - 13,90€',
-        image: '/menu_com_chiengung.png'
+        image: '/menu_com_chiengung.webp'
       },
       {
         id: 'com-thit-nuong',
@@ -2038,7 +2038,7 @@ export default function Menu() {
           ]
         },
         price: '11,90€ - 13,90€',
-        image: '/menu_com_thitnuong.png'
+        image: '/menu_com_thitnuong.webp'
       },
       {
         id: 'com-goi-tron',
@@ -2124,7 +2124,7 @@ export default function Menu() {
           ]
         },
         price: '11,90€ - 12,90€',
-        image: '/menu_com_goi_tron.png'
+        image: '/menu_com_goi_tron.webp'
       },
       {
         id: 'pollo-especial',
@@ -2170,7 +2170,7 @@ export default function Menu() {
           options: []
         },
         price: '11,90€',
-        image: '/menu_pollo_especial.png'
+        image: '/menu_pollo_especial.webp'
       },
       {
         id: 'curry',
@@ -2256,7 +2256,7 @@ export default function Menu() {
           ]
         },
         price: '11,90€ - 12,90€',
-        image: '/menu_curry.png'
+        image: '/menu_curry.webp'
       }
     ],
     desserts: [
@@ -2304,7 +2304,7 @@ export default function Menu() {
           options: []
         },
         price: '4,90€',
-        image: '/menu_chechuoi.png'
+        image: '/menu_chechuoi.webp'
       },
       {
         id: 'che-dau-den',
@@ -2351,7 +2351,7 @@ export default function Menu() {
           options: []
         },
         price: '4,90€',
-        image: '/menu_chedauden.png'
+        image: '/menu_chedauden.webp'
       },
       {
         id: 'panna-cotta',
@@ -2397,7 +2397,7 @@ export default function Menu() {
           options: []
         },
         price: '4,50€',
-        image: '/menu_pannacottatropical.png'
+        image: '/menu_pannacottatropical.webp'
       },
       {
         id: 'sua-chua-nep-cam',
@@ -2443,7 +2443,7 @@ export default function Menu() {
           options: []
         },
         price: '4,90€',
-        image: '/menu_suachuanepcam.png'
+        image: '/menu_suachuanepcam.webp'
       }
     ],
     drinks: [
@@ -2491,7 +2491,7 @@ export default function Menu() {
           options: []
         },
         price: '2,50€',
-        image: '/menu_agua.png'
+        image: '/menu_agua.webp'
       },
       {
         id: 'agua-1l',
@@ -2537,7 +2537,7 @@ export default function Menu() {
           options: []
         },
         price: '4,00€',
-        image: '/menu_agua.png'
+        image: '/menu_agua.webp'
       },
       {
         id: 'agua-con-gas',
@@ -2583,7 +2583,7 @@ export default function Menu() {
           options: []
         },
         price: '2,80€',
-        image: '/menu_agua.png'
+        image: '/menu_agua.webp'
       },
       {
         id: 'coca-cola',
@@ -2629,7 +2629,7 @@ export default function Menu() {
           options: []
         },
         price: '2,80€',
-        image: '/menu_refresco.png'
+        image: '/menu_refresco.webp'
       },
       {
         id: 'coca-cola-zero',
@@ -2675,7 +2675,7 @@ export default function Menu() {
           options: []
         },
         price: '2,80€',
-        image: '/menu_refresco.png'
+        image: '/menu_refresco.webp'
       },
       {
         id: 'fanta-limon',
@@ -2721,7 +2721,7 @@ export default function Menu() {
           options: []
         },
         price: '2,80€',
-        image: '/menu_refresco.png'
+        image: '/menu_refresco.webp'
       },
       {
         id: 'fanta-naranja',
@@ -2767,7 +2767,7 @@ export default function Menu() {
           options: []
         },
         price: '2,80€',
-        image: '/menu_refresco.png'
+        image: '/menu_refresco.webp'
       },
       {
         id: 'nestea',
@@ -2813,7 +2813,7 @@ export default function Menu() {
           options: []
         },
         price: '2,80€',
-        image: '/menu_refresco.png'
+        image: '/menu_refresco.webp'
       },
       {
         id: 'te-de-melocoton',
@@ -2859,7 +2859,7 @@ export default function Menu() {
           options: []
         },
         price: '4,00€',
-        image: '/menu_tedao.png'
+        image: '/menu_tedao.webp'
       },
       {
         id: 'te-de-lichi',
@@ -2905,7 +2905,7 @@ export default function Menu() {
           options: []
         },
         price: '4,00€',
-        image: '/menu_travai.png'
+        image: '/menu_travai.webp'
       },
       {
         id: 'coctel-limon-menta',
@@ -2951,7 +2951,7 @@ export default function Menu() {
           options: []
         },
         price: '5,00€',
-        image: '/menu_coctel_limon.png'
+        image: '/menu_coctel_limon.webp'
       },
       {
         id: 'zumo-naranja',
@@ -2997,7 +2997,7 @@ export default function Menu() {
           options: []
         },
         price: '5,00€',
-        image: '/menu_zumonaranja.png'
+        image: '/menu_zumonaranja.webp'
       },
       {
         id: 'sua-chua-chanh-da',
@@ -3043,7 +3043,7 @@ export default function Menu() {
           options: []
         },
         price: '4,50€',
-        image: '/menu_suachuachanhda.png'
+        image: '/menu_suachuachanhda.webp'
       },
       {
         id: 'sinh-to-bo',
@@ -3089,7 +3089,7 @@ export default function Menu() {
           options: []
         },
         price: '4,50€',
-        image: '/menu_avocado_smoothie.png'
+        image: '/menu_avocado_smoothie.webp'
       },
       {
         id: 'cafe-vietnamita',
@@ -3135,7 +3135,7 @@ export default function Menu() {
           options: []
         },
         price: '4,00€',
-        image: '/menu_cafe.png'
+        image: '/menu_cafe.webp'
       },
       {
         id: 'cafe-solo',
@@ -4445,7 +4445,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_chagio.png" alt="ROLLO PRIMAVERA" className="dmd-flyer-img" />
+                    <img src="/menu_chagio.webp" alt="ROLLO PRIMAVERA" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4480,7 +4480,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_goicuon.png" alt="ROLLO FRESCO" className="dmd-flyer-img" />
+                    <img src="/menu_goicuon.webp" alt="ROLLO FRESCO" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4526,7 +4526,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_chacacom.png" alt="CROQUETAS DE PESCADO CRUJIENTES" className="dmd-flyer-img" />
+                    <img src="/menu_chacacom.webp" alt="CROQUETAS DE PESCADO CRUJIENTES" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4561,7 +4561,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_goixoai.png" alt="ENSALADA VIETNAM DE MANGO" className="dmd-flyer-img" />
+                    <img src="/menu_goixoai.webp" alt="ENSALADA VIETNAM DE MANGO" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4588,7 +4588,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_alitas.png" alt="ALITAS DE POLLO CRUJIENTES" className="dmd-flyer-img" />
+                    <img src="/menu_alitas.webp" alt="ALITAS DE POLLO CRUJIENTES" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4609,7 +4609,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_gyosas.png" alt="GYOSAS AL VAPOR" className="dmd-flyer-img" />
+                    <img src="/menu_gyosas.webp" alt="GYOSAS AL VAPOR" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4667,7 +4667,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_ga_sot_lac.png" alt="POLLO CON SALSA DE CACAHUETE" className="dmd-flyer-img" />
+                    <img src="/menu_ga_sot_lac.webp" alt="POLLO CON SALSA DE CACAHUETE" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4724,7 +4724,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_ba_chi_quay.png" alt="BA CHỈ QUAY" className="dmd-flyer-img" />
+                    <img src="/menu_ba_chi_quay.webp" alt="BA CHỈ QUAY" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4762,7 +4762,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_me_xao.png" alt="TAMARINDO SALTEADO" className="dmd-flyer-img" />
+                    <img src="/menu_me_xao.webp" alt="TAMARINDO SALTEADO" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4802,7 +4802,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_phobo.png" alt="SOPA PHỞ" className="dmd-flyer-img" />
+                    <img src="/menu_phobo.webp" alt="SOPA PHỞ" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4840,7 +4840,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_curry.png" alt="CURRY" className="dmd-flyer-img" />
+                    <img src="/menu_curry.webp" alt="CURRY" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4906,7 +4906,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_bunthitnuong.png" alt="BÚN THỊT NƯỚNG" className="dmd-flyer-img" />
+                    <img src="/menu_bunthitnuong.webp" alt="BÚN THỊT NƯỚNG" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4968,7 +4968,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_bunbonambo.png" alt="BÚN BÒ NAM BỘ" className="dmd-flyer-img" />
+                    <img src="/menu_bunbonambo.webp" alt="BÚN BÒ NAM BỘ" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -4989,7 +4989,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_bunheoquay.png" alt="BÚN TRỘN HEO QUAY" className="dmd-flyer-img" />
+                    <img src="/menu_bunheoquay.webp" alt="BÚN TRỘN HEO QUAY" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -5020,7 +5020,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_com_thit_xi_dau.png" alt="CƠM THỊT SỐT XÌ DẦU" className="dmd-flyer-img" />
+                    <img src="/menu_com_thit_xi_dau.webp" alt="CƠM THỊT SỐT XÌ DẦU" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -5114,7 +5114,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_chechuoi.png" alt="PUDIN CALIENTE CON PLATANO" className="dmd-flyer-img" />
+                    <img src="/menu_chechuoi.webp" alt="PUDIN CALIENTE CON PLATANO" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -5135,7 +5135,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_chedauden.png" alt="CHÈ ĐẬU ĐEN" className="dmd-flyer-img" />
+                    <img src="/menu_chedauden.webp" alt="CHÈ ĐẬU ĐEN" className="dmd-flyer-img" />
                   </div>
                 </div>
               </div>
@@ -5156,7 +5156,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_pannacottatropical.png" alt="PANNA COTTA TROPICAL" className="dmd-flyer-img" />
+                    <img src="/menu_pannacottatropical.webp" alt="PANNA COTTA TROPICAL" className="dmd-flyer-img" loading="lazy" decoding="async" width="140" height="140" />
                   </div>
                 </div>
               </div>
@@ -5177,7 +5177,7 @@ export default function Menu() {
                     </div>
                   </div>
                   <div className="dmd-flyer-image-wrap">
-                    <img src="/menu_suachuanepcam.png" alt="PUDIN DE ARROZ NEGRO Y YOGUR" className="dmd-flyer-img" />
+                    <img src="/menu_suachuanepcam.webp" alt="PUDIN DE ARROZ NEGRO Y YOGUR" className="dmd-flyer-img" loading="lazy" decoding="async" width="140" height="140" />
                   </div>
                 </div>
               </div>
@@ -5209,7 +5209,7 @@ export default function Menu() {
                   {item.image && (
                     <div className="menu-item-image-container">
                       <div className="menu-item-image-circle">
-                        <img src={item.image} alt={item.name} className="menu-item-image" />
+                        <img src={item.image} alt={item.name} className="menu-item-image" loading="lazy" decoding="async" width="120" height="120" />
                       </div>
                     </div>
                   )}

@@ -31,10 +31,12 @@ export default function Hero({ onMenuScroll }) {
           <div className="hero-image-wrapper">
             <div className="hero-bowl">
               <img 
-                src="/hero_phobo_3d.png" 
+                src="/hero_phobo_3d.webp" 
                 alt="Auténtico Phở Bò Vietnamita tradicional con caldo de 12 horas - Pho Viet Barcelona" 
                 className="hero-bowl-img"
                 fetchPriority="high"
+                loading="eager"
+                decoding="async"
                 width="420"
                 height="420"
               />
