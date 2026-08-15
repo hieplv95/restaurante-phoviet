@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import './Menu.css';
 
 export default function Menu() {
   const { language } = useLanguage();

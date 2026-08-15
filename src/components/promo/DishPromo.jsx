@@ -3,6 +3,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { DISH_STORIES } from '../../data/stories';
 import { MapPin, Check } from 'lucide-react';
 import SEO from '../SEO';
+import './DishPromo.css';
 
 export default function DishPromo({ dish }) {
   const { language, t } = useLanguage();

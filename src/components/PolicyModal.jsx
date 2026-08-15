@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { X, Shield, FileText } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { policyData } from '../data/policies';
+import './PolicyModal.css';
 
 export default function PolicyModal({ isOpen, policyType, onClose }) {
   const { language } = useLanguage();

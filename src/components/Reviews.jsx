@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Star, MoreVertical } from 'lucide-react';
+import './Reviews.css';
 
 const REVIEWS_DATA = [
   {

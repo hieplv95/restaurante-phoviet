@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import './About.css';
 
 const aboutTexts = {
   es: {

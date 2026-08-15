@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { ExternalLink, MapPin, Star } from 'lucide-react';
+import './MapSection.css';
 
 export default function MapSection() {
   const { language } = useLanguage();
