@@ -80,11 +80,11 @@ export default function PromoLayout({ children }) {
               </div>
               <div className="footer-info-row">
                 <Phone size={16} className="footer-info-icon" />
-                <span>+34 632 501 335</span>
+                <a href="tel:+34632501335" className="footer-link">+34 632 501 335</a>
               </div>
               <div className="footer-info-row">
                 <Mail size={16} className="footer-info-icon" />
-                <span>tranngoctuando@gmail.com</span>
+                <a href="mailto:tranngoctuando@gmail.com" className="footer-link">tranngoctuando@gmail.com</a>
               </div>
             </div>
           </div>

@@ -107,7 +107,7 @@ export default function Reviews() {
                     <h4 className="review-user-name">{review.name}</h4>
                     <p className="review-user-stats">
                       {review.isLocalGuide && <span className="local-guide-tag">{t('reviews.guide')} • </span>}
-                      {review.reviewCount} {t('reviews.reviews')} • {review.photoCount.toLocaleString()} {t('reviews.photos')}
+                      {review.reviewCount} {t('reviews.reviews')} • {review.photoCount.toLocaleString(language)} {t('reviews.photos')}
                     </p>
                   </div>
                   

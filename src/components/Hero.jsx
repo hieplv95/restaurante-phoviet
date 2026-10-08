@@ -2,8 +2,16 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { ArrowRight } from 'lucide-react';
 
+const heroAlt = {
+  es: 'Phở Bò tradicional con caldo de 12 horas en Pho Viet, restaurante vietnamita en Barcelona',
+  en: 'Traditional beef Phở with 12-hour broth at Pho Viet, Vietnamese restaurant in Barcelona',
+  vi: 'Phở bò truyền thống nước dùng ninh 12 tiếng tại nhà hàng Việt Nam Phở Việt Barcelona',
+  fr: 'Phở au bœuf traditionnel, bouillon mijoté 12 h, chez Pho Viet, restaurant vietnamien à Barcelone',
+  it: 'Phở di manzo tradizionale con brodo di 12 ore da Pho Viet, ristorante vietnamita a Barcellona'
+};
+
 export default function Hero({ onMenuScroll }) {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
 
   return (
     <section id="home" className="hero-section">
@@ -32,7 +40,7 @@ export default function Hero({ onMenuScroll }) {
             <div className="hero-bowl">
               <img 
                 src="/hero_phobo_3d.webp" 
-                alt="Auténtico Phở Bò Vietnamita tradicional con caldo de 12 horas - Pho Viet Barcelona" 
+                alt={heroAlt[language] || heroAlt.en}
                 className="hero-bowl-img"
                 fetchPriority="high"
                 loading="eager"

@@ -12,9 +12,9 @@ const translations = {
     
     // Hero
     'hero.tagline': 'Sabor Tradicional de Hanoi',
-    'hero.title.part1': 'El Arte del ',
-    'hero.title.highlight': 'Phở Auténtico',
-    'hero.title.part2': ' en tu Ciudad',
+    'hero.title.part1': 'Auténtico ',
+    'hero.title.highlight': 'Restaurante Vietnamita',
+    'hero.title.part2': ' en Barcelona',
     'hero.desc': 'Disfruta de recetas familiares vietnamitas transmitidas durante generaciones. Preparadas con ingredientes frescos de la más alta calidad y un caldo cocinado a fuego lento durante 12 horas.',
     'hero.btn.menu': 'Ver Menú',
     'hero.btn.kitchen': 'Simular Cocina 🍳',
@@ -95,9 +95,9 @@ const translations = {
     
     // Hero
     'hero.tagline': 'Traditional Taste of Hanoi',
-    'hero.title.part1': 'The Art of ',
-    'hero.title.highlight': 'Authentic Phở',
-    'hero.title.part2': ' in Your City',
+    'hero.title.part1': 'Authentic ',
+    'hero.title.highlight': 'Vietnamese Restaurant',
+    'hero.title.part2': ' in Barcelona',
     'hero.desc': 'Enjoy Vietnamese family recipes passed down through generations. Prepared with the highest quality fresh ingredients and a slow-cooked 12-hour broth.',
     'hero.btn.menu': 'View Menu',
     'hero.btn.kitchen': 'Simulate Kitchen 🍳',
@@ -178,9 +178,9 @@ const translations = {
     
     // Hero
     'hero.tagline': 'Hương Vị Truyền Thống Hà Nội',
-    'hero.title.part1': 'Nghệ Thuật ',
-    'hero.title.highlight': 'Phở Tự Nhiên',
-    'hero.title.part2': ' Trong Thành Phố Bạn',
+    'hero.title.part1': 'Nhà Hàng ',
+    'hero.title.highlight': 'Việt Nam Chuẩn Vị',
+    'hero.title.part2': ' Tại Barcelona',
     'hero.desc': 'Thưởng thức công thức nấu phở gia truyền của gia đình qua nhiều thế hệ. Chuẩn bị với các nguyên liệu tươi ngon nhất và nước dùng ninh liên tục trong 12 giờ.',
     'hero.btn.menu': 'Xem Thực Đơn',
     'hero.btn.kitchen': 'Simulate Kitchen 🍳',
@@ -261,9 +261,9 @@ const translations = {
     
     // Hero
     'hero.tagline': '河内传统美味',
-    'hero.title.part1': '您城市里的',
-    'hero.title.highlight': '正宗越南粉',
-    'hero.title.part2': '艺术',
+    'hero.title.part1': '巴塞罗那',
+    'hero.title.highlight': '正宗越南餐厅',
+    'hero.title.part2': '',
     'hero.desc': '享受代代相传的越南家族配方。选用最优质的新鲜食材，汤底慢火熬制12小时。',
     'hero.btn.menu': '查看菜单',
     'hero.btn.kitchen': 'Simulate Kitchen 🍳',
@@ -309,9 +309,9 @@ const translations = {
     
     // Hero
     'hero.tagline': '하노이 전통의 맛',
-    'hero.title.part1': '우리 동네에서 만나는 ',
-    'hero.title.highlight': '정통 쌀국수',
-    'hero.title.part2': '의 예술',
+    'hero.title.part1': '바르셀로나 ',
+    'hero.title.highlight': '정통 베트남 레스토랑',
+    'hero.title.part2': '',
     'hero.desc': '대대로 전해 내려오는 베트남 가족 레시피를 즐겨보세요. 최상급 신선한 재료와 12시간 동안 우려낸 깊은 육수로 정성껏 준비합니다.',
     'hero.btn.menu': '메뉴 보기',
     'hero.btn.kitchen': 'Simulate Kitchen 🍳',
@@ -357,9 +357,9 @@ const translations = {
     
     // Hero
     'hero.tagline': 'ハノイ伝統の味',
-    'hero.title.part1': 'あなたの街で味わう',
-    'hero.title.highlight': '本物のフォー',
-    'hero.title.part2': 'の芸術',
+    'hero.title.part1': 'バルセロナの',
+    'hero.title.highlight': '本格ベトナム料理店',
+    'hero.title.part2': '',
     'hero.desc': '何世代にもわたり受け継がれてきたベトナムの秘伝レシピ。最高品質の新鮮な食材と、12時間かけてじっくり煮込んだ秘伝のスープをお楽しみください。',
     'hero.btn.menu': 'メニューを見る',
     'hero.btn.kitchen': 'Simulate Kitchen 🍳',
@@ -405,9 +405,9 @@ const translations = {
     
     // Hero
     'hero.tagline': 'Saveur Traditionnelle de Hanoï',
-    'hero.title.part1': 'L\'Art du ',
-    'hero.title.highlight': 'Phở Authentique',
-    'hero.title.part2': ' dans Votre Ville',
+    'hero.title.part1': 'Restaurant ',
+    'hero.title.highlight': 'Vietnamien Authentique',
+    'hero.title.part2': ' à Barcelone',
     'hero.desc': 'Savourez des recettes familiales vietnamiennes transmises de génération en génération. Préparées avec des ingrédients frais de la plus haute qualité et un bouillon mijoté pendant 12 heures.',
     'hero.btn.menu': 'Voir le Menu',
     'hero.btn.kitchen': 'Simuler Cuisine 🍳',
@@ -453,9 +453,9 @@ const translations = {
     
     // Hero
     'hero.tagline': 'Sapore Tradizionale di Hanoi',
-    'hero.title.part1': 'L\'Arte del ',
-    'hero.title.highlight': 'Phở Autentico',
-    'hero.title.part2': ' nella Tua Città',
+    'hero.title.part1': 'Autentico ',
+    'hero.title.highlight': 'Ristorante Vietnamita',
+    'hero.title.part2': ' a Barcellona',
     'hero.desc': 'Gusta le ricette di famiglia vietnamite tramandate da generazioni. Preparate con ingredienti freschi di altissima qualità e un brodo cotto a fuoco lento per 12 ore.',
     'hero.btn.menu': 'Vedi il Menu',
     'hero.btn.kitchen': 'Simula Cucina 🍳',
@@ -494,14 +494,12 @@ const translations = {
   }
 };
 
-export const LanguageProvider = ({ children }) => {
-  const path = typeof window !== 'undefined' ? window.location.pathname : '';
-  const cleanPath = path.replace(/\/$/, '');
-  const isPromo = cleanPath.startsWith('/promo/') || cleanPath.includes('/promo');
-  const [language, setLanguage] = useState(isPromo ? 'en' : 'es');
+// initialLanguage comes from the URL (see src/seo/routes.js) so server and client render the same language.
+export const LanguageProvider = ({ children, initialLanguage = 'es' }) => {
+  const [language, setLanguage] = useState(initialLanguage);
 
   const t = (key) => {
-    return translations[language]?.[key] || translations['es']?.[key] || key;
+    return translations[language]?.[key] ?? translations['es']?.[key] ?? key;
   };
 
   return (

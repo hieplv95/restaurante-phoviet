@@ -1,6 +1,8 @@
 {
   "rewrites": [
-    { "source": "/promo/(.*)", "destination": "/index.html" },
+    { "source": "/:lang(en|vi|zh|ja|ko|fr|it)", "destination": "/:lang/index.html" },
+    { "source": "/promo/:dish(bun-bo-hue|banh-xeo|pho-ha-noi)/", "destination": "/promo/:dish/index.html" },
+    { "source": "/promo/:dish(bun-bo-hue|banh-xeo|pho-ha-noi)", "destination": "/promo/:dish/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

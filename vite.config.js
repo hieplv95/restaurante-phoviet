@@ -12,6 +12,8 @@ export default defineConfig({
   build: {
     // Improve CSS delivery
     cssCodeSplit: true,
+    // Used by scripts/prerender.js to link the CSS of lazy-loaded sections in the static HTML
+    manifest: true,
     // Minimize output size
     minify: 'terser',
     terserOptions: {

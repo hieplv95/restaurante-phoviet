@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { ChevronDown } from 'lucide-react';
+import { homePath } from '../seo/routes';
 
 export default function Header() {
-  const { language, setLanguage, t } = useLanguage();
+  const { language, t } = useLanguage();
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const langConfig = {
@@ -17,17 +18,12 @@ export default function Header() {
     it: { label: 'Italiano', flag: '/flags/it.png', short: 'IT' }
   };
 
-  const toggleLanguage = (lang) => {
-    setLanguage(lang);
-    setDropdownOpen(false);
-  };
-
   return (
     <header className="header-wrapper">
       <div className="container header-container">
         {/* Brand Logo */}
         <a href="#home" className="logo-link">
-          <img src="/logo_hat.webp" alt="Pho Viet Restaurant" className="logo-img" width="40" height="40" decoding="async" fetchPriority="high" />
+          <img src="/logo_hat.webp" alt="Pho Viet - Vietnamese restaurant in Barcelona" className="logo-img" width="40" height="40" decoding="async" fetchPriority="high" />
           <div className="logo-text">
             Pho <span>Viet</span>
           </div>
@@ -35,7 +31,7 @@ export default function Header() {
 
         {/* Navigation Items */}
         <nav className="nav-menu">
-          <a href="/#menu" className="nav-link">
+          <a href="#menu" className="nav-link">
             {t('nav.menu')}
           </a>
           <a href="/promo/bun-bo-hue" className="nav-link">
@@ -47,17 +43,18 @@ export default function Header() {
           <a href="/promo/pho-ha-noi" className="nav-link">
             Pho & Bun Cha Ha Noi
           </a>
-          <a href="/#footer" className="nav-link">
+          <a href="#footer" className="nav-link">
             {t('footer.contact')}
           </a>
         </nav>
 
         {/* Actions panel */}
         <div className="nav-actions">
-          {/* Language Selector Dropdown */}
+          {/* Language Selector Dropdown: real links so every language URL is crawlable */}
           <div className="lang-selector">
             <button 
               className="lang-btn" 
+              aria-label="Language"
               onClick={() => setDropdownOpen(!dropdownOpen)}
             >
               <img 
@@ -69,14 +66,16 @@ export default function Header() {
             </button>
             <div className="lang-dropdown" style={{ display: dropdownOpen ? 'flex' : 'none' }}>
               {Object.entries(langConfig).map(([code, cfg]) => (
-                <button 
+                <a 
                   key={code}
+                  href={homePath(code)}
+                  hrefLang={code}
+                  lang={code}
                   className={`lang-option ${language === code ? 'active' : ''}`}
-                  onClick={() => toggleLanguage(code)}
                 >
                   <img src={cfg.flag} alt={cfg.short} className="lang-flag-img-dropdown" />
                   <span>{cfg.label}</span>
-                </button>
+                </a>
               ))}
             </div>
           </div>
@@ -85,4 +84,3 @@ export default function Header() {
     </header>
   );
 }
-
